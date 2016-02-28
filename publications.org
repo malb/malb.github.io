@@ -4,15 +4,15 @@
 
 ** Theses
 
--  Martin Albrecht. [[http://martinralbrecht.files.wordpress.com/2010/10/phd.pdf][Algorithmic Algebraic Techniques and their Application to Block Cipher Cryptanalysis]]. PhD thesis, Royal Holloway, University of London, 2010
--  Martin Albrecht. [[./papers/algebraic-attacks-on-the-courtois-toy-cipher--diplomarbeit.pdf][Algebraic Attacks against the Courtois Toy Cipher]]. Diplomarbeit, Universität Bremen. 2007.
+- Martin Albrecht. [[http://martinralbrecht.files.wordpress.com/2010/10/phd.pdf][Algorithmic Algebraic Techniques and their Application to Block Cipher Cryptanalysis]]. PhD thesis, Royal Holloway, University of London, 2010
+- Martin Albrecht. [[./papers/algebraic-attacks-on-the-courtois-toy-cipher--diplomarbeit.pdf][Algebraic Attacks against the Courtois Toy Cipher]]. Diplomarbeit, Universität Bremen. 2007.
 
 ** Journal articles
 
 - Martin R. Albrecht, Rachel Player and Sam Scott. /On the concrete hardness of Learning with Errors/ in /Journal of Mathematical Cryptology/ 9(3):169-203 (2015), DOI: [[http://dx.doi.org/10.1515/jmc-2015-0016][10.1515/jmc-2015-0016]]. pre-print available as [[http://ia.cr/2015/046][Cryptology ePrint Archive: Report 2015/046]].
--  Martin R. Albrecht, Carlos Cid, Jean-Charles Faugère, Robert Fitzpatrick and Ludovic Perret. /On the complexity of the BKW algorithm on LWE/ in /Designs, Codes and Cryptography/, Volume 74, [[http://link.springer.com/journal/10623/74/2/page/1][Issue 2]], pages 325-354. 2015. pre-print available as [[http://ia.cr/2012/636][Cryptology ePrint Archive: Report 2012/636]].
--  Martin Albrecht, Carlos Cid, Jean-Charles Faugère and Ludovic Perret. /On the relation between the MXL family of algorithms and Gröbner basis algorithms/ in /Journal of Symbolic Computation/. 2012. [http://ia.cr/2011/164][pre-print]], [[https://bitbucket.org/malb/papers/src/5608545eb1bb/mutant-groebner-basis][LaTeX sources]]
--  Martin Albrecht, Gregory Bard and Bill Hart. /Efficient Multiplication of Dense Matrices over GF(2)/ in /ACM Transactions on Mathematical Software/. pre-print available on the [[http://arxiv.org/abs/0811.1714][arXiv]]. 2008.
+- Martin R. Albrecht, Carlos Cid, Jean-Charles Faugère, Robert Fitzpatrick and Ludovic Perret. /On the complexity of the BKW algorithm on LWE/ in /Designs, Codes and Cryptography/, Volume 74, [[http://link.springer.com/journal/10623/74/2/page/1][Issue 2]], pages 325-354. 2015. pre-print available as [[http://ia.cr/2012/636][Cryptology ePrint Archive: Report 2012/636]].
+- Martin Albrecht, Carlos Cid, Jean-Charles Faugère and Ludovic Perret. /On the relation between the MXL family of algorithms and Gröbner basis algorithms/ in /Journal of Symbolic Computation/. 2012. [[http://ia.cr/2011/164][pre-print]], [[https://bitbucket.org/malb/papers/src/5608545eb1bb/mutant-groebner-basis][LaTeX sources]]
+- Martin Albrecht, Gregory Bard and Bill Hart. /Efficient Multiplication of Dense Matrices over GF(2)/ in /ACM Transactions on Mathematical Software/. pre-print available on the [[http://arxiv.org/abs/0811.1714][arXiv]]. 2008.
 -  Martin Albrecht. /Algebraic Attacks against the Courtois Toy Cipher/ in /Cryptologia/, Volume 32, Issue 3 July 2008 , pages 220 - 276. available at [[http://www.informaworld.com/smpp/content~db=all~content=a794832591~tab=citation][informaworld]]. 2008.
 
 ** Peer-reviewed conference publications
@@ -29,12 +29,12 @@
 *** 2014
 
 -  Martin R. Albrecht, Benedikt Driessen, Elif Bilge Kavun, Gregor Leander, Christof Paar and Tolga Yalcin. /Block Ciphers - Focus On The Linear Layer (feat. PRIDE)/ in proceedings of /CRYPTO 2014/, Springer Verlag, 2015. [[http://dx.doi.org/10.1007/978-3-662-44371-2_4][10.1007/978-3-662-44371-2\_4]]. pre-print available as [[https://eprint.iacr.org/2014/453][Cryptology ePrint Archive: Report 2014/453]].
--  Martin R. Albrecht, Jean-Charles Faugère, Robert Fitzpatrick, Ludovic Perret. /Lazy Modulus Switching for the BKW Algorithm on LWE/ in proceedings of /PKC 2014/, Springer Verlag, 2014. full version available as [http://ia.cr/2014/019][Cryptology ePrint Archive: Report 2014/019]]. [[https://bitbucket.org/malb/papers/src/tip/lazy-modulus-switching-for-bkw-on-lwe/?at=default][LaTeX sources]].
+-  Martin R. Albrecht, Jean-Charles Faugère, Robert Fitzpatrick, Ludovic Perret. /Lazy Modulus Switching for the BKW Algorithm on LWE/ in proceedings of /PKC 2014/, Springer Verlag, 2014. full version available as [[http://ia.cr/2014/019][Cryptology ePrint Archive: Report 2014/019]]. [[https://bitbucket.org/malb/papers/src/tip/lazy-modulus-switching-for-bkw-on-lwe/?at=default][LaTeX sources]].
 -  Martin R. Albrecht. Jean-Charles Faugère, Robert Fitzpatrick, Ludovic Perret, Yosuke Todo and Keita Xagawa. /Practical Cryptanalysis of a Public-Key Encryption Scheme Based on New Multivariate Quadratic Assumptions/ in proceedings of /PKC 2014/, Springer Verlag, 2014.
 
 *** 2013
 
--  Martin R. Albrecht, Robert Fitzpatrick, and Florian Göpfert: /On the Efficacy of Solving LWE by Reduction to Unique-SVP/ in proceedings of /International Conference on Information Security and Cryptology./ 2013. pre-print available as [http://ia.cr/2013/602][Cryptology ePrint Archive: Report 2013/602]].
+-  Martin R. Albrecht, Robert Fitzpatrick, and Florian Göpfert: /On the Efficacy of Solving LWE by Reduction to Unique-SVP/ in proceedings of /International Conference on Information Security and Cryptology./ 2013. pre-print available as [[http://ia.cr/2013/602][Cryptology ePrint Archive: Report 2013/602]].
 
 *** 2012
 
@@ -43,8 +43,8 @@
 
 *** 2011
 
--  Martin R. Albrecht and Kenneth G. Paterson. /Breaking An Identity-Based Encryption Scheme based on DHIES/ in proceedings of /IMA CCC 2011/. Springer Verlag, 2011. pre-print available as [http://ia.cr/2010/637][Cryptology ePrint Archive: Report 2010/637]]. 2010. [[https://bitbucket.org/malb/papers/src/5608545eb1bb/dhies-ibe-mq-attack][LaTeX sources]]
--  Martin R. Albrecht, Pooya Farshim, Jean-Charles Faugère and Ludovic Perret. /Polly Cracker, Revisited/ in Proceedings of /ASIACRYPT 2011/. Springer Verlag 2011. pre-print/full version available as [http://ia.cr/2011/289][Cryptology ePrint Archive: Report 2011/289]]. 2011. [[https://bitbucket.org/malb/papers/src/tip/polly-cracker-revisited-extended-abstract][LaTeX sources]]
+-  Martin R. Albrecht and Kenneth G. Paterson. /Breaking An Identity-Based Encryption Scheme based on DHIES/ in proceedings of /IMA CCC 2011/. Springer Verlag, 2011. pre-print available as [[http://ia.cr/2010/637][Cryptology ePrint Archive: Report 2010/637]]. 2010. [[https://bitbucket.org/malb/papers/src/5608545eb1bb/dhies-ibe-mq-attack][LaTeX sources]]
+-  Martin R. Albrecht, Pooya Farshim, Jean-Charles Faugère and Ludovic Perret. /Polly Cracker, Revisited/ in Proceedings of /ASIACRYPT 2011/. Springer Verlag 2011. pre-print/full version available as [[http://ia.cr/2011/289][Cryptology ePrint Archive: Report 2011/289]]. 2011. [[https://bitbucket.org/malb/papers/src/tip/polly-cracker-revisited-extended-abstract][LaTeX sources]]
 -  Martin Albrecht and Carlos Cid. /Cold Boot Key Recovery by Solving Polynomial Systems with Noise/ in proceedings of /9th International Conference on Applied Cryptography and Network Security/. Springer Verlag, 2011. [[http://martinralbrecht.files.wordpress.com/2010/07/paper.pdf][local copy]], [[https://bitbucket.org/malb/papers/src/5608545eb1bb/coldboot-attacks-max-posso][LaTeX sources]].
 -  Martin R. Albrecht, Pooya Farshim, Kenneth G. Paterson and Gaven J. Watson. /On Cipher-Dependent Related-Key Attacks in the Ideal Cipher Model/ in proceedings of /FSE 2011/, 2011.
 
@@ -54,9 +54,9 @@
 
 *** 2009
 
--  Martin Albrecht, Craig Gentry, Shai Halevi and Jonathan Katz. /Attacking Cryptographic Schemes Based on "Perturbation Polynomials"/ in proceedings of the /16th ACM Conference on Computer and Communications Security/. pre-print available at [http://ia.cr/2009/098]]. 2009.
+-  Martin Albrecht, Craig Gentry, Shai Halevi and Jonathan Katz. /Attacking Cryptographic Schemes Based on "Perturbation Polynomials"/ in proceedings of the /16th ACM Conference on Computer and Communications Security/. pre-print available as [[http://ia.cr/2009/098][Cryptology ePrint Archive: 2009/098]] Report . 2009.
 -  Martin Albrecht, Kenny Paterson and Gaven Watson. /Plaintext Recovery Attacks Against SSH/ in proceedings of /IEEE Symposium on Security and Privacy 2009/. available [[http://www.informatik.uni-bremen.de/~malb/papers/plaintext_recover_attacks_against_ssh.pdf][locally]]. 2009.
--  Martin Albrecht and Carlos Cid. /Algebraic Techniques in Differential Cryptanalysis/ to proceedings of /Fast Software Encryption 2009/. pre-print available at [http://ia.cr/2008/177]]. 2009. ([[http://bitbucket.org/malb/algebraic_attacks/src/tip/present.py][source code]])
+-  Martin Albrecht and Carlos Cid. /Algebraic Techniques in Differential Cryptanalysis/ to proceedings of /Fast Software Encryption 2009/. pre-print available as [[http://ia.cr/2008/177][Cryptology ePrint Archive: 2008/177]]. 2009. ([[http://bitbucket.org/malb/algebraic_attacks/src/tip/present.py][source code]])
 
 *** 2005
 
