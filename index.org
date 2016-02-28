@@ -1,0 +1,32 @@
+#+SETUPFILE: setup.org
+#+TITLE: Martin R. Albrecht
+
+* Decl
+
+I am a lecturer in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Security Group]] at [[https://royalholloway.ac.uk][Royal Holloway, University of London]].
+
+* Text
+
+- [[https://martinralbrecht.wordpress.com][blog]]
+- [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][dblp]]
+- [[./publications.html][publications]]
+
+* Code
+
+- [[https://bitbucket.org/malb][bitbucket]]
+- [[https://github.com/malb][github]]
+- [[https://gist.github.com/malb][gists]]
+
+* Link
+
+- [[https://www.isg.rhul.ac.uk/bin/staff-dir.php][rhul]]
+- [[mailto:FIRSTNAME.LASTNAME@royalholloway.ac.uk][email]]
+- [[https://twitter.com/martinralbrecht][twitter]]
+- [[https://keybase.io/martinralbrecht][keybase]]
+- [[http://uk.linkedin.com/pub/martin-albrecht/95/74b/42a][linkedin]]
+- [[https://www.google.com/+MartinAlbrecht][google+]]
+
+#+INCLUDE: footer.org
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
+# End:
