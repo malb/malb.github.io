@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/martinralbrecht
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://malb.io
+  * I am martinralbrecht (https://keybase.io/martinralbrecht) on keybase.
+  * I have a public key with fingerprint 40BC 7F0D 724B 4AB1 CC98  4014 A040 043C 6532 AFB4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101dc713fe56735c840fb208908b743c12d2f851f5df7f82d50478f39094df39ac40a",
+            "fingerprint": "40bc7f0d724b4ab1cc984014a040043c6532afb4",
+            "host": "keybase.io",
+            "key_id": "a040043c6532afb4",
+            "kid": "0101dc713fe56735c840fb208908b743c12d2f851f5df7f82d50478f39094df39ac40a",
+            "uid": "b115c7709e85a1cb6e5f4dc01d179619",
+            "username": "martinralbrecht"
+        },
+        "service": {
+            "hostname": "malb.io",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1456683625,
+    "expire_in": 157680000,
+    "prev": "7c8124e589ec6145e6a26e9ba3ac3c3c97bbb4d977f637e838551b2372716342",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUmlMXFUUHla7QAYsSjHQlqf+QKb69mVKwlKQUARhSim4ML7lPnjMMDPMvBmg
+QE3BhhBoQlUa0KnahVC0QrWQ2lI0qF1MW7FQiBiaUFBioUArhFhE9D5cfvnTe3+c
+3HO/7zvfOTlNwX46X58PEvzjAN7V7XPtrqDLHTJWViKCXapAjJWIBawFYJWASzVb
+FAkxIiiGYpLIYIQMKJohKJElUVnAUZZDWYEhCRHDJVxmKUymJJmRWVyiUJJhZYJD
+OVKCgRdJlEcMiKzYCoHT4VRsKpQlUUFkZFRicFIgeQETRQ4KYySPkigKVWmKwHlZ
+ICGxyO7SGNCcwLvAs4od5uDDvGbvP/D/s2/3mpyAYZTIMCgHWIrHRIEGlExKIqyB
+MRyNcRrQBZw2vgRAdAnvVBWbk7cKTiAWqUi1AYGfHkUE2ny1hv4FWoW/OnI47apd
+tFthskhVHUaNo1Y4NFAZEMx/082CYpPgICHBA5wuxW5DjBhEiqqi6WEkRdMsQeOU
+AQHlDsUJzIqGoBiaReHRygAPlGREFsPJfECxHBBpSAM0j9OAE3iCFwl4OUYQBFLi
+GEamCQawBEtRmIATDM5gNEHiiNZRqc2OGDnoky+Emi6l0MarbidAqjfU+0b663x8
+dYEBvtqK6TasD/ln75q+1q9sHJUPhoblXr9cv3x8IK0oInJ8m/J57W8De8G5lq1z
+EbMZ26dCvOwXHw2mxZbL8Wn9by6+m50bNDPcXtV3K2Ii+5nDh/CGZG9UZlap2Tqb
++mmKt8a9+/W59tCGTw6cK7jV/PZrifqdl4YOM7V/dNRX33/YPPLLE/f2JvmoL4Ur
+V7Z3zoVXvmOyxMcoVU0hZ2P1UT3G+NGj5PBXtUqXKWuz/0Lr+L3bAUfPFFc81/Bo
+/vdX95X/PBOxtHlmNjR904NdOzIv7Ul+g391uS60kaxbV3znfW/4wdGT0xlxY7s8
+HbdPnp6wrZrOhwVOmaMSTBn7DEM3jne9Utxztpbn109y5+uCoru6ucHp1uhJb6L4
+8SnL3Zz9OR2P77GcfixoZNN8TKBrcjHdukPNux42/4DPSYkEdw5Nd8Z2Dhgab6zw
+jdlSeOLuK61JL8efaGtYbaxK/3Hd1RHpw4HlJy0lSb0TT/utujO/bT4WpxjyVtAD
+rPnUWOiMybGKfzcVUjxw0+25eMTfuBH7Pa91JK8oEVnwq7nwfHPmzW3dwRfOjM+3
+tbwYUfpU1GT3cHXt2GfmLXXv7e8b7Lv/MFK/czCrO+Risr49JSy1dym97FfqWMKX
+b+X39yekxjQe+cl7+RG/+rmolALVb/EHV9hS9AvulqWVgt5gz4nMmsit3wBdmd5U
+1bYYsLTQY9uSfo39Ew==
+=bz0H
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/martinralbrecht
+
+==================================================================
