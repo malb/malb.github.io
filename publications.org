@@ -54,7 +54,7 @@
 
 *** 2009
 
-- Martin Albrecht, Craig Gentry, Shai Halevi and Jonathan Katz. /Attacking Cryptographic Schemes Based on "Perturbation Polynomials"/ in proceedings of the /16th ACM Conference on Computer and Communications Security/. pre-print available as [[http://ia.cr/2009/098][Cryptology ePrint Archive: 2009/098]] Report . 2009.
+- Martin Albrecht, Craig Gentry, Shai Halevi and Jonathan Katz. /Attacking Cryptographic Schemes Based on Perturbation Polynomials/ in proceedings of the /16th ACM Conference on Computer and Communications Security/. pre-print available as [[http://ia.cr/2009/098][Cryptology ePrint Archive: 2009/098]] Report . 2009.
 - Martin Albrecht, Kenny Paterson and Gaven Watson. /Plaintext Recovery Attacks Against SSH/ in proceedings of /IEEE Symposium on Security and Privacy 2009/. available [[http://www.informatik.uni-bremen.de/~malb/papers/plaintext_recover_attacks_against_ssh.pdf][locally]]. 2009.
 - Martin Albrecht and Carlos Cid. /Algebraic Techniques in Differential Cryptanalysis/ to proceedings of /Fast Software Encryption 2009/. pre-print available as [[http://ia.cr/2008/177][Cryptology ePrint Archive: 2008/177]]. 2009. ([[http://bitbucket.org/malb/algebraic_attacks/src/tip/present.py][source code]])
 
