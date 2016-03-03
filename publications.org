@@ -9,6 +9,7 @@
 ** Journal articles
 
 - Martin R. Albrecht, Rachel Player and Sam Scott. /On the concrete hardness of Learning with Errors/ in /Journal of Mathematical Cryptology/ 9(3):169-203 (2015), DOI: [[http://dx.doi.org/10.1515/jmc-2015-0016][10.1515/jmc-2015-0016]]. pre-print available as [[http://ia.cr/2015/046][Cryptology ePrint Archive: Report 2015/046]].
+- Martin R. Albrecht, Jean-Charles Faugère, Pooya Farshim, Gottfried Herold, and Ludovic Perret. /Polly Cracker, revisited/ in /Designs, Codes and Cryptography/ (2015), pp. 1–42. DOI: [[http://dx.doi.org/10.1007/s10623-015-0048-8][10.1007/s10623-015-0048-8]]. pre-print available as [[http://ia.cr/2011/289][Cryptology ePrint Archive: Report 2011/289]].
 - Martin R. Albrecht, Carlos Cid, Jean-Charles Faugère, Robert Fitzpatrick and Ludovic Perret. /On the complexity of the BKW algorithm on LWE/ in /Designs, Codes and Cryptography/, Volume 74, [[http://link.springer.com/journal/10623/74/2/page/1][Issue 2]], pages 325-354. 2015. pre-print available as [[http://ia.cr/2012/636][Cryptology ePrint Archive: Report 2012/636]].
 - Martin Albrecht, Carlos Cid, Jean-Charles Faugère and Ludovic Perret. /On the relation between the MXL family of algorithms and Gröbner basis algorithms/ in /Journal of Symbolic Computation/. 2012. [[http://ia.cr/2011/164][pre-print]], [[https://bitbucket.org/malb/papers/src/5608545eb1bb/mutant-groebner-basis][LaTeX sources]]
 - Martin Albrecht, Gregory Bard and Bill Hart. /Efficient Multiplication of Dense Matrices over GF(2)/ in /ACM Transactions on Mathematical Software/. pre-print available on the [[http://arxiv.org/abs/0811.1714][arXiv]]. 2008.
@@ -57,11 +58,14 @@
 - Martin Albrecht, Kenny Paterson and Gaven Watson. /Plaintext Recovery Attacks Against SSH/ in proceedings of /IEEE Symposium on Security and Privacy 2009/. available [[http://www.informatik.uni-bremen.de/~malb/papers/plaintext_recover_attacks_against_ssh.pdf][locally]]. 2009.
 - Martin Albrecht and Carlos Cid. /Algebraic Techniques in Differential Cryptanalysis/ to proceedings of /Fast Software Encryption 2009/. pre-print available as [[http://ia.cr/2008/177][Cryptology ePrint Archive: 2008/177]]. 2009. ([[http://bitbucket.org/malb/algebraic_attacks/src/tip/present.py][source code]])
 
+*** 2006
+
+- Martin Albrecht, Till Backhaus, Steffen Planthaber, Henning Stöpler, Dirk Spenneberg, and Frank Kirchner. /AIMEE: A four-legged robot for RoboCup Rescue/ in /Climbing and Walking Robots/. Springer, 2006, pp. 1003–1010
+
 *** 2005
 
-- M. Albrecht, T. Backhaus, S. Planthaber, H. Stöppler, D. Spenneberg and F. Kirchner. /AIMEE: A Four-Legged Robot for Robocup Rescue/ in proceedings of /CLAWAR 2005/. available at [[http://citeseer.ist.psu.edu/731942.html][citeseer]]. 2005.
-- Dirk Spenneberg, Martin Albrecht and Till Backhaus. /M.O.N.S.T.E.R.: A new Behavior-Bases Microkernel for Mobile Robots/ in proceedings of the /2nd European Conference on Mobile Robots/. available at [[http://citeseer.ist.psu.edu/spenneberg05monster.html][citeseer]]. 2005.
-- D. Spenneberg, A. Strack, J. Hilljegerdes, H. Zschenker, M. Albrecht, T. Backhaus and F. Kirchner. /ARAMIES: A Four-Legged Climbing and Walking Robot/ in /Proceedings of 8th International Symposium iSAIRAS/. available at [[http://citeseer.ist.psu.edu/spenneberg05aramies.html][citeseer]]. 2005.
+- Dirk Spenneberg, Martin Albrecht, and Till Backhaus. /Monster: A new behavior-based microkernel for mobile robots/ in proceedings of the /2nd European Conference on Mobile Robots/. 2005.
+- Dirk Spenneberg, Martin Albrecht, Till Backhaus, Jens Hilljegerdes, Frank Kirchner, Andreas Strack, and Heiko Zschenker. /Aramies: A four-legged climbing and walking robot/ in /Proceedings of 8th International Symposium iSAIRAS/. 2005
 
 ** Other publications
 
