@@ -15,3 +15,11 @@
 #+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.3.4)
 #+LATEX_HEADER:
 #+HTML_HEAD: <link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
+#+HTML_HEAD: <script>
+#+HTML_HEAD:   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+#+HTML_HEAD:   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+#+HTML_HEAD:   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+#+HTML_HEAD:   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+#+HTML_HEAD:   ga('create', 'UA-74660978-1', 'auto');
+#+HTML_HEAD:   ga('send', 'pageview');
+#+HTML_HEAD: </script>
