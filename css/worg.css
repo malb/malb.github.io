@@ -37,7 +37,7 @@
         text-align: right;
         /* ensure doesn't flow off the screen when expanded */
         max-height: 80%;
-        overflow: auto; 
+        overflow: auto;
     }
     #table-of-contents h2 {
         font-size: 10pt;
@@ -46,17 +46,17 @@
         padding-left: 0.5em;
         padding-left: 0.5em;
         padding-top: 0.05em;
-        padding-bottom: 0.05em; 
+        padding-bottom: 0.05em;
     }
 
     #table-of-contents #text-table-of-contents {
         display: none;
-        text-align: left; 
+        text-align: left;
     }
     #table-of-contents:hover #text-table-of-contents {
         display: block;
         padding: 0.5em;
-        margin-top: -1.5em; 
+        margin-top: -1.5em;
     }
 
     #table-of-contents #text-table-of-contents ul {
@@ -119,16 +119,16 @@
     }
 
     a {
-        text-decoration: none; 
+        text-decoration: none;
         color: #3399cc;
     }
     /* a:visited {text-decoration: none; color: #224444} */ /* Taken out because color too similar to text. */
     a:visited {
-        text-decoration: none; 
+        text-decoration: none;
         color: #3399cc;
     }  /* this is now the color of the Unicorns horn */
     a:hover {
-        text-decoration: underline; 
+        text-decoration: underline;
         color: #3399cc;
     }
 
@@ -973,10 +973,10 @@
     }
 
     #show_source {
-        float: right; 
+        float: right;
         margin: .7em;
     }
-    
+
 
 } /* END OF @media all */
 
