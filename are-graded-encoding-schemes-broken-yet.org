@@ -23,10 +23,10 @@ Polynomial-time attack in cite:EPRINT:HuJia15
 
 ** BROKEN Indistinguishability Obfuscation
 
-- cite:FOCS:GGHRSW13 is broken in polynomial-time in cite:EPRINT:MilSahZha16
-- cite:EC:BGKPS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16
-- cite:EPRINT:AGIS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16
-- cite:EPRINT:BMSZ15 is broken in polynomial-time in cite:EPRINT:MilSahZha16
+- cite:FOCS:GGHRSW13 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
+- cite:EC:BGKPS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:AGIS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:BMSZ15 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
 
 ** COMMENT Other
 
