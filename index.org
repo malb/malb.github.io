@@ -28,6 +28,7 @@ I am a lecturer in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Securi
 - [[https://www.google.com/+MartinAlbrecht][google+]]
 
 #+INCLUDE: footer.org
+
 # Local Variables:
 # eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
 # End:

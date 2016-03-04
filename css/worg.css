@@ -80,6 +80,14 @@
         color: #333;
     }
 
+    h1.org-ref-bib-h1 {
+        font-family:Arial,sans-serif;
+        font-size:1.45em;
+        line-height:16px;
+        padding:7px 0 0 0;
+        color: #666;
+    }
+
     h2 {
         font-family:Arial,sans-serif;
         font-size:1.45em;

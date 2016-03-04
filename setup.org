@@ -1,5 +1,5 @@
 #+OPTIONS: html-link-use-abs-url:nil html-postamble:nil html-preamble:t html-scripts:t
-#+OPTIONS: toc:t num:nil todo:nil pri:nil tags:nil ^:nil TeX:nil
+#+OPTIONS: toc:t num:nil todo:t pri:nil tags:nil ^:nil TeX:t LaTeX:t
 #+OPTIONS: html-style:t html5-fancy:t tex:t
 #+HTML_DOCTYPE: xhtml-strict
 #+HTML_CONTAINER: div
