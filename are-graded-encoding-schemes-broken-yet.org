@@ -30,7 +30,7 @@ Polynomial-time attack in cite:EPRINT:HuJia15
 
 ** Other
 
-- Subexponential classical without encodings of zero or using the zero-testing parameter for large levels of multilinearity $κ$ in cite:EPRINT:CheJeoLee16 and cite:EPRINT:AlbBaiDuc16. The latter also points out a quantum polynomial-time attack under the same conditions.
+- Subexponential attack without encodings of zero or using the zero-testing parameter for large levels of multilinearity $κ$ in cite:EPRINT:CheJeoLee16 and cite:EPRINT:AlbBaiDuc16. The latter also points out a quantum polynomial-time attack under the same conditions.
 
 * CLT13
 
