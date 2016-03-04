@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-03-04 Fri 12:37 -->
+<!-- 2016-03-04 Fri 14:52 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Are Graded Encoding Scheme broken yet?</title>
@@ -96,6 +96,14 @@
   /*]]>*/-->
 </style>
 <link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-74660978-1', 'auto');
+ga('send', 'pageview');
+</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -142,6 +150,28 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "left",
+        displayIndent: "5em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "Neo-Euler"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "Neo-Euler"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "left",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -155,19 +185,20 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline2">Follow-Up Constructions</a></li>
 <li><a href="#orgheadline3"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
 <li><a href="#orgheadline4"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</a></li>
+<li><a href="#orgheadline5">Other</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline5">CLT13</a>
+<li><a href="#orgheadline6">CLT13</a>
 <ul>
-<li><a href="#orgheadline6"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
-<li><a href="#orgheadline7"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline8"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</a></li>
+<li><a href="#orgheadline7"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
+<li><a href="#orgheadline8"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
+<li><a href="#orgheadline9"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline11">GGH15</a>
+<li><a href="#orgheadline12">GGH15</a>
 <ul>
-<li><a href="#orgheadline9"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline10"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</a></li>
+<li><a href="#orgheadline10"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
+<li><a href="#orgheadline11"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</a></li>
 </ul>
 </li>
 </ul>
@@ -212,61 +243,70 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:HuJia15">EP
 <h3 id="orgheadline4"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</h3>
 <div class="outline-text-3" id="text-orgheadline4">
 <ul class="org-ul">
-<li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a></li>
-<li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a></li>
-<li><a class='org-ref-reference' href="#EPRINT:AGIS14">EPRINT:AGIS14</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a></li>
-<li><a class='org-ref-reference' href="#EPRINT:BMSZ15">EPRINT:BMSZ15</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a></li>
+<li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
+<li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
+<li><a class='org-ref-reference' href="#EPRINT:AGIS14">EPRINT:AGIS14</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
+<li><a class='org-ref-reference' href="#EPRINT:BMSZ15">EPRINT:BMSZ15</a> is broken in polynomial-time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgheadline5" class="outline-3">
+<h3 id="orgheadline5">Other</h3>
+<div class="outline-text-3" id="text-orgheadline5">
+<ul class="org-ul">
+<li>Subexponential classical without encodings of zero or using the zero-testing parameter for large levels of multilinearity \(κ\) in <a class='org-ref-reference' href="#EPRINT:CheJeoLee16">EPRINT:CheJeoLee16</a> and <a class='org-ref-reference' href="#EPRINT:AlbBaiDuc16">EPRINT:AlbBaiDuc16</a>. The latter also points out a quantum polynomial-time attack under the same conditions.</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5">CLT13</h2>
-<div class="outline-text-2" id="text-orgheadline5">
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6">CLT13</h2>
+<div class="outline-text-2" id="text-orgheadline6">
 <p>
 The second candidate graded encoding scheme based on a problem related to the approximate GCD assumption <a class='org-ref-reference' href="#C:CorLepTib13">C:CorLepTib13</a>.
 </p>
 </div>
 
-<div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</h3>
-<div class="outline-text-3" id="text-orgheadline6">
+<div id="outline-container-orgheadline7" class="outline-3">
+<h3 id="orgheadline7"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</h3>
+<div class="outline-text-3" id="text-orgheadline7">
 <p>
 <a class='org-ref-reference' href="#C:CorLepTib15">C:CorLepTib15</a> was put forward in response to the attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHLRS15</a>, but was broken in polynomial-time for all applications in <a class='org-ref-reference' href="#EPRINT:MinFou15">EPRINT:MinFou15</a> and <a class='org-ref-reference' href="#EPRINT:CheLeeRyu15">EPRINT:CheLeeRyu15</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
-<div class="outline-text-3" id="text-orgheadline7">
+<div id="outline-container-orgheadline8" class="outline-3">
+<h3 id="orgheadline8"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
+<div class="outline-text-3" id="text-orgheadline8">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHLRS15</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</h3>
+<div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</h3>
 </div>
 </div>
 
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11">GGH15</h2>
-<div class="outline-text-2" id="text-orgheadline11">
-</div><div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
-<div class="outline-text-3" id="text-orgheadline9">
+<div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12">GGH15</h2>
+<div class="outline-text-2" id="text-orgheadline12">
+</div><div id="outline-container-orgheadline10" class="outline-3">
+<h3 id="orgheadline10"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
+<div class="outline-text-3" id="text-orgheadline10">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EPRINT:Coron15</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</h3>
-<div class="outline-text-3" id="text-orgheadline10">
+<div id="outline-container-orgheadline11" class="outline-3">
+<h3 id="orgheadline11"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</h3>
+<div class="outline-text-3" id="text-orgheadline11">
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
 <ul class='org-ref-bib'><li><a id="EC:GarGenHal13">[EC:GarGenHal13] Garg, Gentry & Halevi, Candidate Multilinear Maps from Ideal Lattices., 1-17, in in: EUROCRYPT, edited by Johansson & Nguyen, (2013)</a></li>
@@ -278,6 +318,8 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EP
 <li><a id="EC:BGKPS14">[EC:BGKPS14] Boaz Barak, Sanjam Garg, Yael Tauman Kalai, Omer Paneth & Amit Sahai, Protecting Obfuscation against Algebraic Attacks, 221-238, in in: EUROCRYPT, edited by Phong Nguyen & Elisabeth Oswald, Springer (2014)</a></li>
 <li><a id="EPRINT:AGIS14">[EPRINT:AGIS14] Prabhanjan Ananth, Divya Gupta, Yuval Ishai & Amit Sahai, Optimizing Obfuscation: Avoiding Barrington's Theorem, <i>IACR Cryptology ePrint Archive</i>, <b>2014</b>, (2014). <a href="http://ia.cr/2014/222">link</a>.</a></li>
 <li><a id="EPRINT:BMSZ15">[EPRINT:BMSZ15] Saikrishna Badrinarayanan, Eric Miles, Amit Sahai & Mark Zhandry, Post-Zeroizing Obfuscation: The case of Evasive Circuits, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, 167 (2015). <a href="http://ia.cr/2015/167">link</a>.</a></li>
+<li><a id="EPRINT:CheJeoLee16">[EPRINT:CheJeoLee16] Jung Hee Cheon, Jinhyuck Jeong & Changmin Lee, An Algorithm for NTRU Problems and Cryptanalysis of the GGH Multilinear Map  without an encoding of zero, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/139">link</a>.</a></li>
+<li><a id="EPRINT:AlbBaiDuc16">[EPRINT:AlbBaiDuc16] Martin Albrecht, Shi Bai & Léo Ducas, A subfield lattice attack on overstretched NTRU assumptions: Cryptanalysis of some FHE and Graded Encoding Schemes, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/127">link</a>.</a></li>
 <li><a id="C:CorLepTib13">[C:CorLepTib13] Jean-Sébastien Coron, Tancrède Lepoint & Mehdi Tibouchi, Practical Multilinear Maps over the Integers, 476-493, in in: CRYPTO, edited by Ran Canetti & Juan Garay, (2013)</a></li>
 <li><a id="C:CorLepTib15">[C:CorLepTib15] Jean-Sébastien Coron, Tancrède Lepoint & Mehdi Tibouchi, New Multilinear Maps Over the Integers, 267-286, in in: CRYPTO, edited by Rosario Gennaro & Matthew Robshaw, (2015)</a></li>
 <li><a id="EC:CHLRS15">[EC:CHLRS15] Jung Hee Cheon, Kyoohyung Han, Changmin Lee, Hansol Ryu & Damien Stehlé, Cryptanaxlysis of the Multilinear Map over the Integers, 3-12, in in: EUROCRYPT, edited by Elisabeth Oswald & Marc Fischlin, (2015)</a></li>
