@@ -9,7 +9,7 @@ I am a lecturer in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Securi
 
 - [[./publications.html][publications]]
 - [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][dblp]] ([[http://bibbase.org/dblp/martin_r_albrecht][bibbase]])
-- [[https://martinralbrecht.wordpress.com][blog]] ([[https://https://bitbucket.org/malb/blog/][src]])
+- [[https://martinralbrecht.wordpress.com][blog]] ([[https://bitbucket.org/malb/blog/][src]])
 - [[https://github.com/malb/malb.github.io][this]]
 
 * Code
