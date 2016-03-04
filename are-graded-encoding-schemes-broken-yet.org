@@ -1,0 +1,65 @@
+#+SETUPFILE: setup.org
+#+TITLE: Are Graded Encoding Scheme broken yet?
+#+BIBLIOGRAPHY: local.bib
+#+TODO: BROKEN | STANDING
+#+TODO: TODO | DONE
+
+A quick overview of attacks on Graded Encoding Schemes.
+
+* GGH13
+
+The first candidate graded encoding scheme based on an NTRU-like problem in ideal lattices cite:EC:GarGenHal13.
+
+** Follow-Up Constructions
+
+Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
+
+- cite:EC:LanSteSte14
+- cite:AC:ACLL15
+
+** BROKEN Key Exchange
+
+Polynomial-time attack in cite:EPRINT:HuJia15
+
+** BROKEN Indistinguishability Obfuscation
+
+- cite:FOCS:GGHRSW13 is broken in polynomial-time in cite:EPRINT:MilSahZha16
+- cite:EC:BGKPS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16
+- cite:EPRINT:AGIS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16
+- cite:EPRINT:BMSZ15 is broken in polynomial-time in cite:EPRINT:MilSahZha16
+
+** COMMENT Other
+
+Subexponential attack in XXXX. Polynomial-time quantum attack in XXXX.
+
+* CLT13
+
+The second candidate graded encoding scheme based on a problem related to the approximate GCD assumption cite:C:CorLepTib13.
+
+** BROKEN Follow-Up Construction
+
+cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15, but was broken in polynomial-time for all applications in cite:EPRINT:MinFou15 and cite:EPRINT:CheLeeRyu15.
+
+** BROKEN Key Exchange
+
+Polynomial-time attack in cite:EC:CHLRS15.
+
+** TODO Indistinguishability Obfuscation
+
+* GGH15
+
+** BROKEN Key Exchange
+
+Polynomial-time attack in cite:EPRINT:Coron15.
+
+** TODO Indistinguishability Obfuscation
+
+
+
+bibliography:local.bib
+
+#+INCLUDE: footer.org
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
+# End:
