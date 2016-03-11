@@ -78,6 +78,7 @@
         margin-top: 10px;
         margin-bottom: 10px;
         color: #333;
+        line-height: 1.1em;
     }
 
     h1.org-ref-bib-h1 {
@@ -989,6 +990,17 @@
 } /* END OF @media all */
 
 
+@media (max-width: 768px) {
+    h1.title {
+        text-align: left;
+    }
+    blockquote {
+        padding: 2px !important;
+    }
+    body {
+        padding: 10%;
+    }
+}
 
 @media screen
 {
