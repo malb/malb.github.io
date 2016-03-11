@@ -4,11 +4,13 @@
 #+TODO: BROKEN | STANDING
 #+TODO: TODO | DONE
 
-A quick overview of attacks on Graded Encoding Schemes.
+A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/discrete-subgroup/pulls][let us know]].
 
 * GGH13
 
-The first candidate graded encoding scheme based on an NTRU-like problem in ideal lattices cite:EC:GarGenHal13.
+#+BEGIN_QUOTE
+We describe plausible lattice-based constructions with properties that approximate the sought-after multilinear maps in hard-discrete-logarithm groups, and show an example application of such multi-linear maps that can be realized using our approximation. The security of our constructions relies on seemingly hard problems in ideal lattices, which can be viewed as extensions of the assumed hardness of the NTRU function. – cite:EC:GarGenHal13
+#+END_QUOTE
 
 ** Follow-Up Constructions
 
@@ -34,7 +36,9 @@ Polynomial-time attack in cite:EPRINT:HuJia15
 
 * CLT13
 
-The second candidate graded encoding scheme based on a problem related to the approximate GCD assumption cite:C:CorLepTib13.
+#+BEGIN_QUOTE
+Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — cite:C:CorLepTib13
+#+END_QUOTE
 
 ** BROKEN Follow-Up Construction
 
@@ -44,17 +48,27 @@ cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15,
 
 Polynomial-time attack in cite:EC:CHLRS15.
 
-** TODO Indistinguishability Obfuscation
+** STANDING Indistinguishability Obfuscation
+
+- cite:EC:Zimmerman15 (full version)
+- cite:TCC:AppBra15
 
 * GGH15
 
-** BROKEN Key Exchange
+#+BEGIN_QUOTE
+Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — cite:TCC:GenGorHal15
+#+END_QUOTE
 
-Polynomial-time attack in cite:EPRINT:Coron15.
+** Key Exchange
 
-** TODO Indistinguishability Obfuscation
+Polynomial-time attack in cite:EPRINT:Coron15 for GGH13 without extra safeguards. With additional safeguards from cite:EPRINT:Coron15 ratios of secret elements are recovered, but not the secret elements directly. These safeguards are:
 
+1. Kilian-style randomisation of the encodings.
+2. Choosing the first encoding matrix in each chain to have large entries.
 
+** STANDING Indistinguishability Obfuscation
+
+cite:TCC:GenGorHal15 also describes a candidate construction for branching-program obfuscation.
 
 bibliography:local.bib
 

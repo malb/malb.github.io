@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-03-04 Fri 14:53 -->
+<!-- 2016-03-11 Fri 18:35 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Are Graded Encoding Scheme broken yet?</title>
@@ -192,28 +192,30 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#orgheadline7"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
 <li><a href="#orgheadline8"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline9"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</a></li>
+<li><a href="#orgheadline9"><span class="done STANDING">STANDING</span> Indistinguishability Obfuscation</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline12">GGH15</a>
+<li><a href="#orgheadline10">GGH15</a>
 <ul>
-<li><a href="#orgheadline10"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline11"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</a></li>
+<li><a href="#orgheadline11">Key Exchange</a></li>
+<li><a href="#orgheadline12"><span class="done STANDING">STANDING</span> Indistinguishability Obfuscation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <p>
-A quick overview of attacks on Graded Encoding Schemes.
+A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please <a href="https://github.com/malb/discrete-subgroup/pulls">let us know</a>.
 </p>
 
 <div id="outline-container-orgheadline1" class="outline-2">
 <h2 id="orgheadline1">GGH13</h2>
 <div class="outline-text-2" id="text-orgheadline1">
+<blockquote>
 <p>
-The first candidate graded encoding scheme based on an NTRU-like problem in ideal lattices <a class='org-ref-reference' href="#EC:GarGenHal13">EC:GarGenHal13</a>.
+We describe plausible lattice-based constructions with properties that approximate the sought-after multilinear maps in hard-discrete-logarithm groups, and show an example application of such multi-linear maps that can be realized using our approximation. The security of our constructions relies on seemingly hard problems in ideal lattices, which can be viewed as extensions of the assumed hardness of the NTRU function. – <a class='org-ref-reference' href="#EC:GarGenHal13">EC:GarGenHal13</a>
 </p>
+</blockquote>
 </div>
 
 <div id="outline-container-orgheadline2" class="outline-3">
@@ -264,9 +266,11 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:HuJia15">EP
 <div id="outline-container-orgheadline6" class="outline-2">
 <h2 id="orgheadline6">CLT13</h2>
 <div class="outline-text-2" id="text-orgheadline6">
+<blockquote>
 <p>
-The second candidate graded encoding scheme based on a problem related to the approximate GCD assumption <a class='org-ref-reference' href="#C:CorLepTib13">C:CorLepTib13</a>.
+Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — <a class='org-ref-reference' href="#C:CorLepTib13">C:CorLepTib13</a>
 </p>
+</blockquote>
 </div>
 
 <div id="outline-container-orgheadline7" class="outline-3">
@@ -288,28 +292,50 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHL
 </div>
 
 <div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</h3>
+<h3 id="orgheadline9"><span class="done STANDING">STANDING</span> Indistinguishability Obfuscation</h3>
+<div class="outline-text-3" id="text-orgheadline9">
+<ul class="org-ul">
+<li><a class='org-ref-reference' href="#EC:Zimmerman15">EC:Zimmerman15</a> (full version)</li>
+<li><a class='org-ref-reference' href="#TCC:AppBra15">TCC:AppBra15</a></li>
+</ul>
+</div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline12" class="outline-2">
-<h2 id="orgheadline12">GGH15</h2>
-<div class="outline-text-2" id="text-orgheadline12">
-</div><div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
-<div class="outline-text-3" id="text-orgheadline10">
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10">GGH15</h2>
+<div class="outline-text-2" id="text-orgheadline10">
+<blockquote>
 <p>
-Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EPRINT:Coron15</a>.
+Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — <a class='org-ref-reference' href="#TCC:GenGorHal15">TCC:GenGorHal15</a>
 </p>
-</div>
+</blockquote>
 </div>
 
 <div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11"><span class="todo TODO">TODO</span> Indistinguishability Obfuscation</h3>
+<h3 id="orgheadline11">Key Exchange</h3>
 <div class="outline-text-3" id="text-orgheadline11">
 <p>
+Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EPRINT:Coron15</a> for GGH13 without extra safeguards. With additional safeguards from <a class='org-ref-reference' href="#EPRINT:Coron15">EPRINT:Coron15</a> ratios of secret elements are recovered, but not the secret elements directly. These safeguards are:
+</p>
+
+<ol class="org-ol">
+<li>Kilian-style randomisation of the encodings.</li>
+<li>Choosing the first encoding matrix in each chain to have large entries.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12"><span class="done STANDING">STANDING</span> Indistinguishability Obfuscation</h3>
+<div class="outline-text-3" id="text-orgheadline12">
+<p>
+<a class='org-ref-reference' href="#TCC:GenGorHal15">TCC:GenGorHal15</a> also describes a candidate construction for branching-program obfuscation.
+</p>
+
+<p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="EC:GarGenHal13">[EC:GarGenHal13] Garg, Gentry & Halevi, Candidate Multilinear Maps from Ideal Lattices., 1-17, in in: EUROCRYPT, edited by Johansson & Nguyen, (2013)</a></li>
+<ul class='org-ref-bib'><li><a id="EC:GarGenHal13">[EC:GarGenHal13] Garg, Gentry & Halevi, Candidate Multilinear Maps from Ideal Lattices, 1-17, in in: EUROCRYPT, edited by Johansson & Nguyen, (2013)</a></li>
 <li><a id="EC:LanSteSte14">[EC:LanSteSte14] Adeline Langlois, Damien Stehlé & Ron Steinfeld, GGHLite: More Efficient Multilinear Maps from Ideal Lattices, 239-256, in in: EUROCRYPT, edited by Phong Nguyen & Elisabeth Oswald, (2014)</a></li>
 <li><a id="AC:ACLL15">[AC:ACLL15] Albrecht, Cocis, Laguillaumie & Langlois, Implementing candidate graded encoding schemes from ideal lattices, 752-775, in in: ASIACRYPT, edited by Iwata & Cheon, Springer (2015)</a></li>
 <li><a id="EPRINT:HuJia15">[EPRINT:HuJia15] Hu & Jia, Cryptanalysis of GGH Map, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, (2015). <a href="http://ia.cr/2015/301">link</a>.</a></li>
@@ -325,7 +351,10 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EP
 <li><a id="EC:CHLRS15">[EC:CHLRS15] Jung Hee Cheon, Kyoohyung Han, Changmin Lee, Hansol Ryu & Damien Stehlé, Cryptanaxlysis of the Multilinear Map over the Integers, 3-12, in in: EUROCRYPT, edited by Elisabeth Oswald & Marc Fischlin, (2015)</a></li>
 <li><a id="EPRINT:MinFou15">[EPRINT:MinFou15] Brice Minaud & Pierre-Alain Fouque, Cryptanalysis of the New Multilinear Map over the Integers, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, (2015). <a href="http://ia.cr/2015/941">link</a>.</a></li>
 <li><a id="EPRINT:CheLeeRyu15">[EPRINT:CheLeeRyu15] Jung Hee Cheon, Changmin Lee & Hansol Ryu, Cryptanalysis of the New CLT Multilinear Maps, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, 934 (2015). <a href="http://ia.cr/2015/934">link</a>.</a></li>
-<li><a id="EPRINT:Coron15">[EPRINT:Coron15] Jean-Sébastien Coron, Cryptanalysis of GGH15 Multilinear Maps, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, (2015). <a href="http://ia.cr/2015/1037">link</a>.</a></li>
+<li><a id="EC:Zimmerman15">[EC:Zimmerman15] Joe Zimmerman, How to Obfuscate Programs Directly, 439-467, in in: EUROCRYPT, edited by Elisabeth Oswald & Marc Fischlin, Springer (2015)</a></li>
+<li><a id="TCC:AppBra15">[TCC:AppBra15] Benny Applebaum & Zvika Brakerski, Obfuscating Circuits via Composite-Order Graded Encoding, 528-556, in in: TCC, edited by Yevgeniy Dodis & Jesper Buus Nielsen, Springer (2015)</a></li>
+<li><a id="TCC:GenGorHal15">[TCC:GenGorHal15] Craig Gentry, Sergey Gorbunov & Shai Halevi, Graph-Induced Multilinear Maps from Lattices, 498-527, in in: TCC, edited by Yevgeniy Dodis & Jesper Buus Nielsen, Springer (2015)</a></li>
+<li><a id="EPRINT:Coron15">[EPRINT:Coron15] Jean-Sébastien Coron, Moon Sung Lee, Tancrède Lepoint & Mehdi Tibouchi, Cryptanalysis of GGH15 Multilinear Maps, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, (2015). <a href="http://ia.cr/2015/1037">link</a>.</a></li>
 </ul>
 </p>
 </div>
