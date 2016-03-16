@@ -4,7 +4,7 @@
 #+TODO: BROKEN | STANDING
 #+TODO: TODO | DONE
 
-A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/discrete-subgroup/pulls][let us know]].
+A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/malb.github.io/pulls][let us know]].
 
 * GGH13
 
