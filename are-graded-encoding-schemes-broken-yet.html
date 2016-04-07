@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-03-16 Wed 11:02 -->
+<!-- 2016-04-07 Thu 11:07 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Are Graded Encoding Scheme broken yet?</title>
@@ -184,10 +184,10 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#orgheadline1">GGH13</a>
 <ul>
-<li><a href="#orgheadline2">Follow-Up Constructions</a></li>
+<li><a href="#orgheadline2"><span class="todo BROKEN">BROKEN</span> General</a></li>
 <li><a href="#orgheadline3"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
 <li><a href="#orgheadline4"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</a></li>
-<li><a href="#orgheadline5">Other</a></li>
+<li><a href="#orgheadline5">Follow-Up Constructions</a></li>
 </ul>
 </li>
 <li><a href="#orgheadline6">CLT13</a>
@@ -221,16 +221,11 @@ We describe plausible lattice-based constructions with properties that approxima
 </div>
 
 <div id="outline-container-orgheadline2" class="outline-3">
-<h3 id="orgheadline2">Follow-Up Constructions</h3>
+<h3 id="orgheadline2"><span class="todo BROKEN">BROKEN</span> General</h3>
 <div class="outline-text-3" id="text-orgheadline2">
 <p>
-Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
+Subexponential classical and quantum polynomial-time attack without encodings of zero or using the zero-testing parameter in <a class='org-ref-reference' href="#EPRINT:AlbBaiDuc16">EPRINT:AlbBaiDuc16</a> for large levels of multilinearity \(κ\). Polynomial-time attack without low-level encodings of zero for large levels of multilinearity \(κ\) in <a class='org-ref-reference' href="#EPRINT:CheJeoLee16">EPRINT:CheJeoLee16</a>.
 </p>
-
-<ul class="org-ul">
-<li><a class='org-ref-reference' href="#EC:LanSteSte14">EC:LanSteSte14</a></li>
-<li><a class='org-ref-reference' href="#AC:ACLL15">AC:ACLL15</a></li>
-</ul>
 </div>
 </div>
 
@@ -256,10 +251,15 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:HuJia15">EP
 </div>
 
 <div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5">Other</h3>
+<h3 id="orgheadline5">Follow-Up Constructions</h3>
 <div class="outline-text-3" id="text-orgheadline5">
+<p>
+Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
+</p>
+
 <ul class="org-ul">
-<li>Subexponential attack without encodings of zero or using the zero-testing parameter for large levels of multilinearity \(κ\) in <a class='org-ref-reference' href="#EPRINT:CheJeoLee16">EPRINT:CheJeoLee16</a> and <a class='org-ref-reference' href="#EPRINT:AlbBaiDuc16">EPRINT:AlbBaiDuc16</a>. The latter also points out a quantum polynomial-time attack under the same conditions.</li>
+<li><a class='org-ref-reference' href="#EC:LanSteSte14">EC:LanSteSte14</a></li>
+<li><a class='org-ref-reference' href="#AC:ACLL15">AC:ACLL15</a></li>
 </ul>
 </div>
 </div>
@@ -338,16 +338,16 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EP
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
 <ul class='org-ref-bib'><li><a id="EC:GarGenHal13">[EC:GarGenHal13] Garg, Gentry & Halevi, Candidate Multilinear Maps from Ideal Lattices, 1-17, in in: EUROCRYPT, edited by Johansson & Nguyen, (2013)</a></li>
-<li><a id="EC:LanSteSte14">[EC:LanSteSte14] Adeline Langlois, Damien Stehlé & Ron Steinfeld, GGHLite: More Efficient Multilinear Maps from Ideal Lattices, 239-256, in in: EUROCRYPT, edited by Phong Nguyen & Elisabeth Oswald, (2014)</a></li>
-<li><a id="AC:ACLL15">[AC:ACLL15] Albrecht, Cocis, Laguillaumie & Langlois, Implementing candidate graded encoding schemes from ideal lattices, 752-775, in in: ASIACRYPT, edited by Iwata & Cheon, Springer (2015)</a></li>
+<li><a id="EPRINT:AlbBaiDuc16">[EPRINT:AlbBaiDuc16] Martin Albrecht, Shi Bai & Léo Ducas, A subfield lattice attack on overstretched NTRU assumptions: Cryptanalysis of some FHE and Graded Encoding Schemes, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/127">link</a>.</a></li>
+<li><a id="EPRINT:CheJeoLee16">[EPRINT:CheJeoLee16] Jung Hee Cheon, Jinhyuck Jeong & Changmin Lee, An Algorithm for NTRU Problems and Cryptanalysis of the GGH Multilinear Map  without an encoding of zero, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/139">link</a>.</a></li>
 <li><a id="EPRINT:HuJia15">[EPRINT:HuJia15] Hu & Jia, Cryptanalysis of GGH Map, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, (2015). <a href="http://ia.cr/2015/301">link</a>.</a></li>
 <li><a id="FOCS:GGHRSW13">[FOCS:GGHRSW13] Sanjam Garg, Craig Gentry, Shai Halevi, Mariana Raykova, Amit Sahai & Brent Waters, Candidate Indistinguishability Obfuscation and Functional Encryption for all Circuits, 40-49, in in: FOCS, edited by IEEE Computer Society (2013)</a></li>
 <li><a id="EPRINT:MilSahZha16">[EPRINT:MilSahZha16] Miles, Sahai & Zhandry, Annihilation Attacks for Multilinear Maps: Cryptanalysis of Indistinguishability Obfuscation over GGH13, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/147">link</a>.</a></li>
 <li><a id="EC:BGKPS14">[EC:BGKPS14] Boaz Barak, Sanjam Garg, Yael Tauman Kalai, Omer Paneth & Amit Sahai, Protecting Obfuscation against Algebraic Attacks, 221-238, in in: EUROCRYPT, edited by Phong Nguyen & Elisabeth Oswald, Springer (2014)</a></li>
 <li><a id="EPRINT:AGIS14">[EPRINT:AGIS14] Prabhanjan Ananth, Divya Gupta, Yuval Ishai & Amit Sahai, Optimizing Obfuscation: Avoiding Barrington's Theorem, <i>IACR Cryptology ePrint Archive</i>, <b>2014</b>, (2014). <a href="http://ia.cr/2014/222">link</a>.</a></li>
 <li><a id="EPRINT:BMSZ15">[EPRINT:BMSZ15] Saikrishna Badrinarayanan, Eric Miles, Amit Sahai & Mark Zhandry, Post-Zeroizing Obfuscation: The case of Evasive Circuits, <i>IACR Cryptology ePrint Archive</i>, <b>2015</b>, 167 (2015). <a href="http://ia.cr/2015/167">link</a>.</a></li>
-<li><a id="EPRINT:CheJeoLee16">[EPRINT:CheJeoLee16] Jung Hee Cheon, Jinhyuck Jeong & Changmin Lee, An Algorithm for NTRU Problems and Cryptanalysis of the GGH Multilinear Map  without an encoding of zero, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/139">link</a>.</a></li>
-<li><a id="EPRINT:AlbBaiDuc16">[EPRINT:AlbBaiDuc16] Martin Albrecht, Shi Bai & Léo Ducas, A subfield lattice attack on overstretched NTRU assumptions: Cryptanalysis of some FHE and Graded Encoding Schemes, <i>IACR Cryptology ePrint Archive</i>, <b>2016</b>, (2016). <a href="http://ia.cr/2016/127">link</a>.</a></li>
+<li><a id="EC:LanSteSte14">[EC:LanSteSte14] Adeline Langlois, Damien Stehlé & Ron Steinfeld, GGHLite: More Efficient Multilinear Maps from Ideal Lattices, 239-256, in in: EUROCRYPT, edited by Phong Nguyen & Elisabeth Oswald, (2014)</a></li>
+<li><a id="AC:ACLL15">[AC:ACLL15] Albrecht, Cocis, Laguillaumie & Langlois, Implementing candidate graded encoding schemes from ideal lattices, 752-775, in in: ASIACRYPT, edited by Iwata & Cheon, Springer (2015)</a></li>
 <li><a id="C:CorLepTib13">[C:CorLepTib13] Jean-Sébastien Coron, Tancrède Lepoint & Mehdi Tibouchi, Practical Multilinear Maps over the Integers, 476-493, in in: CRYPTO, edited by Ran Canetti & Juan Garay, (2013)</a></li>
 <li><a id="C:CorLepTib15">[C:CorLepTib15] Jean-Sébastien Coron, Tancrède Lepoint & Mehdi Tibouchi, New Multilinear Maps Over the Integers, 267-286, in in: CRYPTO, edited by Rosario Gennaro & Matthew Robshaw, (2015)</a></li>
 <li><a id="EC:CHLRS15">[EC:CHLRS15] Jung Hee Cheon, Kyoohyung Han, Changmin Lee, Hansol Ryu & Damien Stehlé, Cryptanaxlysis of the Multilinear Map over the Integers, 3-12, in in: EUROCRYPT, edited by Elisabeth Oswald & Marc Fischlin, (2015)</a></li>

@@ -12,12 +12,9 @@ A quick overview of attacks on Graded Encoding Schemes. If you find anything wro
 We describe plausible lattice-based constructions with properties that approximate the sought-after multilinear maps in hard-discrete-logarithm groups, and show an example application of such multi-linear maps that can be realized using our approximation. The security of our constructions relies on seemingly hard problems in ideal lattices, which can be viewed as extensions of the assumed hardness of the NTRU function. – cite:EC:GarGenHal13
 #+END_QUOTE
 
-** Follow-Up Constructions
+** BROKEN General
 
-Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
-
-- cite:EC:LanSteSte14
-- cite:AC:ACLL15
+Subexponential classical and quantum polynomial-time attack without encodings of zero or using the zero-testing parameter in cite:EPRINT:AlbBaiDuc16 for large levels of multilinearity $κ$. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity $κ$ in cite:EPRINT:CheJeoLee16.
 
 ** BROKEN Key Exchange
 
@@ -30,9 +27,12 @@ Polynomial-time attack in cite:EPRINT:HuJia15
 - cite:EPRINT:AGIS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:BMSZ15 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
 
-** Other
+** Follow-Up Constructions
 
-- Subexponential attack without encodings of zero or using the zero-testing parameter for large levels of multilinearity $κ$ in cite:EPRINT:CheJeoLee16 and cite:EPRINT:AlbBaiDuc16. The latter also points out a quantum polynomial-time attack under the same conditions.
+Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
+
+- cite:EC:LanSteSte14
+- cite:AC:ACLL15
 
 * CLT13
 
