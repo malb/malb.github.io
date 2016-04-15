@@ -14,7 +14,7 @@ We describe plausible lattice-based constructions with properties that approxima
 
 ** BROKEN General
 
-Subexponential classical and quantum polynomial-time attack without encodings of zero or using the zero-testing parameter in cite:EPRINT:AlbBaiDuc16 for large levels of multilinearity $κ$. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity $κ$ in cite:EPRINT:CheJeoLee16.
+Subexponential classical and quantum polynomial-time attack without encodings of zero or using the zero-testing parameter in cite:EPRINT:AlbBaiDuc16 for large levels of multilinearity κ. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity κ in cite:EPRINT:CheJeoLee16.
 
 ** BROKEN Key Exchange
 
