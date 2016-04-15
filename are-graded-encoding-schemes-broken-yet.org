@@ -59,12 +59,9 @@ Polynomial-time attack in cite:EC:CHLRS15.
 Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — cite:TCC:GenGorHal15
 #+END_QUOTE
 
-** Key Exchange
+** BROKEN Key Exchange
 
-Polynomial-time attack in cite:EPRINT:Coron15 for GGH13 without extra safeguards. With additional safeguards from cite:EPRINT:Coron15 ratios of secret elements are recovered, but not the secret elements directly. These safeguards are:
-
-1. Kilian-style randomisation of the encodings.
-2. Choosing the first encoding matrix in each chain to have large entries.
+Polynomial-time attack in cite:EPRINT:Coron15 for GGH15 (with and without extra safeguards).
 
 ** STANDING Indistinguishability Obfuscation
 
