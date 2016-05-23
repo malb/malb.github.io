@@ -6,6 +6,8 @@
 
 A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/malb.github.io/pulls][let us know]].
 
+We consider an indistinguishability obfuscation (iO) construction broken, if it is broken for *any* circuit. In contrast, Appendix A of cite:EPRINT:AJNSY16 — which informed this page insofar as iO is concerned — takes a much more optimistic view.
+
 * GGH13
 
 #+BEGIN_QUOTE
@@ -14,18 +16,7 @@ We describe plausible lattice-based constructions with properties that approxima
 
 ** BROKEN General
 
-Subexponential classical and quantum polynomial-time attack without encodings of zero or using the zero-testing parameter in cite:EPRINT:AlbBaiDuc16 for large levels of multilinearity κ. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity κ in cite:EPRINT:CheJeoLee16.
-
-** BROKEN Key Exchange
-
-Polynomial-time attack in cite:EPRINT:HuJia15
-
-** BROKEN Indistinguishability Obfuscation
-
-- cite:FOCS:GGHRSW13 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
-- cite:EC:BGKPS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:AGIS14 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:BMSZ15 is broken in polynomial-time in cite:EPRINT:MilSahZha16.
+Subexponential classical and quantum polynomial time attack without encodings of zero or using the zero-testing parameter in cite:EPRINT:AlbBaiDuc16 for large levels of multilinearity κ. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity κ in cite:EPRINT:CheJeoLee16.
 
 ** Follow-Up Constructions
 
@@ -33,6 +24,25 @@ Attacks on GGH13 also apply to these follow-up constructions, which reduce param
 
 - cite:EC:LanSteSte14
 - cite:AC:ACLL15
+
+** BROKEN Key Exchange
+
+Polynomial-time attack in cite:EC:HuJia16.
+
+** Indistinguishability Obfuscation
+
+*** Branching Programs
+
+- cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:FOCS:GGHRSW13 is *not* broken by cite:EPRINT:MilSahZha16.
+
+*** STANDING Other
+
+See cite:EPRINT:AJNSY16 for an overview.
 
 * CLT13
 
@@ -42,16 +52,27 @@ Extending bilinear elliptic curve pairings to multilinear maps is a long-standin
 
 ** BROKEN Follow-Up Construction
 
-cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15, but was broken in polynomial-time for all applications in cite:EPRINT:MinFou15 and cite:EPRINT:CheLeeRyu15.
+cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15, but was broken in polynomial time for all applications in cite:EPRINT:MinFou15 and cite:EPRINT:CheLeeRyu15.
 
 ** BROKEN Key Exchange
 
 Polynomial-time attack in cite:EC:CHLRS15.
 
-** STANDING Indistinguishability Obfuscation
+** Indistinguishability Obfuscation
 
-- cite:EC:Zimmerman15 (full version)
-- cite:TCC:AppBra15
+*** Branching Programs
+
+- cite:FOCS:GGHRSW13 is broken in polynomial time in cite:C:CGHLMMRST15.
+- cite:EC:BGKPS14 (single input) is broken in polynomial time cite:C:CGHLMMRST15, dual input is *not* broken.
+- cite:C:PasSetTel14 is broken in polynomial time in cite:C:CGHLMMRST15.
+- cite:FOCS:GLSW15 is broken in polynomial time in cite:C:CGHLMMRST15.
+
+*** Other
+
+- cite:EC:Zimmerman15 broken in polynomial time in cite:C:CGHLMMRST15.
+- cite:TCC:AppBra15 broken in polynomial time in cite:C:CGHLMMRST15.
+
+See cite:EPRINT:AJNSY16 for an overview.
 
 * GGH15
 
@@ -61,11 +82,11 @@ Graded multilinear encodings have found extensive applications in cryptography r
 
 ** BROKEN Key Exchange
 
-Polynomial-time attack in cite:EPRINT:Coron15 for GGH15 (with and without extra safeguards).
+Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
 
 ** STANDING Indistinguishability Obfuscation
 
-cite:TCC:GenGorHal15 also describes a candidate construction for branching-program obfuscation.
+cite:TCC:GenGorHal15 also describes a candidate construction for branching-program obfuscation, there are no known attacks.
 
 bibliography:local.bib
 

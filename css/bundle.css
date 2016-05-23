@@ -351,7 +351,7 @@ code::after {
   display: inline-block;
   vertical-align: middle;
   margin-right: 0.5rem;
-}
+}h
 .collection-url {
   color: rgba(0, 0, 0, 0.45);
   text-decoration: none;
@@ -408,14 +408,14 @@ h6 {
 */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 700;
 }
 /*
  Heading » Secondary headings
  ==============================================================================
 */
-h4,
 h5,
 h6 {
   font-weight: normal;
@@ -424,7 +424,7 @@ h6 {
 h1 { font-size: 2.9rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.75rem; }
-h4 { font-size: 1.4rem; }
+h4 { font-size: 1.45rem; }
 h5 { font-size: 1.3rem; }
 h6 { font-size: 1.15rem; }
 /*

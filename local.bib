@@ -171,14 +171,23 @@
   url          = {http://ia.cr/2015/1037},
 }
 
-@article{EPRINT:HuJia15,
-  author       = {Hu, Yupu and Jia, Huiwen},
-  title        = {Cryptanalysis of GGH Map},
-  journal      = {{IACR} Cryptology ePrint Archive},
-  year         = 2015,
-  volume       = 2015,
-  url          = {http://ia.cr/2015/301},
+@InProceedings{EC:HuJia16,
+  author       = {Yupu Hu and Huiwen Jia},
+  title        = {Cryptanalysis of {GGH} Map},
+  booktitle    = {Advances in Cryptology - {EUROCRYPT} 2016 - 35th Annual International Conference on the Theory and Applications of Cryptographic Techniques, Vienna, Austria, May 8-12, 2016, Proceedings, Part {I}},
+  year         = 2016,
+  editor       = {Marc Fischlin and Jean{-}S{\'{e}}bastien Coron},
+  volume       = 9665,
+  series       = {Lecture Notes in Computer Science},
+  pages        = {537-565},
+  publisher    = {Springer},
+  doi          = {10.1007/978-3-662-49890-3_21},
+  url          = {http://dx.doi.org/10.1007/978-3-662-49890-3_21},
+  year         = 2016,
+  url          = {http://dx.doi.org/10.1007/978-3-662-49890-3},
+  doi          = {10.1007/978-3-662-49890-3},
 }
+
 
 @article{EPRINT:MilSahZha16,
   author       = {Miles, Eric and Sahai, Amit and Zhandry, Mark},
@@ -207,7 +216,6 @@
   publisher    = {{IEEE} Computer Society},
   url          = {http://dx.doi.org/10.1109/FOCS.2013.13},
   doi          = {10.1109/FOCS.2013.13},
-  isbn         = {978-0-7695-5135-7},
 }
 
 @inproceedings{TCC:AppBra15,
@@ -222,7 +230,6 @@
   publisher    = {Springer},
   url          = {http://dx.doi.org/10.1007/978-3-662-46497-7_21},
   doi          = {10.1007/978-3-662-46497-7_21},
-  year         = 2015,
 }
 
 @inproceedings{TCC:GenGorHal15,
@@ -235,8 +242,71 @@
   series       = {Lecture Notes in Computer Science},
   pages        = {498-527},
   publisher    = {Springer},
-  crossref     = {DBLP:conf/tcc/2015-2},
   url          = {http://dx.doi.org/10.1007/978-3-662-46497-7_20},
   doi          = {10.1007/978-3-662-46497-7_20},
+}
+
+@InProceedings{C:CGHLMMRST15,
+  author       = {Jean{-}S{\'{e}}bastien Coron and Craig Gentry and Shai Halevi and Tancr{\`{e}}de Lepoint and Hemanta K. Maji and Eric Miles and Mariana Raykova and Amit Sahai and Mehdi Tibouchi},
+  title        = {Zeroizing Without Low-Level Zeroes: New {MMAP} Attacks and their Limitations},
+  booktitle    = {Advances in Cryptology - {CRYPTO} 2015 - 35th Annual Cryptology Conference, Santa Barbara, CA, USA, August 16-20, 2015, Proceedings, Part {I}},
+  year         = 2015,
+  editor       = {Rosario Gennaro and Matthew Robshaw},
+  volume       = 9215,
+  series       = {Lecture Notes in Computer Science},
+  pages        = {247-266},
+  publisher    = {Springer},
+  doi          = {10.1007/978-3-662-47989-6_12},
+  url          = {http://dx.doi.org/10.1007/978-3-662-47989-6_12},
+}
+
+@article{EPRINT:AJNSY16,
+  author       = {Prabhanjan Ananth and Aayush Jain and Moni Naor and Amit Sahai and Eylon Yogev},
+  title        = {Universal Obfuscation and Witness Encryption: Boosting Correctness and Combining Security},
+  journal      = {{IACR} Cryptology ePrint Archive},
+  year         = 2016,
+  volume       = 2016,
+  pages        = 281,
+  url          = {http://eprint.iacr.org/2016/281},
+}
+
+@InProceedings{TCC:BraRot14,
+  author       = {Zvika Brakerski and Guy N. Rothblum},
+  title        = {Virtual Black-Box Obfuscation for All Circuits via Generic Graded Encoding},
+  booktitle    = {Theory of Cryptography - 11th Theory of Cryptography Conference, {TCC} 2014, San Diego, CA, USA, February 24-26, 2014. Proceedings},
+  year         = 2014,
+  editor       = {Yehuda Lindell},
+  volume       = 8349,
+  series       = {Lecture Notes in Computer Science},
+  pages        = {1-25},
+  publisher    = {Springer},
+  doi          = {10.1007/978-3-642-54242-8_1},
+  url          = {http://dx.doi.org/10.1007/978-3-642-54242-8_1},
+}
+
+@InProceedings{C:PasSetTel14,
+  author       = {Rafael Pass and Karn Seth and Sidharth Telang},
+  title        = {Indistinguishability Obfuscation from Semantically-Secure Multilinear Encodings},
+  booktitle    = {Advances in Cryptology - {CRYPTO} 2014 - 34th Annual Cryptology Conference, Santa Barbara, CA, USA, August 17-21, 2014, Proceedings, Part {I}},
+  year         = 2014,
+  editor       = {Juan A. Garay and Rosario Gennaro},
+  volume       = 8616,
+  series       = {Lecture Notes in Computer Science},
+  pages        = {500-517},
+  publisher    = {Springer},
+  doi          = {10.1007/978-3-662-44371-2_28},
+  url          = {http://dx.doi.org/10.1007/978-3-662-44371-2_28},
+}
+
+@InProceedings{FOCS:GLSW15,
+  author       = {Craig Gentry and Allison Bishop Lewko and Amit Sahai and Brent Waters},
+  title        = {Indistinguishability Obfuscation from the Multilinear Subgroup Elimination Assumption},
+  booktitle    = {{IEEE} 56th Annual Symposium on Foundations of Computer Science, {FOCS} 2015, Berkeley, CA, USA, 17-20 October, 2015},
+  year         = 2015,
+  editor       = {Venkatesan Guruswami},
+  pages        = {151-170},
+  publisher    = {{IEEE} Computer Society},
+  doi          = {10.1109/FOCS.2015.19},
+  url          = {http://dx.doi.org/10.1109/FOCS.2015.19},
 }
 
