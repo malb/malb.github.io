@@ -19,12 +19,21 @@
 
 *** 2016
 
+- Martin R. Albrecht, Lorenzo Grassi, Christian Rechberger, Arnab Roy, and Tyge Tiessen. /MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity/. To appear in proceedings of /ASIACRYPT 2016/. 2016. pre-print available as [[http://ia.cr/2016/492][Cryptology ePrint Archive: Report 2016/492]].
+
+- Martin R. Albrecht, Jean Paul Degabriele, Torben Brandt Hansen, and Kenneth G. Paterson. /A Surfeit of SSH Cipher Suites./ To appear in proceedings of /CCS 2016/. 2016
+
+- Martin Albrecht, Shi Bai, and Léo Ducas. /A Subfield Lattice Attack on Overstretched NTRU Assumptions - Cryptanalysis of Some FHE and Graded Encoding Schemes/ in /Advances in Cryptology - CRYPTO 2016/. Ed. by Matthew Robshaw and Jonathan Katz. Vol. 9814. Lecture Notes in Computer Science. Springer, 2016, pp. 153–178. doi: 10.1007/978-3- 662-53018-4_6. url: http://dx.doi.org/10.1007/978-3-662-53018-4_6. pre-print available as [[http://ia.cr/2016/127][Cryptology ePrint Archive: Report 2016/127]].
+
+- Martin R. Albrecht and Kenneth G. Paterson. /Lucky Microseconds: A Timing Attack on Amazon’s s2n Implementation of TLS/. in: /Proceedings of Theory and Application of Cryptographic Techniques (EUROCRYPT)/. 2016, pp. 622–643. url: http://dx.doi.org/10.1007/978-3-662-49890-3_24. pre-print available as [[http://ia.cr/2015/1129][Cryptology ePrint Archive: Report 2015/1129]].
+
 - Martin R. Albrecht, Pooya Farshim, Dennis Hofheinz, Enrique Larraia and Kenneth G. Paterson. /Multilinear Maps from Obfuscation/ in proceedings of /TCC (A1) 2016/, Springer Verlag, 2016. pre-print available as [[http://ia.cr/2015/780][Cryptology ePrint Archive: Report 2015/780]].
 
 *** 2015
 
 - Martin R. Albrecht, Catalin Cocis, Fabien Laguillaumie and Adeline Langlois: /Implementing Candidate Graded Encoding Schemes from Ideal Lattices/ in proceedings of /ASIACRYPT 2015/, Springer Verlag, 2015, pre-print available as [[http://ia.cr/2014/928][Cryptology ePrint Archive: Report 2014/928]].
-- Martin R. Albrecht, Christian Rechberger, Thomas Schneider, Tyge Tiessen and Michael Zohner. /Ciphers for MPC and FHE/ in proceedings of /EUROCRYPT 2015/, Springer Verlag 2015. [[http://thomaschneider.de/papers/ARSTZ15.pdf][Pre-print]].
+
+- Martin R. Albrecht, Christian Rechberger, Thomas Schneider, Tyge Tiessen and Michael Zohner. /Ciphers for MPC and FHE/ in proceedings of /EUROCRYPT 2015/, Springer Verlag 2015. pre-print available as [[http://ia.cr/2016/687][Cryptology ePrint Archive: Report 2016/687]].
 
 *** 2014
 
