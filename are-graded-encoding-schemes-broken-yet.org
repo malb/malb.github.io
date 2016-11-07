@@ -1,4 +1,5 @@
 #+SETUPFILE: setup.org
+#+AUTHOR: Martin R. Albrecht
 #+TITLE: Are Graded Encoding Scheme broken yet?
 #+BIBLIOGRAPHY: local.bib
 #+TODO: BROKEN | STANDING
