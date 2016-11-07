@@ -1,3 +1,5 @@
+(add-to-list 'load-path "./elisp")
+
 (setq package-archives '(
                          ("gnu" . "https://elpa.gnu.org/packages/")
                          ("melpa" . "https://melpa.org/packages/")))
@@ -24,5 +26,8 @@
                   org-highlight-latex-and-related '(latex)
                   org-edit-src-content-indentation 0 ; don't indent source code
                   org-src-preserve-indentation t)))
+
+(use-package ox-extra
+  :config (ox-extras-activate '(ignore-headlines)))
 
 (use-package org-ref)
