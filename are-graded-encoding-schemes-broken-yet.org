@@ -80,7 +80,7 @@ Polynomial-time attack in cite:EC:CHLRS15.
 - cite:FOCS:GLSW15 is broken in polynomial time in cite:C:CGHLMMRST15.
 - cite:EPRINT:GMMSSZ16 is broken in polynomial time in cite:EPRINT:CLLT16
 
-*** Other
+*** BROKEN Other
 
 - cite:EC:Zimmerman15 broken in polynomial time in cite:C:CGHLMMRST15.
 - cite:TCC:AppBra15 broken in polynomial time in cite:C:CGHLMMRST15.
