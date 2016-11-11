@@ -15,8 +15,9 @@ We consider an indistinguishability obfuscation (iO) construction broken, if it 
 If you wish to contribute/correct a mistake, feel free to send a pull request to [[https://github.com/malb/malb.github.io][malb/malb.github.io]].
 
 *** Contributors
-Martin Albrecht
-Alex Davidson 
+
+- Martin Albrecht
+- Alex Davidson
 
 * GGH13
 
