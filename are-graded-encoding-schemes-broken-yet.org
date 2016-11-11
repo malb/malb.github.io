@@ -12,8 +12,11 @@ A quick overview of attacks on Graded Encoding Schemes. If you find anything wro
 We consider an indistinguishability obfuscation (iO) construction broken, if it is broken for *any* circuit. In contrast, Appendix A of cite:EPRINT:AJNSY16 — which informed this page insofar as iO is concerned — takes a much more optimistic view.
 
 ** Contributing
+If you wish to contribute/correct a mistake, feel free to send a pull request to [[https://github.com/malb/malb.github.io][malb/malb.github.io]].
 
-This page is maintained by Martin Albrecht. If you wish to contribute/correct a mistake, feel free to send a pull request to [[https://github.com/malb/malb.github.io][malb/malb.github.io]].
+*** Contributors
+Martin Albrecht
+Alex Davidson 
 
 * GGH13
 
@@ -38,14 +41,15 @@ Polynomial-time attack in cite:EC:HuJia16.
 
 ** Indistinguishability Obfuscation
 
-*** Branching Programs
+*** BROKEN Branching Programs
 
 - cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:FOCS:GGHRSW13 is *not* broken by cite:EPRINT:MilSahZha16.
+- cite:FOCS:GGHRSW13 is broken in polynomial time in cite:EPRINT:CheGenHal16.
+- cite:EPRINT:GMMSSZ16 is broken in polynomial time in cite:EPRINT:CheGenHal16, dual-input is *not* broken.
 
 *** STANDING Other
 
@@ -67,12 +71,13 @@ Polynomial-time attack in cite:EC:CHLRS15.
 
 ** Indistinguishability Obfuscation
 
-*** Branching Programs
+*** BROKEN Branching Programs
 
 - cite:FOCS:GGHRSW13 is broken in polynomial time in cite:C:CGHLMMRST15.
 - cite:EC:BGKPS14 (single input) is broken in polynomial time cite:C:CGHLMMRST15, dual input is *not* broken.
 - cite:C:PasSetTel14 is broken in polynomial time in cite:C:CGHLMMRST15.
 - cite:FOCS:GLSW15 is broken in polynomial time in cite:C:CGHLMMRST15.
+- cite:EPRINT:GMMSSZ16 is broken in polynomial time in cite:EPRINT:CLLT16
 
 *** Other
 
@@ -91,9 +96,9 @@ Graded multilinear encodings have found extensive applications in cryptography r
 
 Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
 
-** STANDING Indistinguishability Obfuscation
+** BROKEN Indistinguishability Obfuscation
 
-cite:TCC:GenGorHal15 also describes a candidate construction for branching-program obfuscation, there are no known attacks.
+- cite:FOCS:GGHRSW13 is broken in subexponential-time (classical) and quantum polynomial-time attack in cite:EPRINT:CheGenHal16
 
 * Bibliography                                                          :ignore:
 
