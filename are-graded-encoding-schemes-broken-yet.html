@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-11-11 Fri 12:49 -->
+<!-- 2016-11-11 Fri 12:54 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Are Graded Encoding Scheme broken yet?</title>
@@ -172,32 +172,31 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline4">GGH13</a>
 <ul>
 <li><a href="#orgheadline5"><span class="todo BROKEN">BROKEN</span> General</a></li>
-<li><a href="#orgheadline6">Follow-Up Constructions</a></li>
+<li><a href="#orgheadline6"><span class="todo BROKEN">BROKEN</span> Follow-Up Constructions</a></li>
 <li><a href="#orgheadline7"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline10">Indistinguishability Obfuscation</a>
+<li><a href="#orgheadline9"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</a>
 <ul>
 <li><a href="#orgheadline8"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
-<li><a href="#orgheadline9"><span class="done STANDING">STANDING</span> Other</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline11">CLT13</a>
+<li><a href="#orgheadline10">CLT13</a>
 <ul>
-<li><a href="#orgheadline12"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
-<li><a href="#orgheadline13"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline16">Indistinguishability Obfuscation</a>
+<li><a href="#orgheadline11"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
+<li><a href="#orgheadline12"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
+<li><a href="#orgheadline15"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</a>
 <ul>
-<li><a href="#orgheadline14"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
-<li><a href="#orgheadline15"><span class="todo BROKEN">BROKEN</span> Other</a></li>
+<li><a href="#orgheadline13"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
+<li><a href="#orgheadline14"><span class="todo BROKEN">BROKEN</span> Other</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline17">GGH15</a>
+<li><a href="#orgheadline16">GGH15</a>
 <ul>
-<li><a href="#orgheadline18"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
-<li><a href="#orgheadline19"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</a></li>
+<li><a href="#orgheadline17"><span class="todo BROKEN">BROKEN</span> Key Exchange</a></li>
+<li><a href="#orgheadline18"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</a></li>
 </ul>
 </li>
 </ul>
@@ -212,7 +211,7 @@ A quick overview of attacks on Graded Encoding Schemes. If you find anything wro
 </p>
 
 <p>
-We consider an indistinguishability obfuscation (iO) construction broken, if it is broken for <b>any</b> circuit. In contrast, Appendix A of <a class='org-ref-reference' href="#EPRINT:AJNSY16">EPRINT:AJNSY16</a> — which informed this page insofar as iO is concerned — takes a much more optimistic view.
+We consider an indistinguishability obfuscation (iO) construction broken, if it is broken for <b>any</b> circuit. In contrast, Appendix A of <a class='org-ref-reference' href="#EPRINT:AJNSY16">EPRINT:AJNSY16</a> — which partly informed this page — takes a much more optimistic view.
 </p>
 </div>
 
@@ -256,7 +255,7 @@ Subexponential classical and quantum polynomial time attack without encodings of
 </div>
 
 <div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6">Follow-Up Constructions</h3>
+<h3 id="orgheadline6"><span class="todo BROKEN">BROKEN</span> Follow-Up Constructions</h3>
 <div class="outline-text-3" id="text-orgheadline6">
 <p>
 Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
@@ -278,9 +277,9 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EC:HuJia16">EC:HuJ
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10">Indistinguishability Obfuscation</h3>
-<div class="outline-text-3" id="text-orgheadline10">
+<div id="outline-container-orgheadline9" class="outline-3">
+<h3 id="orgheadline9"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</h3>
+<div class="outline-text-3" id="text-orgheadline9">
 </div><div id="outline-container-orgheadline8" class="outline-4">
 <h4 id="orgheadline8"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
 <div class="outline-text-4" id="text-orgheadline8">
@@ -295,21 +294,12 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EC:HuJia16">EC:HuJ
 </ul>
 </div>
 </div>
-
-<div id="outline-container-orgheadline9" class="outline-4">
-<h4 id="orgheadline9"><span class="done STANDING">STANDING</span> Other</h4>
-<div class="outline-text-4" id="text-orgheadline9">
-<p>
-See <a class='org-ref-reference' href="#EPRINT:AJNSY16">EPRINT:AJNSY16</a> for an overview.
-</p>
-</div>
-</div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11">CLT13</h2>
-<div class="outline-text-2" id="text-orgheadline11">
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10">CLT13</h2>
+<div class="outline-text-2" id="text-orgheadline10">
 <blockquote>
 <p>
 Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — <a class='org-ref-reference' href="#C:CorLepTib13">C:CorLepTib13</a>
@@ -317,30 +307,30 @@ Extending bilinear elliptic curve pairings to multilinear maps is a long-standin
 </blockquote>
 </div>
 
-<div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</h3>
-<div class="outline-text-3" id="text-orgheadline12">
+<div id="outline-container-orgheadline11" class="outline-3">
+<h3 id="orgheadline11"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</h3>
+<div class="outline-text-3" id="text-orgheadline11">
 <p>
 <a class='org-ref-reference' href="#C:CorLepTib15">C:CorLepTib15</a> was put forward in response to the attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHLRS15</a>, but was broken in polynomial time for all applications in <a class='org-ref-reference' href="#EPRINT:MinFou15">EPRINT:MinFou15</a> and <a class='org-ref-reference' href="#EPRINT:CheLeeRyu15">EPRINT:CheLeeRyu15</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-3">
-<h3 id="orgheadline13"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
-<div class="outline-text-3" id="text-orgheadline13">
+<div id="outline-container-orgheadline12" class="outline-3">
+<h3 id="orgheadline12"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
+<div class="outline-text-3" id="text-orgheadline12">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHLRS15</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline16" class="outline-3">
-<h3 id="orgheadline16">Indistinguishability Obfuscation</h3>
-<div class="outline-text-3" id="text-orgheadline16">
-</div><div id="outline-container-orgheadline14" class="outline-4">
-<h4 id="orgheadline14"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
-<div class="outline-text-4" id="text-orgheadline14">
+<div id="outline-container-orgheadline15" class="outline-3">
+<h3 id="orgheadline15"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</h3>
+<div class="outline-text-3" id="text-orgheadline15">
+</div><div id="outline-container-orgheadline13" class="outline-4">
+<h4 id="orgheadline13"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
+<div class="outline-text-4" id="text-orgheadline13">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> is broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>.</li>
 <li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> (single input) is broken in polynomial time <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>, dual input is <b>not</b> broken.</li>
@@ -351,25 +341,21 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHL
 </div>
 </div>
 
-<div id="outline-container-orgheadline15" class="outline-4">
-<h4 id="orgheadline15"><span class="todo BROKEN">BROKEN</span> Other</h4>
-<div class="outline-text-4" id="text-orgheadline15">
+<div id="outline-container-orgheadline14" class="outline-4">
+<h4 id="orgheadline14"><span class="todo BROKEN">BROKEN</span> Other</h4>
+<div class="outline-text-4" id="text-orgheadline14">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:Zimmerman15">EC:Zimmerman15</a> broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>.</li>
 <li><a class='org-ref-reference' href="#TCC:AppBra15">TCC:AppBra15</a> broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>.</li>
 </ul>
-
-<p>
-See <a class='org-ref-reference' href="#EPRINT:AJNSY16">EPRINT:AJNSY16</a> for an overview.
-</p>
 </div>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline17" class="outline-2">
-<h2 id="orgheadline17">GGH15</h2>
-<div class="outline-text-2" id="text-orgheadline17">
+<div id="outline-container-orgheadline16" class="outline-2">
+<h2 id="orgheadline16">GGH15</h2>
+<div class="outline-text-2" id="text-orgheadline16">
 <blockquote>
 <p>
 Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — <a class='org-ref-reference' href="#TCC:GenGorHal15">TCC:GenGorHal15</a>
@@ -377,18 +363,18 @@ Graded multilinear encodings have found extensive applications in cryptography r
 </blockquote>
 </div>
 
-<div id="outline-container-orgheadline18" class="outline-3">
-<h3 id="orgheadline18"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
-<div class="outline-text-3" id="text-orgheadline18">
+<div id="outline-container-orgheadline17" class="outline-3">
+<h3 id="orgheadline17"><span class="todo BROKEN">BROKEN</span> Key Exchange</h3>
+<div class="outline-text-3" id="text-orgheadline17">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EPRINT:Coron15</a> for GGH15.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline19" class="outline-3">
-<h3 id="orgheadline19"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</h3>
-<div class="outline-text-3" id="text-orgheadline19">
+<div id="outline-container-orgheadline18" class="outline-3">
+<h3 id="orgheadline18"><span class="todo BROKEN">BROKEN</span> Indistinguishability Obfuscation</h3>
+<div class="outline-text-3" id="text-orgheadline18">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> is broken in subexponential-time (classical) and quantum polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:CheGenHal16">EPRINT:CheGenHal16</a></li>
 </ul>
