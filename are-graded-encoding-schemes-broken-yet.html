@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-11-22 Tue 18:52 -->
+<!-- 2016-11-22 Tue 18:56 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title>Are Graded Encoding Scheme broken yet?</title>
@@ -191,22 +191,24 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline25">Indistinguishability Obfuscation</a>
+<li><a href="#orgheadline23">Indistinguishability Obfuscation</a>
 <ul>
-<li><a href="#orgheadline17">GGH13</a>
+<li><a href="#orgheadline16">GGH13</a>
 <ul>
-<li><a href="#orgheadline16">Branching Programs</a></li>
+<li><a href="#orgheadline14">Single-Input Branching Programs</a></li>
+<li><a href="#orgheadline15"><span class="todo BROKEN">BROKEN</span> Dual-Input Branching Programs</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline22">CLT13</a>
+<li><a href="#orgheadline20">CLT13</a>
 <ul>
-<li><a href="#orgheadline20">Branching Programs</a></li>
-<li><a href="#orgheadline21"><span class="todo BROKEN">BROKEN</span> Other</a></li>
+<li><a href="#orgheadline17">Single-Input Branching Programs</a></li>
+<li><a href="#orgheadline18"><span class="done STANDING">STANDING</span> Dual-Input Branching Programs</a></li>
+<li><a href="#orgheadline19"><span class="todo BROKEN">BROKEN</span> Direct</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline24">GGH15</a>
+<li><a href="#orgheadline22">GGH15</a>
 <ul>
-<li><a href="#orgheadline23"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
+<li><a href="#orgheadline21"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
 </ul>
 </li>
 </ul>
@@ -343,16 +345,15 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EP
 </div>
 </div>
 
-<div id="outline-container-orgheadline25" class="outline-2">
-<h2 id="orgheadline25">Indistinguishability Obfuscation</h2>
-<div class="outline-text-2" id="text-orgheadline25">
-</div><div id="outline-container-orgheadline17" class="outline-3">
-<h3 id="orgheadline17">GGH13</h3>
-<div class="outline-text-3" id="text-orgheadline17">
-</div><div id="outline-container-orgheadline16" class="outline-4">
-<h4 id="orgheadline16">Branching Programs</h4>
-<div class="outline-text-4" id="text-orgheadline16">
-</div><ul class="org-ul"><li><a id="orgheadline14"></a>Single-input<br  /><div class="outline-text-5" id="text-orgheadline14">
+<div id="outline-container-orgheadline23" class="outline-2">
+<h2 id="orgheadline23">Indistinguishability Obfuscation</h2>
+<div class="outline-text-2" id="text-orgheadline23">
+</div><div id="outline-container-orgheadline16" class="outline-3">
+<h3 id="orgheadline16">GGH13</h3>
+<div class="outline-text-3" id="text-orgheadline16">
+</div><div id="outline-container-orgheadline14" class="outline-4">
+<h4 id="orgheadline14">Single-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-orgheadline14">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
 <li><a class='org-ref-reference' href="#EPRINT:AGIS14">EPRINT:AGIS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
@@ -362,9 +363,12 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EP
 <li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> break in <a class='org-ref-reference' href="#EPRINT:CheGenHal16">EPRINT:CheGenHal16</a> but repaired in <a class='org-ref-reference' href="#EPRINT:FerRasSah16">EPRINT:FerRasSah16</a></li>
 <li><a class='org-ref-reference' href="#EPRINT:GMMSSZ16">EPRINT:GMMSSZ16</a> break in <a class='org-ref-reference' href="#EPRINT:CheGenHal16">EPRINT:CheGenHal16</a> but repaired in <a class='org-ref-reference' href="#EPRINT:FerRasSah16">EPRINT:FerRasSah16</a></li>
 </ul>
-</div></li>
+</div>
+</div>
 
-<li><a id="orgheadline15"></a><span class="todo BROKEN">BROKEN</span> Dual-input<br  /><div class="outline-text-5" id="text-orgheadline15">
+<div id="outline-container-orgheadline15" class="outline-4">
+<h4 id="orgheadline15"><span class="todo BROKEN">BROKEN</span> Dual-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-orgheadline15">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
 <li><a class='org-ref-reference' href="#EPRINT:AGIS14">EPRINT:AGIS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
@@ -373,17 +377,16 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:Coron15">EP
 <li><a class='org-ref-reference' href="#C:PasSetTel14">C:PasSetTel14</a> is broken in polynomial time in <a class='org-ref-reference' href="#EPRINT:MilSahZha16">EPRINT:MilSahZha16</a>.</li>
 <li><a class='org-ref-reference' href="#EPRINT:GMMSSZ16">EPRINT:GMMSSZ16</a> is broken in polynomial time in <a class='org-ref-reference' href="#EPRINT:CheGenHal16">EPRINT:CheGenHal16</a>.</li>
 </ul>
-</div></li></ul>
+</div>
 </div>
 </div>
 
-<div id="outline-container-orgheadline22" class="outline-3">
-<h3 id="orgheadline22">CLT13</h3>
-<div class="outline-text-3" id="text-orgheadline22">
-</div><div id="outline-container-orgheadline20" class="outline-4">
-<h4 id="orgheadline20">Branching Programs</h4>
-<div class="outline-text-4" id="text-orgheadline20">
-</div><ul class="org-ul"><li><a id="orgheadline18"></a>Single-input<br  /><div class="outline-text-5" id="text-orgheadline18">
+<div id="outline-container-orgheadline20" class="outline-3">
+<h3 id="orgheadline20">CLT13</h3>
+<div class="outline-text-3" id="text-orgheadline20">
+</div><div id="outline-container-orgheadline17" class="outline-4">
+<h4 id="orgheadline17">Single-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-orgheadline17">
 <p>
 All constructions were fixed in <a class='org-ref-reference' href="#EPRINT:FerRasSah16">EPRINT:FerRasSah16</a>. Previously constructions of
 </p>
@@ -401,18 +404,21 @@ All constructions were fixed in <a class='org-ref-reference' href="#EPRINT:FerRa
 <p>
 were broken by <a class='org-ref-reference' href="#EPRINT:CorLeeLepTib16">EPRINT:CorLeeLepTib16</a> and <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>.
 </p>
-</div></li>
+</div>
+</div>
 
-<li><a id="orgheadline19"></a><span class="done STANDING">STANDING</span> Dual-input<br  /><div class="outline-text-5" id="text-orgheadline19">
+<div id="outline-container-orgheadline18" class="outline-4">
+<h4 id="orgheadline18"><span class="done STANDING">STANDING</span> Dual-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-orgheadline18">
 <p>
 All dual-input constructions are currently standing and were unaffected by previous attacks in <a class='org-ref-reference' href="#EPRINT:CorLeeLepTib16">EPRINT:CorLeeLepTib16</a>.
 </p>
-</div></li></ul>
+</div>
 </div>
 
-<div id="outline-container-orgheadline21" class="outline-4">
-<h4 id="orgheadline21"><span class="todo BROKEN">BROKEN</span> Other</h4>
-<div class="outline-text-4" id="text-orgheadline21">
+<div id="outline-container-orgheadline19" class="outline-4">
+<h4 id="orgheadline19"><span class="todo BROKEN">BROKEN</span> Direct</h4>
+<div class="outline-text-4" id="text-orgheadline19">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:Zimmerman15">EC:Zimmerman15</a> broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>.</li>
 <li><a class='org-ref-reference' href="#TCC:AppBra15">TCC:AppBra15</a> broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMMRST15">C:CGHLMMRST15</a>.</li>
@@ -421,12 +427,12 @@ All dual-input constructions are currently standing and were unaffected by previ
 </div>
 </div>
 
-<div id="outline-container-orgheadline24" class="outline-3">
-<h3 id="orgheadline24">GGH15</h3>
-<div class="outline-text-3" id="text-orgheadline24">
-</div><div id="outline-container-orgheadline23" class="outline-4">
-<h4 id="orgheadline23"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
-<div class="outline-text-4" id="text-orgheadline23">
+<div id="outline-container-orgheadline22" class="outline-3">
+<h3 id="orgheadline22">GGH15</h3>
+<div class="outline-text-3" id="text-orgheadline22">
+</div><div id="outline-container-orgheadline21" class="outline-4">
+<h4 id="orgheadline21"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
+<div class="outline-text-4" id="text-orgheadline21">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> is broken in subexponential-time (classical) and quantum polynomial-time attack in <a class='org-ref-reference' href="#EPRINT:CheGenHal16">EPRINT:CheGenHal16</a> This attack reveals a basis for the ideal generated by g and therefore we consider this a valid break</li>
 </ul>
