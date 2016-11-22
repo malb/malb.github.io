@@ -9,7 +9,7 @@
 
 A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/malb.github.io/pulls][let us know]].
 
-We consider an indistinguishability obfuscation (iO) construction broken, if it is broken for *any* circuit. In contrast, Appendix A of cite:EPRINT:AJNSY16 — which partly informed this page — takes a much more optimistic view.
+We split the attacks into those directly on graded encoding schemes and those that affect indistinguishability obfuscation (iO) constructions. We consider an iO construction broken, if it is broken for *any* circuit. In contrast, Appendix A of cite:EPRINT:AJNSY16 — which partly informed this page — takes a much more optimistic view.
 
 ** Contributing
 If you wish to contribute/correct a mistake, feel free to send a pull request to [[https://github.com/malb/malb.github.io][malb/malb.github.io]].
@@ -19,81 +19,112 @@ If you wish to contribute/correct a mistake, feel free to send a pull request to
 - Martin Albrecht
 - Alex Davidson
 
-* GGH13
+* Graded Encoding Schemes
+
+** GGH13
 
 #+BEGIN_QUOTE
 We describe plausible lattice-based constructions with properties that approximate the sought-after multilinear maps in hard-discrete-logarithm groups, and show an example application of such multi-linear maps that can be realized using our approximation. The security of our constructions relies on seemingly hard problems in ideal lattices, which can be viewed as extensions of the assumed hardness of the NTRU function. – cite:EC:GarGenHal13
 #+END_QUOTE
 
-** BROKEN General
+*** BROKEN General
 
 Subexponential classical and quantum polynomial time attack without encodings of zero or using the zero-testing parameter in cite:EPRINT:AlbBaiDuc16 for large levels of multilinearity κ. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity κ in cite:EPRINT:CheJeoLee16.
 
-** BROKEN Follow-Up Constructions
+*** BROKEN Follow-Up Constructions
 
 Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
 
 - cite:EC:LanSteSte14
 - cite:AC:ACLL15
 
-** BROKEN Key Exchange
+*** BROKEN Key Exchange
 
 Polynomial-time attack in cite:EC:HuJia16.
 
-** BROKEN Indistinguishability Obfuscation
+** CLT13
 
-*** BROKEN Branching Programs
+#+BEGIN_QUOTE
+Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — cite:C:CorLepTib13
+#+END_QUOTE
+
+*** BROKEN Follow-Up Construction
+
+cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15, but was broken in polynomial time for all applications in cite:EPRINT:MinFou15 and cite:EPRINT:CheLeeRyu15.
+
+*** BROKEN Key Exchange
+
+Polynomial-time attack in cite:EC:CHLRS15.
+
+** GGH15
+
+#+BEGIN_QUOTE
+Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — cite:TCC:GenGorHal15
+#+END_QUOTE
+
+*** BROKEN Key Exchange
+
+Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
+
+* Indistinguishability Obfuscation
+
+** GGH13
+
+*** STANDING Branching Programs
+
+**** Single-input
 
 - cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:FOCS:GGHRSW13 is broken in polynomial time in cite:EPRINT:CheGenHal16.
-- cite:EPRINT:GMMSSZ16 is broken in polynomial time in cite:EPRINT:CheGenHal16, dual-input is *not* broken.
+- cite:FOCS:GGHRSW13 is standing (break in cite:EPRINT:CheGenHal16 but fixed in cite:EPRINT:FerRasSah16)
+- cite:EPRINT:GMMSSZ16 is standing (break in cite:EPRINT:CheGenHal16 but fixed in cite:EPRINT:FerRasSah16)
 
-* CLT13
+**** Dual-input
 
-#+BEGIN_QUOTE
-Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — cite:C:CorLepTib13
-#+END_QUOTE
+- cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
+- cite:EPRINT:GMMSSZ16 is standing in polynomial time in cite:EPRINT:CheGenHal16.
 
-** BROKEN Follow-Up Construction
+** CLT13
 
-cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15, but was broken in polynomial time for all applications in cite:EPRINT:MinFou15 and cite:EPRINT:CheLeeRyu15.
+*** STANDING Branching Programs
 
-** BROKEN Key Exchange
+**** STANDING Single-input
 
-Polynomial-time attack in cite:EC:CHLRS15.
+All constructions are standing thanks to the fix in cite:EPRINT:FerRasSah16. Previously constructions of
 
-** BROKEN Indistinguishability Obfuscation
+- cite:EC:BGKPS14 
+- cite:EPRINT:AGIS14
+- cite:TCC:BraRot14 
+- cite:EPRINT:BMSZ15
+- cite:C:PasSetTel14
+- cite:FOCS:GGHRSW13
+- cite:EPRINT:GMMSSZ16
 
-*** BROKEN Branching Programs
+were broken by cite:EPRINT:CorLeeLepTib16 and cite:C:CGHLMMRST15.
 
-- cite:FOCS:GGHRSW13 is broken in polynomial time in cite:C:CGHLMMRST15.
-- cite:EC:BGKPS14 (single input) is broken in polynomial time cite:C:CGHLMMRST15, dual input is *not* broken.
-- cite:C:PasSetTel14 is broken in polynomial time in cite:C:CGHLMMRST15.
-- cite:FOCS:GLSW15 is broken in polynomial time in cite:C:CGHLMMRST15.
-- cite:EPRINT:GMMSSZ16 is broken in polynomial time in cite:EPRINT:CLLT16
+**** STANDING Dual-input
+
+All dual-input constructions are currently standing and were unaffected by previous attacks in cite:EPRINT:CorLeeLepTib16.
 
 *** BROKEN Other
 
 - cite:EC:Zimmerman15 broken in polynomial time in cite:C:CGHLMMRST15.
 - cite:TCC:AppBra15 broken in polynomial time in cite:C:CGHLMMRST15.
 
-* GGH15
+** GGH15 
 
-#+BEGIN_QUOTE
-Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — cite:TCC:GenGorHal15
-#+END_QUOTE
-
-** BROKEN Key Exchange
-
-Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
-
-** BROKEN Indistinguishability Obfuscation
+*** BROKEN Branching Programs
 
 - cite:FOCS:GGHRSW13 is broken in subexponential-time (classical) and quantum polynomial-time attack in cite:EPRINT:CheGenHal16
+
+(This attack reveals a basis for the ideal generated by g and therefore we consider this a valid break)
 
 * Bibliography                                                          :ignore:
 
