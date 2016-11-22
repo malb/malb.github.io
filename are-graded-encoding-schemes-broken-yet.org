@@ -75,17 +75,17 @@ Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
 - cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:FOCS:GGHRSW13 break in cite:EPRINT:CheGenHal16 but repaired in cite:EPRINT:FerRasSah16
-- cite:EPRINT:GMMSSZ16 break in cite:EPRINT:CheGenHal16 but repaired in cite:EPRINT:FerRasSah16
+- cite:FOCS:GGHRSW13 break in cite:EPRINT:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
+- cite:EPRINT:GMMSSZ16 break in cite:EPRINT:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
 
-*** BROKEN Dual-Input Branching Programs
+*** Dual-Input Branching Programs
 
 - cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
 - cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:GMMSSZ16 is broken in polynomial time in cite:EPRINT:CheGenHal16.
+- cite:EPRINT:GMMSSZ16 is *standing*.
 
 ** CLT13
 
