@@ -1,0 +1,109 @@
+#+SETUPFILE: setup.org
+#+AUTHOR: Martin R. Albrecht
+#+TITLE: Tips for MSc students
+
+If you are a student doing or considering doing an MSc project with me, keep reading, this document will hopefully provide some useful guidance.
+
+*Note:* Large parts of this document is shamelessly stolen from [[https://github.com/veorq/misc/blob/students/STUDENTS.md][JP Aumasson]].
+
+* Commitment
+
+In order to successfully deliver a good MSc project it quite important to work on something you are interested in and something you care about. 
+
+If you’re not enjoying working on the project at all this is not a good sign and you should probably come and talk to me. If you feel unsatisfied with the work you're doing or if you'd prefer to do something a bit different, we can discuss if it is possible to adapt the project to a topic that is better for you, in terms of learning, efficiency or career.
+
+* Intellectual rigour
+
+You will need to bring rigour and an analytical mindset. For example, you should be able to define the problem precisely, to determine what information you need to solve that problem and whether you have data or a theorem at your disposal that carries that information.
+
+If you make a claim not supported by any data or theorem, you should be able to define the premises upon which your claim stands. Also, you should be able to detect bogus reasoning and fallacious claims.
+
+When data is available, use it to make precise fact-based claims, rather than mere qualitative assessments or guesses. For example, instead of saying “this method is faster” you would say “this method is 2.6 times faster than the generic one on CPU model X”, or “this method runs at 123 GBps” — measure, don't speculate. Similarly, when you state that this or that construction is cryptographically secure, state precisely which security goals it meets under which hardness assumptions. Finally, make your results and measurements reproducible.
+
+* Organisation
+
+I strongly recommend that you maintain a todo list and notes in order to keep track of tasks and to prioritise them. I also recommend creating a rough project timeline against which you can measure your progress as you get on with the project. This way you can detect when things go off the rails. There are plenty of software options available to help you with that. Some people like [[https://trello.com][Trello]], some people like [[https://www.toodledo.com][Toodledo]], some people swear on [[https://evernote.com][Evernote]] or [[https://www.onenote.com][OneNote]]. I personally use [[http://orgmode.org][Org-mode]].
+
+You should also organise your literature notes and your references in general in some systematic way. Some people like [[https://www.zotero.org][Zotero]], some like [[https://www.mendeley.com][Mendeley]] to help them with that. I use [[https://github.com/tmalsburg/helm-bibtex][Helm-BibTeX]].
+
+* Creativity
+
+Your project might include a research component. This means that you're not here just to execute tasks, but also to bring your own ideas regarding the direction and execution of the project. Creativity means, for example, finding different ways to solve a technical problem or adapting the goals of the project to more interesting/ambitious/original ones. Creativity is also about challenging my ideas and, even better, proving me wrong.
+
+“But I'm not a creative person!”; creativity is not a skill or a character trait, it's a mode of operation. It takes curiosity and stubbornness.
+
+* No marketing speak
+
+If you are doing a *technical* project with me, do not spend the first 20 pages with management speak and quoting Gartner reports on business projections. For example, when investigating the security of some software for remote file storage, do not start with an extensive account on “why private, public or hybrid clouds are excellent for businesses”. It is important to motivate a technical question but keep it brief.
+
+Similarly, equip yourself with a good bullshit detector. You'll need it if you work in information security! Some bullshit signs in information security are:
+
+- The abuse of the word “cyber”.
+- Bad quality writing and visuals.
+- The use of superlatives instead of reliable facts. For example, “our ultra-advanced cyber detection system performs extraordinarily to reach a 200 threats.“
+- Incorrect use of technical terms, for example, confusion between “vulnerability”, “exploit" and “malware” or “cipher” and “cryptographic protocol”.
+- The use and abuse of buzzwords, especially when simpler terms would fit. For example, “secure blockchain-based deep learning”. New buzzwords appear regularly.
+- Forcing the blockchain on everything.
+
+* Literature
+
+Random websites, press clippings and typically whitepapers are not reliable sources of information. Some technical whitepapers contain useful information, but often they are just glorified ads. 
+
+You will have to engage with the academic literature. But not all literature is of equal quality, you’ll need to develop a sense of what is good research and what is not. I suggest the following exercise:
+
+1. Find 3 academic papers (preferably published, but in this fast moving field often pre-prints will have to do) on your topic.
+2. Describe what each does in 3 sentences each max.
+3. Rank these three papers from great to perhaps-not-so-great or worse. Explain why in 1-2 sentences.
+4. Find the three top venues (conferences, journals) where papers on this area would be published.
+
+This would give you (and me) some idea how hard a time you’d have engaging with the subject in the manner the MSc project would require: finding scientific work and critically evaluating it.
+
+* Questions
+
+Before asking me a question (such as “how to get command-line arguments in C?”), try to find the answer by yourself first in the usual places (literature, Google, StackOverflow, etc.). I can suggest some strategies for how to find good answers.
+
+I will try to respond to your requests or questions by email fairly quickly. You can also come by my office hour (Thursday, 2pm) but I prefer a written form because it forces you to write down the question and thus think about it. A written response also leaves a trace for further reference (“but *you* told me that, look!“).
+
+Similarly, the more specific your question the better are your chances of getting a good response. For example “Can we have a meeting about my project?” gives me no clue if and what I should prepare, how much time to schedule or if the issue at hand could be handled much more efficiently in writing via e-mail.
+
+* Feedback on drafts
+
+I’m happy to give you feedback on an early draft up until 4 weeks before the submission deadline. Before and after that deadline, I’m happy to answer specific questions.
+
+I cannot give detailed feedback on grammar or spelling, but I will point out if I believe you should improve.
+
+* Writing
+
+To learn the basics of good writing, JP Aumasson recommends [[http://www.crockford.com/wrrrld/style.html][The Elements of Style]]. It's a quick and easy read. To further improve your English, he also recommends you check William Zinsser's [[https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548/][On Writing Well]], another classic. You'll find a PDF [[http://www.brynmawr.edu/math/people/anmyers/ESem/on-writing-well.pdf][online]].
+
+Royal Holloway has a [[https://www.royalholloway.ac.uk/ecampus/cedas/home.aspx][Centre for the Development of Academic Skills]] which offers courses on improving Academic English writing. It also offers a service to connect you to a professional, approved proofreader. They will require a letter from me for the latter, I’m happy to provide it.
+
+You may also have some success with automated tools such as [[https://app.grammarly.com][Grammarly]] or [[https://www.languagetool.org][LanguageTool]], the latter is available as a plugin for Emacs, Sublime Text and LibreOffice.
+
+* Flexibility
+
+You may receive emails from me at night or during weekends, but that does not mean that I expect you to also work at those times.
+
+* Tools
+
+Feel free to use and propose other tools than the ones I propose. I neither care if you use emacs, vi, Sublime Text or MS Word nor which programming language, framework or libraries you use.
+
+I highly recommend that you use revision control such as to organise and backup your project. I’ve written about using Git for academic writing on [[https://martinralbrecht.wordpress.com/2016/01/10/writing-crypto-papers-and-version-control/][my blog]].
+
+* Coding
+
+If you write code, it should not only work/compile, it should also follow the best practices and coding conventions for the specific language you're using. You should assume that your code will be published and be visible to your peers and future potential employers.
+
+For example, don’t code a dirty or unsafe workaround thinking “that's ok since nobody will read the code”. If you have to use such code, add a comment highlighting it and justifying it.
+
+To write code of better quality, use static code analysers and code formatters. For example, =pylint= and =pep8= for Python, gofmt for Go, and for C(++), =valgrind=, =flawfinder=, =clang-format=, clang's address sanitizer, to name but a few.
+
+* Formalities
+
+The most straight-forward way to address me is just to use my first name, no “Mr.”, “Dr.” required. This is the general etiquette at Royal Holloway and British universities in general. Hence, I tend to address everybody by their first name as well. If that doesn’t work for you, let me know.
+
+#+INCLUDE: footer.org
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
+# End:
