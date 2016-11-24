@@ -4,6 +4,10 @@
 
 If you are a student doing or considering doing an MSc project with me, keep reading, this document will hopefully provide some useful guidance.
 
+Given my area of expertise (computer science with a focus towards cryptography), most MSc projects I supervise will be somewhat technical in nature. Hence, the following guidance is written with a view towards that area.
+
+However, I am happy to discuss/consider supervising MSc projects in other areas of information security as well. In this case not all advise below would apply. If you are unsure, come talk to me.
+
 *Note:* Large parts of this document is shamelessly stolen from [[https://github.com/veorq/misc/blob/students/STUDENTS.md][JP Aumasson]].
 
 * Commitment
@@ -32,14 +36,13 @@ Your project might include a research component. This means that you're not here
 
 “But I'm not a creative person!”; creativity is not a skill or a character trait, it's a mode of operation. It takes curiosity and stubbornness.
 
-* No marketing speak
+* Marketing speak
 
-If you are doing a *technical* project with me, do not spend the first 20 pages with management speak and quoting Gartner reports on business projections. For example, when investigating the security of some software for remote file storage, do not start with an extensive account on “why private, public or hybrid clouds are excellent for businesses”. It is important to motivate a technical question but keep it brief.
+If you are doing a *technical* project with me, do not spend the first 20 pages with marketing speak and quoting Gartner reports on business projections. For example, when investigating the security of some software for remote file storage, do not start with an extensive account on “why private, public or hybrid clouds are excellent for businesses”. It is important to motivate a technical question but keep it brief.
 
-Similarly, equip yourself with a good bullshit detector. You'll need it if you work in information security! Some bullshit signs in information security are:
+Similarly, equip yourself with a good detector for bad science. You'll need it if you work in information security! In information security, some signs are:
 
 - The abuse of the word “cyber”.
-- Bad quality writing and visuals.
 - The use of superlatives instead of reliable facts. For example, “our ultra-advanced cyber detection system performs extraordinarily to reach a 200 threats.“
 - Incorrect use of technical terms, for example, confusion between “vulnerability”, “exploit" and “malware” or “cipher” and “cryptographic protocol”.
 - The use and abuse of buzzwords, especially when simpler terms would fit. For example, “secure blockchain-based deep learning”. New buzzwords appear regularly.
