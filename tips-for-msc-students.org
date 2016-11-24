@@ -77,7 +77,7 @@ I cannot give detailed feedback on grammar or spelling, but I will point out if 
 
 * Writing
 
-To learn the basics of good writing, JP Aumasson recommends [[http://www.crockford.com/wrrrld/style.html][The Elements of Style]]. It's a quick and easy read. To further improve your English, he also recommends you check William Zinsser's [[https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548/][On Writing Well]], another classic. You'll find a PDF [[http://www.brynmawr.edu/math/people/anmyers/ESem/on-writing-well.pdf][online]].
+To learn the basics of good writing, JP Aumasson recommends [[http://www.crockford.com/wrrrld/style.html][The Elements of Style]]. It's a quick and easy read. To further improve your English, he also recommends you check William Zinsser's [[https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548/][On Writing Well]], another classic. You'll find a PDF [[http://www.brynmawr.edu/math/people/anmyers/ESem/on-writing-well.pdf][online]]. [[http://www.isg.rhul.ac.uk/~slng/][Siaw-Lynn Ng]] recommends [[https://www.amazon.co.uk/Line-How-Edit-Your-Writing/dp/0395393914][Line by Line - How to Edit Your Own Writing]] by Claire Kehrwald Cook.
 
 Royal Holloway has a [[https://www.royalholloway.ac.uk/ecampus/cedas/home.aspx][Centre for the Development of Academic Skills]] which offers courses on improving Academic English writing. It also offers a service to connect you to a professional, approved proofreader. They will require a letter from me for the latter, I’m happy to provide it.
 
