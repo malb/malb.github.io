@@ -17,11 +17,15 @@
 
 ** Peer-reviewed conference publications
 
+*** 2017
+
+- Martin R. Albrecht. /On dual lattice attacks against small-secret LWE and parameter choices in HElib and SEAL/. To appear in proceedings of EUROCRYPT 2017. pre-print available as [[https://eprint.iacr.org/2017/047][Cryptology ePrint Archive: Report 2017/047]].
+
 *** 2016
 
-- Martin R. Albrecht, Lorenzo Grassi, Christian Rechberger, Arnab Roy, and Tyge Tiessen. /MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity/. To appear in proceedings of /ASIACRYPT 2016/. 2016. pre-print available as [[http://ia.cr/2016/492][Cryptology ePrint Archive: Report 2016/492]].
+- Martin R. Albrecht, Lorenzo Grassi, Christian Rechberger, Arnab Roy, and Tyge Tiessen. /MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity/. In proceedings of /ASIACRYPT 2016/. 2016. pre-print available as [[http://ia.cr/2016/492][Cryptology ePrint Archive: Report 2016/492]].
 
-- Martin R. Albrecht, Jean Paul Degabriele, Torben Brandt Hansen, and Kenneth G. Paterson. /A Surfeit of SSH Cipher Suites./ To appear in proceedings of /CCS 2016/. 2016
+- Martin R. Albrecht, Jean Paul Degabriele, Torben Brandt Hansen, and Kenneth G. Paterson. /A Surfeit of SSH Cipher Suites./ In /Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security/, pages 1480-1491 , best paper award. ACM Press, 2016.
 
 - Martin Albrecht, Shi Bai, and Léo Ducas. /A Subfield Lattice Attack on Overstretched NTRU Assumptions - Cryptanalysis of Some FHE and Graded Encoding Schemes/ in /Advances in Cryptology - CRYPTO 2016/. Ed. by Matthew Robshaw and Jonathan Katz. Vol. 9814. Lecture Notes in Computer Science. Springer, 2016, pp. 153–178. doi: 10.1007/978-3- 662-53018-4_6. url: http://dx.doi.org/10.1007/978-3-662-53018-4_6. pre-print available as [[http://ia.cr/2016/127][Cryptology ePrint Archive: Report 2016/127]].
 

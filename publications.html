@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-08-19 Fri 15:26 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-02-28 Tue 13:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Publications</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Martin R. Albrecht" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Martin R. Albrecht" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,6 +176,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
@@ -160,30 +245,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1">Theses</a></li>
-<li><a href="#orgheadline2">Journal articles</a></li>
-<li><a href="#orgheadline13">Peer-reviewed conference publications</a>
+<li><a href="#orgcabbf7e">Theses</a></li>
+<li><a href="#orgc1fcfa3">Journal articles</a></li>
+<li><a href="#orgf58581a">Peer-reviewed conference publications</a>
 <ul>
-<li><a href="#orgheadline3">2016</a></li>
-<li><a href="#orgheadline4">2015</a></li>
-<li><a href="#orgheadline5">2014</a></li>
-<li><a href="#orgheadline6">2013</a></li>
-<li><a href="#orgheadline7">2012</a></li>
-<li><a href="#orgheadline8">2011</a></li>
-<li><a href="#orgheadline9">2010</a></li>
-<li><a href="#orgheadline10">2009</a></li>
-<li><a href="#orgheadline11">2006</a></li>
-<li><a href="#orgheadline12">2005</a></li>
+<li><a href="#orgd6bb365">2017</a></li>
+<li><a href="#org2ade883">2016</a></li>
+<li><a href="#orgde9811e">2015</a></li>
+<li><a href="#org15e6a82">2014</a></li>
+<li><a href="#orgad71f81">2013</a></li>
+<li><a href="#org35c3d51">2012</a></li>
+<li><a href="#org8e11aeb">2011</a></li>
+<li><a href="#org0a8382b">2010</a></li>
+<li><a href="#orgd25aff4">2009</a></li>
+<li><a href="#org6c58799">2006</a></li>
+<li><a href="#org3bb0fe3">2005</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline14">Other publications</a></li>
+<li><a href="#org1499ce0">Other publications</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1">Theses</h2>
-<div class="outline-text-2" id="text-orgheadline1">
+<div id="outline-container-orgcabbf7e" class="outline-2">
+<h2 id="orgcabbf7e">Theses</h2>
+<div class="outline-text-2" id="text-orgcabbf7e">
 <ul class="org-ul">
 <li>Martin Albrecht. <a href="http://martinralbrecht.files.wordpress.com/2010/10/phd.pdf">Algorithmic Algebraic Techniques and their Application to Block Cipher Cryptanalysis</a>. PhD thesis, Royal Holloway, University of London, 2010</li>
 <li>Martin Albrecht. <a href="./papers/algebraic-attacks-on-the-courtois-toy-cipher--diplomarbeit.pdf">Algebraic Attacks against the Courtois Toy Cipher</a>. Diplomarbeit, Universität Bremen. 2007.</li>
@@ -191,9 +277,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2">Journal articles</h2>
-<div class="outline-text-2" id="text-orgheadline2">
+<div id="outline-container-orgc1fcfa3" class="outline-2">
+<h2 id="orgc1fcfa3">Journal articles</h2>
+<div class="outline-text-2" id="text-orgc1fcfa3">
 <ul class="org-ul">
 <li>Martin R. Albrecht, Rachel Player and Sam Scott. <i>On the concrete hardness of Learning with Errors</i> in <i>Journal of Mathematical Cryptology</i> 9(3):169-203 (2015), DOI: <a href="http://dx.doi.org/10.1515/jmc-2015-0016">10.1515/jmc-2015-0016</a>. pre-print available as <a href="http://ia.cr/2015/046">Cryptology ePrint Archive: Report 2015/046</a>.</li>
 <li>Martin R. Albrecht, Jean-Charles Faugère, Pooya Farshim, Gottfried Herold, and Ludovic Perret. <i>Polly Cracker, revisited</i> in <i>Designs, Codes and Cryptography</i> (2015), pp. 1–42. DOI: <a href="http://dx.doi.org/10.1007/s10623-015-0048-8">10.1007/s10623-015-0048-8</a>. pre-print available as <a href="http://ia.cr/2011/289">Cryptology ePrint Archive: Report 2011/289</a>.</li>
@@ -205,16 +291,25 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13">Peer-reviewed conference publications</h2>
-<div class="outline-text-2" id="text-orgheadline13">
-</div><div id="outline-container-orgheadline3" class="outline-3">
-<h3 id="orgheadline3">2016</h3>
-<div class="outline-text-3" id="text-orgheadline3">
+<div id="outline-container-orgf58581a" class="outline-2">
+<h2 id="orgf58581a">Peer-reviewed conference publications</h2>
+<div class="outline-text-2" id="text-orgf58581a">
+</div><div id="outline-container-orgd6bb365" class="outline-3">
+<h3 id="orgd6bb365">2017</h3>
+<div class="outline-text-3" id="text-orgd6bb365">
 <ul class="org-ul">
-<li>Martin R. Albrecht, Lorenzo Grassi, Christian Rechberger, Arnab Roy, and Tyge Tiessen. <i>MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity</i>. To appear in proceedings of <i>ASIACRYPT 2016</i>. 2016. pre-print available as <a href="http://ia.cr/2016/492">Cryptology ePrint Archive: Report 2016/492</a>.</li>
+<li>Martin R. Albrecht. <i>On dual lattice attacks against small-secret LWE and parameter choices in HElib and SEAL</i>. To appear in proceedings of EUROCRYPT 2017. pre-print available as <a href="https://eprint.iacr.org/2017/047">Cryptology ePrint Archive: Report 2017/047</a>.</li>
+</ul>
+</div>
+</div>
 
-<li>Martin R. Albrecht, Jean Paul Degabriele, Torben Brandt Hansen, and Kenneth G. Paterson. <i>A Surfeit of SSH Cipher Suites.</i> To appear in proceedings of <i>CCS 2016</i>. 2016</li>
+<div id="outline-container-org2ade883" class="outline-3">
+<h3 id="org2ade883">2016</h3>
+<div class="outline-text-3" id="text-org2ade883">
+<ul class="org-ul">
+<li>Martin R. Albrecht, Lorenzo Grassi, Christian Rechberger, Arnab Roy, and Tyge Tiessen. <i>MiMC: Efficient Encryption and Cryptographic Hashing with Minimal Multiplicative Complexity</i>. In proceedings of <i>ASIACRYPT 2016</i>. 2016. pre-print available as <a href="http://ia.cr/2016/492">Cryptology ePrint Archive: Report 2016/492</a>.</li>
+
+<li>Martin R. Albrecht, Jean Paul Degabriele, Torben Brandt Hansen, and Kenneth G. Paterson. <i>A Surfeit of SSH Cipher Suites.</i> In <i>Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security</i>, pages 1480-1491 , best paper award. ACM Press, 2016.</li>
 
 <li>Martin Albrecht, Shi Bai, and Léo Ducas. <i>A Subfield Lattice Attack on Overstretched NTRU Assumptions - Cryptanalysis of Some FHE and Graded Encoding Schemes</i> in <i>Advances in Cryptology - CRYPTO 2016</i>. Ed. by Matthew Robshaw and Jonathan Katz. Vol. 9814. Lecture Notes in Computer Science. Springer, 2016, pp. 153–178. doi: 10.1007/978-3- 662-53018-4_6. url: <a href="http://dx.doi.org/10.1007/978-3-662-53018-4_6">http://dx.doi.org/10.1007/978-3-662-53018-4_6</a>. pre-print available as <a href="http://ia.cr/2016/127">Cryptology ePrint Archive: Report 2016/127</a>.</li>
 
@@ -225,9 +320,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline4" class="outline-3">
-<h3 id="orgheadline4">2015</h3>
-<div class="outline-text-3" id="text-orgheadline4">
+<div id="outline-container-orgde9811e" class="outline-3">
+<h3 id="orgde9811e">2015</h3>
+<div class="outline-text-3" id="text-orgde9811e">
 <ul class="org-ul">
 <li>Martin R. Albrecht, Catalin Cocis, Fabien Laguillaumie and Adeline Langlois: <i>Implementing Candidate Graded Encoding Schemes from Ideal Lattices</i> in proceedings of <i>ASIACRYPT 2015</i>, Springer Verlag, 2015, pre-print available as <a href="http://ia.cr/2014/928">Cryptology ePrint Archive: Report 2014/928</a>.</li>
 
@@ -236,9 +331,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-3">
-<h3 id="orgheadline5">2014</h3>
-<div class="outline-text-3" id="text-orgheadline5">
+<div id="outline-container-org15e6a82" class="outline-3">
+<h3 id="org15e6a82">2014</h3>
+<div class="outline-text-3" id="text-org15e6a82">
 <ul class="org-ul">
 <li>Martin R. Albrecht, Benedikt Driessen, Elif Bilge Kavun, Gregor Leander, Christof Paar and Tolga Yalcin. <i>Block Ciphers - Focus On The Linear Layer (feat. PRIDE)</i> in proceedings of <i>CRYPTO 2014</i>, Springer Verlag, 2015. <a href="http://dx.doi.org/10.1007/978-3-662-44371-2_4">10.1007/978-3-662-44371-2\_4</a>. pre-print available as <a href="https://eprint.iacr.org/2014/453">Cryptology ePrint Archive: Report 2014/453</a>.</li>
 <li>Martin R. Albrecht, Jean-Charles Faugère, Robert Fitzpatrick, Ludovic Perret. <i>Lazy Modulus Switching for the BKW Algorithm on LWE</i> in proceedings of <i>PKC 2014</i>, Springer Verlag, 2014. full version available as <a href="http://ia.cr/2014/019">Cryptology ePrint Archive: Report 2014/019</a>. <a href="https://bitbucket.org/malb/papers/src/tip/lazy-modulus-switching-for-bkw-on-lwe/?at=default">LaTeX sources</a>.</li>
@@ -247,18 +342,18 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline6" class="outline-3">
-<h3 id="orgheadline6">2013</h3>
-<div class="outline-text-3" id="text-orgheadline6">
+<div id="outline-container-orgad71f81" class="outline-3">
+<h3 id="orgad71f81">2013</h3>
+<div class="outline-text-3" id="text-orgad71f81">
 <ul class="org-ul">
 <li>Martin R. Albrecht, Robert Fitzpatrick, and Florian Göpfert: <i>On the Efficacy of Solving LWE by Reduction to Unique-SVP</i> in proceedings of <i>International Conference on Information Security and Cryptology.</i> 2013. pre-print available as <a href="http://ia.cr/2013/602">Cryptology ePrint Archive: Report 2013/602</a>.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline7" class="outline-3">
-<h3 id="orgheadline7">2012</h3>
-<div class="outline-text-3" id="text-orgheadline7">
+<div id="outline-container-org35c3d51" class="outline-3">
+<h3 id="org35c3d51">2012</h3>
+<div class="outline-text-3" id="text-org35c3d51">
 <ul class="org-ul">
 <li>Martin R. Albrecht and Gregor Leander. <i>An All-In-One Approach to Differential Cryptanalysis for Small Block Ciphers</i> in proceedings of <i>Selected Areas of Cryptography 2012</i>, Springer Verlag, 2012.</li>
 <li>Martin R. Albrecht. <i>The M4RIE library for dense linear algebra over small fields with even characteristic</i> in proceedings of <i>37th International Symposium on Symbolic and Algebraic Computation</i>, ACM Press, 2012.</li>
@@ -266,9 +361,9 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline8" class="outline-3">
-<h3 id="orgheadline8">2011</h3>
-<div class="outline-text-3" id="text-orgheadline8">
+<div id="outline-container-org8e11aeb" class="outline-3">
+<h3 id="org8e11aeb">2011</h3>
+<div class="outline-text-3" id="text-org8e11aeb">
 <ul class="org-ul">
 <li>Martin R. Albrecht and Kenneth G. Paterson. <i>Breaking An Identity-Based Encryption Scheme based on DHIES</i> in proceedings of <i>IMA CCC 2011</i>. Springer Verlag, 2011. pre-print available as <a href="http://ia.cr/2010/637">Cryptology ePrint Archive: Report 2010/637</a>. 2010. <a href="https://bitbucket.org/malb/papers/src/5608545eb1bb/dhies-ibe-mq-attack">LaTeX sources</a></li>
 <li>Martin R. Albrecht, Pooya Farshim, Jean-Charles Faugère and Ludovic Perret. <i>Polly Cracker, Revisited</i> in Proceedings of <i>ASIACRYPT 2011</i>. Springer Verlag 2011. pre-print/full version available as <a href="http://ia.cr/2011/289">Cryptology ePrint Archive: Report 2011/289</a>. 2011. <a href="https://bitbucket.org/malb/papers/src/tip/polly-cracker-revisited-extended-abstract">LaTeX sources</a></li>
@@ -278,18 +373,18 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline9" class="outline-3">
-<h3 id="orgheadline9">2010</h3>
-<div class="outline-text-3" id="text-orgheadline9">
+<div id="outline-container-org0a8382b" class="outline-3">
+<h3 id="org0a8382b">2010</h3>
+<div class="outline-text-3" id="text-org0a8382b">
 <ul class="org-ul">
 <li>Martin Albrecht, Carlos Cid, Thomas Dullien, Jean-Charles Faugère and Ludovic Perret. <i>Algebraic Precomputations in Differential and Integral Cryptanalysis</i> in proceedings of <i>INSCRYPT 2010</i>, Shanghai, China, October 2010 (<a href="http://martinralbrecht.files.wordpress.com/2010/10/adc2.pdf">local copy</a>). An earlier version of this work was presented at the ECrypt <i>Workshop on Tools for Cryptanalysis 2010</i>.  2010.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-3">
-<h3 id="orgheadline10">2009</h3>
-<div class="outline-text-3" id="text-orgheadline10">
+<div id="outline-container-orgd25aff4" class="outline-3">
+<h3 id="orgd25aff4">2009</h3>
+<div class="outline-text-3" id="text-orgd25aff4">
 <ul class="org-ul">
 <li>Martin Albrecht, Craig Gentry, Shai Halevi and Jonathan Katz. <i>Attacking Cryptographic Schemes Based on Perturbation Polynomials</i> in proceedings of the <i>16th ACM Conference on Computer and Communications Security</i>. pre-print available as <a href="http://ia.cr/2009/098">Cryptology ePrint Archive: 2009/098</a> Report . 2009.</li>
 <li>Martin Albrecht, Kenny Paterson and Gaven Watson. <i>Plaintext Recovery Attacks Against SSH</i> in proceedings of <i>IEEE Symposium on Security and Privacy 2009</i>. available <a href="http://www.informatik.uni-bremen.de/~malb/papers/plaintext_recover_attacks_against_ssh.pdf">locally</a>. 2009.</li>
@@ -298,18 +393,18 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline11" class="outline-3">
-<h3 id="orgheadline11">2006</h3>
-<div class="outline-text-3" id="text-orgheadline11">
+<div id="outline-container-org6c58799" class="outline-3">
+<h3 id="org6c58799">2006</h3>
+<div class="outline-text-3" id="text-org6c58799">
 <ul class="org-ul">
 <li>Martin Albrecht, Till Backhaus, Steffen Planthaber, Henning Stöpler, Dirk Spenneberg, and Frank Kirchner. <i>AIMEE: A four-legged robot for RoboCup Rescue</i> in <i>Climbing and Walking Robots</i>. Springer, 2006, pp. 1003–1010</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgheadline12" class="outline-3">
-<h3 id="orgheadline12">2005</h3>
-<div class="outline-text-3" id="text-orgheadline12">
+<div id="outline-container-org3bb0fe3" class="outline-3">
+<h3 id="org3bb0fe3">2005</h3>
+<div class="outline-text-3" id="text-org3bb0fe3">
 <ul class="org-ul">
 <li>Dirk Spenneberg, Martin Albrecht, and Till Backhaus. <i>Monster: A new behavior-based microkernel for mobile robots</i> in proceedings of the <i>2nd European Conference on Mobile Robots</i>. 2005.</li>
 <li>Dirk Spenneberg, Martin Albrecht, Till Backhaus, Jens Hilljegerdes, Frank Kirchner, Andreas Strack, and Heiko Zschenker. <i>Aramies: A four-legged climbing and walking robot</i> in <i>Proceedings of 8th International Symposium iSAIRAS</i>. 2005</li>
@@ -318,14 +413,14 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline14" class="outline-2">
-<h2 id="orgheadline14">Other publications</h2>
-<div class="outline-text-2" id="text-orgheadline14">
+<div id="outline-container-org1499ce0" class="outline-2">
+<h2 id="org1499ce0">Other publications</h2>
+<div class="outline-text-2" id="text-org1499ce0">
 <ul class="org-ul">
 <li>Martin R. Albrecht, Daniel Cabarcas, Robert Fitzpatrick, Florian Göpfert and Michael Schneider. <i>A Generator for LWE and Ring-LWE Instances</i>. available at <a href="http://www.iacr.org/news/files/2013-04-29lwe-generator.pdf">http://www.iacr.org/news/files/2013-04-29lwe-generator.pdf</a>. 2013</li>
 <li>Martin Albrecht and Clément Pernet. <i>Efficient Decomposition of Dense Matrices over GF(2)</i> accepted for presentation at ECrypt <i>Workshop on Tools for Cryptanalysis 2010</i>. available on <a href="http://bitbucket.org/cpernet/pluqm4ri/overview">bitbucket</a>. 2010.</li>
-<li>Martin Albrecht, Gregory Bard <i>et al.</i>. <a href="http://m4ri.sagemath.org/">M4RI Library</a>. 2007ff.</li>
-<li>William Stein <i>et al.</i>. <a href="http://www.sagemath.org/">Sage</a> mathematics software. 2005ff.</li>
+<li>Martin Albrecht, Gregory Bard <i>et al.</i>. <a href="http://m4ri.sagemath.org">M4RI Library</a>. 2007ff.</li>
+<li>William Stein <i>et al.</i>. <a href="http://www.sagemath.org">Sage</a> mathematics software. 2005ff.</li>
 </ul>
 </div>
 </div>
