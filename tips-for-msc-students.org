@@ -81,7 +81,7 @@ To learn the basics of good writing, JP Aumasson recommends [[http://www.crockfo
 
 Royal Holloway has a [[https://www.royalholloway.ac.uk/ecampus/cedas/home.aspx][Centre for the Development of Academic Skills]] which offers courses on improving Academic English writing. It also offers a service to connect you to a professional, approved proofreader. They will require a letter from me for the latter, I’m happy to provide it.
 
-You may also have some success with automated tools such as [[https://app.grammarly.com][Grammarly]] or [[https://www.languagetool.org][LanguageTool]], the latter is available as a plugin for Emacs, Sublime Text and LibreOffice.
+You may also have some success with automated tools such as [[https://app.grammarly.com][Grammarly]], [[http://typely.com][Typely]], [[https://www.languagetool.org][LanguageTool]], the latter is available as a plugin for Emacs, Sublime Text and LibreOffice.
 
 * Flexibility
 

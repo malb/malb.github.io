@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-11-24 Thu 19:56 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="viewport" content="width=device-width, initial-scale=1" />
+<!-- 2017-08-25 Fri 11:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Tips for MSc students</title>
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="Martin R. Albrecht" />
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Martin R. Albrecht" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -53,13 +53,97 @@
     border: 1px solid black;
   }
   pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
   pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
 
   table { border-collapse:collapse; }
   caption.t-above { caption-side: top; }
@@ -92,6 +176,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
 <link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
@@ -111,7 +196,7 @@ ga('send', 'pageview');
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
+Copyright (C) 2012-2017 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -160,19 +245,19 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgheadline1">Commitment</a></li>
-<li><a href="#orgheadline2">Intellectual rigour</a></li>
-<li><a href="#orgheadline3">Organisation</a></li>
-<li><a href="#orgheadline4">Creativity</a></li>
-<li><a href="#orgheadline5">Marketing speak</a></li>
-<li><a href="#orgheadline6">Literature</a></li>
-<li><a href="#orgheadline7">Questions</a></li>
-<li><a href="#orgheadline8">Feedback on drafts</a></li>
-<li><a href="#orgheadline9">Writing</a></li>
-<li><a href="#orgheadline10">Flexibility</a></li>
-<li><a href="#orgheadline11">Tools</a></li>
-<li><a href="#orgheadline12">Coding</a></li>
-<li><a href="#orgheadline13">Formalities</a></li>
+<li><a href="#orgba90834">Commitment</a></li>
+<li><a href="#org65f4927">Intellectual rigour</a></li>
+<li><a href="#org0623c94">Organisation</a></li>
+<li><a href="#org180339c">Creativity</a></li>
+<li><a href="#orgd7444a7">Marketing speak</a></li>
+<li><a href="#org408c177">Literature</a></li>
+<li><a href="#orga0a70b7">Questions</a></li>
+<li><a href="#org29d55de">Feedback on drafts</a></li>
+<li><a href="#org65e4933">Writing</a></li>
+<li><a href="#orge9a6ab1">Flexibility</a></li>
+<li><a href="#org3e9a1a0">Tools</a></li>
+<li><a href="#org41d9ddb">Coding</a></li>
+<li><a href="#org5a57d08">Formalities</a></li>
 </ul>
 </div>
 </div>
@@ -192,9 +277,9 @@ However, I am happy to discuss/consider supervising MSc projects in other areas 
 <b>Note:</b> Large parts of this document is shamelessly stolen from <a href="https://github.com/veorq/misc/blob/students/STUDENTS.md">JP Aumasson</a>.
 </p>
 
-<div id="outline-container-orgheadline1" class="outline-2">
-<h2 id="orgheadline1">Commitment</h2>
-<div class="outline-text-2" id="text-orgheadline1">
+<div id="outline-container-orgba90834" class="outline-2">
+<h2 id="orgba90834">Commitment</h2>
+<div class="outline-text-2" id="text-orgba90834">
 <p>
 In order to successfully deliver a good MSc project it quite important to work on something you are interested in and something you care about. 
 </p>
@@ -205,9 +290,9 @@ If you’re not enjoying working on the project at all this is not a good sign a
 </div>
 </div>
 
-<div id="outline-container-orgheadline2" class="outline-2">
-<h2 id="orgheadline2">Intellectual rigour</h2>
-<div class="outline-text-2" id="text-orgheadline2">
+<div id="outline-container-org65f4927" class="outline-2">
+<h2 id="org65f4927">Intellectual rigour</h2>
+<div class="outline-text-2" id="text-org65f4927">
 <p>
 You will need to bring rigour and an analytical mindset. For example, you should be able to define the problem precisely, to determine what information you need to solve that problem and whether you have data or a theorem at your disposal that carries that information.
 </p>
@@ -222,22 +307,22 @@ When data is available, use it to make precise fact-based claims, rather than me
 </div>
 </div>
 
-<div id="outline-container-orgheadline3" class="outline-2">
-<h2 id="orgheadline3">Organisation</h2>
-<div class="outline-text-2" id="text-orgheadline3">
+<div id="outline-container-org0623c94" class="outline-2">
+<h2 id="org0623c94">Organisation</h2>
+<div class="outline-text-2" id="text-org0623c94">
 <p>
-I strongly recommend that you maintain a todo list and notes in order to keep track of tasks and to prioritise them. I also recommend creating a rough project timeline against which you can measure your progress as you get on with the project. This way you can detect when things go off the rails. There are plenty of software options available to help you with that. Some people like <a href="https://trello.com/">Trello</a>, some people like <a href="https://www.toodledo.com/">Toodledo</a>, some people swear on <a href="https://evernote.com/">Evernote</a> or <a href="https://www.onenote.com/">OneNote</a>. I personally use <a href="http://orgmode.org/">Org-mode</a>.
+I strongly recommend that you maintain a todo list and notes in order to keep track of tasks and to prioritise them. I also recommend creating a rough project timeline against which you can measure your progress as you get on with the project. This way you can detect when things go off the rails. There are plenty of software options available to help you with that. Some people like <a href="https://trello.com">Trello</a>, some people like <a href="https://www.toodledo.com">Toodledo</a>, some people swear on <a href="https://evernote.com">Evernote</a> or <a href="https://www.onenote.com">OneNote</a>. I personally use <a href="http://orgmode.org">Org-mode</a>.
 </p>
 
 <p>
-You should also organise your literature notes and your references in general in some systematic way. Some people like <a href="https://www.zotero.org/">Zotero</a>, some like <a href="https://www.mendeley.com/">Mendeley</a> to help them with that. I use <a href="https://github.com/tmalsburg/helm-bibtex">Helm-BibTeX</a>.
+You should also organise your literature notes and your references in general in some systematic way. Some people like <a href="https://www.zotero.org">Zotero</a>, some like <a href="https://www.mendeley.com">Mendeley</a> to help them with that. I use <a href="https://github.com/tmalsburg/helm-bibtex">Helm-BibTeX</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4">Creativity</h2>
-<div class="outline-text-2" id="text-orgheadline4">
+<div id="outline-container-org180339c" class="outline-2">
+<h2 id="org180339c">Creativity</h2>
+<div class="outline-text-2" id="text-org180339c">
 <p>
 Your project might include a research component. This means that you're not here just to execute tasks, but also to bring your own ideas regarding the direction and execution of the project. Creativity means, for example, finding different ways to solve a technical problem or adapting the goals of the project to more interesting/ambitious/original ones. Creativity is also about challenging my ideas and, even better, proving me wrong.
 </p>
@@ -248,9 +333,9 @@ Your project might include a research component. This means that you're not here
 </div>
 </div>
 
-<div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5">Marketing speak</h2>
-<div class="outline-text-2" id="text-orgheadline5">
+<div id="outline-container-orgd7444a7" class="outline-2">
+<h2 id="orgd7444a7">Marketing speak</h2>
+<div class="outline-text-2" id="text-orgd7444a7">
 <p>
 If you are doing a <b>technical</b> project with me, do not spend the first 20 pages with marketing speak and quoting Gartner reports on business projections. For example, when investigating the security of some software for remote file storage, do not start with an extensive account on “why private, public or hybrid clouds are excellent for businesses”. It is important to motivate a technical question but keep it brief.
 </p>
@@ -269,9 +354,9 @@ Similarly, equip yourself with a good detector for bad science. You'll need it i
 </div>
 </div>
 
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6">Literature</h2>
-<div class="outline-text-2" id="text-orgheadline6">
+<div id="outline-container-org408c177" class="outline-2">
+<h2 id="org408c177">Literature</h2>
+<div class="outline-text-2" id="text-org408c177">
 <p>
 Random websites, press clippings and typically whitepapers are not reliable sources of information. Some technical whitepapers contain useful information, but often they are just glorified ads. 
 </p>
@@ -293,9 +378,9 @@ This would give you (and me) some idea how hard a time you’d have engaging wit
 </div>
 </div>
 
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7">Questions</h2>
-<div class="outline-text-2" id="text-orgheadline7">
+<div id="outline-container-orga0a70b7" class="outline-2">
+<h2 id="orga0a70b7">Questions</h2>
+<div class="outline-text-2" id="text-orga0a70b7">
 <p>
 Before asking me a question (such as “how to get command-line arguments in C?”), try to find the answer by yourself first in the usual places (literature, Google, StackOverflow, etc.). I can suggest some strategies for how to find good answers.
 </p>
@@ -310,9 +395,9 @@ Similarly, the more specific your question the better are your chances of gettin
 </div>
 </div>
 
-<div id="outline-container-orgheadline8" class="outline-2">
-<h2 id="orgheadline8">Feedback on drafts</h2>
-<div class="outline-text-2" id="text-orgheadline8">
+<div id="outline-container-org29d55de" class="outline-2">
+<h2 id="org29d55de">Feedback on drafts</h2>
+<div class="outline-text-2" id="text-org29d55de">
 <p>
 I’m happy to give you feedback on an early draft up until 4 weeks before the submission deadline. Before and after that deadline, I’m happy to answer specific questions.
 </p>
@@ -323,9 +408,9 @@ I cannot give detailed feedback on grammar or spelling, but I will point out if 
 </div>
 </div>
 
-<div id="outline-container-orgheadline9" class="outline-2">
-<h2 id="orgheadline9">Writing</h2>
-<div class="outline-text-2" id="text-orgheadline9">
+<div id="outline-container-org65e4933" class="outline-2">
+<h2 id="org65e4933">Writing</h2>
+<div class="outline-text-2" id="text-org65e4933">
 <p>
 To learn the basics of good writing, JP Aumasson recommends <a href="http://www.crockford.com/wrrrld/style.html">The Elements of Style</a>. It's a quick and easy read. To further improve your English, he also recommends you check William Zinsser's <a href="https://www.amazon.com/Writing-Well-Classic-Guide-Nonfiction/dp/0060891548/">On Writing Well</a>, another classic. You'll find a PDF <a href="http://www.brynmawr.edu/math/people/anmyers/ESem/on-writing-well.pdf">online</a>. <a href="http://www.isg.rhul.ac.uk/~slng/">Siaw-Lynn Ng</a> recommends <a href="https://www.amazon.co.uk/Line-How-Edit-Your-Writing/dp/0395393914">Line by Line - How to Edit Your Own Writing</a> by Claire Kehrwald Cook.
 </p>
@@ -335,23 +420,23 @@ Royal Holloway has a <a href="https://www.royalholloway.ac.uk/ecampus/cedas/home
 </p>
 
 <p>
-You may also have some success with automated tools such as <a href="https://app.grammarly.com/">Grammarly</a> or <a href="https://www.languagetool.org/">LanguageTool</a>, the latter is available as a plugin for Emacs, Sublime Text and LibreOffice.
+You may also have some success with automated tools such as <a href="https://app.grammarly.com">Grammarly</a>, <a href="http://typely.com">Typely</a>, <a href="https://www.languagetool.org">LanguageTool</a>, the latter is available as a plugin for Emacs, Sublime Text and LibreOffice.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-2">
-<h2 id="orgheadline10">Flexibility</h2>
-<div class="outline-text-2" id="text-orgheadline10">
+<div id="outline-container-orge9a6ab1" class="outline-2">
+<h2 id="orge9a6ab1">Flexibility</h2>
+<div class="outline-text-2" id="text-orge9a6ab1">
 <p>
 You may receive emails from me at night or during weekends, but that does not mean that I expect you to also work at those times.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11">Tools</h2>
-<div class="outline-text-2" id="text-orgheadline11">
+<div id="outline-container-org3e9a1a0" class="outline-2">
+<h2 id="org3e9a1a0">Tools</h2>
+<div class="outline-text-2" id="text-org3e9a1a0">
 <p>
 Feel free to use and propose other tools than the ones I propose. I neither care if you use emacs, vi, Sublime Text or MS Word nor which programming language, framework or libraries you use.
 </p>
@@ -362,9 +447,9 @@ I highly recommend that you use revision control such as to organise and backup 
 </div>
 </div>
 
-<div id="outline-container-orgheadline12" class="outline-2">
-<h2 id="orgheadline12">Coding</h2>
-<div class="outline-text-2" id="text-orgheadline12">
+<div id="outline-container-org41d9ddb" class="outline-2">
+<h2 id="org41d9ddb">Coding</h2>
+<div class="outline-text-2" id="text-org41d9ddb">
 <p>
 If you write code, it should not only work/compile, it should also follow the best practices and coding conventions for the specific language you're using. You should assume that your code will be published and be visible to your peers and future potential employers.
 </p>
@@ -379,12 +464,19 @@ To write code of better quality, use static code analysers and code formatters. 
 </div>
 </div>
 
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13">Formalities</h2>
-<div class="outline-text-2" id="text-orgheadline13">
+<div id="outline-container-org5a57d08" class="outline-2">
+<h2 id="org5a57d08">Formalities</h2>
+<div class="outline-text-2" id="text-org5a57d08">
 <p>
 The most straight-forward way to address me is just to use my first name, no “Mr.”, “Dr.” required. This is the general etiquette at Royal Holloway and British universities in general. Hence, I tend to address everybody by their first name as well. If that doesn’t work for you, let me know.
 </p>
+
+<div class="HTML">
+<p>
+
+</p>
+
+</div>
 </div>
 </div>
 </div>
