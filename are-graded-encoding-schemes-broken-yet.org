@@ -7,7 +7,7 @@
 
 * Introduction
 
-A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/malb.github.io/pulls][let us know]].
+A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please [[https://github.com/malb/malb.github.io/pulls][let us know]]. Note that you can check the last modification date of this website by consulting [[https://github.com/malb/malb.github.io/commits/master/are-graded-encoding-schemes-broken-yet.org][the corresponding GitHub repository]].
 
 We split the attacks into those directly on graded encoding schemes and those that affect indistinguishability obfuscation (iO) constructions. We consider an iO construction broken, if it is broken for *any* circuit. In contrast, Appendix A of cite:EPRINT:AJNSY16 — which partly informed this page — takes a much more optimistic view.
 
