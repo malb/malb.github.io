@@ -19,12 +19,16 @@ If you wish to contribute/correct a mistake, feel free to send a pull request to
 - Martin Albrecht
 - Alex Davidson
 
-* Graded Encoding Schemes
-** GGH13
+* Concrete Graded Encoding Schemes
+** GGH13 [[https://eprint.iacr.org/2012/610][paper]]
 
 #+BEGIN_QUOTE
 We describe plausible lattice-based constructions with properties that approximate the sought-after multilinear maps in hard-discrete-logarithm groups, and show an example application of such multi-linear maps that can be realized using our approximation. The security of our constructions relies on seemingly hard problems in ideal lattices, which can be viewed as extensions of the assumed hardness of the NTRU function. – cite:EC:GarGenHal13
 #+END_QUOTE
+
+*** BROKEN MDDH hardness
+
+Polynomial-time attack in cite:EC:HuJia16.
 
 *** BROKEN General
 
@@ -37,61 +41,73 @@ Attacks on GGH13 also apply to these follow-up constructions, which reduce param
 - cite:EC:LanSteSte14
 - cite:AC:ACLL15
 
-*** BROKEN Key Exchange
-
-Polynomial-time attack in cite:EC:HuJia16.
-
-** CLT13
+** CLT13 [[https://eprint.iacr.org/2013/183][paper]]
 
 #+BEGIN_QUOTE
 Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — cite:C:CorLepTib13
 #+END_QUOTE
 
+*** BROKEN MDDH hardness
+
+Polynomial-time attack in cite:EC:CHLRS15.
+
 *** BROKEN Follow-Up Construction
 
 cite:C:CorLepTib15 was put forward in response to the attack in cite:EC:CHLRS15, but was broken in polynomial time for all applications in cite:EPRINT:MinFou15 and cite:EPRINT:CheLeeRyu15.
 
-*** BROKEN Key Exchange
-
-Polynomial-time attack in cite:EC:CHLRS15.
-
-** GGH15
+** GGH15 [[https://eprint.iacr.org/2014/645][paper]]
 
 #+BEGIN_QUOTE
 Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — cite:TCC:GenGorHal15
 #+END_QUOTE
 
-*** BROKEN Key Exchange
+*** BROKEN MDDH hardness
 
 Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
+
+** MZ17 [[https://eprint.iacr.org/2017/946][paper]]
+
+#+BEGIN_QUOTE
+We devise the first weak multilinear map model for CLT13 multilinear maps (Coron et al., CRYPTO 2013) that captures all known classical polynomial-time attacks on the maps. We then show important applications of our model. First, we show that in our model, several existing obfuscation and order-revealing  encryption  schemes,  when  instantiated  with  CLT13  maps,  are  secure  against  known attacks  under  a  mild  algebraic  complexity  assumption  used  in  prior  work.  These  are  schemes  that are actually being implemented for experimentation. However, until our work, they had no rigorous justification for security. Next, we turn to building constant degree multilinear maps on top of CLT13 for which there are no known attacks . Precisely, we prove that our scheme achieves the ideal security notion for multilinear maps in our weak CLT13 model, under a much stronger variant of the algebraic complexity assumption used above. Our multilinear maps do not achieve the full functionality of multilinear maps as envisioned by Boneh and Silverberg (Contemporary Mathematics, 2003), but do allow for re-randomization and for encoding arbitrary plaintext elements 
+#+END_QUOTE
+
+*** STANDING MDDH hardness
+
+Not proven to be hard, no attacks as of yet.
+
+*** STANDING CLT13 zeroizing attacks
+
+Zeroizing attacks on CLT13 are not possible (in idealised model) based on the hardness of the 'Vector-input Branching Program Unannihilatibility Assumption'.
 
 * Indistinguishability Obfuscation
 ** GGH13
 
 *** Single-Input Branching Programs
 
-- cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:FOCS:GGHRSW13 break in cite:EPRINT:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
-- cite:EPRINT:GMMSSZ16 break in cite:EPRINT:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
+- cite:EC:BGKPS14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:EPRINT:AGIS14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:TCC:BraRot14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:EPRINT:BMSZ15 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:C:PasSetTel14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:FOCS:GGHRSW13 break in cite:EC:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
+- cite:EPRINT:GMMSSZ16 break in cite:EC:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
 
 *** Dual-Input Branching Programs
 
-- cite:EC:BGKPS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:AGIS14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:TCC:BraRot14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:BMSZ15 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:C:PasSetTel14 is broken in polynomial time in cite:EPRINT:MilSahZha16.
-- cite:EPRINT:GMMSSZ16 is *standing*.
+- cite:EC:BGKPS14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:EPRINT:AGIS14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:TCC:BraRot14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:EPRINT:BMSZ15 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:C:PasSetTel14 is broken in polynomial time in cite:C:MilSahZha16.
+- cite:TCC:GMMSSZ16 is *standing*.
 
 ** CLT13
 
 *** Single-Input Branching Programs
 
-All constructions were fixed in cite:EPRINT:FerRasSah16. Previously constructions of
+All constructions were fixed in cite:EPRINT:FerRasSah16. 
+
+Previously constructions of
 
 - cite:EC:BGKPS14 
 - cite:EPRINT:AGIS14
@@ -116,7 +132,11 @@ All dual-input constructions are currently standing and were unaffected by previ
 
 *** BROKEN Branching Programs
 
-- cite:FOCS:GGHRSW13 is broken in subexponential-time (classical) and quantum polynomial-time attack in cite:EPRINT:CheGenHal16 The "subexponential-time classical or quantum polynomial-time" part is used to recover the small multiplicative bundling scalars from the (possibly big representatives of the) ideals, to conduct the final mixed-input attack. The first few steps that are used to recover these ideals take classical polynomial time.
+- cite:FOCS:GGHRSW13 is broken in subexponential-time (classical) and quantum polynomial-time attack in cite:EC:CheGenHal16 The "subexponential-time classical or quantum polynomial-time" part is used to recover the small multiplicative bundling scalars from the (possibly big representatives of the) ideals, to conduct the final mixed-input attack. The first few steps that are used to recover these ideals take classical polynomial time.
+
+** MZ17
+
+No known constructions of obfuscators
 
 * Bibliography                                                          :ignore:
 
