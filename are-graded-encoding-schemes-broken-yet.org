@@ -63,7 +63,7 @@ Graded multilinear encodings have found extensive applications in cryptography r
 
 *** BROKEN MDDH hardness
 
-Polynomial-time attack in cite:EPRINT:Coron15 for GGH15.
+Polynomial-time attack in cite:C:CLLT16 for GGH15.
 
 ** MZ17 [[https://eprint.iacr.org/2017/946][paper]]
 
@@ -89,8 +89,8 @@ Zeroizing attacks on CLT13 are not possible (in idealised model) based on the ha
 - cite:TCC:BraRot14 is broken in polynomial time in cite:C:MilSahZha16.
 - cite:EPRINT:BMSZ15 is broken in polynomial time in cite:C:MilSahZha16.
 - cite:C:PasSetTel14 is broken in polynomial time in cite:C:MilSahZha16.
-- cite:FOCS:GGHRSW13 break in cite:EC:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
-- cite:EPRINT:GMMSSZ16 break in cite:EC:CheGenHal16 but *repaired* in cite:EPRINT:FerRasSah16
+- cite:FOCS:GGHRSW13 break in cite:EC:CheGenHal17 but *repaired* in cite:EPRINT:FerRasSah16
+- cite:EPRINT:GMMSSZ16 break in cite:EC:CheGenHal17 but *repaired* in cite:EPRINT:FerRasSah16
 
 *** Dual-Input Branching Programs
 
@@ -117,22 +117,22 @@ Previously constructions of
 - cite:FOCS:GGHRSW13
 - cite:EPRINT:GMMSSZ16
 
-were broken by cite:EPRINT:CorLeeLepTib16 and cite:C:CGHLMMRST15.
+were broken by cite:PKC:CLLT17 and cite:C:CGHLMM15.
 
 *** STANDING Dual-Input Branching Programs
 
-All dual-input constructions are currently standing and were unaffected by previous attacks in cite:EPRINT:CorLeeLepTib16.
+All dual-input constructions are currently standing and were unaffected by previous attacks in cite:PKC:CLLT17.
 
 *** BROKEN Direct
 
-- cite:EC:Zimmerman15 broken in polynomial time in cite:C:CGHLMMRST15.
-- cite:TCC:AppBra15 broken in polynomial time in cite:C:CGHLMMRST15.
+- cite:EC:Zimmerman15 broken in polynomial time in cite:C:CGHLMM15.
+- cite:TCC:AppBra15 broken in polynomial time in cite:C:CGHLMM15.
 
 ** GGH15 
 
 *** BROKEN Branching Programs
 
-- cite:FOCS:GGHRSW13 is broken in subexponential-time (classical) and quantum polynomial-time attack in cite:EC:CheGenHal16 The "subexponential-time classical or quantum polynomial-time" part is used to recover the small multiplicative bundling scalars from the (possibly big representatives of the) ideals, to conduct the final mixed-input attack. The first few steps that are used to recover these ideals take classical polynomial time.
+- cite:FOCS:GGHRSW13 is broken in subexponential-time (classical) and quantum polynomial-time attack in cite:EC:CheGenHal17 The "subexponential-time classical or quantum polynomial-time" part is used to recover the small multiplicative bundling scalars from the (possibly big representatives of the) ideals, to conduct the final mixed-input attack. The first few steps that are used to recover these ideals take classical polynomial time.
 
 ** MZ17
 
