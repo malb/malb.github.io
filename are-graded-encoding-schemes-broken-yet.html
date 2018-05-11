@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-01-19 Fri 15:01 -->
+<!-- 2018-05-11 Fri 09:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Are Graded Encoding Scheme broken yet?</title>
+<title>Are Graded Encoding Schemes broken yet?</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Martin R. Albrecht" />
 <style type="text/css">
@@ -197,7 +197,7 @@ ga('send', 'pageview');
 @licstart  The following is the entire license notice for the
 JavaScript code in this tag.
 
-Copyright (C) 2012-2017 Free Software Foundation, Inc.
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
 
 The JavaScript code in this tag is free software: you can
 redistribute it and/or modify it under the terms of the GNU
@@ -241,78 +241,78 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Are Graded Encoding Scheme broken yet?</h1>
+<h1 class="title">Are Graded Encoding Schemes broken yet?</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9f0a269">Introduction</a>
+<li><a href="#org65a9181">Introduction</a>
 <ul>
-<li><a href="#org693c40b">Contributing</a>
+<li><a href="#org6a5eb1a">Contributing</a>
 <ul>
-<li><a href="#orgb563d0b">Contributors</a></li>
+<li><a href="#orgbdeafd6">Contributors</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org08a47c9">Concrete Graded Encoding Schemes</a>
+<li><a href="#org7046752">Concrete Graded Encoding Schemes</a>
 <ul>
-<li><a href="#org4a792d0">GGH13 paper</a>
+<li><a href="#orgc677586">GGH13 paper</a>
 <ul>
-<li><a href="#org556993c"><span class="todo BROKEN">BROKEN</span> MDDH hardness</a></li>
-<li><a href="#org276a197"><span class="todo BROKEN">BROKEN</span> General</a></li>
-<li><a href="#org339d941"><span class="todo BROKEN">BROKEN</span> Follow-Up Constructions</a></li>
+<li><a href="#orgc69258c"><span class="todo BROKEN">BROKEN</span> MDDH hardness</a></li>
+<li><a href="#org52a6717"><span class="todo BROKEN">BROKEN</span> General</a></li>
+<li><a href="#org05f6fb2"><span class="todo BROKEN">BROKEN</span> Follow-Up Constructions</a></li>
 </ul>
 </li>
-<li><a href="#org4f976ac">CLT13 paper</a>
+<li><a href="#orgfb57977">CLT13 paper</a>
 <ul>
-<li><a href="#org727aac7"><span class="todo BROKEN">BROKEN</span> MDDH hardness</a></li>
-<li><a href="#org6c3e1c8"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
+<li><a href="#org1e3e4fb"><span class="todo BROKEN">BROKEN</span> MDDH hardness</a></li>
+<li><a href="#orgae64350"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</a></li>
 </ul>
 </li>
-<li><a href="#orge3e19c9">GGH15 paper</a>
+<li><a href="#orge047b3a">GGH15 paper</a>
 <ul>
-<li><a href="#orgc1f5f21"><span class="todo BROKEN">BROKEN</span> MDDH hardness</a></li>
+<li><a href="#org0c598f2"><span class="todo BROKEN">BROKEN</span> MDDH hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgab3727a">MZ17 paper</a>
+<li><a href="#org4530bbb">MZ17 paper</a>
 <ul>
-<li><a href="#org6452d28"><span class="done STANDING">STANDING</span> MDDH hardness</a></li>
-<li><a href="#org2dac813"><span class="done STANDING">STANDING</span> CLT13 zeroizing attacks</a></li>
+<li><a href="#org9137720"><span class="done STANDING">STANDING</span> MDDH hardness</a></li>
+<li><a href="#orgd828847"><span class="done STANDING">STANDING</span> CLT13 zeroizing attacks</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org97445bb">Indistinguishability Obfuscation</a>
+<li><a href="#org63b0a25">Indistinguishability Obfuscation</a>
 <ul>
-<li><a href="#orgaaa075e">GGH13</a>
+<li><a href="#org157a87d">GGH13</a>
 <ul>
-<li><a href="#org6aab228">Single-Input Branching Programs</a></li>
-<li><a href="#orgaab4996">Dual-Input Branching Programs</a></li>
+<li><a href="#org235196e">Single-Input Branching Programs</a></li>
+<li><a href="#orge34db2b">Dual-Input Branching Programs</a></li>
 </ul>
 </li>
-<li><a href="#org460c021">CLT13</a>
+<li><a href="#org2b96264">CLT13</a>
 <ul>
-<li><a href="#org06c2c25">Single-Input Branching Programs</a></li>
-<li><a href="#orgd279db1"><span class="done STANDING">STANDING</span> Dual-Input Branching Programs</a></li>
-<li><a href="#orgc8facbd"><span class="todo BROKEN">BROKEN</span> Direct</a></li>
+<li><a href="#orgdb41a3e">Single-Input Branching Programs</a></li>
+<li><a href="#org3cb1156"><span class="done STANDING">STANDING</span> Dual-Input Branching Programs</a></li>
+<li><a href="#orgca380e6"><span class="todo BROKEN">BROKEN</span> Direct</a></li>
 </ul>
 </li>
-<li><a href="#orgc500c91">GGH15</a>
+<li><a href="#org0a973af">GGH15</a>
 <ul>
-<li><a href="#org84fa960"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
+<li><a href="#orgbe9c8c7"><span class="todo BROKEN">BROKEN</span> Branching Programs</a></li>
 </ul>
 </li>
-<li><a href="#org5826365">MZ17</a></li>
+<li><a href="#org5199c2b">MZ17</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org9f0a269" class="outline-2">
-<h2 id="org9f0a269">Introduction</h2>
-<div class="outline-text-2" id="text-org9f0a269">
+<div id="outline-container-org65a9181" class="outline-2">
+<h2 id="org65a9181">Introduction</h2>
+<div class="outline-text-2" id="text-org65a9181">
 <p>
 A quick overview of attacks on Graded Encoding Schemes. If you find anything wrong, misleading or outdated, please <a href="https://github.com/malb/malb.github.io/pulls">let us know</a>. Note that you can check the last modification date of this website by consulting <a href="https://github.com/malb/malb.github.io/commits/master/are-graded-encoding-schemes-broken-yet.org">the corresponding GitHub repository</a>.
 </p>
@@ -322,17 +322,17 @@ We split the attacks into those directly on graded encoding schemes and those th
 </p>
 </div>
 
-<div id="outline-container-org693c40b" class="outline-3">
-<h3 id="org693c40b">Contributing</h3>
-<div class="outline-text-3" id="text-org693c40b">
+<div id="outline-container-org6a5eb1a" class="outline-3">
+<h3 id="org6a5eb1a">Contributing</h3>
+<div class="outline-text-3" id="text-org6a5eb1a">
 <p>
 If you wish to contribute/correct a mistake, feel free to send a pull request to <a href="https://github.com/malb/malb.github.io">malb/malb.github.io</a>.
 </p>
 </div>
 
-<div id="outline-container-orgb563d0b" class="outline-4">
-<h4 id="orgb563d0b">Contributors</h4>
-<div class="outline-text-4" id="text-orgb563d0b">
+<div id="outline-container-orgbdeafd6" class="outline-4">
+<h4 id="orgbdeafd6">Contributors</h4>
+<div class="outline-text-4" id="text-orgbdeafd6">
 <ul class="org-ul">
 <li>Martin Albrecht</li>
 <li>Alex Davidson</li>
@@ -342,13 +342,13 @@ If you wish to contribute/correct a mistake, feel free to send a pull request to
 </div>
 </div>
 
-<div id="outline-container-org08a47c9" class="outline-2">
-<h2 id="org08a47c9">Concrete Graded Encoding Schemes</h2>
-<div class="outline-text-2" id="text-org08a47c9">
+<div id="outline-container-org7046752" class="outline-2">
+<h2 id="org7046752">Concrete Graded Encoding Schemes</h2>
+<div class="outline-text-2" id="text-org7046752">
 </div>
-<div id="outline-container-org4a792d0" class="outline-3">
-<h3 id="org4a792d0">GGH13 <a href="https://eprint.iacr.org/2012/610">paper</a></h3>
-<div class="outline-text-3" id="text-org4a792d0">
+<div id="outline-container-orgc677586" class="outline-3">
+<h3 id="orgc677586">GGH13 <a href="https://eprint.iacr.org/2012/610">paper</a></h3>
+<div class="outline-text-3" id="text-orgc677586">
 <blockquote>
 <p>
 We describe plausible lattice-based constructions with properties that approximate the sought-after multilinear maps in hard-discrete-logarithm groups, and show an example application of such multi-linear maps that can be realized using our approximation. The security of our constructions relies on seemingly hard problems in ideal lattices, which can be viewed as extensions of the assumed hardness of the NTRU function. – <a class='org-ref-reference' href="#EC:GarGenHal13">EC:GarGenHal13</a>
@@ -356,27 +356,27 @@ We describe plausible lattice-based constructions with properties that approxima
 </blockquote>
 </div>
 
-<div id="outline-container-org556993c" class="outline-4">
-<h4 id="org556993c"><span class="todo BROKEN">BROKEN</span> MDDH hardness</h4>
-<div class="outline-text-4" id="text-org556993c">
+<div id="outline-container-orgc69258c" class="outline-4">
+<h4 id="orgc69258c"><span class="todo BROKEN">BROKEN</span> MDDH hardness</h4>
+<div class="outline-text-4" id="text-orgc69258c">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#EC:HuJia16">EC:HuJia16</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org276a197" class="outline-4">
-<h4 id="org276a197"><span class="todo BROKEN">BROKEN</span> General</h4>
-<div class="outline-text-4" id="text-org276a197">
+<div id="outline-container-org52a6717" class="outline-4">
+<h4 id="org52a6717"><span class="todo BROKEN">BROKEN</span> General</h4>
+<div class="outline-text-4" id="text-org52a6717">
 <p>
 Subexponential classical and quantum polynomial time attack without encodings of zero or using the zero-testing parameter in <a class='org-ref-reference' href="#EPRINT:AlbBaiDuc16">EPRINT:AlbBaiDuc16</a> for large levels of multilinearity κ. Polynomial-time attack without low-level encodings of zero for large levels of multilinearity κ in <a class='org-ref-reference' href="#EPRINT:CheJeoLee16">EPRINT:CheJeoLee16</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org339d941" class="outline-4">
-<h4 id="org339d941"><span class="todo BROKEN">BROKEN</span> Follow-Up Constructions</h4>
-<div class="outline-text-4" id="text-org339d941">
+<div id="outline-container-org05f6fb2" class="outline-4">
+<h4 id="org05f6fb2"><span class="todo BROKEN">BROKEN</span> Follow-Up Constructions</h4>
+<div class="outline-text-4" id="text-org05f6fb2">
 <p>
 Attacks on GGH13 also apply to these follow-up constructions, which reduce parameter sizes.
 </p>
@@ -389,9 +389,9 @@ Attacks on GGH13 also apply to these follow-up constructions, which reduce param
 </div>
 </div>
 
-<div id="outline-container-org4f976ac" class="outline-3">
-<h3 id="org4f976ac">CLT13 <a href="https://eprint.iacr.org/2013/183">paper</a></h3>
-<div class="outline-text-3" id="text-org4f976ac">
+<div id="outline-container-orgfb57977" class="outline-3">
+<h3 id="orgfb57977">CLT13 <a href="https://eprint.iacr.org/2013/183">paper</a></h3>
+<div class="outline-text-3" id="text-orgfb57977">
 <blockquote>
 <p>
 Extending bilinear elliptic curve pairings to multilinear maps is a long-standing open problem. The first plausible construction of such multilinear maps has recently been described by Garg, Gentry and Halevi, based on ideal lattices. In this paper we describe a different construction that works over the integers instead of ideal lattices, similar to the DGHV fully homomorphic encryption scheme. We also describe a different technique for proving the full randomization of encodings: instead of Gaussian linear sums, we apply the classical leftover hash lemma over a quotient lattice. We show that our construction is relatively practical: for reasonable security parameters a one-round 7-party Diffie-Hellman key exchange requires less than 40 seconds per party. Moreover, in contrast with previous work, multilinear analogues of useful, base group assumptions like DLIN appear to hold in our setting. — <a class='org-ref-reference' href="#C:CorLepTib13">C:CorLepTib13</a>
@@ -399,18 +399,18 @@ Extending bilinear elliptic curve pairings to multilinear maps is a long-standin
 </blockquote>
 </div>
 
-<div id="outline-container-org727aac7" class="outline-4">
-<h4 id="org727aac7"><span class="todo BROKEN">BROKEN</span> MDDH hardness</h4>
-<div class="outline-text-4" id="text-org727aac7">
+<div id="outline-container-org1e3e4fb" class="outline-4">
+<h4 id="org1e3e4fb"><span class="todo BROKEN">BROKEN</span> MDDH hardness</h4>
+<div class="outline-text-4" id="text-org1e3e4fb">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHLRS15</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6c3e1c8" class="outline-4">
-<h4 id="org6c3e1c8"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</h4>
-<div class="outline-text-4" id="text-org6c3e1c8">
+<div id="outline-container-orgae64350" class="outline-4">
+<h4 id="orgae64350"><span class="todo BROKEN">BROKEN</span> Follow-Up Construction</h4>
+<div class="outline-text-4" id="text-orgae64350">
 <p>
 <a class='org-ref-reference' href="#C:CorLepTib15">C:CorLepTib15</a> was put forward in response to the attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHLRS15</a>, but was broken in polynomial time for all applications in <a class='org-ref-reference' href="#EPRINT:MinFou15">EPRINT:MinFou15</a> and <a class='org-ref-reference' href="#EPRINT:CheLeeRyu15">EPRINT:CheLeeRyu15</a>.
 </p>
@@ -418,9 +418,9 @@ Polynomial-time attack in <a class='org-ref-reference' href="#EC:CHLRS15">EC:CHL
 </div>
 </div>
 
-<div id="outline-container-orge3e19c9" class="outline-3">
-<h3 id="orge3e19c9">GGH15 <a href="https://eprint.iacr.org/2014/645">paper</a></h3>
-<div class="outline-text-3" id="text-orge3e19c9">
+<div id="outline-container-orge047b3a" class="outline-3">
+<h3 id="orge047b3a">GGH15 <a href="https://eprint.iacr.org/2014/645">paper</a></h3>
+<div class="outline-text-3" id="text-orge047b3a">
 <blockquote>
 <p>
 Graded multilinear encodings have found extensive applications in cryptography ranging from non-interactive key exchange protocols, to broadcast and attribute-based encryption, and even to software obfuscation. Despite seemingly unlimited applicability, essentially only two candidate constructions are known (GGH and CLT). In this work, we describe a new graphinduced multilinear encoding scheme from lattices. In a graph-induced multilinear encoding scheme the arithmetic operations that are allowed are restricted through an explicitly defined directed graph (somewhat similar to the “asymmetric variant” of previous schemes). Our construction encodes Learning With Errors (LWE) samples in short square matrices of higher dimensions. Addition and multiplication of the encodings corresponds naturally to addition and multiplication of the LWE secrets. — <a class='org-ref-reference' href="#TCC:GenGorHal15">TCC:GenGorHal15</a>
@@ -428,9 +428,9 @@ Graded multilinear encodings have found extensive applications in cryptography r
 </blockquote>
 </div>
 
-<div id="outline-container-orgc1f5f21" class="outline-4">
-<h4 id="orgc1f5f21"><span class="todo BROKEN">BROKEN</span> MDDH hardness</h4>
-<div class="outline-text-4" id="text-orgc1f5f21">
+<div id="outline-container-org0c598f2" class="outline-4">
+<h4 id="org0c598f2"><span class="todo BROKEN">BROKEN</span> MDDH hardness</h4>
+<div class="outline-text-4" id="text-org0c598f2">
 <p>
 Polynomial-time attack in <a class='org-ref-reference' href="#C:CLLT16">C:CLLT16</a> for GGH15.
 </p>
@@ -438,9 +438,9 @@ Polynomial-time attack in <a class='org-ref-reference' href="#C:CLLT16">C:CLLT16
 </div>
 </div>
 
-<div id="outline-container-orgab3727a" class="outline-3">
-<h3 id="orgab3727a">MZ17 <a href="https://eprint.iacr.org/2017/946">paper</a></h3>
-<div class="outline-text-3" id="text-orgab3727a">
+<div id="outline-container-org4530bbb" class="outline-3">
+<h3 id="org4530bbb">MZ17 <a href="https://eprint.iacr.org/2017/946">paper</a></h3>
+<div class="outline-text-3" id="text-org4530bbb">
 <blockquote>
 <p>
 We devise the first weak multilinear map model for CLT13 multilinear maps (Coron et al., CRYPTO 2013) that captures all known classical polynomial-time attacks on the maps. We then show important applications of our model. First, we show that in our model, several existing obfuscation and order-revealing  encryption  schemes,  when  instantiated  with  CLT13  maps,  are  secure  against  known attacks  under  a  mild  algebraic  complexity  assumption  used  in  prior  work.  These  are  schemes  that are actually being implemented for experimentation. However, until our work, they had no rigorous justification for security. Next, we turn to building constant degree multilinear maps on top of CLT13 for which there are no known attacks . Precisely, we prove that our scheme achieves the ideal security notion for multilinear maps in our weak CLT13 model, under a much stronger variant of the algebraic complexity assumption used above. Our multilinear maps do not achieve the full functionality of multilinear maps as envisioned by Boneh and Silverberg (Contemporary Mathematics, 2003), but do allow for re-randomization and for encoding arbitrary plaintext elements 
@@ -448,18 +448,18 @@ We devise the first weak multilinear map model for CLT13 multilinear maps (Coron
 </blockquote>
 </div>
 
-<div id="outline-container-org6452d28" class="outline-4">
-<h4 id="org6452d28"><span class="done STANDING">STANDING</span> MDDH hardness</h4>
-<div class="outline-text-4" id="text-org6452d28">
+<div id="outline-container-org9137720" class="outline-4">
+<h4 id="org9137720"><span class="done STANDING">STANDING</span> MDDH hardness</h4>
+<div class="outline-text-4" id="text-org9137720">
 <p>
 Not proven to be hard, no attacks as of yet.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org2dac813" class="outline-4">
-<h4 id="org2dac813"><span class="done STANDING">STANDING</span> CLT13 zeroizing attacks</h4>
-<div class="outline-text-4" id="text-org2dac813">
+<div id="outline-container-orgd828847" class="outline-4">
+<h4 id="orgd828847"><span class="done STANDING">STANDING</span> CLT13 zeroizing attacks</h4>
+<div class="outline-text-4" id="text-orgd828847">
 <p>
 Zeroizing attacks on CLT13 are not possible (in idealised model) based on the hardness of the 'Vector-input Branching Program Unannihilatibility Assumption'.
 </p>
@@ -468,17 +468,17 @@ Zeroizing attacks on CLT13 are not possible (in idealised model) based on the ha
 </div>
 </div>
 
-<div id="outline-container-org97445bb" class="outline-2">
-<h2 id="org97445bb">Indistinguishability Obfuscation</h2>
-<div class="outline-text-2" id="text-org97445bb">
+<div id="outline-container-org63b0a25" class="outline-2">
+<h2 id="org63b0a25">Indistinguishability Obfuscation</h2>
+<div class="outline-text-2" id="text-org63b0a25">
 </div>
-<div id="outline-container-orgaaa075e" class="outline-3">
-<h3 id="orgaaa075e">GGH13</h3>
-<div class="outline-text-3" id="text-orgaaa075e">
+<div id="outline-container-org157a87d" class="outline-3">
+<h3 id="org157a87d">GGH13</h3>
+<div class="outline-text-3" id="text-org157a87d">
 </div>
-<div id="outline-container-org6aab228" class="outline-4">
-<h4 id="org6aab228">Single-Input Branching Programs</h4>
-<div class="outline-text-4" id="text-org6aab228">
+<div id="outline-container-org235196e" class="outline-4">
+<h4 id="org235196e">Single-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-org235196e">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#C:MilSahZha16">C:MilSahZha16</a>.</li>
 <li><a class='org-ref-reference' href="#EPRINT:AGIS14">EPRINT:AGIS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#C:MilSahZha16">C:MilSahZha16</a>.</li>
@@ -491,9 +491,9 @@ Zeroizing attacks on CLT13 are not possible (in idealised model) based on the ha
 </div>
 </div>
 
-<div id="outline-container-orgaab4996" class="outline-4">
-<h4 id="orgaab4996">Dual-Input Branching Programs</h4>
-<div class="outline-text-4" id="text-orgaab4996">
+<div id="outline-container-orge34db2b" class="outline-4">
+<h4 id="orge34db2b">Dual-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-orge34db2b">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:BGKPS14">EC:BGKPS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#C:MilSahZha16">C:MilSahZha16</a>.</li>
 <li><a class='org-ref-reference' href="#EPRINT:AGIS14">EPRINT:AGIS14</a> is broken in polynomial time in <a class='org-ref-reference' href="#C:MilSahZha16">C:MilSahZha16</a>.</li>
@@ -506,13 +506,13 @@ Zeroizing attacks on CLT13 are not possible (in idealised model) based on the ha
 </div>
 </div>
 
-<div id="outline-container-org460c021" class="outline-3">
-<h3 id="org460c021">CLT13</h3>
-<div class="outline-text-3" id="text-org460c021">
+<div id="outline-container-org2b96264" class="outline-3">
+<h3 id="org2b96264">CLT13</h3>
+<div class="outline-text-3" id="text-org2b96264">
 </div>
-<div id="outline-container-org06c2c25" class="outline-4">
-<h4 id="org06c2c25">Single-Input Branching Programs</h4>
-<div class="outline-text-4" id="text-org06c2c25">
+<div id="outline-container-orgdb41a3e" class="outline-4">
+<h4 id="orgdb41a3e">Single-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-orgdb41a3e">
 <p>
 All constructions were fixed in <a class='org-ref-reference' href="#EPRINT:FerRasSah16">EPRINT:FerRasSah16</a>. 
 </p>
@@ -537,18 +537,18 @@ were broken by <a class='org-ref-reference' href="#PKC:CLLT17">PKC:CLLT17</a> an
 </div>
 </div>
 
-<div id="outline-container-orgd279db1" class="outline-4">
-<h4 id="orgd279db1"><span class="done STANDING">STANDING</span> Dual-Input Branching Programs</h4>
-<div class="outline-text-4" id="text-orgd279db1">
+<div id="outline-container-org3cb1156" class="outline-4">
+<h4 id="org3cb1156"><span class="done STANDING">STANDING</span> Dual-Input Branching Programs</h4>
+<div class="outline-text-4" id="text-org3cb1156">
 <p>
 All dual-input constructions are currently standing and were unaffected by previous attacks in <a class='org-ref-reference' href="#PKC:CLLT17">PKC:CLLT17</a>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc8facbd" class="outline-4">
-<h4 id="orgc8facbd"><span class="todo BROKEN">BROKEN</span> Direct</h4>
-<div class="outline-text-4" id="text-orgc8facbd">
+<div id="outline-container-orgca380e6" class="outline-4">
+<h4 id="orgca380e6"><span class="todo BROKEN">BROKEN</span> Direct</h4>
+<div class="outline-text-4" id="text-orgca380e6">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#EC:Zimmerman15">EC:Zimmerman15</a> broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMM15">C:CGHLMM15</a>.</li>
 <li><a class='org-ref-reference' href="#TCC:AppBra15">TCC:AppBra15</a> broken in polynomial time in <a class='org-ref-reference' href="#C:CGHLMM15">C:CGHLMM15</a>.</li>
@@ -557,13 +557,13 @@ All dual-input constructions are currently standing and were unaffected by previ
 </div>
 </div>
 
-<div id="outline-container-orgc500c91" class="outline-3">
-<h3 id="orgc500c91">GGH15</h3>
-<div class="outline-text-3" id="text-orgc500c91">
+<div id="outline-container-org0a973af" class="outline-3">
+<h3 id="org0a973af">GGH15</h3>
+<div class="outline-text-3" id="text-org0a973af">
 </div>
-<div id="outline-container-org84fa960" class="outline-4">
-<h4 id="org84fa960"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
-<div class="outline-text-4" id="text-org84fa960">
+<div id="outline-container-orgbe9c8c7" class="outline-4">
+<h4 id="orgbe9c8c7"><span class="todo BROKEN">BROKEN</span> Branching Programs</h4>
+<div class="outline-text-4" id="text-orgbe9c8c7">
 <ul class="org-ul">
 <li><a class='org-ref-reference' href="#FOCS:GGHRSW13">FOCS:GGHRSW13</a> is broken in subexponential-time (classical) and quantum polynomial-time attack in <a class='org-ref-reference' href="#EC:CheGenHal17">EC:CheGenHal17</a> The "subexponential-time classical or quantum polynomial-time" part is used to recover the small multiplicative bundling scalars from the (possibly big representatives of the) ideals, to conduct the final mixed-input attack. The first few steps that are used to recover these ideals take classical polynomial time.</li>
 </ul>
@@ -571,9 +571,9 @@ All dual-input constructions are currently standing and were unaffected by previ
 </div>
 </div>
 
-<div id="outline-container-org5826365" class="outline-3">
-<h3 id="org5826365">MZ17</h3>
-<div class="outline-text-3" id="text-org5826365">
+<div id="outline-container-org5199c2b" class="outline-3">
+<h3 id="org5199c2b">MZ17</h3>
+<div class="outline-text-3" id="text-org5199c2b">
 <p>
 No known constructions of obfuscators
 </p>
@@ -583,37 +583,44 @@ No known constructions of obfuscators
 
 <p>
 <h1 class='org-ref-bib-h1'>Bibliography</h1>
-<ul class='org-ref-bib'><li><a id="EPRINT:AJNSY16">[EPRINT:AJNSY16]</a> Prabhanjan Ananth, Aayush Jain, Moni Naor, , Amit Sahai & Eylon Yogev, Universal Obfuscation and Witness Encryption:  Boosting Correctness and Combining Security, <i></i>, <b></b>, (2016).</li>
-<li><a id="EC:GarGenHal13">[EC:GarGenHal13]</a> Sanjam Garg, Craig Gentry & Shai Halevi, Candidate Multilinear Maps from Ideal Lattices, 1-17, in in: EUROCRYPT~2013, edited by Thomas Johansson & Phong Nguyen, Springer, Heidelberg (2013)</li>
-<li><a id="EC:HuJia16">[EC:HuJia16]</a> Yupu Hu & Huiwen Jia, Cryptanalysis of GGH Map, 537-565, in in: EUROCRYPT~2016, Part~I, edited by Marc Fischlin & Jean-S\'ebastien Coron, Springer, Heidelberg (2016)</li>
-<li><a id="EPRINT:AlbBaiDuc16">[EPRINT:AlbBaiDuc16]</a> Martin Albrecht, Shi Bai & L\'eo Ducas, A subfield lattice attack on overstretched NTRU  assumptions: Cryptanalysis of some FHE and Graded  Encoding Schemes, <i></i>, <b></b>, (2016).</li>
-<li><a id="EPRINT:CheJeoLee16">[EPRINT:CheJeoLee16]</a> Jung Hee Cheon, Jinhyuck Jeong & Changmin Lee, An Algorithm for NTRU Problems and Cryptanalysis of  the GGH Multilinear Map without a Low Level  Encoding of Zero, <i></i>, <b></b>, (2016).</li>
-<li><a id="EC:LanSteSte14">[EC:LanSteSte14]</a> Adeline Langlois, Damien Stehl\'e, & Ron Steinfeld, GGHLite: More Efficient Multilinear Maps from Ideal  Lattices, 239-256, in in: EUROCRYPT~2014, edited by Phong Nguyen & Elisabeth Oswald, Springer, Heidelberg (2014)</li>
-<li><a id="AC:ACLL15">[AC:ACLL15]</a> Martin Albrecht, Catalin Cocis, , Fabien Laguillaumie & Adeline Langlois, Implementing Candidate Graded Encoding Schemes from  Ideal Lattices, 752-775, in in: ASIACRYPT~2015, Part~II, edited by Tetsu Iwata & Jung Hee Cheon, Springer, Heidelberg (2015)</li>
-<li><a id="C:CorLepTib13">[C:CorLepTib13]</a> Jean-S\'ebastien Coron, Tancr\`ede Lepoint, & Mehdi Tibouchi, Practical Multilinear Maps over the Integers, 476-493, in in: CRYPTO~2013, Part~I, edited by Ran Canetti & Juan Garay, Springer, Heidelberg (2013)</li>
-<li><a id="EC:CHLRS15">[EC:CHLRS15]</a> Jung Hee Cheon, Kyoohyung Han, Changmin Lee, , Hansol Ryu & Damien Stehl\'e, Cryptanalysis of the Multilinear Map over the  Integers, 3-12, in in: EUROCRYPT~2015, Part~I, edited by Elisabeth Oswald & Marc Fischlin, Springer, Heidelberg (2015)</li>
-<li><a id="C:CorLepTib15">[C:CorLepTib15]</a> Jean-S\'ebastien Coron, Tancr\`ede Lepoint, & Mehdi Tibouchi, New Multilinear Maps Over the Integers, 267-286, in in: CRYPTO~2015, Part~I, edited by Rosario Gennaro & Matthew Robshaw, Springer, Heidelberg (2015)</li>
-<li><a id="EPRINT:MinFou15">[EPRINT:MinFou15]</a> Brice Minaud & Pierre-Alain Fouque, Cryptanalysis of the New Multilinear Map over the  Integers, <i></i>, <b></b>, (2015).</li>
-<li><a id="EPRINT:CheLeeRyu15">[EPRINT:CheLeeRyu15]</a> Jung Hee Cheon, Changmin Lee & Hansol Ryu, Cryptanalysis of the New CLT Multilinear Maps, <i></i>, <b></b>, (2015).</li>
-<li><a id="TCC:GenGorHal15">[TCC:GenGorHal15]</a> Craig Gentry, Sergey Gorbunov & Shai Halevi, Graph-Induced Multilinear Maps from Lattices, 498-527, in in: TCC~2015, Part~II, edited by Yevgeniy Dodis & Jesper Buus Nielsen, Springer, Heidelberg (2015)</li>
-<li><a id="C:CLLT16">[C:CLLT16]</a> Jean-S\'ebastien Coron, Moon Sung Lee, , Tancr\`ede Lepoint & Mehdi Tibouchi, Cryptanalysis of GGH15 Multilinear Maps, 607-628, in in: CRYPTO~2016, Part~II, edited by Matthew Robshaw & Jonathan Katz, Springer, Heidelberg (2016)</li>
-<li><a id="EC:BGKPS14">[EC:BGKPS14]</a> Boaz Barak, Sanjam Garg, Yael Tauman Kalai, , Omer Paneth & Amit Sahai, Protecting Obfuscation against Algebraic Attacks, 221-238, in in: EUROCRYPT~2014, edited by Phong Nguyen & Elisabeth Oswald, Springer, Heidelberg (2014)</li>
-<li><a id="C:MilSahZha16">[C:MilSahZha16]</a> Eric Miles, Amit Sahai & Mark Zhandry, Annihilation Attacks for Multilinear Maps:  Cryptanalysis of Indistinguishability Obfuscation  over GGH13, 629-658, in in: CRYPTO~2016, Part~II, edited by Matthew Robshaw & Jonathan Katz, Springer, Heidelberg (2016)</li>
-<li><a id="EPRINT:AGIS14">[EPRINT:AGIS14]</a> Prabhanjan Ananth, Divya Gupta, Yuval Ishai, & Amit Sahai, Optimizing Obfuscation: Avoiding Barrington's  Theorem, <i></i>, <b></b>, (2014).</li>
-<li><a id="TCC:BraRot14">[TCC:BraRot14]</a> Zvika Brakerski & Guy Rothblum, Virtual Black-Box Obfuscation for All Circuits via  Generic Graded Encoding, 1-25, in in: TCC~2014, edited by Yehuda Lindell, Springer, Heidelberg (2014)</li>
-<li><a id="EPRINT:BMSZ15">[EPRINT:BMSZ15]</a> Saikrishna Badrinarayanan, Eric Miles, , Amit Sahai & Mark Zhandry, Post-Zeroizing Obfuscation: The case of Evasive  Circuits, <i></i>, <b></b>, (2015).</li>
-<li><a id="C:PasSetTel14">[C:PasSetTel14]</a> Rafael Pass, Karn Seth & Sidharth Telang, Indistinguishability Obfuscation from  Semantically-Secure Multilinear Encodings, 500-517, in in: CRYPTO~2014, Part~I, edited by Juan Garay & Rosario Gennaro, Springer, Heidelberg (2014)</li>
-<li><a id="FOCS:GGHRSW13">[FOCS:GGHRSW13]</a> Sanjam Garg, Craig Gentry, Shai Halevi, , Mariana Raykova, Amit Sahai & Brent Waters, Candidate Indistinguishability Obfuscation and  Functional Encryption for all Circuits, 40-49, in in: 54th FOCS, edited by IEEE Computer Society Press (2013)</li>
-<li><a id="EC:CheGenHal17">[EC:CheGenHal17]</a> Yilei Chen, Craig Gentry & Shai Halevi, Cryptanalyses of Candidate Branching Program  Obfuscators, 278-307, in in: EUROCRYPT~2017, Part~II, edited by Jean-S\'ebastien Coron & Jesper Buus Nielsen, Springer, Heidelberg (2017)</li>
-<li><a id="EPRINT:FerRasSah16">[EPRINT:FerRasSah16]</a> Rex Fernando, Peter Rasmussen, & Amit Sahai, Preventing CLT Attacks on Obfuscation with Linear  Overhead, <i></i>, <b></b>, (2016).</li>
-<li><a id="EPRINT:GMMSSZ16">[EPRINT:GMMSSZ16]</a> Sanjam Garg, Eric Miles, Pratyay Mukherjee, , Amit Sahai, Akshayaram Srinivasan, & Mark Zhandry, Secure Obfuscation in a Weak Multilinear Map Model, <i></i>, <b></b>, (2016).</li>
-<li><a id="TCC:GMMSSZ16">[TCC:GMMSSZ16]</a> Sanjam Garg, Eric Miles, Pratyay Mukherjee, , Amit Sahai, Akshayaram Srinivasan, & Mark Zhandry, Secure Obfuscation in a Weak Multilinear Map Model, 241-268, in in: TCC~2016-B, Part~II, edited by Martin Hirt & Adam Smith, Springer, Heidelberg (2016)</li>
-<li><a id="PKC:CLLT17">[PKC:CLLT17]</a> Jean-S\'ebastien Coron, Moon Sung Lee, , Tancr\`ede Lepoint & Mehdi Tibouchi, Zeroizing Attacks on Indistinguishability Obfuscation  over CLT13, 41-58, in in: PKC~2017, Part~I, edited by Serge Fehr, Springer, Heidelberg (2017)</li>
-<li><a id="C:CGHLMM15">[C:CGHLMM15]</a> Jean-S\'ebastien Coron, Craig Gentry, , Shai Halevi, Tancr\`ede Lepoint, , Hemanta Maji, Eric Miles, Mariana Raykova, , Amit Sahai & Mehdi Tibouchi, Zeroizing Without Low-Level Zeroes: New MMAP  Attacks and their Limitations, 247-266, in in: CRYPTO~2015, Part~I, edited by Rosario Gennaro & Matthew Robshaw, Springer, Heidelberg (2015)</li>
-<li><a id="EC:Zimmerman15">[EC:Zimmerman15]</a> Joe Zimmerman, How to Obfuscate Programs Directly, 439-467, in in: EUROCRYPT~2015, Part~II, edited by Elisabeth Oswald & Marc Fischlin, Springer, Heidelberg (2015)</li>
-<li><a id="TCC:AppBra15">[TCC:AppBra15]</a> Benny Applebaum & Zvika Brakerski, Obfuscating Circuits via Composite-Order Graded  Encoding, 528-556, in in: TCC~2015, Part~II, edited by Yevgeniy Dodis & Jesper Buus Nielsen, Springer, Heidelberg (2015)</li>
+<ul class='org-ref-bib'><li><a id="EPRINT:AJNSY16">[EPRINT:AJNSY16]</a> <a name="EPRINT:AJNSY16"></a>Prabhanjan Ananth, Aayush Jain, Moni Naor, , Amit Sahai & Eylon Yogev, Universal Obfuscation and Witness Encryption:  Boosting Correctness and Combining Security, <i></i>, <b></b>, (2016).</li>
+<li><a id="EC:GarGenHal13">[EC:GarGenHal13]</a> <a name="EC:GarGenHal13"></a>Sanjam Garg, Craig Gentry & Shai Halevi, Candidate Multilinear Maps from Ideal Lattices, 1-17, in in: EUROCRYPT~2013, edited by Thomas Johansson & Phong Nguyen, Springer, Heidelberg (2013)</li>
+<li><a id="EC:HuJia16">[EC:HuJia16]</a> <a name="EC:HuJia16"></a>Yupu Hu & Huiwen Jia, Cryptanalysis of GGH Map, 537-565, in in: EUROCRYPT~2016, Part~I, edited by Marc Fischlin & Jean-S\'ebastien Coron, Springer, Heidelberg (2016)</li>
+<li><a id="EPRINT:AlbBaiDuc16">[EPRINT:AlbBaiDuc16]</a> <a name="EPRINT:AlbBaiDuc16"></a>Martin Albrecht, Shi Bai & L\'eo Ducas, A subfield lattice attack on overstretched NTRU  assumptions: Cryptanalysis of some FHE and Graded  Encoding Schemes, <i></i>, <b></b>, (2016).</li>
+<li><a id="EPRINT:CheJeoLee16">[EPRINT:CheJeoLee16]</a> <a name="EPRINT:CheJeoLee16"></a>Jung Hee Cheon, Jinhyuck Jeong & Changmin Lee, An Algorithm for NTRU Problems and Cryptanalysis of  the GGH Multilinear Map without a Low Level  Encoding of Zero, <i></i>, <b></b>, (2016).</li>
+<li><a id="EC:LanSteSte14">[EC:LanSteSte14]</a> <a name="EC:LanSteSte14"></a>Adeline Langlois, Damien Stehl\'e, & Ron Steinfeld, GGHLite: More Efficient Multilinear Maps from Ideal  Lattices, 239-256, in in: EUROCRYPT~2014, edited by Phong Nguyen & Elisabeth Oswald, Springer, Heidelberg (2014)</li>
+<li><a id="AC:ACLL15">[AC:ACLL15]</a> <a name="AC:ACLL15"></a>Martin Albrecht, Catalin Cocis, , Fabien Laguillaumie & Adeline Langlois, Implementing Candidate Graded Encoding Schemes from  Ideal Lattices, 752-775, in in: ASIACRYPT~2015, Part~II, edited by Tetsu Iwata & Jung Hee Cheon, Springer, Heidelberg (2015)</li>
+<li><a id="C:CorLepTib13">[C:CorLepTib13]</a> <a name="C:CorLepTib13"></a>Jean-S\'ebastien Coron, Tancr\`ede Lepoint, & Mehdi Tibouchi, Practical Multilinear Maps over the Integers, 476-493, in in: CRYPTO~2013, Part~I, edited by Ran Canetti & Juan Garay, Springer, Heidelberg (2013)</li>
+<li><a id="EC:CHLRS15">[EC:CHLRS15]</a> <a name="EC:CHLRS15"></a>Jung Hee Cheon, Kyoohyung Han, Changmin Lee, , Hansol Ryu & Damien Stehl\'e, Cryptanalysis of the Multilinear Map over the  Integers, 3-12, in in: EUROCRYPT~2015, Part~I, edited by Elisabeth Oswald & Marc Fischlin, Springer, Heidelberg (2015)</li>
+<li><a id="C:CorLepTib15">[C:CorLepTib15]</a> <a name="C:CorLepTib15"></a>Jean-S\'ebastien Coron, Tancr\`ede Lepoint, & Mehdi Tibouchi, New Multilinear Maps Over the Integers, 267-286, in in: CRYPTO~2015, Part~I, edited by Rosario Gennaro & Matthew Robshaw, Springer, Heidelberg (2015)</li>
+<li><a id="EPRINT:MinFou15">[EPRINT:MinFou15]</a> <a name="EPRINT:MinFou15"></a>Brice Minaud & Pierre-Alain Fouque, Cryptanalysis of the New Multilinear Map over the  Integers, <i></i>, <b></b>, (2015).</li>
+<li><a id="EPRINT:CheLeeRyu15">[EPRINT:CheLeeRyu15]</a> <a name="EPRINT:CheLeeRyu15"></a>Jung Hee Cheon, Changmin Lee & Hansol Ryu, Cryptanalysis of the New CLT Multilinear Maps, <i></i>, <b></b>, (2015).</li>
+<li><a id="TCC:GenGorHal15">[TCC:GenGorHal15]</a> <a name="TCC:GenGorHal15"></a>Craig Gentry, Sergey Gorbunov & Shai Halevi, Graph-Induced Multilinear Maps from Lattices, 498-527, in in: TCC~2015, Part~II, edited by Yevgeniy Dodis & Jesper Buus Nielsen, Springer, Heidelberg (2015)</li>
+<li><a id="C:CLLT16">[C:CLLT16]</a> <a name="C:CLLT16"></a>Jean-S\'ebastien Coron, Moon Sung Lee, , Tancr\`ede Lepoint & Mehdi Tibouchi, Cryptanalysis of GGH15 Multilinear Maps, 607-628, in in: CRYPTO~2016, Part~II, edited by Matthew Robshaw & Jonathan Katz, Springer, Heidelberg (2016)</li>
+<li><a id="EC:BGKPS14">[EC:BGKPS14]</a> <a name="EC:BGKPS14"></a>Boaz Barak, Sanjam Garg, Yael Tauman Kalai, , Omer Paneth & Amit Sahai, Protecting Obfuscation against Algebraic Attacks, 221-238, in in: EUROCRYPT~2014, edited by Phong Nguyen & Elisabeth Oswald, Springer, Heidelberg (2014)</li>
+<li><a id="C:MilSahZha16">[C:MilSahZha16]</a> <a name="C:MilSahZha16"></a>Eric Miles, Amit Sahai & Mark Zhandry, Annihilation Attacks for Multilinear Maps:  Cryptanalysis of Indistinguishability Obfuscation  over GGH13, 629-658, in in: CRYPTO~2016, Part~II, edited by Matthew Robshaw & Jonathan Katz, Springer, Heidelberg (2016)</li>
+<li><a id="EPRINT:AGIS14">[EPRINT:AGIS14]</a> <a name="EPRINT:AGIS14"></a>Prabhanjan Ananth, Divya Gupta, Yuval Ishai, & Amit Sahai, Optimizing Obfuscation: Avoiding Barrington's  Theorem, <i></i>, <b></b>, (2014).</li>
+<li><a id="TCC:BraRot14">[TCC:BraRot14]</a> <a name="TCC:BraRot14"></a>Zvika Brakerski & Guy Rothblum, Virtual Black-Box Obfuscation for All Circuits via  Generic Graded Encoding, 1-25, in in: TCC~2014, edited by Yehuda Lindell, Springer, Heidelberg (2014)</li>
+<li><a id="EPRINT:BMSZ15">[EPRINT:BMSZ15]</a> <a name="EPRINT:BMSZ15"></a>Saikrishna Badrinarayanan, Eric Miles, , Amit Sahai & Mark Zhandry, Post-Zeroizing Obfuscation: The case of Evasive  Circuits, <i></i>, <b></b>, (2015).</li>
+<li><a id="C:PasSetTel14">[C:PasSetTel14]</a> <a name="C:PasSetTel14"></a>Rafael Pass, Karn Seth & Sidharth Telang, Indistinguishability Obfuscation from  Semantically-Secure Multilinear Encodings, 500-517, in in: CRYPTO~2014, Part~I, edited by Juan Garay & Rosario Gennaro, Springer, Heidelberg (2014)</li>
+<li><a id="FOCS:GGHRSW13">[FOCS:GGHRSW13]</a> <a name="FOCS:GGHRSW13"></a>Sanjam Garg, Craig Gentry, Shai Halevi, , Mariana Raykova, Amit Sahai & Brent Waters, Candidate Indistinguishability Obfuscation and  Functional Encryption for all Circuits, 40-49, in in: 54th FOCS, edited by IEEE Computer Society Press (2013)</li>
+<li><a id="EC:CheGenHal17">[EC:CheGenHal17]</a> <a name="EC:CheGenHal17"></a>Yilei Chen, Craig Gentry & Shai Halevi, Cryptanalyses of Candidate Branching Program  Obfuscators, 278-307, in in: EUROCRYPT~2017, Part~II, edited by Jean-S\'ebastien Coron & Jesper Buus Nielsen, Springer, Heidelberg (2017)</li>
+<li><a id="EPRINT:FerRasSah16">[EPRINT:FerRasSah16]</a> <a name="EPRINT:FerRasSah16"></a>Rex Fernando, Peter Rasmussen, & Amit Sahai, Preventing CLT Attacks on Obfuscation with Linear  Overhead, <i></i>, <b></b>, (2016).</li>
+<li><a id="EPRINT:GMMSSZ16">[EPRINT:GMMSSZ16]</a> <a name="EPRINT:GMMSSZ16"></a>Sanjam Garg, Eric Miles, Pratyay Mukherjee, , Amit Sahai, Akshayaram Srinivasan, & Mark Zhandry, Secure Obfuscation in a Weak Multilinear Map Model, <i></i>, <b></b>, (2016).</li>
+<li><a id="TCC:GMMSSZ16">[TCC:GMMSSZ16]</a> <a name="TCC:GMMSSZ16"></a>Sanjam Garg, Eric Miles, Pratyay Mukherjee, , Amit Sahai, Akshayaram Srinivasan, & Mark Zhandry, Secure Obfuscation in a Weak Multilinear Map Model, 241-268, in in: TCC~2016-B, Part~II, edited by Martin Hirt & Adam Smith, Springer, Heidelberg (2016)</li>
+<li><a id="PKC:CLLT17">[PKC:CLLT17]</a> <a name="PKC:CLLT17"></a>Jean-S\'ebastien Coron, Moon Sung Lee, , Tancr\`ede Lepoint & Mehdi Tibouchi, Zeroizing Attacks on Indistinguishability Obfuscation  over CLT13, 41-58, in in: PKC~2017, Part~I, edited by Serge Fehr, Springer, Heidelberg (2017)</li>
+<li><a id="C:CGHLMM15">[C:CGHLMM15]</a> <a name="C:CGHLMM15"></a>Jean-S\'ebastien Coron, Craig Gentry, , Shai Halevi, Tancr\`ede Lepoint, , Hemanta Maji, Eric Miles, Mariana Raykova, , Amit Sahai & Mehdi Tibouchi, Zeroizing Without Low-Level Zeroes: New MMAP  Attacks and their Limitations, 247-266, in in: CRYPTO~2015, Part~I, edited by Rosario Gennaro & Matthew Robshaw, Springer, Heidelberg (2015)</li>
+<li><a id="EC:Zimmerman15">[EC:Zimmerman15]</a> <a name="EC:Zimmerman15"></a>Joe Zimmerman, How to Obfuscate Programs Directly, 439-467, in in: EUROCRYPT~2015, Part~II, edited by Elisabeth Oswald & Marc Fischlin, Springer, Heidelberg (2015)</li>
+<li><a id="TCC:AppBra15">[TCC:AppBra15]</a> <a name="TCC:AppBra15"></a>Benny Applebaum & Zvika Brakerski, Obfuscating Circuits via Composite-Order Graded  Encoding, 528-556, in in: TCC~2015, Part~II, edited by Yevgeniy Dodis & Jesper Buus Nielsen, Springer, Heidelberg (2015)</li>
 </ul>
 </p>
+
+<div class="HTML">
+<p>
+
+</p>
+
+</div>
 </div>
 </body>
 </html>
