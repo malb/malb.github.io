@@ -1,7 +1,7 @@
 #+TITLE: QuAC: Quantum Algorithms for Cryptanalysis
 #+OPTIONS: html-postamble:nil num:nil
 
-*Workshop co-located with [[https://eurocrypt.iacr.org/2019/][Eurocrypt 2019]] on Sunday May 19, 2019*
+*Workshop co-located with [[https://eurocrypt.iacr.org/2019/][Eurocrypt 2019]] on Sunday May 19, 2019 in Darmstadt, Germany*
 
 #+BEGIN_EXPORT html
 <a href="https://pixabay.com/en/duck-ice-winter-lake-frozen-pond-1886431/"><img src="./duck.jpg" class="img-responsive" alt="duck.jpg"></a>
@@ -20,6 +20,12 @@ This workshop will give an overview of the use of quantum algorithms in cryptana
 ** [[https://www.math.ucdavis.edu/~greg/][Greg Kuperberg]]
 
 * Registration
+
+TBA
+
+* Venue
+
+TBA
 
 * Organisers
 
