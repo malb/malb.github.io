@@ -1,5 +1,9 @@
 #+TITLE: QuAC: Quantum Algorithms for Cryptanalysis
-#+OPTIONS: html-postamble:nil num:nil
+#+OPTIONS: html-postamble:nil tex:t num:nil
+#+DESCRIPTION: Workshop co-located with Eurocrypt 2019 on Sunday May 19, 2019 in Darmstadt, Germany
+#+KEYWORDS:
+#+SUBTITLE: Sunday May 19, 2019 in Darmstadt, Germany
+#+LATEX_HEADER:
 
 *Workshop co-located with [[https://eurocrypt.iacr.org/2019/][Eurocrypt 2019]] on Sunday May 19, 2019 in Darmstadt, Germany*
 
@@ -12,6 +16,9 @@ That quantum computers are bad news for RSA and discrete logarithms gave rise to
 This workshop will give an overview of the use of quantum algorithms in cryptanalysis beyond Grover to encourage the broader exploration of quantum algorithms for cryptanalysis. The program is comprised of invited talks from expert speakers who have worked in the development of quantum algorithms and their application in cryptanalysis. The goal is a summer-school-like format and we strongly encourage audience participation.
 
 * Speakers / Schedule
+:PROPERTIES:
+:CUSTOM_ID: speakers-schedule
+:END:
 
 ** [[https://homepages.cwi.nl/~jeffery/][Stacey Jeffery]]
 ** [[http://www.mmrc.iss.ac.cn/~xgao/][Xiao-shan Gao]]
@@ -20,20 +27,32 @@ This workshop will give an overview of the use of quantum algorithms in cryptana
 ** [[https://www.math.ucdavis.edu/~greg/][Greg Kuperberg]]
 
 * Registration
+:PROPERTIES:
+:CUSTOM_ID: registration
+:END:
 
 TBA
 
 * Venue
+:PROPERTIES:
+:CUSTOM_ID: venue
+:END:
 
 TBA
 
 * Organisers
+:PROPERTIES:
+:CUSTOM_ID: organisers
+:END:
 
 - Martin R. Albrecht :: Information Security Group, Royal Holloway, University of London, UK [[mailto:martin.albrecht@royalholloway.ac.uk][martin.albrecht@royalholloway.ac.uk]]
 
 - Rachel Player :: Sorbonne Université, CNRS, INRIA, Laboratoire d'Informatique de Paris 6, LIP6, Équipe PolSys, France [[mailto:Rachel.Player@lip6.fr][Rachel.Player@lip6.fr]]
 
 * Credit
+:PROPERTIES:
+:CUSTOM_ID: credits
+:END:
 
 This event is supported by the [[http://prometheuscrypt.gforge.inria.fr/][PROMETHEUS]] H2020 Project.
 
