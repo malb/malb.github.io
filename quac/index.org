@@ -1,0 +1,36 @@
+#+TITLE: QuAC: Quantum Algorithms for Cryptanalysis
+#+OPTIONS: html-postamble:nil num:nil
+
+*Workshop co-located with [[https://eurocrypt.iacr.org/2019/][Eurocrypt 2019]] on Sunday May 19, 2019*
+
+#+BEGIN_EXPORT html
+<a href="https://pixabay.com/en/duck-ice-winter-lake-frozen-pond-1886431/"><img src="./duck.jpg" class="img-responsive" alt="duck.jpg"></a>
+#+END_EXPORT
+
+That quantum computers are bad news for RSA and discrete logarithms gave rise to post-quantum cryptography, which is now under consideration for standardisation by NIST, ETSI, ISO and the IETF. A natural question, then, is how quantum computer fare against these post-quantum schemes. Here, so far, the main application is Grover’s algorithm for various exhaustive search steps within classical cryptanalytic algorithms.
+
+This workshop will give an overview of the use of quantum algorithms in cryptanalysis beyond Grover to encourage the broader exploration of quantum algorithms for cryptanalysis.
+
+* Speakers / Schedule
+
+** [[https://homepages.cwi.nl/~jeffery/][Stacey Jeffery]]
+** [[http://www.mmrc.iss.ac.cn/~xgao/][Xiao-shan Gao]]
+** [[http://services.iqc.uwaterloo.ca/people/profile/vgheorghiu/][Vlad Gheorghiu]] and [[http://services.iqc.uwaterloo.ca/people/profile/jschanck/][John Schanck]]
+** [[http://naya.plasencia.free.fr/Maria/][María Naya-Plasencia]]
+** [[https://www.math.ucdavis.edu/~greg/][Greg Kuperberg]]
+
+* Registration
+
+* Organisers
+
+- Martin R. Albrecht :: Information Security Group, Royal Holloway, University of London, UK [[mailto:martin.albrecht@royalholloway.ac.uk][martin.albrecht@royalholloway.ac.uk]]
+
+- Rachel Player :: Sorbonne Université, CNRS, INRIA, Laboratoire d'Informatique de Paris 6, LIP6, Équipe PolSys, France [[mailto:Rachel.Player@lip6.fr][Rachel.Player@lip6.fr]]
+
+* Credit
+
+This event is supported by the [[http://prometheuscrypt.gforge.inria.fr/][PROMETHEUS]] H2020 Project.
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-twbs-export-to-html))) nil t)
+# End:
