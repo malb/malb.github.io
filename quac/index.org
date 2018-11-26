@@ -20,7 +20,7 @@ This workshop will give an overview of the use of quantum algorithms in cryptana
 :CUSTOM_ID: speakers-schedule
 :END:
 
-** [[https://homepages.cwi.nl/~jeffery/][Stacey Jeffery]]
+** [[https://homepages.cwi.nl/~jeffery/][Stacey Jeffery]] – Quantum Search Beyond Grover
 ** [[http://www.mmrc.iss.ac.cn/~xgao/][Xiao-shan Gao]]
 ** [[http://services.iqc.uwaterloo.ca/people/profile/vgheorghiu/][Vlad Gheorghiu]] and [[http://services.iqc.uwaterloo.ca/people/profile/jschanck/][John Schanck]]
 ** [[http://naya.plasencia.free.fr/Maria/][María Naya-Plasencia]] – New Algorithms for Quantum Symmetric Cryptanalysis
