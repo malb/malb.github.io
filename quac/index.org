@@ -45,9 +45,12 @@ TBA
 :CUSTOM_ID: organisers
 :END:
 
-- Martin R. Albrecht :: Information Security Group, Royal Holloway, University of London, UK [[mailto:martin.albrecht@royalholloway.ac.uk][martin.albrecht@royalholloway.ac.uk]]
+- Martin R. Albrecht :: Information Security Group, Royal Holloway, University of London, UK \\
+                         [[mailto:martin.albrecht@royalholloway.ac.uk][martin.albrecht@royalholloway.ac.uk]]
 
-- Rachel Player :: Sorbonne Université, CNRS, INRIA, Laboratoire d'Informatique de Paris 6, LIP6, Équipe PolSys, France [[mailto:Rachel.Player@lip6.fr][Rachel.Player@lip6.fr]]
+- Rachel Player :: Sorbonne Université, CNRS, INRIA, Laboratoire d'Informatique de Paris 6, LIP6, Équipe PolSys, France \\
+                   Information Security Group, Royal Holloway, University of London, UK \\
+                   [[mailto:Rachel.Player@lip6.fr][Rachel.Player@lip6.fr]]
 
 * Credit
 :PROPERTIES:
