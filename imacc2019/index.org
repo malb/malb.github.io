@@ -1,0 +1,117 @@
+#+TITLE: 17th IMA International Conference on Cryptography and Coding
+#+OPTIONS: html-postamble:nil tex:t num:nil
+#+DESCRIPTION:
+#+KEYWORDS:
+#+SUBTITLE:
+#+LATEX_HEADER:
+
+*16 - 18 December 2019, St Anne’s College, University of Oxford*
+
+* Important Dates
+- *Submission Deadline:* 14 July 2019
+- *Author Notification:* 5 September 2019
+- *Proceedings Version Deadline:* 22 September 2019
+- *Conference:* 16 to 18 December 2019
+
+* Invited Speakers
+
+* Registration / Practical Information
+
+* Calls
+
+** Call for Papers
+
+The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits original *research papers* on all technical aspects of cryptography and coding are solicited for submission.
+
+Submissions are welcome on any cryptographic or coding-theoretic topic including, but not limited to:
+
+- Foundational theory and mathematics;
+- The design, proposal, and analysis of cryptographic or coding primitives and protocols
+- Secure implementation and optimisation in hardware or software; and
+- Applied aspects of cryptography and coding.
+
+The proceedings will be published in Springer's Lecture Notes in Computer Science series, and will be available at the conference.
+
+Submissions must not substantially duplicate work that any of the authors has published elsewhere or has submitted in parallel to a journal or any other conference or workshop with proceedings. Accepted submissions may not appear in any other conference or workshop that has proceedings. Authors of accepted papers must guarantee that their paper will be presented at the conference and must make a full version of their paper available online.
+
+All submissions will be blind-reviewed. Papers must be anonymous, with no author names, affiliations, acknowledgements, or obvious references. Submissions should begin with a cover page containing title, a short abstract, and a list of keywords. The body of the paper should be at most 14 pages, excluding the title page with abstract, the bibliography, and clearly marked appendices. Committee members are not required to review appendices, so the paper should be intelligible and self-contained within this length. The text should be in a single column format, in at least 11-point fonts and have reasonable margins. Submissions not meeting these guidelines risk rejection without consideration of their merits.
+
+Submissions should be submitted via EasyChair: *TBA*
+
+** Call for Presentations
+
+The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits *presentations* on all technical aspects of cryptography and coding.
+
+Presentations are welcome on any cryptographic or coding-theoretic topic including, but not limited to:
+- Foundational theory and mathematics;
+- The design, proposal, and analysis of cryptographic or coding primitives and protocols
+- Secure implementation and optimisation in hardware or software; and
+- Applied aspects of cryptography and coding.
+
+The main criteria for acceptance are whether the committee believes that the proposed talk will be of interest and of appropriate quality to present to the IMACC audience:
+
+Submissions must comply with the following rules:
+
+- Submissions can be full papers (maximum 10 pages), abstracts (maximum 2 pages), or the expected presentation slides.
+- Submissions must be non-anonymous and must clearly specify which author will give the talk.
+- The submission should provide sufficient detail to explain what the talk will be about.
+
+As these presentations do not enter the formal proceedings (see accompanying Call for Papers), we accept and encourage contributed talk proposals which correspond to papers that are under submission or already published elsewhere.
+
+Presentations should be submitted via EasyChair: *TBA*
+
+* Committees
+** Programme Committee
+
+- Adeline Roux-Langlois, Univ Rennes, CNRS, IRISA, France
+- Alex Davidson, Cloudflare, UK
+- Benjamin Dowling, Information Security Group, Royal Holloway, University of London, UK
+- Caroline Fontaine, CNRS, France, LSV lab, France
+- Carolyn Whitnall, University of Bristol, UK,
+- Christian Janson, Technische Universität Darmstadt, Germany
+- Christian Rechberger, TU Graz, Austria
+- Christoph Striecks, AIT Austrian Institute of Technology, Austria
+- Christophe Petit, School of Computer Science, University of Birmingham, UK
+- Ciara Rafferty, Queen's University Belfast, UK
+- Cong Ling, Imperial College London, UK
+- Daniel Page, University of Bristol, UK
+- Elizabeth Quaglia, Information Security Group, Royal Holloway, University of London, UK,
+- Emmanuela Orsini, COSIC, KU Leuven, Belgium
+- Julia Hesse, IBM Research - Zurich, Switzerland
+- Martin Albrecht, Information Security Group, Royal Holloway, University of London, UK (*Chair*)
+- Rachel Player, Information Security Group, Royal Holloway, University of London, UK
+- Roope Vehkalahti, Aalto University, Finland
+- Thyla van der Merwe, Mozilla, UK
+
+** Steering Committee
+
+- Liqun Chen, University of Surrey, UK
+- Bahram Honary, School of Computing and Communication, University of Lancaster, UK
+- Máire O'Neill, Centre for Secure Information Technologies, ECIT, Queen's University Belfast, UK
+- Christopher Mitchell, Information Security Group, Royal Holloway University of London, UK
+- Matthew Parker, Institute for Informatics, University of Bergen, Norway
+- Kenneth Paterson, Information Security Group, Royal Holloway University of London, UK
+- Fred Piper, UK
+- Martijn Stam, Computer Science Department, University of Bristol, UK
+
+* Code of Conduct
+
+We are committed to providing an experience free of harassment and discrimination at the IMA CCC conference, respecting the dignity of every participant.
+
+If you experience harassment or discriminatory behavior at IMA CC, we encourage you to reach out to the Conference Chair Martin Albrecht or *TBA*
+
+Participants who violate this code may be sanctioned and/or expelled from the event, at the joint discretion of the Conference Chair and *TBA*. Any action will only be taken with the consent of the complaining party. UK law applies.
+
+If you witness harassment or discriminatory behavior, please consider intervening.
+
+* Further Information
+
+For further details on the conference, please contact the IMA Conferences Department:\\
+Email: [[mailto:conferences@ima.org.uk][conferences@ima.org.uk]]\\
+Tel: +44 (0) 1702 354 020\\
+Institute of Mathematics and its Applications, Catherine Richards House, 16 Nelson Street, Southend-on-Sea, Essex, SS1 1EF, UK
+
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-twbs-export-to-html))) nil t)
+# End:
