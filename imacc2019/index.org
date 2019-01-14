@@ -19,9 +19,7 @@
 
 * Calls
 
-** Call for Papers
-
-The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits original *research papers* on all technical aspects of cryptography and coding are solicited for submission.
+The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits original *research papers* and *presentations* on all technical aspects of cryptography and coding.
 
 Submissions are welcome on any cryptographic or coding-theoretic topic including, but not limited to:
 
@@ -30,23 +28,17 @@ Submissions are welcome on any cryptographic or coding-theoretic topic including
 - Secure implementation and optimisation in hardware or software; and
 - Applied aspects of cryptography and coding.
 
+** Call for Papers
+
 The proceedings will be published in Springer's Lecture Notes in Computer Science series, and will be available at the conference.
 
 Submissions must not substantially duplicate work that any of the authors has published elsewhere or has submitted in parallel to a journal or any other conference or workshop with proceedings. Accepted submissions may not appear in any other conference or workshop that has proceedings. Authors of accepted papers must guarantee that their paper will be presented at the conference and must make a full version of their paper available online.
 
-All submissions will be blind-reviewed. Papers must be anonymous, with no author names, affiliations, acknowledgements, or obvious references. Submissions should begin with a cover page containing title, a short abstract, and a list of keywords. The body of the paper should be at most 14 pages, excluding the title page with abstract, the bibliography, and clearly marked appendices. Committee members are not required to review appendices, so the paper should be intelligible and self-contained within this length. The text should be in a single column format, in at least 11-point fonts and have reasonable margins. Submissions not meeting these guidelines risk rejection without consideration of their merits.
+All submissions will be blind-reviewed. Papers must be anonymous, with no author names, affiliations, acknowledgements, or obvious references. Submissions should begin with a cover page containing title, a short abstract, and a list of keywords. The body of the paper should be at most 14 pages, excluding the title page with abstract, the bibliography, and clearly marked appendices. Committee members are not required to review appendices, so the paper should be intelligible and self-contained within this length. The submission must be in [[https://www.springer.com/gb/computer-science/lncs/conference-proceedings-guidelines][Springer’s LNCS format]] (LaTeX). Submissions not meeting these guidelines risk rejection without consideration of their merits.
 
 Submissions should be submitted via EasyChair: *TBA*
 
 ** Call for Presentations
-
-The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits *presentations* on all technical aspects of cryptography and coding.
-
-Presentations are welcome on any cryptographic or coding-theoretic topic including, but not limited to:
-- Foundational theory and mathematics;
-- The design, proposal, and analysis of cryptographic or coding primitives and protocols
-- Secure implementation and optimisation in hardware or software; and
-- Applied aspects of cryptography and coding.
 
 The main criteria for acceptance are whether the committee believes that the proposed talk will be of interest and of appropriate quality to present to the IMACC audience:
 
