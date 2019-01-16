@@ -29,7 +29,7 @@ This workshop will give an overview of the use of quantum algorithms in cryptana
 
 ** *12:30-13:45* Lunch
 ** *13:45-14:45* [[http://naya.plasencia.free.fr/Maria/][María Naya-Plasencia]] – New Algorithms for Quantum Symmetric Cryptanalysis
-** *14:45-15:45* [[http://services.iqc.uwaterloo.ca/people/profile/vgheorghiu/][Vlad Gheorghiu]] and [[http://services.iqc.uwaterloo.ca/people/profile/jschanck/][John Schanck]] – TBA
+** *14:45-15:45* [[http://services.iqc.uwaterloo.ca/people/profile/vgheorghiu/][Vlad Gheorghiu]] and [[http://services.iqc.uwaterloo.ca/people/profile/jschanck/][John Schanck]] – Non-Asymptotic Quantum Resource Estimation
 ** *15:45-16:15* Coffee Break
 ** *16:15-17:15* [[https://www.math.ucdavis.edu/~greg/][Greg Kuperberg]] – Quantum Hidden Shift Algorithms 2.0
 
