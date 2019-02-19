@@ -84,7 +84,7 @@ Presentations should be submitted via EasyChair: *TBA*
 - Matthew Parker, Institute for Informatics, University of Bergen, Norway
 - Kenneth Paterson, Information Security Group, Royal Holloway University of London, UK
 - Fred Piper, UK
-- Martijn Stam, Computer Science Department, University of Bristol, UK
+- Martijn Stam, Simula UiB, Norway
 
 * Code of Conduct
 
