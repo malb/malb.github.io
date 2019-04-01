@@ -22,6 +22,9 @@ This workshop will give an overview of the use of quantum algorithms in cryptana
 
 ** *08:30-09:30* Registration
 ** *09:30-10:30* [[https://homepages.cwi.nl/~jeffery/][Stacey Jeffery]] – Quantum Search Beyond Grover
+
+I will describe several techniques for designing quantum algorithms for search problems based on random walks. No prior quantum algorithms knowledge will be necessary.
+
 ** *10:30-11:00* Coffee Break
 ** *11:00-12:00* [[http://www.mmrc.iss.ac.cn/~xgao/][Xiao-shan Gao]] – Quantum Algorithms for Optimization over Finite Fields and Applications in Cryptanalysis
 
