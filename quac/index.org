@@ -33,6 +33,8 @@ This workshop will give an overview of the use of quantum algorithms in cryptana
 ** *15:45-16:15* Coffee Break
 ** *16:15-17:15* [[https://www.math.ucdavis.edu/~greg/][Greg Kuperberg]] – Quantum Hidden Shift Algorithms 2.0
 
+The dihedral hidden subgroup problem is equivalent to the hidden shift problem for a cyclic group, while the hidden shift problem for an arbitrary abelian group is generally similar. In 2003, I found a subexponential time algorithm for this problem, more precisely stretched exponential time. Later there were two variations, one due to Regev and the other due to me. These algorithms became more interesting when Childs, Jao, and Soukharev showed that they yield a quantum algorithm to find isogenies between elliptic curves. I will discuss my lesser known second algorithm, which deserves more attention because it supersedes my original algorithm as well as Regev's algorithm. The newer algorithm has a better constant in the exponent, it is expensive only in classical space and not quantum space, and it is tunable in various ways. The algorithm also breaks out of the representation theory of finite groups and instead uses a novel quantum data structure that can be called a "phase vector".
+
 * Registration
 :PROPERTIES:
 :CUSTOM_ID: registration
