@@ -43,14 +43,21 @@ The dihedral hidden subgroup problem is equivalent to the hidden shift problem f
 :CUSTOM_ID: registration
 :END:
 
-TBA
+https://eurocrypt.iacr.org/2019/registration.html
 
 * Venue
 :PROPERTIES:
 :CUSTOM_ID: venue
 :END:
 
-TBA
+#+begin_export html
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2571.239124058805!2d8.655332265417833!3d49.87553583650352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sUniversit%C3%A4t+Darmstadt+S101+!5e0!3m2!1sen!2suk!4v1554195682150!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+#+end_export
+
+Universität Darmstadt\\
+Room A02\\
+Building S101 (opposite of Darmstadium where Eurocrypt will take place)\\
+Darmstadt, Germany
 
 * Organisers
 :PROPERTIES:
