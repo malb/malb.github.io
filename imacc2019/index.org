@@ -1,5 +1,5 @@
 #+TITLE: 17th IMA International Conference on Cryptography and Coding
-#+OPTIONS: html-postamble:nil tex:t num:nil
+#+OPTIONS: html-postamble:nil tex:t num:1
 #+DESCRIPTION:
 #+KEYWORDS:
 #+SUBTITLE:
