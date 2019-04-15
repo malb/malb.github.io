@@ -36,7 +36,7 @@ Submissions must not substantially duplicate work that any of the authors has pu
 
 All submissions will be blind-reviewed. Papers must be anonymous, with no author names, affiliations, acknowledgements, or obvious references. Submissions should begin with a cover page containing title, a short abstract, and a list of keywords. The body of the paper should be at most 14 pages, excluding the title page with abstract, the bibliography, and clearly marked appendices. Committee members are not required to review appendices, so the paper should be intelligible and self-contained within this length. The submission must be in [[https://www.springer.com/gb/computer-science/lncs/conference-proceedings-guidelines][Springer’s LNCS format]] (LaTeX). Submissions not meeting these guidelines risk rejection without consideration of their merits.
 
-Submissions should be submitted via EasyChair: *TBA*
+Submissions should be submitted via [[https://easychair.org/conferences/?conf=imacc2019][EasyChair]].
 
 ** Call for Presentations
 
@@ -50,7 +50,7 @@ Submissions must comply with the following rules:
 
 As these presentations do not enter the formal proceedings (see accompanying Call for Papers), we accept and encourage contributed talk proposals which correspond to papers that are under submission or already published elsewhere.
 
-Presentations should be submitted via EasyChair: *TBA*
+Presentations should be submitted via [[https://easychair.org/conferences/?conf=imacc2019][EasyChair]].
 
 * Committees
 ** Programme Committee
@@ -102,6 +102,8 @@ For further details on the conference, please contact the IMA Conferences Depart
 Email: [[mailto:conferences@ima.org.uk][conferences@ima.org.uk]]\\
 Tel: +44 (0) 1702 354 020\\
 Institute of Mathematics and its Applications, Catherine Richards House, 16 Nelson Street, Southend-on-Sea, Essex, SS1 1EF, UK
+
+See also https://ima.org.uk/11167/17th-ima-international-conference-on-cryptography-and-coding/
 
 
 # Local Variables:
