@@ -58,7 +58,7 @@ https://eurocrypt.iacr.org/2019/registration.html
 #+end_export
 
 Universität Darmstadt\\
-Room A02\\
+Room A03\\
 Building S101 (opposite of Darmstadium where Eurocrypt will take place)\\
 Darmstadt, Germany
 
