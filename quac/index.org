@@ -15,7 +15,7 @@ That quantum computers are bad news for RSA and discrete logarithms gave rise to
 
 This workshop will give an overview of the use of quantum algorithms in cryptanalysis beyond Grover to encourage the broader exploration of quantum algorithms for cryptanalysis. The program is comprised of invited talks from expert speakers who have worked in the development of quantum algorithms and their application in cryptanalysis. The goal is a summer-school-like format and we strongly encourage audience participation.
 
-* Speakers / Preliminary Schedule
+* Speakers / Schedule
 :PROPERTIES:
 :CUSTOM_ID: speakers-schedule
 :END:
@@ -31,7 +31,7 @@ I will describe several techniques for designing quantum algorithms for search p
 In this talk, we present quantum algorithms for two fundamental computation problems: solving polynomial systems and optimization over finite fields. The quantum algorithms can solve these problems with any given success probability and have complexities polynomial in the size of the input and the condition number of certain polynomial system related to the problem. So, we achieved exponential speedup for these problems when their condition numbers are small. We apply the quantum algorithm to the cryptanalysis of the stream cipher Trivum, the block cipher AES, the hash function SHA-3/Keccak, the multivariate public key cryptosystems, the lattice based cipher NTRU, and show that they are secure under quantum algebraic attack only if the condition numbers of the corresponding equation systems are large.
 
 ** *12:30-13:45* Lunch
-** *13:45-14:45* André Schrottenloher – New Algorithms for Quantum Symmetric Cryptanalysis
+** *13:45-14:45* [[https://who.rocq.inria.fr/Andre.Schrottenloher/][André Schrottenloher]] – [[./schrottenloher.pdf][New Algorithms for Quantum Symmetric Cryptanalysis]]
 
 The security of symmetric cryptography is completely based on cryptanalysis: we only gain confidence in the security of a symmetric primitive through extensive and continuous scrutiny. It is therefore not possible to determine whether a symmetric primitive might be secure or not in a post-quantum world without first understanding how a quantum adversary could attack it. In this talk I will provide an overview of the subject and present some recent results on symmetric quantum cryptanalysis: a new efficient quantum collision search algorithm (joint work with A. Chailloux and M. Naya-Plasencia), and new efficient quantum algorithms for solving the K-xor problem (joint work with L. Grassi and M. Naya-Plasencia) and a very recent improvement that provides optimal merging algorithms. We will discuss some implications of these results in quantum-safe symmetric cryptography.
 
