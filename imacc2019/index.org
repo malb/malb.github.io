@@ -9,6 +9,7 @@
 
 * Updates
 
+- 2019-07-24: Note that presentation submission will *open* on August 5 and *close* on August 14 (unchanged).
 - 2019-07-12: Paper Submission Deadline Extended to *19 July 2019, 6pm (UK Time)*
 
 * Important Dates
