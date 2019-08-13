@@ -9,11 +9,12 @@
 
 * Updates
 
+- 2019-08-13: Presentation Submission Deadline extended to *28 August, 6pm (UK time)*.
 - 2019-07-24: Note that presentation submission will *open* on August 5 and *close* on August 14 (unchanged).
-- 2019-07-12: Paper Submission Deadline Extended to *19 July 2019, 6pm (UK Time)*
+- 2019-07-12: Paper Submission Deadline extended to *19 July 2019, 6pm (UK Time)*.
 
 * Important Dates
-- *Submission Deadline:* 19 July 2019 (Papers) and 14 August 2019 (Presentations)
+- *Submission Deadline:* 19 July 2019 (Papers) and 28 August 2019 (Presentations)
 - *Author Notification:* 5 September 2019 (Papers) and 5 October 2019 (Presentations)
 - *Proceedings Version Deadline:* 22 September 2019 (Papers)
 - *Conference:* 16 to 18 December 2019
