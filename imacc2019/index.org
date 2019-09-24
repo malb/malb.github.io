@@ -19,12 +19,22 @@
 - *Proceedings Version Deadline:* 22 September 2019 (Papers)
 - *Conference:* 16 to 18 December 2019
 
-* Invited Speakers
+* Invited Talks
 
-- Cas Cremers (CISPA Helmholtz Center for Information Security, Germany)
-- Nadia Henninger (University of California, San Diego)
-- Clémentine Maurice (French National Centre for Scientific Research (CNRS), France)
-- Francesca Musiani (French National Centre for Scientific Research (CNRS), France)
+** [[https://people.cispa.io/cas.cremers/][Cas Cremers]]:
+
+** [[https://cseweb.ucsd.edu/~nadiah/][Nadia Henninger]]:
+
+** [[https://cmaurice.fr/][Clémentine Maurice]]: Side-channel Attacks on Microarchitecture: Beyond Crypto
+
+Hardware is often considered as an abstract layer that behaves correctly, just executing instructions and outputing a result. However, the internal state of the hardware leaks information about the programs that are executing, paving the way for covert or side-channel attacks. Historically, cryptography has been a strong focus of research in the field of microarchitectural side-channel attacks However, the last years have shown a shift in the targets. During this presentation, we will review how microarchitectural attacks evolved in the last decade, and we will delve into side-channel attacks on keystroke timings as well as robust covert channels in the cloud.
+
+** [[http://www.iscc.cnrs.fr/spip.php?article1980][Francesca Musiani]]: Nuancing the ‘User’ of Secure Messaging Tools
+
+From 2016 to 2018, the H2020 NEXTLEAP (NEXT-generation Techno-Social and Legal Encryption, Access and Privacy) project has sought to ‘create, validate, and deploy communication and computation protocols that can serve as pillars for a secure, trust-worthy, annotable and privacy-respecting Internet that ensures citizens fundamental rights’. Its consortium included computer scientists and social scientists working in close interaction. In this talk, I will present some of the work that was conducted in the ‘social sciences-led’ strand of NEXTLEAP, which attempted to account for the diversity of users of secure messaging applications and their underlying protocols, as well as the different motivations of their developers.
+
+Due to the increased deployment of secure messaging protocols in a variety of settings, differences between what developers “believe” are the needs of their users and their actual needs can have very tangible and potentially problematic consequences. Based on 90 interviews with both high and low-risk users, as well as the developers, of popular secure messaging applications, we mapped the design choices made by developers to threat models of both high-risk and low-risk users. Our research revealed interesting and sometimes surprising results, among which: high-risk users often consider client device seizures to be more dangerous than compromised servers; key verification is important to high-risk users, but they often do not engage in cryptographic key verification, instead using other “out of band” means; high-risk users, unlike low-risk users, often need pseudonyms and are heavily concerned over metadata collection. Developers tend to value open standards, open-source, and decentralization, but high-risk users often find these aspects less urgent given their more pressing concerns; and while, for developers, avoiding trusted third parties is an important concern, several high-risk users are in fact happy to rely on trusted third parties ‘protected’ by specific geo-political situations. We conclude by suggesting that work still needs to be done for secure messaging protocols to be aligned with real user needs, including high-risk, and with real-world threat models.
+
 
 * Registration / Practical Information
 
