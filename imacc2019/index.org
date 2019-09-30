@@ -35,6 +35,25 @@ From 2016 to 2018, the H2020 NEXTLEAP (NEXT-generation Techno-Social and Legal E
 
 Due to the increased deployment of secure messaging protocols in a variety of settings, differences between what developers “believe” are the needs of their users and their actual needs can have very tangible and potentially problematic consequences. Based on 90 interviews with both high and low-risk users, as well as the developers, of popular secure messaging applications, we mapped the design choices made by developers to threat models of both high-risk and low-risk users. Our research revealed interesting and sometimes surprising results, among which: high-risk users often consider client device seizures to be more dangerous than compromised servers; key verification is important to high-risk users, but they often do not engage in cryptographic key verification, instead using other “out of band” means; high-risk users, unlike low-risk users, often need pseudonyms and are heavily concerned over metadata collection. Developers tend to value open standards, open-source, and decentralization, but high-risk users often find these aspects less urgent given their more pressing concerns; and while, for developers, avoiding trusted third parties is an important concern, several high-risk users are in fact happy to rely on trusted third parties ‘protected’ by specific geo-political situations. We conclude by suggesting that work still needs to be done for secure messaging protocols to be aligned with real user needs, including high-risk, and with real-world threat models.
 
+* Accepted Papers
+
+- Behzad Abdolmaleki, Hamidreza Khoshakhlagh and Daniel Slamanig. *A Framework for UC-Secure Commitments from Publicly Computable Smooth Projective Hashing*
+- Terry Shue Chien Lau, Chik How Tan and Theo Fanuela Prabowo. *Key Recovery Attack on Rank Metric Code-based Signatures*
+- Daniele Cozzo and Nigel Smart. *Sharing the LUOV: Threshold Post-Quantum Signatures*
+- Claire Delaplace, Andre Esser and Alexander May. *Improved Low-Memory Subset Sum and LPN Algorithms via Multiple Collisions*
+- Jan Camenisch, Maria Dubovitskaya and Patrick Towa. *Efficient Fully Secure Leakage-Deterring Encryption*
+- Nigel Smart and Younes Talibi Alaoui. *Distributing any Elliptic Curve Based Protocol*
+- Ivan Damgård, Helene Haagh, Michael Nielsen and Claudio Orlandi. *Commodity-Based 2PC for Arithmetic Circuits*
+- Pedro Branco, Jintai Ding, Manuel Goulão and Paulo Mateus. *A Framework for Universally Composable Oblivious Transfer from One-Round Key-Exchange*
+- Rowena Alma Betty and Akihiro Munemasa. *Classification of self-dual codes of length 20 over $\mathbb{Z}_4$ and length at most 18 over $\mathbb{F}_2+u\mathbb{F}_2$*
+- Hyang-Sook Lee and Jeongeun Park. *On the Security of Multikey Homomorphic Encryption*
+- Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*
+- Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*
+- Shyam Murthy and Srinivas Vivek. *Cryptanalysis of a Protocol for Efficient Sorting on SHE Encrypted Data*
+- Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*
+- Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*
+- Shingo Sato and Junji Shikata. *Quantum-Secure (Non-)Sequential Aggregate Message Authentication Codes*
+- Shingo Sato and Junji Shikata. *SO-CCA secure PKE from KEM in the QROM and the QICM*
 
 * Registration / Practical Information
 
