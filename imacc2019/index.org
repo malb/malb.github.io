@@ -7,18 +7,6 @@
 
 *16 - 18 December 2019, St Anne’s College, University of Oxford*
 
-* Updates
-
-- 2019-08-13: Presentation Submission Deadline extended to *28 August, 6pm (UK time)*.
-- 2019-07-24: Note that presentation submission will *open* on August 5 and *close* on August 14 (unchanged).
-- 2019-07-12: Paper Submission Deadline extended to *19 July 2019, 6pm (UK Time)*.
-
-* Important Dates
-- *Submission Deadline:* 19 July 2019 (Papers) and 28 August 2019 (Presentations)
-- *Author Notification:* 5 September 2019 (Papers) and 5 October 2019 (Presentations)
-- *Proceedings Version Deadline:* 22 September 2019 (Papers)
-- *Conference:* 16 to 18 December 2019
-
 * Invited Talks
 
 ** [[https://people.cispa.io/cas.cremers/][Cas Cremers]]:
@@ -71,6 +59,16 @@ Due to the increased deployment of secure messaging protocols in a variety of se
 
 See https://ima.org.uk/11167/17th-ima-international-conference-on-cryptography-and-coding/
 
+* Code of Conduct
+
+We are committed to providing an experience free of harassment and discrimination at the IMA CCC conference, respecting the dignity of every participant.
+
+If you experience harassment or discriminatory behavior at IMA CC, we encourage you to reach out to the Conference Chair Martin Albrecht or Ciara Rafferty.
+
+Participants who violate this code may be sanctioned and/or expelled from the event, at the joint discretion of the Conference Chair and Ciara Rafferty. Any action will only be taken with the consent of the complaining party. UK law applies.
+
+If you witness harassment or discriminatory behavior, please consider intervening.
+
 * Calls
 
 The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits original *research papers* and *presentations* on all technical aspects of cryptography and coding.
@@ -106,8 +104,20 @@ As these presentations do not enter the formal proceedings (see accompanying Cal
 
 Presentations should be submitted via [[https://easychair.org/conferences/?conf=imacc2019][EasyChair]].
 
-* Committees
-** Programme Committee
+** Updates
+
+- 2019-08-13: Presentation Submission Deadline extended to *28 August, 6pm (UK time)*.
+- 2019-07-24: Note that presentation submission will *open* on August 5 and *close* on August 14 (unchanged).
+- 2019-07-12: Paper Submission Deadline extended to *19 July 2019, 6pm (UK Time)*.
+
+** Important Dates
+- *Submission Deadline:* 19 July 2019 (Papers) and 28 August 2019 (Presentations)
+- *Author Notification:* 5 September 2019 (Papers) and 5 October 2019 (Presentations)
+- *Proceedings Version Deadline:* 22 September 2019 (Papers)
+- *Conference:* 16 to 18 December 2019
+
+** Committees
+*** Programme Committee
 
 - Adeline Roux-Langlois, Univ Rennes, CNRS, IRISA, France
 - Alex Davidson, Cloudflare, UK
@@ -129,7 +139,7 @@ Presentations should be submitted via [[https://easychair.org/conferences/?conf=
 - Roope Vehkalahti, Aalto University, Finland
 - Thyla van der Merwe, Mozilla, UK
 
-** Steering Committee
+*** Steering Committee
 
 - Liqun Chen, University of Surrey, UK
 - Bahram Honary, School of Computing and Communication, University of Lancaster, UK
@@ -139,16 +149,6 @@ Presentations should be submitted via [[https://easychair.org/conferences/?conf=
 - Kenneth Paterson, Information Security Group, Royal Holloway University of London, UK
 - Fred Piper, UK
 - Martijn Stam, Simula UiB, Norway
-
-* Code of Conduct
-
-We are committed to providing an experience free of harassment and discrimination at the IMA CCC conference, respecting the dignity of every participant.
-
-If you experience harassment or discriminatory behavior at IMA CC, we encourage you to reach out to the Conference Chair Martin Albrecht or Ciara Rafferty.
-
-Participants who violate this code may be sanctioned and/or expelled from the event, at the joint discretion of the Conference Chair and Ciara Rafferty. Any action will only be taken with the consent of the complaining party. UK law applies.
-
-If you witness harassment or discriminatory behavior, please consider intervening.
 
 * Further Information
 
