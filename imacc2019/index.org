@@ -55,6 +55,18 @@ Due to the increased deployment of secure messaging protocols in a variety of se
 - Shingo Sato and Junji Shikata. *Quantum-Secure (Non-)Sequential Aggregate Message Authentication Codes*
 - Shingo Sato and Junji Shikata. *SO-CCA secure PKE from KEM in the QROM and the QICM*
 
+* Accepted Presentations
+
+- James Howe, Marco Martinoli, Elisabeth Oswald and Francesco Regazzoni. *Optimised Lattice-Based Key Encapsulation in Hardware*
+- Gabrielle De Micheli, Remi Piau and Cecile Pierrot. *A Tale of Three Signatures: practical attack of ECDSA with wNAF*
+- Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*
+- Monika Trimoska, Sorina Ionica and Gilles Dequen. *A SAT-based approach for index calculus on binary elliptic curves*
+- Jake Massimo. *Primality Testing in Cryptographic Applications*
+- Anamaria Costache, Kim Laine and Rachel Player. *Homomorphic noise growth in practice: comparing BGV and FV*
+- Sergiu Carpov, Malika Izabachène and Victor Mollimard. *TFHE Toolbox for homomorphic neural network prediction*
+- Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference*
+- Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*
+
 * Registration / Practical Information
 
 See https://ima.org.uk/11167/17th-ima-international-conference-on-cryptography-and-coding/
