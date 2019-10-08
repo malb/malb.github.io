@@ -9,7 +9,7 @@
 
 * Invited Talks
 
-** [[https://people.cispa.io/cas.cremers/][Cas Cremers]]: Security standardisation and secure messaging
+** [[https://people.cispa.io/cas.cremers/][Cas Cremers]]: Security Standardisation and Secure Messaging
 
 Modern secure messaging protocols can offer strong security guarantees, such as perfect forward secrecy and post-compromise security [1]. Many widely used messaging applications, such as WhatsApp, Facebook Secure Conversations, Skype, and the Signal App have started to use one common underlying mechanism: the Signal protocol library. Yet while there exist good modern standardised protocols for secure channels, such as IETF TLS 1.3, there are no such open standard counterparts for secure messaging.
 
@@ -90,7 +90,7 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 |               | *Invited Talk*                                                                                                                                                       |
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 09:40 - 10:40 | Cas Cremers                                                                                                                                                          |
+| 09:40 - 10:40 | Cas Cremers: *Security Standardisation and Secure Messaging*
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 10:40 - 11:10 | Break                                                                                                                                                                |
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
