@@ -26,7 +26,7 @@ In this talk we will discuss the goals of Messaging Layer Security, its ongoing 
 [4] "On Ends-to-Ends Encryption: Asynchronous Group Messaging with Strong Security Guarantees", K. Cohn-Gordon, C. Cremers, L. Garratt, J. Millican, and K. Milner. 2018, ACM CCS 2018 and <https://eprint.iacr.org/2017/666.pdf>.
 
 
-** [[https://cseweb.ucsd.edu/~nadiah/][Nadia Henninger]]:
+** [[https://cseweb.ucsd.edu/~nadiah/][Nadia Heninger]]:
 
 ** [[https://cmaurice.fr/][Clémentine Maurice]]: Side-channel Attacks on Microarchitecture: Beyond Crypto
 
@@ -126,7 +126,7 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 |               | *Invited Talks*                                                                                                                                            |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 09:40 - 10:40 | Nadia Henninger:                                                                                                                                           |
+| 09:40 - 10:40 | Nadia Heninger:                                                                                                                                            |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 10:40 - 11:10 | Break                                                                                                                                                      |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
