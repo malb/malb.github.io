@@ -84,6 +84,107 @@ Participants who violate this code may be sanctioned and/or expelled from the ev
 
 If you witness harassment or discriminatory behavior, please consider intervening.
 
+* Programme
+
+** Monday
+
+|               | *Invited Talk*                                                                                                                                                       |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 09:40 - 10:40 | Cas Cremers                                                                                                                                                          |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 10:40 - 11:10 | Break                                                                                                                                                                |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *MPC*                                                                                                                                                                |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 11:10 - 11:35 | Ivan Damgård, Helene Haagh, Michael Nielsen and Claudio Orlandi. *Commodity-Based 2PC for Arithmetic Circuits*                                                       |
+| 11:35 - 12:00 | Nigel Smart and Younes Talibi Alaoui. *Distributing any Elliptic Curve Based Protocol*                                                                               |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 12:00 - 13:00 | Lunch                                                                                                                                                                |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Coding (Attacks)*                                                                                                                                                   |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:00 - 13:25 | Terry Shue Chien Lau, Chik How Tan and Theo Fanuela Prabowo. *Key Recovery Attack on Rank Metric Code-based Signatures*                                              |
+| 13:25 - 13:50 | Claire Delaplace, Andre Esser and Alexander May. *Improved Low-Memory Subset Sum and LPN Algorithms via Multiple Collisions*                                         |
+| 13:50 - 14:15 | Rowena Alma Betty and Akihiro Munemasa. *Classification of self-dual codes of length 20 over $\mathbb{Z}_4$ and length at most 18 over $\mathbb{F}_2+u\mathbb{F}_2$* |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 14:15 - 14:45 | Break                                                                                                                                                                |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Adversarial Quantum Queries*                                                                                                                                        |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 14:45 - 15:10 | Shingo Sato and Junji Shikata. *Quantum-Secure (Non-)Sequential Aggregate Message Authentication Codes*                                                              |
+| 15:10 - 15:35 | Shingo Sato and Junji Shikata. *SO-CCA secure PKE from KEM in the QROM and the QICM*                                                                                 |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Presentations (Lattices)*                                                                                                                                           |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 15:35 - 16:00 | Sergiu Carpov, Malika Izabachène and Victor Mollimard. *TFHE Toolbox for homomorphic neural network prediction*                                                      |
+| 16:00 - 16:25 | James Howe, Marco Martinoli, Elisabeth Oswald and Francesco Regazzoni. *Optimised Lattice-Based Key Encapsulation in Hardware*                                       |
+| 16:25 - 16:50 | Anamaria Costache, Kim Laine and Rachel Player. *Homomorphic noise growth in practice: comparing BGV and FV*                                                         |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 17:00         | Drinks Reception                                                                                                                                                     |
+
+** Tuesday
+
+|               | *Invited Talks*                                                                                                                                            |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 09:40 - 10:40 | Nadia Henninger:                                                                                                                                           |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 10:40 - 11:10 | Break                                                                                                                                                      |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *FHE Security*                                                                                                                                             |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 11:10 - 11:35 | Hyang-Sook Lee and Jeongeun Park. *On the Security of Multikey Homomorphic Encryption*                                                                     |
+| 11:35 - 12:00 | Shyam Murthy and Srinivas Vivek. *Cryptanalysis of a Protocol for Efficient Sorting on SHE Encrypted Data*                                                 |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 12:00 - 13:00 | Lunch                                                                                                                                                      |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Constructions*                                                                                                                                            |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:00 - 13:25 | Daniele Cozzo and Nigel Smart. *Sharing the LUOV: Threshold Post-Quantum Signatures*                                                                       |
+| 13:25 - 13:50 | Jan Camenisch, Maria Dubovitskaya and Patrick Towa. *Efficient Fully Secure Leakage-Deterring Encryption*                                                  |
+| 13:50 - 14:15 | Behzad Abdolmaleki, Hamidreza Khoshakhlagh and Daniel Slamanig. *A Framework for UC-Secure Commitments from Publicly Computable Smooth Projective Hashing* |
+| 14:15 - 14:40 | Pedro Branco, Jintai Ding, Manuel Goulão and Paulo Mateus. *A Framework for Universally Composable Oblivious Transfer from One-Round Key-Exchange*         |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 14:40 - 15:10 | Break                                                                                                                                                      |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Presentations (Attacks)*                                                                                                                                  |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 15:10 - 15:35 | Gabrielle De Micheli, Remi Piau and Cecile Pierrot. *A Tale of Three Signatures: practical attack of ECDSA with wNAF*                                      |
+| 15:35 - 16:00 | Jake Massimo. *Primality Testing in Cryptographic Applications*                                                                                            |
+| 16:00 - 16:25 | Monika Trimoska, Sorina Ionica and Gilles Dequen. *A SAT-based approach for index calculus on binary elliptic curves*                                      |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | Invited Talk                                                                                                                                               |
+| 16:30 - 17:30 | Francesca Musiani: *Nuancing the ‘User’ of Secure Messaging Tools*                                                                                         |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 19:00         | Conference Dinner                                                                                                                                          |
+
+** Wednesday
+
+|               | *Invited Talk*                                                                                                                                |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 09:40 - 10:40 | Clémentine Maurice: *Side-channel Attacks on Microarchitecture: Beyond Crypto*                                                                |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 10:40 - 11:10 | Break                                                                                                                                         |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Attacks on AEAD Primitives*                                                                                                                  |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 11:10 - 11:35 | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
+| 11:35 - 12:00 | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 12:00 - 13:00 | Lunch                                                                                                                                         |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *ZK*                                                                                                                                          |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:00 - 13:25 | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
+| 13:25 - 13:50 | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Presentations*                                                                                                                               |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:50 - 14:15 | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
+| 14:15 - 14:40 | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
+| 14:40 - 15:05 | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 15:05 - 15:10 | Closing Remarks                                                                                                                               |
+
 * Calls
 
 The mathematical theory and practice of both cryptography and coding underpins the provision of effective security and reliability for data communication, processing and storage. This seventeenth International Conference in an established and successful IMA series on the theme of "Cryptography and Coding" solicits original *research papers* and *presentations* on all technical aspects of cryptography and coding.
