@@ -3,11 +3,10 @@
 
 * Decl
 
-I am a lecturer in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Security Group]] at [[https://royalholloway.ac.uk][Royal Holloway, University of London]].
+I am a reader in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Security Group]] at [[https://royalholloway.ac.uk][Royal Holloway, University of London]].
 
 ** Text
 
- - [[./publications.html][publications]]
  - [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][dblp]] ([[http://bibbase.org/dblp/martin_r_albrecht][bibbase]])
  - [[https://martinralbrecht.wordpress.com][blog]] ([[https://bitbucket.org/malb/blog/][src]])
  - [[https://github.com/malb/malb.github.io][this]]
@@ -29,7 +28,7 @@ I am a lecturer in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Securi
 - [[https://twitter.com/martinralbrecht][twitter]]
 - [[https://keybase.io/martinralbrecht][keybase]]
 - [[http://uk.linkedin.com/pub/martin-albrecht/95/74b/42a][linkedin]]
-- [[https://www.google.com/+MartinAlbrecht][google+]]
+- [[https://scholar.google.com/citations?user=mELfH20AAAAJ&hl=en][gscholar]]
 
 #+INCLUDE: footer.org
 
