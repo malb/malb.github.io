@@ -40,21 +40,21 @@ Due to the increased deployment of secure messaging protocols in a variety of se
 
 * Accepted Papers
 
-- Behzad Abdolmaleki, Hamidreza Khoshakhlagh and Daniel Slamanig. *A Framework for UC-Secure Commitments from Publicly Computable Smooth Projective Hashing*
+- Behzad Abdolmaleki, Hamidreza Khoshakhlagh and Daniel Slamanig. *A Framework for UC-Secure Commitments from Publicly Computable Smooth Projective Hashing* ([[https://eprint.iacr.org/2019/1063][eprint]])
 - Terry Shue Chien Lau, Chik How Tan and Theo Fanuela Prabowo. *Key Recovery Attack on Rank Metric Code-based Signatures*
 - Daniele Cozzo and Nigel Smart. *Sharing the LUOV: Threshold Post-Quantum Signatures*
-- Claire Delaplace, Andre Esser and Alexander May. *Improved Low-Memory Subset Sum and LPN Algorithms via Multiple Collisions*
+- Claire Delaplace, Andre Esser and Alexander May. *Improved Low-Memory Subset Sum and LPN Algorithms via Multiple Collisions* ([[https://eprint.iacr.org/2019/804][eprint]])
 - Jan Camenisch, Maria Dubovitskaya and Patrick Towa. *Efficient Fully Secure Leakage-Deterring Encryption*
-- Nigel Smart and Younes Talibi Alaoui. *Distributing any Elliptic Curve Based Protocol*
-- Ivan Damgård, Helene Haagh, Michael Nielsen and Claudio Orlandi. *Commodity-Based 2PC for Arithmetic Circuits*
-- Pedro Branco, Jintai Ding, Manuel Goulão and Paulo Mateus. *A Framework for Universally Composable Oblivious Transfer from One-Round Key-Exchange*
+- Nigel Smart and Younes Talibi Alaoui. *Distributing any Elliptic Curve Based Protocol* ([[https://eprint.iacr.org/2019/768][eprint]])
+- Ivan Damgård, Helene Haagh, Michael Nielsen and Claudio Orlandi. *Commodity-Based 2PC for Arithmetic Circuits* ([[https://eprint.iacr.org/2019/705][eprint]])
+- Pedro Branco, Jintai Ding, Manuel Goulão and Paulo Mateus. *A Framework for Universally Composable Oblivious Transfer from One-Round Key-Exchange* ([[https://eprint.iacr.org/2019/726][eprint]])
 - Rowena Alma Betty and Akihiro Munemasa. *Classification of self-dual codes of length 20 over $\mathbb{Z}_4$ and length at most 18 over $\mathbb{F}_2+u\mathbb{F}_2$*
-- Hyang-Sook Lee and Jeongeun Park. *On the Security of Multikey Homomorphic Encryption*
+- Hyang-Sook Lee and Jeongeun Park. *On the Security of Multikey Homomorphic Encryption* ([[https://eprint.iacr.org/2019/1082][eprint]])
 - Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*
-- Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*
-- Shyam Murthy and Srinivas Vivek. *Cryptanalysis of a Protocol for Efficient Sorting on SHE Encrypted Data*
+- Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs* ([[https://eprint.iacr.org/2019/1162][eprint]])
+- Shyam Murthy and Srinivas Vivek. *Cryptanalysis of a Protocol for Efficient Sorting on SHE Encrypted Data* ([[https://eprint.iacr.org/2019/1087][eprint]])
 - Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*
-- Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*
+- Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD* ([[https://eprint.iacr.org/2019/679][eprint]])
 - Shingo Sato and Junji Shikata. *Quantum-Secure (Non-)Sequential Aggregate Message Authentication Codes*
 - Shingo Sato and Junji Shikata. *SO-CCA secure PKE from KEM in the QROM and the QICM*
 
