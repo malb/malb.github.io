@@ -235,25 +235,25 @@ Presentations should be submitted via [[https://easychair.org/conferences/?conf=
 ** Committees
 *** Programme Committee
 
-- Adeline Roux-Langlois, Univ Rennes, CNRS, IRISA, France
-- Alex Davidson, Cloudflare, UK
-- Benjamin Dowling, Information Security Group, Royal Holloway, University of London, UK
-- Caroline Fontaine, CNRS, France, LSV lab, France
-- Carolyn Whitnall, University of Bristol, UK,
-- Christian Janson, Technische Universität Darmstadt, Germany
-- Christian Rechberger, TU Graz, Austria
-- Christoph Striecks, AIT Austrian Institute of Technology, Austria
-- Christophe Petit, School of Computer Science, University of Birmingham, UK
-- Ciara Rafferty, Queen's University Belfast, UK
-- Cong Ling, Imperial College London, UK
+- Martin Albrecht, Royal Holloway, University of London, UK (*Chair*)
+- Alex Davidson, Cloudflare Portugal, Portugal
+- Benjamin Dowling, ETH Zurich, Switzerland
+- Caroline Fontaine, CNRS (LSV), France
+- Julia Hesse, IBM Research Zurich, Switzerland
+- Christian Janson, TU Darmstadt, Germany
+- Cong Ling, Imperial College, UK
+- Emmanuela Orsini, Katholieke Universiteit Leuven, Belgium
 - Daniel Page, University of Bristol, UK
-- Elizabeth Quaglia, Information Security Group, Royal Holloway, University of London, UK,
-- Emmanuela Orsini, COSIC, KU Leuven, Belgium
-- Julia Hesse, IBM Research - Zurich, Switzerland
-- Martin Albrecht, Information Security Group, Royal Holloway, University of London, UK (*Chair*)
-- Rachel Player, Information Security Group, Royal Holloway, University of London, UK
-- Roope Vehkalahti, Aalto University, Finland
+- Christophe Petit, University of Oxford, UK
+- Rachel Player, Royal Holloway, University of London, UK
+- Elizabeth Quaglia, Royal Holloway, University of London, UK
+- Ciara Rafferty, Queen’s University Belfast, UK
+- Christian Rechberger, TU Graz, Austria
+- Adeline Roux-Langlois, Univ Rennes, CNRS, IRISA, France
+- Christoph Striecks, AIT, Austria
 - Thyla van der Merwe, Mozilla, UK
+- Roope Vehkalahti, Aalto University, Finland
+- Carolyn Whitnall, University of Bristol, UK
 
 *** Steering Committee
 
