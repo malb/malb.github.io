@@ -25,8 +25,9 @@ In this talk we will discuss the goals of Messaging Layer Security, its ongoing 
 
 [4] "On Ends-to-Ends Encryption: Asynchronous Group Messaging with Strong Security Guarantees", K. Cohn-Gordon, C. Cremers, L. Garratt, J. Millican, and K. Milner. 2018, ACM CCS 2018 and <https://eprint.iacr.org/2017/666.pdf>.
 
+** [[https://cseweb.ucsd.edu/~nadiah/][Nadia Heninger]]: The Cryptographic Legacy of Old RNG Designs
 
-** [[https://cseweb.ucsd.edu/~nadiah/][Nadia Heninger]]:
+Randomness is vital to cryptographic security. Pseudorandom number generation algorithms have been the topic of decades of academic study, and a variety of cryptographic pseudorandom number generation algorithms have been formally standardized over the years. However, in spite of these formal foundations and standards, cryptographic disasters stemming from flawed random number generator implementations happen with distressing frequency. We will tour several recent incidents of flawed random number generator designs, trace these flaws to gaps in understanding between researchers, standards bodies, and implementers, and discuss implications for security and policy moving forward.
 
 ** [[https://cmaurice.fr/][Clémentine Maurice]]: Side-channel Attacks on Microarchitecture: Beyond Crypto
 
