@@ -29,9 +29,11 @@ In this talk we will discuss the goals of Messaging Layer Security, its ongoing 
 
 Randomness is vital to cryptographic security. Pseudorandom number generation algorithms have been the topic of decades of academic study, and a variety of cryptographic pseudorandom number generation algorithms have been formally standardized over the years. However, in spite of these formal foundations and standards, cryptographic disasters stemming from flawed random number generator implementations happen with distressing frequency. We will tour several recent incidents of flawed random number generator designs, trace these flaws to gaps in understanding between researchers, standards bodies, and implementers, and discuss implications for security and policy moving forward.
 
-** [[https://cmaurice.fr/][Clémentine Maurice]]: Side-channel Attacks on Microarchitecture: Beyond Crypto
+** +[[https://cmaurice.fr/][Clémentine Maurice]]: Side-channel Attacks on Microarchitecture: Beyond Crypto+
 
-Hardware is often considered as an abstract layer that behaves correctly, just executing instructions and outputing a result. However, the internal state of the hardware leaks information about the programs that are executing, paving the way for covert or side-channel attacks. Historically, cryptography has been a strong focus of research in the field of microarchitectural side-channel attacks However, the last years have shown a shift in the targets. During this presentation, we will review how microarchitectural attacks evolved in the last decade, and we will delve into side-channel attacks on keystroke timings as well as robust covert channels in the cloud.
++Hardware is often considered as an abstract layer that behaves correctly, just executing instructions and outputing a result. However, the internal state of the hardware leaks information about the programs that are executing, paving the way for covert or side-channel attacks. Historically, cryptography has been a strong focus of research in the field of microarchitectural side-channel attacks However, the last years have shown a shift in the targets. During this presentation, we will review how microarchitectural attacks evolved in the last decade, and we will delve into side-channel attacks on keystroke timings as well as robust covert channels in the cloud.+
+
+Unfortunately, Clémentine’s talk had to be cancelled.
 
 ** [[http://www.iscc.cnrs.fr/spip.php?article1980][Francesca Musiani]]: Nuancing the ‘User’ of Secure Messaging Tools
 
@@ -94,11 +96,11 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 | 09:40 - 10:40 | Cas Cremers: *Security Standardisation and Secure Messaging*
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 10:40 - 11:10 | Break                                                                                                                                                                |
-|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|               | *MPC*                                                                                                                                                                |
-|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 11:10 - 11:35 | Ivan Damgård, Helene Haagh, Michael Nielsen and Claudio Orlandi. *Commodity-Based 2PC for Arithmetic Circuits*                                                       |
-| 11:35 - 12:00 | Nigel Smart and Younes Talibi Alaoui. *Distributing any Elliptic Curve Based Protocol*                                                                               |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *FHE Security*                                                                                                                                             |
+|---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 11:10 - 11:35 | Hyang-Sook Lee and Jeongeun Park. *On the Security of Multikey Homomorphic Encryption*                                                                     |
+| 11:35 - 12:00 | Shyam Murthy and Srinivas Vivek. *Cryptanalysis of a Protocol for Efficient Sorting on SHE Encrypted Data*                                                 |
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 12:00 - 13:00 | Lunch                                                                                                                                                                |
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -127,14 +129,14 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 |               | *Invited Talks*                                                                                                                                            |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 09:40 - 10:40 | Nadia Heninger:                                                                                                                                            |
+| 09:40 - 10:40 | Nadia Heninger: The Cryptographic Legacy of Old RNG Designs                                                                                                |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 10:40 - 11:10 | Break                                                                                                                                                      |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|               | *FHE Security*                                                                                                                                             |
+|               | *MPC*                                                                                                                                                      |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 11:10 - 11:35 | Hyang-Sook Lee and Jeongeun Park. *On the Security of Multikey Homomorphic Encryption*                                                                     |
-| 11:35 - 12:00 | Shyam Murthy and Srinivas Vivek. *Cryptanalysis of a Protocol for Efficient Sorting on SHE Encrypted Data*                                                 |
+| 11:10 - 11:35 | Ivan Damgård, Helene Haagh, Michael Nielsen and Claudio Orlandi. *Commodity-Based 2PC for Arithmetic Circuits*                                             |
+| 11:35 - 12:00 | Nigel Smart and Younes Talibi Alaoui. *Distributing any Elliptic Curve Based Protocol*                                                                     |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 12:00 - 13:00 | Lunch                                                                                                                                                      |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -160,31 +162,31 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 ** Wednesday
 
-|               | *Invited Talk*                                                                                                                                |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 09:40 - 10:40 | Clémentine Maurice: *Side-channel Attacks on Microarchitecture: Beyond Crypto*                                                                |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 10:40 - 11:10 | Break                                                                                                                                         |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-|               | *Attacks on AEAD Primitives*                                                                                                                  |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 11:10 - 11:35 | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
-| 11:35 - 12:00 | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 12:00 - 13:00 | Lunch                                                                                                                                         |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-|               | *ZK*                                                                                                                                          |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 13:00 - 13:25 | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
-| 13:25 - 13:50 | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-|               | *Presentations*                                                                                                                               |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 13:50 - 14:15 | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
-| 14:15 - 14:40 | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
-| 14:40 - 15:05 | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
-|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 15:05 - 15:10 | Closing Remarks                                                                                                                               |
+|                 | *Invited Talk*                                                                                                                                |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| +09:40 - 10:40+ | +Clémentine Maurice: *Side-channel Attacks on Microarchitecture: Beyond Crypto*+ Unfortunately the talk had to be cancelled.                  |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 10:40 - 11:10   | Break                                                                                                                                         |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|                 | *Attacks on AEAD Primitives*                                                                                                                  |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 11:10 - 11:35   | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
+| 11:35 - 12:00   | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 12:00 - 13:00   | Lunch                                                                                                                                         |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|                 | *ZK*                                                                                                                                          |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:00 - 13:25   | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
+| 13:25 - 13:50   | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|                 | *Presentations*                                                                                                                               |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:50 - 14:15   | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
+| 14:15 - 14:40   | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
+| 14:40 - 15:05   | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 15:05 - 15:10   | Closing Remarks                                                                                                                               |
 
 * Calls
 
