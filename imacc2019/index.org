@@ -164,29 +164,27 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 |                 | *Invited Talk*                                                                                                                                |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| +09:40 - 10:40+ | +Clémentine Maurice: *Side-channel Attacks on Microarchitecture: Beyond Crypto*+ Unfortunately the talk had to be cancelled.                  |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 10:40 - 11:10   | Break                                                                                                                                         |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
 |                 | *Attacks on AEAD Primitives*                                                                                                                  |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 11:10 - 11:35   | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
-| 11:35 - 12:00   | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
+| 09:40 - 10:05   | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
+| 10:05 - 10:30   | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 12:00 - 13:00   | Lunch                                                                                                                                         |
+| 10:30 - 11:10   | Break                                                                                                                                         |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
 |                 | *ZK*                                                                                                                                          |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 13:00 - 13:25   | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
-| 13:25 - 13:50   | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
+| 11:10 - 11:35   | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
+| 11:35 - 12:00   | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
+|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 12:00 - 13:00   | Lunch                                                                                                                                         |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
 |                 | *Presentations*                                                                                                                               |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 13:50 - 14:15   | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
-| 14:15 - 14:40   | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
-| 14:40 - 15:05   | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
+| 13:00 - 13:25   | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
+| 13:25 - 13:50   | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
+| 13:50 - 14:15   | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 15:05 - 15:10   | Closing Remarks                                                                                                                               |
+| 14:15 - 14:20   | Closing Remarks                                                                                                                               |
 
 * Calls
 
