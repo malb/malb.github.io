@@ -162,8 +162,6 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 ** Wednesday
 
-|                 | *Invited Talk*                                                                                                                                |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
 |                 | *Attacks on AEAD Primitives*                                                                                                                  |
 |-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
 | 09:40 - 10:05   | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
