@@ -69,7 +69,7 @@ Due to the increased deployment of secure messaging protocols in a variety of se
 - Monika Trimoska, Sorina Ionica and Gilles Dequen. *A SAT-based approach for index calculus on binary elliptic curves*
 - Jake Massimo. *Primality Testing in Cryptographic Applications*
 - Anamaria Costache, Kim Laine and Rachel Player. *Homomorphic noise growth in practice: comparing BGV and FV*
-- +Sergiu Carpov, Malika Izabachène and Victor Mollimard. *TFHE Toolbox for homomorphic neural network prediction*+ (talk had to be cancelled)
+- +Sergiu Carpov, Malika Izabachène and Victor Mollimard.+ +*TFHE Toolbox for homomorphic neural network prediction*+ (talk had to be cancelled)
 - Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference*
 - Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*
 
@@ -91,7 +91,9 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 ** Monday
 
-|               | *Invited Talk* (Session Chair: Martin Albrecht)                                                                                                                      |
+| Time          | Session                                                                                                                                                              |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Invited Talk*  (Session Chair: Martin Albrecht)                                                                                                                     |
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 09:40 - 10:40 | Cas Cremers: *Security Standardisation and Secure Messaging*                                                                                                         |
 |---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,6 +128,8 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 ** Tuesday
 
+| Time          | Session                                                                                                                                                              |
+|---------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |               | *Invited Talks* (Session Chair: Martin Albrecht)                                                                                                           |
 |---------------+------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 09:40 - 10:40 | Nadia Heninger: The Cryptographic Legacy of Old RNG Designs                                                                                                |
@@ -162,27 +166,29 @@ If you witness harassment or discriminatory behavior, please consider intervenin
 
 ** Wednesday
 
-|                 | *Attacks on AEAD Primitives* (Session Chair: Martin Albrecht)                                                                                 |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 09:40 - 10:05   | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
-| 10:05 - 10:30   | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 10:30 - 11:10   | Break                                                                                                                                         |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-|                 | *ZK* (Session Chair: Alex Davidson)                                                                                                           |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 11:10 - 11:35   | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
-| 11:35 - 12:00   | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 12:00 - 13:00   | Lunch                                                                                                                                         |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-|                 | *Presentations* (Session Chair: Ciara Rafferty)                                                                                               |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 13:00 - 13:25   | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
-| 13:25 - 13:50   | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
-| 13:50 - 14:15   | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
-|-----------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
-| 14:15 - 14:20   | Closing Remarks                                                                                                                               |
+| Time          | Session                                                                                                                                       |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Attacks on AEAD Primitives* (Session Chair: Martin Albrecht)                                                                                 |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 09:40 - 10:05 | Marcel Armour and Bertram Poettering. *Decryption Algorithm Substitution Attacks*                                                             |
+| 10:05 - 10:30 | Maria Eichlseder, Daniel Kales and Markus Schofnegger. *Forgery Attacks on FlexAE and FlexAEAD*                                               |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 10:30 - 11:10 | Break                                                                                                                                         |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *ZK* (Session Chair: Alex Davidson)                                                                                                           |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 11:10 - 11:35 | Ramiro Martínez and Paz Morillo. *RLWE-based Zero-Knowledge Proofs for linear and multiplicative relations*                                   |
+| 11:35 - 12:00 | Karim Baghery. *Subversion-Resistant Simulation (Knowledge) Sound NIZKs*                                                                      |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 12:00 - 13:00 | Lunch                                                                                                                                         |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+|               | *Presentations* (Session Chair: Ciara Rafferty)                                                                                               |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 13:00 - 13:25 | Woojoo Na, Alexander Allin and Christophe Petit. *Trapdoor attacks on Cayley hash function parameters proposed at the NutMiC 2019 conference* |
+| 13:25 - 13:50 | Nina Bindel, Mike Hamburg, Andreas Hülsing and Edoardo Persichetti. *Tighter proofs of CCA security in the quantum random oracle model*       |
+| 13:50 - 14:15 | Lydia Garms and Anja Lehmann. *Group Signatures with Selective Linkability*                                                                   |
+|---------------+-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 14:15 - 14:20 | Closing Remarks                                                                                                                               |
 
 * Calls
 
