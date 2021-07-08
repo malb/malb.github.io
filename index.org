@@ -3,11 +3,11 @@
 
 * Decl
 
-I am a professor in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Security Group]] at [[https://royalholloway.ac.uk][Royal Holloway, University of London]].
+I am a professor in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Security Group]] at [[https://royalholloway.ac.uk][Royal Holloway, University of London]]. I am also the director of the [[https://cryptography.isg.rhul.ac.uk/][Cryptography Group]] there.
 
 ** Text
 
- - [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][dblp]] ([[http://bibbase.org/dblp/martin_r_albrecht][bibbase]])
+ - [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][dblp]]
  - [[https://martinralbrecht.wordpress.com][blog]] ([[https://bitbucket.org/malb/blog/][src]])
  - [[https://github.com/malb/malb.github.io][this]]
 

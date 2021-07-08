@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2019-12-16 Mon 21:25 -->
+<!-- 2021-07-08 Thu 09:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Martin R. Albrecht</title>
@@ -40,7 +40,7 @@
   }
   pre.src {
     position: relative;
-    overflow: visible;
+    overflow: auto;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -52,7 +52,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline;}
+  pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -206,50 +206,26 @@ ga('create', 'UA-74660978-1', 'auto');
 ga('send', 'pageview');
 </script>
 <script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2019 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
 </script>
 </head>
 <body>
@@ -259,31 +235,31 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org5091a78">Decl</a>
+<li><a href="#org5d0a0ef">Decl</a>
 <ul>
-<li><a href="#org7a81d26">Text</a></li>
+<li><a href="#org041b96b">Text</a></li>
 </ul>
 </li>
-<li><a href="#orgc4d70ce">Here</a></li>
-<li><a href="#org18db0e2">Code</a></li>
-<li><a href="#org16166a4">Link</a></li>
+<li><a href="#orgc156d93">Here</a></li>
+<li><a href="#org2e28ae2">Code</a></li>
+<li><a href="#orge1f8af8">Link</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5091a78" class="outline-2">
-<h2 id="org5091a78">Decl</h2>
-<div class="outline-text-2" id="text-org5091a78">
+<div id="outline-container-org5d0a0ef" class="outline-2">
+<h2 id="org5d0a0ef">Decl</h2>
+<div class="outline-text-2" id="text-org5d0a0ef">
 <p>
-I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Information Security Group</a> at <a href="https://royalholloway.ac.uk">Royal Holloway, University of London</a>.
+I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Information Security Group</a> at <a href="https://royalholloway.ac.uk">Royal Holloway, University of London</a>. I am also the director of the <a href="https://cryptography.isg.rhul.ac.uk/">Cryptography Group</a> there.
 </p>
 </div>
 
-<div id="outline-container-org7a81d26" class="outline-3">
-<h3 id="org7a81d26">Text</h3>
-<div class="outline-text-3" id="text-org7a81d26">
+<div id="outline-container-org041b96b" class="outline-3">
+<h3 id="org041b96b">Text</h3>
+<div class="outline-text-3" id="text-org041b96b">
 <ul class="org-ul">
-<li><a href="http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=">dblp</a> (<a href="http://bibbase.org/dblp/martin_r_albrecht">bibbase</a>)</li>
+<li><a href="http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=">dblp</a></li>
 <li><a href="https://martinralbrecht.wordpress.com">blog</a> (<a href="https://bitbucket.org/malb/blog/">src</a>)</li>
 <li><a href="https://github.com/malb/malb.github.io">this</a></li>
 </ul>
@@ -291,18 +267,18 @@ I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Informatio
 </div>
 </div>
 
-<div id="outline-container-orgc4d70ce" class="outline-2">
-<h2 id="orgc4d70ce">Here</h2>
-<div class="outline-text-2" id="text-orgc4d70ce">
+<div id="outline-container-orgc156d93" class="outline-2">
+<h2 id="orgc156d93">Here</h2>
+<div class="outline-text-2" id="text-orgc156d93">
 <ul class="org-ul">
 <li><a href="./are-graded-encoding-schemes-broken-yet.html">are graded encoding schemes broken yet</a>?</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org18db0e2" class="outline-2">
-<h2 id="org18db0e2">Code</h2>
-<div class="outline-text-2" id="text-org18db0e2">
+<div id="outline-container-org2e28ae2" class="outline-2">
+<h2 id="org2e28ae2">Code</h2>
+<div class="outline-text-2" id="text-org2e28ae2">
 <ul class="org-ul">
 <li><a href="https://bitbucket.org/malb">bitbucket</a></li>
 <li><a href="https://github.com/malb">github</a></li>
@@ -311,9 +287,9 @@ I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Informatio
 </div>
 </div>
 
-<div id="outline-container-org16166a4" class="outline-2">
-<h2 id="org16166a4">Link</h2>
-<div class="outline-text-2" id="text-org16166a4">
+<div id="outline-container-orge1f8af8" class="outline-2">
+<h2 id="orge1f8af8">Link</h2>
+<div class="outline-text-2" id="text-orge1f8af8">
 <ul class="org-ul">
 <li><a href="https://www.isg.rhul.ac.uk/bin/staff-dir.php">rhul</a></li>
 <li><a href="mailto:FIRSTNAME.LASTNAME@royalholloway.ac.uk">email</a></li>
@@ -323,7 +299,7 @@ I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Informatio
 <li><a href="https://scholar.google.com/citations?user=mELfH20AAAAJ&amp;hl=en">gscholar</a></li>
 </ul>
 
-<div class="HTML">
+<div class="HTML" id="orga201332">
 <p>
 
 </p>
