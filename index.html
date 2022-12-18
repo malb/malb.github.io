@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-08 Thu 09:43 -->
+<!-- 2022-12-18 Sun 19:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Martin R. Albrecht</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="Martin R. Albrecht" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -190,8 +191,7 @@
     { font-size: 10px; font-weight: bold; white-space: nowrap; }
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
+  .org-svg { }
 </style>
 <link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/bundle.css"/>
@@ -205,9 +205,8 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-74660978-1', 'auto');
 ga('send', 'pageview');
 </script>
-<script type="text/javascript">
+<script>
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
-<!--/*--><![CDATA[/*><!--*/
      function CodeHighlightOn(elem, id)
      {
        var target = document.getElementById(id);
@@ -224,40 +223,39 @@ ga('send', 'pageview');
          target.classList.remove("code-highlighted");
        }
      }
-    /*]]>*///-->
 // @license-end
 </script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Martin R. Albrecht</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org5d0a0ef">Decl</a>
+<li><a href="#org0bb2f8c">Decl</a>
 <ul>
-<li><a href="#org041b96b">Text</a></li>
+<li><a href="#org3844143">Text</a></li>
 </ul>
 </li>
-<li><a href="#orgc156d93">Here</a></li>
-<li><a href="#org2e28ae2">Code</a></li>
-<li><a href="#orge1f8af8">Link</a></li>
+<li><a href="#orgb349dfe">Here</a></li>
+<li><a href="#orge100aff">Code</a></li>
+<li><a href="#orgcc835e6">Link</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5d0a0ef" class="outline-2">
-<h2 id="org5d0a0ef">Decl</h2>
-<div class="outline-text-2" id="text-org5d0a0ef">
+<div id="outline-container-org0bb2f8c" class="outline-2">
+<h2 id="org0bb2f8c">Decl</h2>
+<div class="outline-text-2" id="text-org0bb2f8c">
 <p>
-I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Information Security Group</a> at <a href="https://royalholloway.ac.uk">Royal Holloway, University of London</a>. I am also the director of the <a href="https://cryptography.isg.rhul.ac.uk/">Cryptography Group</a> there.
+I am a professor in the <a href="https://www.kcl.ac.uk/research/cys">Cybersecurity Group</a> at <a href="https://www.kcl.ac.uk/research/cys">King’s College London</a>. I am also a Principal Research Scientist for <a href="https://www.sandboxaq.com/">SandboxAQ</a>. I work in cryptography, especially post-quantum and lattice based cryptography and applied cryptography.
 </p>
 </div>
 
-<div id="outline-container-org041b96b" class="outline-3">
-<h3 id="org041b96b">Text</h3>
-<div class="outline-text-3" id="text-org041b96b">
+<div id="outline-container-org3844143" class="outline-3">
+<h3 id="org3844143">Text</h3>
+<div class="outline-text-3" id="text-org3844143">
 <ul class="org-ul">
 <li><a href="http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=">dblp</a></li>
 <li><a href="https://martinralbrecht.wordpress.com">blog</a> (<a href="https://bitbucket.org/malb/blog/">src</a>)</li>
@@ -267,18 +265,18 @@ I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Informatio
 </div>
 </div>
 
-<div id="outline-container-orgc156d93" class="outline-2">
-<h2 id="orgc156d93">Here</h2>
-<div class="outline-text-2" id="text-orgc156d93">
+<div id="outline-container-orgb349dfe" class="outline-2">
+<h2 id="orgb349dfe">Here</h2>
+<div class="outline-text-2" id="text-orgb349dfe">
 <ul class="org-ul">
 <li><a href="./are-graded-encoding-schemes-broken-yet.html">are graded encoding schemes broken yet</a>?</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org2e28ae2" class="outline-2">
-<h2 id="org2e28ae2">Code</h2>
-<div class="outline-text-2" id="text-org2e28ae2">
+<div id="outline-container-orge100aff" class="outline-2">
+<h2 id="orge100aff">Code</h2>
+<div class="outline-text-2" id="text-orge100aff">
 <ul class="org-ul">
 <li><a href="https://bitbucket.org/malb">bitbucket</a></li>
 <li><a href="https://github.com/malb">github</a></li>
@@ -287,9 +285,9 @@ I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Informatio
 </div>
 </div>
 
-<div id="outline-container-orge1f8af8" class="outline-2">
-<h2 id="orge1f8af8">Link</h2>
-<div class="outline-text-2" id="text-orge1f8af8">
+<div id="outline-container-orgcc835e6" class="outline-2">
+<h2 id="orgcc835e6">Link</h2>
+<div class="outline-text-2" id="text-orgcc835e6">
 <ul class="org-ul">
 <li><a href="https://www.isg.rhul.ac.uk/bin/staff-dir.php">rhul</a></li>
 <li><a href="mailto:FIRSTNAME.LASTNAME@royalholloway.ac.uk">email</a></li>
@@ -299,7 +297,7 @@ I am a professor in the <a href="http://www.rhul.ac.uk/isg/home.aspx">Informatio
 <li><a href="https://scholar.google.com/citations?user=mELfH20AAAAJ&amp;hl=en">gscholar</a></li>
 </ul>
 
-<div class="HTML" id="orga201332">
+<div class="HTML" id="org7507d6f">
 <p>
 
 </p>

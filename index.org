@@ -3,7 +3,7 @@
 
 * Decl
 
-I am a professor in the [[http://www.rhul.ac.uk/isg/home.aspx][Information Security Group]] at [[https://royalholloway.ac.uk][Royal Holloway, University of London]]. I am also the director of the [[https://cryptography.isg.rhul.ac.uk/][Cryptography Group]] there.
+I am a professor in the [[https://www.kcl.ac.uk/research/cys][Cybersecurity Group]] at [[https://www.kcl.ac.uk/research/cys][King’s College London]]. I am also a Principal Research Scientist for [[https://www.sandboxaq.com/][SandboxAQ]]. I work in cryptography, especially post-quantum and lattice based cryptography and applied cryptography.
 
 ** Text
 
