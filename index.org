@@ -23,8 +23,7 @@ I am a professor in the [[https://www.kcl.ac.uk/research/cys][Cybersecurity Grou
 
 * Link
 
-- [[https://www.isg.rhul.ac.uk/bin/staff-dir.php][rhul]]
-- [[mailto:FIRSTNAME.LASTNAME@royalholloway.ac.uk][email]]
+- [[mailto:FIRSTNAME.LASTNAME@kcl.ac.uk][email]]
 - [[https://twitter.com/martinralbrecht][twitter]]
 - [[https://keybase.io/martinralbrecht][keybase]]
 - [[http://uk.linkedin.com/pub/martin-albrecht/95/74b/42a][linkedin]]
