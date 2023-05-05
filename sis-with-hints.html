@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-05-05 Fri 16:36 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SIS with Hints Zoo</title>
+<meta name="author" content="Martin R. Albrecht" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/bundle.css"/>
+<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+<script src="css/bundle.js" type="text/javascript" ></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-74660978-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'left',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'left',
+      displayIndent: '5em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'left',
+      displayIndent: '5em'
+    },
+    output: {
+      font: 'mathjax-euler',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">SIS with Hints Zoo</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgf596c51">1. k-SIS</a>
+<ul>
+<li><a href="#org498d46e">1.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#orga0078ea">2. <span class="todo TODO">TODO</span> Evasive LWE</a></li>
+<li><a href="#org978feb9">3. One-more-ISIS</a>
+<ul>
+<li><a href="#org5703575">3.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#orgde0b83a">4. K-R-ISIS</a>
+<ul>
+<li><a href="#org26cd48c">4.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#orge609e99">5. Knowledge K-R-ISIS</a>
+<ul>
+<li><a href="#orge446779">5.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#org6621e11">6. <span class="todo TODO">TODO</span> Twin K-R-ISIS</a></li>
+<li><a href="#orgb4b1909">7. BASIS</a>
+<ul>
+<li><a href="#org86459d5">7.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#orgc7cb13c">8. <span class="todo TODO">TODO</span> ISISf</a></li>
+</ul>
+</div>
+</div>
+<div class="HTML" id="orge650b58">
+<p>
+\( 
+  \newcommand\ring{\mathcal{R}}
+  \newcommand\ZZ{\mathbb{Z}}
+  \renewcommand{\vec}[1]{{\boldsymbol{\mathbf{#1}}}}
+  \newcommand\mat[1]{\vec{#1}}
+\)
+</p>
+
+</div>
+
+<p>
+An attempt to keep track of all those new SIS-like assumptions that hand out additional hints. Some of these venture into LWE land, but for now I want to keep it more or less SIS focused.
+</p>
+
+<p>
+Please reach out if you find a mistake or have an update.
+</p>
+
+<ul class="org-ul">
+<li><b>Designers:</b> please consider whether you can re-use one of those many newfangled assumptions before introducing yet another one.</li>
+
+<li><b>Cryptanalysts:</b> please consider analysing these assumptions.</li>
+</ul>
+
+<div id="outline-container-orgf596c51" class="outline-2">
+<h2 id="orgf596c51"><span class="section-number-2">1.</span> k-SIS</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+(<a href="#citeproc_bib_item_3">Boneh &#38; Freeman, 2011</a>)
+</p>
+
+<p>
+We give the module variant defined in (<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>).
+</p>
+
+<blockquote>
+<p>
+For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\mat{A} \in \ring_{q}^{\eta \times \ell}\) and a set of \(k\) vectors \(\vec{u}_{0}, \ldots \vec{u}_{k-1}\) s.t. \(\mat{A}\cdot \vec{u}_{i} \equiv \vec{0} \bmod q\) with \(\|{\vec{u}_i}\| \leq \beta\). A solution to the problem is a nonzero vector \(\vec{u} \in \ring^{\ell}\) such that
+</p>
+
+<p>
+\[\|{\vec{u}}\| \leq \beta^*, \quad \mat{A}\cdot \vec{u} \equiv \vec{0} \bmod q,\quad \text{and} \quad \vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k}).\]
+</p>
+</blockquote>
+
+
+<p>
+An LWE variant, called k-LWE was introduced in (<a href="#citeproc_bib_item_4">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>).
+</p>
+</div>
+
+<div id="outline-container-org498d46e" class="outline-3">
+<h3 id="org498d46e"><span class="section-number-3">1.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in (<a href="#citeproc_bib_item_4">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>) to cover \(k = \mathcal{O}(\ell)\). No proof was provided for the module variant.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga0078ea" class="outline-2">
+<h2 id="orga0078ea"><span class="section-number-2">2.</span> <span class="todo TODO">TODO</span> Evasive LWE</h2>
+</div>
+
+<div id="outline-container-org978feb9" class="outline-2">
+<h2 id="org978feb9"><span class="section-number-2">3.</span> One-more-ISIS</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+(<a href="#citeproc_bib_item_1">Agrawal, Kirshanova, Stehlé, &#38; Yadav, 2022</a>)
+</p>
+
+<blockquote>
+<p>
+A challenger selects a matrix \(\mat{A} \in \ZZ_{q}^{n \times m}\) and sends it to the adversary. The adversary can perform two types of queries:
+</p>
+
+
+<p>
+<b>Syndrome queries</b> The adversary can request a challenge vector which the challenger selects at random, i.e. \(\vec{t} \gets_{\$} \ZZ_{q}^{n}\), adds to some set \(\mathcal{S}\) and returns to the adversary.
+</p>
+
+
+<p>
+<b>Preimage queries.</b> The adversary submits <i>any</i> vector \(\vec{t}' \in \ZZ_{q}^{n}\). The challenger will return a short vector \(\vec{y}' \gets_{\$} D_{\ZZ^m,\sigma}\) such that \(\mat{A}\cdot \vec{y}' \equiv \vec{t}' \bmod q\). Denote \(\ell\) for the number of preimage queries.
+</p>
+
+<p>
+In the end the adversary is asked to output \(\ell+1\) pairs \(\{(\vec{y}_i,\vec{t}_i)\}_{0 \leq i < \ell+1}\) satisfying:
+\[\mat{A}\cdot \vec{y}_{i} \equiv \vec{t}_{i} \bmod q, \|\vec{y}_{i}\| \leq \beta \text{ and }\vec{t}_{i} \in \mathcal{S}.\]
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org5703575" class="outline-3">
+<h3 id="org5703575"><span class="section-number-3">3.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+The hardness of the problem is analysed using direct cryptanalysis in the original paper. The authors give a combinatorial attack and a lattice attack.
+</p>
+
+<p>
+<b>Combinatorial Attack.</b> The adversary requests \(n \cdot q\) preimages for all \(\{a \cdot \vec{e}_{i} | a \in \ZZ_{q}, i \in \ZZ_{n}\}\), here \(\vec{e}_{i}\) is the \(i\)-th unit vector. Then, adding up \(n\) such preimages allows to construct any image. Since the norm of the preimages returned by the challenger is \(\sqrt{m} \cdot \sigma\), this allows to solve the One-more-ISIS problem when \(\sqrt{n\cdot m} \cdot \sigma \leq \beta\). Of course, smaller and larger sets of preimages are possible, increasing and decreasing the output norm respectively.
+</p>
+
+<p>
+<b>Lattice Attack.</b> The adversary requests \(> m\) preimages of zero and uses that to produce a short basis \(\mat{T}\) for the kernel of \(\mat{A}\), i.e. \(\mat{A}\cdot\mat{T} \equiv \vec{0} \bmod q\). This constitutes a trapdoor for \(\mat{A}\) and thus permits to return short preimages for any target. The key point here is that this trapdoor is of degraded quality relative to the trapdoor used by the challenger. The key computational challenge then is to fix-up or improve this degraded trapdoor in order to be able to sample sufficiently short vectors.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgde0b83a" class="outline-2">
+<h2 id="orgde0b83a"><span class="section-number-2">4.</span> K-R-ISIS</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+(<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>)
+</p>
+
+<blockquote>
+<p>
+Let \(g(\vec{X}) \in \mathcal{R}(\vec{X})\) be a Laurent monomial, i.e. \(g(\vec{X}) = \vec{X}^{\vec{e}} := \prod_{i \in \ZZ_w} X_i^{e_i}\) for some exponent vector \(\vec{e} = (e_i: i \in \ZZ_w) \in \ZZ^w\). Let \(\mathcal{G} \subset \mathcal{R}(\vec{X})\) be a set of Laurent monomials with \(k := |\mathcal{G}|\). Let \(g^{\star} \in \mathcal{R}(\vec{X})\) be a target Laurent monomial. We call a family \(\mathcal{G}\) <b>k-M-ISIS-admissible</b> if
+</p>
+<ol class="org-ol">
+<li>all \(g \in \mathcal{G}\) have constant degree, i.e. \(\|\vec{e}\|_{1} \in O(1)\);</li>
+<li>all \(g \in \mathcal{G}\) are distinct, i.e. \(\mathcal{G}\) is not a multiset; and</li>
+<li>\(0 \not\in\mathcal{G}\).</li>
+</ol>
+
+<p>
+We call a family \((\mathcal{G}, g^*)\)  <b>k-M-ISIS-admissible</b> if \(\mathcal{G}\) is k-MISIS-admissible, \(g^*\) has constant degree, and \(g^* \notin \mathcal{G}\).
+</p>
+
+<p>
+Now, let \(\vec{t} = (1,0,\ldots,0)\).
+Let \(\mathcal{G} \subset \mathcal{R}(\vec{X})\) be a set of \(w\)-variate Laurent monomial.
+Let \(g^{\star} \in \mathcal{R}(\vec{X})\) be a target Laurent monomial.
+Let \((\mathcal{G},g^\star)\) be k-M-ISIS-admissible.
+Let  \(\mat{A} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\).
+Given \((\mat{A}, \{\vec{u}_{g}\})\) with \(\vec{u}_{g}\) short and
+\[
+g(\vec{v}) \cdot \vec{t} \equiv \mat{A}\cdot \vec{u}_{g} \bmod q
+\]
+it is hard to find a short \(\vec{u}_{g^*}\) and small \(s^{*}\) s.t.
+\[
+s^* \cdot g^{*}(\vec{v}) \cdot \vec{t} \equiv \mat{A} \cdot \vec{u}_{g^*} \bmod q.
+\]
+</p>
+</blockquote>
+
+<p>
+When \(\eta = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem <b>k-R-ISIS</b>.
+</p>
+</div>
+
+<div id="outline-container-org26cd48c" class="outline-3">
+<h3 id="org26cd48c"><span class="section-number-3">4.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+The hardness of the problem is analysed by the authors by providing some partial reductions, i.e. covering some special cases. The authors show that
+</p>
+
+<ul class="org-ul">
+<li>k-R-ISIS (with \(g^{*} \equiv 1\)) is as hard as R-SIS when \(\ell > k\) or when the system generated by \(\mathcal{G}\) is efficiently invertible.</li>
+<li>k-M-ISIS is at least as hard as k-R-ISIS and that k-M-ISIS is a true generalisation of k-R-SIS.</li>
+<li>\((\mathcal{G},g^*)\) is as hard as \((\mathcal{G},0)\) for any \(\mathcal{G}\), formalising the intuition that the non-homogeneous variant is no easier than the homogeneous variant.</li>
+<li>scaling \((\mathcal{G},g^*)\) multiplicatively by any non-zero Laurent monomial does not change the hardness, e.g. we may choose to normalise instances to \(g^{*} \equiv 1\).</li>
+</ul>
+
+<p>
+The authors also explore direct cryptanalysis:
+</p>
+<ul class="org-ul">
+<li>a direct SIS attack on \(\mat{A}\).</li>
+<li>finding short \(\ZZ\)-linear combinations of \(\vec{u}_{i}\)</li>
+<li>finding \(\mathbb{Q}\)-linear combinations of \(\vec{u}_{i}\) that produce short images.</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge609e99" class="outline-2">
+<h2 id="orge609e99"><span class="section-number-2">5.</span> Knowledge K-R-ISIS</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+(<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>)
+</p>
+
+<p>
+The assumption essentially states that for any element \(c \cdot \vec{t}\) that the adversary can produce together with a short preimage, it produced that as some small linear combination of the preimages \(\{\vec{u}_{g}\}\) we have given it. Thus, roughly:
+</p>
+<blockquote>
+<p>
+If an adversary outputs any \(c, \vec{u}_{c}\) s.t.
+\[
+c \cdot \vec{t} \equiv \mat{A} \cdot \vec{u}_{c} \bmod q
+\]
+then there is an extractor that &#x2013; with access to the adversary's randomness &#x2013; outputs short
+\(\{c_{g}\}\) s.t.
+\[
+c \equiv \sum_{g \in \mathcal{G}} c_{g} \cdot g(\vec{v}) \bmod q.
+\]
+</p>
+</blockquote>
+
+<p>
+The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
+</p>
+</div>
+
+<div id="outline-container-orge446779" class="outline-3">
+<h3 id="orge446779"><span class="section-number-3">5.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-5-1">
+<p>
+No analysis is provided to date.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6621e11" class="outline-2">
+<h2 id="org6621e11"><span class="section-number-2">6.</span> <span class="todo TODO">TODO</span> Twin K-R-ISIS</h2>
+</div>
+<div id="outline-container-orgb4b1909" class="outline-2">
+<h2 id="orgb4b1909"><span class="section-number-2">7.</span> BASIS</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+(<a href="#citeproc_bib_item_5">Wee &#38; Wu, 2023</a>)
+</p>
+
+<p>
+We consider \(\mathsf{BASIS}\) with with \(k=2\), for simplicity.
+</p>
+
+<blockquote>
+<p>
+Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+</p>
+
+<p>
+We say \(\mathsf{BASIS}_{\mathsf{rand}}\) if \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\mat{A} | \mat{A}^{T}]^{T}\) for some uniformly random \(\mat{A}\). and \(\mathsf{BASIS}_{\mathsf{struct}}\) when \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
+</p>
+
+<p>
+The \(\mathsf{BASIS}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org86459d5" class="outline-3">
+<h3 id="org86459d5"><span class="section-number-3">7.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+It was shown in the original paper that \(\mathsf{BASIS}_{\mathsf{rand}}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
+</p>
+
+<p>
+A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{\eta+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\).
+</p>
+
+<p>
+The authors also show that given an algorithm for solving BASIS there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc7cb13c" class="outline-2">
+<h2 id="orgc7cb13c"><span class="section-number-2">8.</span> <span class="todo TODO">TODO</span> ISISf</h2>
+<div class="outline-text-2" id="text-8">
+<style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
+  <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Agrawal, S., Kirshanova, E., Stehlé, D., &#38; Yadav, A. (2022). Practical, round-optimal lattice-based blind signatures. In H. Yin, A. Stavrou, C. Cremers, &#38; E. Shi (Eds.), <i>Proceedings of the 2022 ACM SIGSAC conference on computer and communications security, CCS 2022</i> (pp. 39–53). <a href="https://doi.org/10.1145/3548606.3560650">https://doi.org/10.1145/3548606.3560650</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Albrecht, M. R., Cini, V., Lai, R. W. F., Malavolta, G., &#38; Thyagarajan, S. A. K. (2022). Lattice-based snarks: Publicly verifiable, preprocessing, and recursively composable - (extended abstract). In Y. Dodis &#38; T. Shrimpton (Eds.), <i>Advances in cryptology - CRYPTO 2022</i> (pp. 102–132). Springer. <a href="https://doi.org/10.1007/978-3-031-15979-4\_4">https://doi.org/10.1007/978-3-031-15979-4\_4</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Boneh, D., &#38; Freeman, D. M. (2011). Linearly homomorphic signatures over binary fields and new tools for lattice-based signatures. In D. Catalano, N. Fazio, R. Gennaro, &#38; A. Nicolosi (Eds.), <i>Public key cryptography - PKC 2011</i> (pp. 1–16). Springer. <a href="https://doi.org/10.1007/978-3-642-19379-8\_1">https://doi.org/10.1007/978-3-642-19379-8\_1</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Ling, S., Phan, D. H., Stehlé, D., &#38; Steinfeld, R. (2014). Hardness of k-lwe and applications in traitor tracing. In J. A. Garay &#38; R. Gennaro (Eds.), <i>Advances in cryptology - CRYPTO 2014</i> (pp. 315–334). Springer. <a href="https://doi.org/10.1007/978-3-662-44371-2\_18">https://doi.org/10.1007/978-3-662-44371-2\_18</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Wee, H., &#38; Wu, D. J. (2023). Succinct vector, polynomial, and functional commitments from lattices. In C. Hazay &#38; M. Stam (Eds.), <i>Advances in cryptology - EUROCRYPT 2023</i> (pp. 385–416). Springer. <a href="https://doi.org/10.1007/978-3-031-30620-4\_13">https://doi.org/10.1007/978-3-031-30620-4\_13</a></div>
+</div>
+
+<div class="HTML" id="org680a8b8">
+<p>
+
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

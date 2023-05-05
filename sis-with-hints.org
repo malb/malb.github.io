@@ -1,0 +1,173 @@
+#+SETUPFILE: setup.org
+#+OPTIONS: num:t
+#+AUTHOR: Martin R. Albrecht
+#+TITLE: SIS with Hints Zoo
+#+cite_export: csl ./apa-6th-edition.csl
+#+bibliography: local.bib
+
+#+BEGIN_HTML
+\( 
+  \newcommand\ring{\mathcal{R}}
+  \newcommand\ZZ{\mathbb{Z}}
+  \renewcommand{\vec}[1]{{\boldsymbol{\mathbf{#1}}}}
+  \newcommand\mat[1]{\vec{#1}}
+\)
+#+END_HTML
+
+An attempt to keep track of all those new SIS-like assumptions that hand out additional hints. Some of these venture into LWE land, but for now I want to keep it more or less SIS focused.
+
+Please reach out if you find a mistake or have an update.
+
+- *Designers:* please consider whether you can re-use one of those many newfangled assumptions before introducing yet another one.
+
+- *Cryptanalysts:* please consider analysing these assumptions.
+
+* k-SIS
+
+[cite:@PKC:BonFre11]
+
+We give the module variant defined in [cite:@C:ACLMT22].
+
+#+begin_quote
+For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\mat{A} \in \ring_{q}^{\eta \times \ell}\) and a set of \(k\) vectors \(\vec{u}_{0}, \ldots \vec{u}_{k-1}\) s.t. \(\mat{A}\cdot \vec{u}_{i} \equiv \vec{0} \bmod q\) with \(\|{\vec{u}_i}\| \leq \beta\). A solution to the problem is a nonzero vector \(\vec{u} \in \ring^{\ell}\) such that
+
+\[\|{\vec{u}}\| \leq \beta^*, \quad \mat{A}\cdot \vec{u} \equiv \vec{0} \bmod q,\quad \text{and} \quad \vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k}).\]
+#+end_quote
+
+
+An LWE variant, called k-LWE was introduced in [cite:@C:LPSS14].
+
+** Hardness
+
+The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in [cite:@C:LPSS14] to cover \(k = \mathcal{O}(\ell)\). No proof was provided for the module variant.
+
+* TODO Evasive LWE
+
+* One-more-ISIS
+
+[cite:@CCS:AKSY22]
+
+#+begin_quote
+A challenger selects a matrix \(\mat{A} \in \ZZ_{q}^{n \times m}\) and sends it to the adversary. The adversary can perform two types of queries:
+
+
+*Syndrome queries* The adversary can request a challenge vector which the challenger selects at random, i.e. \(\vec{t} \gets_{\$} \ZZ_{q}^{n}\), adds to some set \(\mathcal{S}\) and returns to the adversary.
+
+
+*Preimage queries.* The adversary submits /any/ vector \(\vec{t}' \in \ZZ_{q}^{n}\). The challenger will return a short vector \(\vec{y}' \gets_{\$} D_{\ZZ^m,\sigma}\) such that \(\mat{A}\cdot \vec{y}' \equiv \vec{t}' \bmod q\). Denote \(\ell\) for the number of preimage queries.
+
+In the end the adversary is asked to output \(\ell+1\) pairs \(\{(\vec{y}_i,\vec{t}_i)\}_{0 \leq i < \ell+1}\) satisfying:
+\[\mat{A}\cdot \vec{y}_{i} \equiv \vec{t}_{i} \bmod q, \|\vec{y}_{i}\| \leq \beta \text{ and }\vec{t}_{i} \in \mathcal{S}.\]
+#+end_quote
+
+** Hardness
+
+The hardness of the problem is analysed using direct cryptanalysis in the original paper. The authors give a combinatorial attack and a lattice attack.
+
+*Combinatorial Attack.* The adversary requests \(n \cdot q\) preimages for all \(\{a \cdot \vec{e}_{i} | a \in \ZZ_{q}, i \in \ZZ_{n}\}\), here \(\vec{e}_{i}\) is the \(i\)-th unit vector. Then, adding up \(n\) such preimages allows to construct any image. Since the norm of the preimages returned by the challenger is \(\sqrt{m} \cdot \sigma\), this allows to solve the One-more-ISIS problem when \(\sqrt{n\cdot m} \cdot \sigma \leq \beta\). Of course, smaller and larger sets of preimages are possible, increasing and decreasing the output norm respectively.
+
+*Lattice Attack.* The adversary requests \(> m\) preimages of zero and uses that to produce a short basis \(\mat{T}\) for the kernel of \(\mat{A}\), i.e. \(\mat{A}\cdot\mat{T} \equiv \vec{0} \bmod q\). This constitutes a trapdoor for \(\mat{A}\) and thus permits to return short preimages for any target. The key point here is that this trapdoor is of degraded quality relative to the trapdoor used by the challenger. The key computational challenge then is to fix-up or improve this degraded trapdoor in order to be able to sample sufficiently short vectors.
+
+* K-R-ISIS
+
+[cite:@C:ACLMT22]
+
+#+begin_quote
+Let \(g(\vec{X}) \in \mathcal{R}(\vec{X})\) be a Laurent monomial, i.e. \(g(\vec{X}) = \vec{X}^{\vec{e}} := \prod_{i \in \ZZ_w} X_i^{e_i}\) for some exponent vector \(\vec{e} = (e_i: i \in \ZZ_w) \in \ZZ^w\). Let \(\mathcal{G} \subset \mathcal{R}(\vec{X})\) be a set of Laurent monomials with \(k := |\mathcal{G}|\). Let \(g^{\star} \in \mathcal{R}(\vec{X})\) be a target Laurent monomial. We call a family \(\mathcal{G}\) *k-M-ISIS-admissible* if
+1. all \(g \in \mathcal{G}\) have constant degree, i.e. \(\|\vec{e}\|_{1} \in O(1)\);
+2. all \(g \in \mathcal{G}\) are distinct, i.e. \(\mathcal{G}\) is not a multiset; and
+3. \(0 \not\in\mathcal{G}\).
+
+We call a family \((\mathcal{G}, g^*)\)  *k-M-ISIS-admissible* if \(\mathcal{G}\) is k-MISIS-admissible, \(g^*\) has constant degree, and \(g^* \notin \mathcal{G}\).
+
+Now, let \(\vec{t} = (1,0,\ldots,0)\).
+Let \(\mathcal{G} \subset \mathcal{R}(\vec{X})\) be a set of \(w\)-variate Laurent monomial.
+Let \(g^{\star} \in \mathcal{R}(\vec{X})\) be a target Laurent monomial.
+Let \((\mathcal{G},g^\star)\) be k-M-ISIS-admissible.
+Let  \(\mat{A} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\).
+Given \((\mat{A}, \{\vec{u}_{g}\})\) with \(\vec{u}_{g}\) short and
+\[
+g(\vec{v}) \cdot \vec{t} \equiv \mat{A}\cdot \vec{u}_{g} \bmod q
+\]
+it is hard to find a short \(\vec{u}_{g^*}\) and small \(s^{*}\) s.t.
+\[
+s^* \cdot g^{*}(\vec{v}) \cdot \vec{t} \equiv \mat{A} \cdot \vec{u}_{g^*} \bmod q.
+\]
+#+end_quote
+
+When \(\eta = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem *k-R-ISIS*.
+
+** Hardness
+
+The hardness of the problem is analysed by the authors by providing some partial reductions, i.e. covering some special cases. The authors show that
+
+- k-R-ISIS (with \(g^{*} \equiv 1\)) is as hard as R-SIS when \(\ell > k\) or when the system generated by \(\mathcal{G}\) is efficiently invertible.
+- k-M-ISIS is at least as hard as k-R-ISIS and that k-M-ISIS is a true generalisation of k-R-SIS.
+-  \((\mathcal{G},g^*)\) is as hard as \((\mathcal{G},0)\) for any \(\mathcal{G}\), formalising the intuition that the non-homogeneous variant is no easier than the homogeneous variant.
+- scaling \((\mathcal{G},g^*)\) multiplicatively by any non-zero Laurent monomial does not change the hardness, e.g. we may choose to normalise instances to \(g^{*} \equiv 1\).
+
+The authors also explore direct cryptanalysis:
+- a direct SIS attack on \(\mat{A}\).
+- finding short \(\ZZ\)-linear combinations of \(\vec{u}_{i}\)
+- finding \(\mathbb{Q}\)-linear combinations of \(\vec{u}_{i}\) that produce short images.
+
+* Knowledge K-R-ISIS
+
+[cite:@C:ACLMT22]
+
+The assumption essentially states that for any element \(c \cdot \vec{t}\) that the adversary can produce together with a short preimage, it produced that as some small linear combination of the preimages \(\{\vec{u}_{g}\}\) we have given it. Thus, roughly:
+#+begin_quote
+If an adversary outputs any \(c, \vec{u}_{c}\) s.t.
+\[
+c \cdot \vec{t} \equiv \mat{A} \cdot \vec{u}_{c} \bmod q
+\]
+then there is an extractor that -- with access to the adversary's randomness -- outputs short
+\(\{c_{g}\}\) s.t.
+\[
+c \equiv \sum_{g \in \mathcal{G}} c_{g} \cdot g(\vec{v}) \bmod q.
+\]
+#+end_quote
+
+The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
+
+** Hardness
+
+No analysis is provided to date.
+
+* TODO Twin K-R-ISIS
+* BASIS
+
+[cite:@EC:WeeWu23]
+
+We consider \(\mathsf{BASIS}\) with with \(k=2\), for simplicity.
+
+#+begin_quote
+Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+
+We say \(\mathsf{BASIS}_{\mathsf{rand}}\) if \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\mat{A} | \mat{A}^{T}]^{T}\) for some uniformly random \(\mat{A}\). and \(\mathsf{BASIS}_{\mathsf{struct}}\) when \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
+
+The \(\mathsf{BASIS}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+#+end_quote
+
+** Hardness
+
+It was shown in the original paper that \(\mathsf{BASIS}_{\mathsf{rand}}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
+
+A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{\eta+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\).
+
+The authors also show that given an algorithm for solving BASIS there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
+
+* TODO ISISf
+
+#+print_bibliography:
+
+#+INCLUDE: footer.org
+
+# Local Variables:
+# eval: (typo-mode -1)
+# eval: (org-cdlatex-mode 1)
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
+# End:
