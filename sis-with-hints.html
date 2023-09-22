@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-09-22 Fri 11:28 -->
+<!-- 2023-09-22 Fri 11:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SIS with Hints Zoo</title>
@@ -265,50 +265,50 @@ ga('send', 'pageview');
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgfb37f2c">1. <span class="done STANDARD">STANDARD</span> k-SIS</a>
+<li><a href="#org3b5e6b7">1. <span class="done STANDARD">STANDARD</span> k-SIS</a>
 <ul>
-<li><a href="#org2b4aca9">1.1. Hardness</a></li>
+<li><a href="#org8e49e8a">1.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org0162070">2. One-more-ISIS</a>
+<li><a href="#org9e2fc74">2. One-more-ISIS</a>
 <ul>
-<li><a href="#orgb5b1581">2.1. Hardness</a></li>
+<li><a href="#orgafa1f8b">2.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgaf91242">3. K-R-ISIS</a>
+<li><a href="#org9e1e630">3. K-R-ISIS</a>
 <ul>
-<li><a href="#org08c159e">3.1. Hardness</a></li>
+<li><a href="#orgd74adb3">3.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orga5bc3e8">4. <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</a>
+<li><a href="#orgaeb16e7">4. <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</a>
 <ul>
-<li><a href="#org82cb55b">4.1. Cryptanalysis</a></li>
+<li><a href="#org4e49529">4.1. Cryptanalysis</a></li>
 </ul>
 </li>
-<li><a href="#orgd3611cf">5. Twin K-R-ISIS</a>
+<li><a href="#orgc0097c2">5. Twin K-R-ISIS</a>
 <ul>
-<li><a href="#orgb1703a1">5.1. Hardness</a></li>
+<li><a href="#orgb1085b9">5.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org09a9d50">6. BASIS</a>
+<li><a href="#org06c7f84">6. BASIS</a>
 <ul>
-<li><a href="#orgefbcc47">6.1. Hardness</a></li>
+<li><a href="#orgc05845f">6.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgb8dba7b">7. PRISIS</a>
+<li><a href="#org22e002a">7. PRISIS</a>
 <ul>
-<li><a href="#orgeef6bf1">7.1. Hardness</a></li>
+<li><a href="#org8522f8d">7.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org62fcade">8. ISISf</a>
+<li><a href="#org4485e08">8. ISISf</a>
 <ul>
-<li><a href="#orga5705b8">8.1. Hardness</a></li>
+<li><a href="#orgd5336c5">8.1. Hardness</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div class="HTML" id="org53f2389">
+<div class="HTML" id="org58e3793">
 <p>
 \( 
   \newcommand\ring{\mathcal{R}}
@@ -345,8 +345,8 @@ In th jolly tradition of <a href="https://malb.io/are-graded-encoding-schemes-br
 Please reach out if you find a mistake or have an update.
 </p>
 
-<div id="outline-container-orgfb37f2c" class="outline-2">
-<h2 id="orgfb37f2c"><span class="section-number-2">1.</span> <span class="done STANDARD">STANDARD</span> k-SIS</h2>
+<div id="outline-container-org3b5e6b7" class="outline-2">
+<h2 id="org3b5e6b7"><span class="section-number-2">1.</span> <span class="done STANDARD">STANDARD</span> k-SIS</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 (Boneh &#38; Freeman, 2011)
@@ -372,8 +372,8 @@ An LWE variant, called k-LWE was introduced in (Ling, Phan, Stehlé, &#38; Stein
 </p>
 </div>
 
-<div id="outline-container-org2b4aca9" class="outline-3">
-<h3 id="org2b4aca9"><span class="section-number-3">1.1.</span> Hardness</h3>
+<div id="outline-container-org8e49e8a" class="outline-3">
+<h3 id="org8e49e8a"><span class="section-number-3">1.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
 The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in (Ling, Phan, Stehlé, &#38; Steinfeld, 2014) to cover \(k = \mathcal{O}(\ell)\).
@@ -390,8 +390,8 @@ No proof was provided for the module variant.
 </div>
 </div>
 
-<div id="outline-container-org0162070" class="outline-2">
-<h2 id="org0162070"><span class="section-number-2">2.</span> One-more-ISIS</h2>
+<div id="outline-container-org9e2fc74" class="outline-2">
+<h2 id="org9e2fc74"><span class="section-number-2">2.</span> One-more-ISIS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 (Agrawal, Kirshanova, Stehlé, &#38; Yadav, 2022)
@@ -417,8 +417,8 @@ In the end the adversary is asked to output \(k+1\) pairs \(\{(\vec{y}_i,\vec{t}
 </blockquote>
 </div>
 
-<div id="outline-container-orgb5b1581" class="outline-3">
-<h3 id="orgb5b1581"><span class="section-number-3">2.1.</span> Hardness</h3>
+<div id="outline-container-orgafa1f8b" class="outline-3">
+<h3 id="orgafa1f8b"><span class="section-number-3">2.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 The hardness of the problem is analysed using direct cryptanalysis in the original paper. The authors give a combinatorial attack and a lattice attack.
@@ -435,8 +435,8 @@ The hardness of the problem is analysed using direct cryptanalysis in the origin
 </div>
 </div>
 
-<div id="outline-container-orgaf91242" class="outline-2">
-<h2 id="orgaf91242"><span class="section-number-2">3.</span> K-R-ISIS</h2>
+<div id="outline-container-org9e1e630" class="outline-2">
+<h2 id="org9e1e630"><span class="section-number-2">3.</span> K-R-ISIS</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 (Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022)
@@ -478,8 +478,8 @@ When \(\eta = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem 
 </blockquote>
 </div>
 
-<div id="outline-container-org08c159e" class="outline-3">
-<h3 id="org08c159e"><span class="section-number-3">3.1.</span> Hardness</h3>
+<div id="outline-container-orgd74adb3" class="outline-3">
+<h3 id="orgd74adb3"><span class="section-number-3">3.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 The hardness of the problem is analysed by the authors by providing some partial reductions, i.e. covering some special cases. These special cases are not interesting for applications. The authors show that
@@ -504,8 +504,8 @@ The authors also explore direct cryptanalysis:
 </div>
 </div>
 
-<div id="outline-container-orga5bc3e8" class="outline-2">
-<h2 id="orga5bc3e8"><span class="section-number-2">4.</span> <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</h2>
+<div id="outline-container-orgaeb16e7" class="outline-2">
+<h2 id="orgaeb16e7"><span class="section-number-2">4.</span> <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 (Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022)
@@ -533,8 +533,8 @@ The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order
 </p>
 </div>
 
-<div id="outline-container-org82cb55b" class="outline-3">
-<h3 id="org82cb55b"><span class="section-number-3">4.1.</span> Cryptanalysis</h3>
+<div id="outline-container-org4e49529" class="outline-3">
+<h3 id="org4e49529"><span class="section-number-3">4.1.</span> Cryptanalysis</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 The assumption is invalidated &#x2013; at least "morally" &#x2013; in (Wee &#38; Wu, 2023a). Roughly speaking,  the attack uses that the preimages of \(g(\vec{v}) \cdot \vec{t}\) span a short basis of the submodule spanned by \(\vec{t}\): essentially an Ajtai-style trapdoor. Then, sampling an arbitrary, not-necessarily short, preimage of some \(c \cdot \vec{t}\), Babai rounding can be applied to obtain a short preimage of some other, random \(\tilde{c} \cdot \vec{t}\).
@@ -547,8 +547,8 @@ An implementation of the attack in SageMath is available <a href="https://gist.g
 </div>
 </div>
 
-<div id="outline-container-orgd3611cf" class="outline-2">
-<h2 id="orgd3611cf"><span class="section-number-2">5.</span> Twin K-R-ISIS</h2>
+<div id="outline-container-orgc0097c2" class="outline-2">
+<h2 id="orgc0097c2"><span class="section-number-2">5.</span> Twin K-R-ISIS</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 (Balbás, Catalano, Fiore, &#38; Lai, 2022)
@@ -575,8 +575,8 @@ it is hard to find a short \(\vec{u}^{*}, \vec{w}^{*}\) s.t.
 </blockquote>
 </div>
 
-<div id="outline-container-orgb1703a1" class="outline-3">
-<h3 id="orgb1703a1"><span class="section-number-3">5.1.</span> Hardness</h3>
+<div id="outline-container-orgb1085b9" class="outline-3">
+<h3 id="orgb1085b9"><span class="section-number-3">5.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G}_{A}\) and \(\mathcal{G}_{B}\) which would trivially solve the problem by outputting \((\vec{u}_g, -\vec{w}_g)\) as the solution.
@@ -585,8 +585,8 @@ No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G
 </div>
 </div>
 
-<div id="outline-container-org09a9d50" class="outline-2">
-<h2 id="org09a9d50"><span class="section-number-2">6.</span> BASIS</h2>
+<div id="outline-container-org06c7f84" class="outline-2">
+<h2 id="org06c7f84"><span class="section-number-2">6.</span> BASIS</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 (Wee &#38; Wu, 2023b)
@@ -614,8 +614,8 @@ The \(\mathsf{BASIS}\) assumption states that given \((\vec{B}, \vec{T})\) it is
 </blockquote>
 </div>
 
-<div id="outline-container-orgefbcc47" class="outline-3">
-<h3 id="orgefbcc47"><span class="section-number-3">6.1.</span> Hardness</h3>
+<div id="outline-container-orgc05845f" class="outline-3">
+<h3 id="orgc05845f"><span class="section-number-3">6.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 It was shown in the original paper that \(\mathsf{BASIS}_{\mathsf{rand}}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
@@ -632,8 +632,8 @@ The authors also show that given an algorithm for solving BASIS there is an algo
 </div>
 </div>
 
-<div id="outline-container-orgb8dba7b" class="outline-2">
-<h2 id="orgb8dba7b"><span class="section-number-2">7.</span> PRISIS</h2>
+<div id="outline-container-org22e002a" class="outline-2">
+<h2 id="org22e002a"><span class="section-number-2">7.</span> PRISIS</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 PRISIS (Fenzi &#38; Nguyen, 2023) is a special case of BASIS. It is more structured than BASIS, so we might expect hardness results on PRISIS to translate to BASIS. It turns out the additional structure allows to prove a broader regime of parameters as hard as M-SIS.
@@ -657,18 +657,18 @@ The \(\mathsf{PRISIS}\) assumption states that given \((\mat{A}, \mat{B}, w, \ve
 </blockquote>
 </div>
 
-<div id="outline-container-orgeef6bf1" class="outline-3">
-<h3 id="orgeef6bf1"><span class="section-number-3">7.1.</span> Hardness</h3>
+<div id="outline-container-org8522f8d" class="outline-3">
+<h3 id="org8522f8d"><span class="section-number-3">7.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
-If \(\ell=2\) then PRISIS is no easier than M-SIS.
+If \(\ell=2\) then PRISIS is no easier than M-SIS (Fenzi &#38; Nguyen, 2023).
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org62fcade" class="outline-2">
-<h2 id="org62fcade"><span class="section-number-2">8.</span> ISISf</h2>
+<div id="outline-container-org4485e08" class="outline-2">
+<h2 id="org4485e08"><span class="section-number-2">8.</span> ISISf</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 (Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023)
@@ -685,8 +685,8 @@ the <i>ISISf</i> assumption states that it is hard to output a fresh tuple \((x^
 </blockquote>
 </div>
 
-<div id="outline-container-orga5705b8" class="outline-3">
-<h3 id="orga5705b8"><span class="section-number-3">8.1.</span> Hardness</h3>
+<div id="outline-container-orgd5336c5" class="outline-3">
+<h3 id="orgd5336c5"><span class="section-number-3">8.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
 If \(f\) is a random oracle then the problem, in the ROM, is as hard as SIS.
@@ -699,7 +699,7 @@ In (Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023) the authors set \(f\) t
 </div>
 </div>
 
-<div class="HTML" id="orgb79b9a9">
+<div class="HTML" id="orga4fecd5">
 <p>
 
 </p>

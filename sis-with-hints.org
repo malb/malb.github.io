@@ -214,7 +214,7 @@ The \(\mathsf{PRISIS}\) assumption states that given \((\mat{A}, \mat{B}, w, \ve
 
 ** Hardness
 
-If \(\ell=2\) then PRISIS is no easier than M-SIS.
+If \(\ell=2\) then PRISIS is no easier than M-SIS [cite:@EPRINT:FenNgu23].
 
 * ISISf
 
