@@ -2,6 +2,7 @@
 #+OPTIONS: num:t
 #+AUTHOR: Martin R. Albrecht
 #+TITLE: SIS with Hints Zoo
+#+TODO: BROKEN | STANDARD EQUIVALENT
 #+cite_export: csl ./apa-6th-edition.csl
 #+bibliography: local.bib
 
@@ -17,13 +18,19 @@
 
 An attempt to keep track of all those new SIS-like assumptions that hand out additional hints. Some of these venture into LWE land, but for now I want to keep it more or less SIS focused.
 
-Please reach out if you find a mistake or have an update.
-
 - *Designers:* Please consider whether you can re-use one of those many newfangled assumptions before introducing yet another one.
 
 - *Cryptanalysts:* Analyse them!
 
-* k-SIS
+In th jolly tradition of [[https://malb.io/are-graded-encoding-schemes-broken-yet.html]["Are Graded Encoding Schemes broken yet?"]]  I tag problems as BROKEN if I am aware of cryptanalysis. I also tag them as:
+
+- STANDARD :: if there is a reduction from a standard (non-hint) assumption that covers meaningful parameters, i.e. those useful in applications. For example, k-SIS is tagged like this but k-R-ISIS is not because known reductions only cover parameters that, so far, seem useless in applications.
+
+- EQUIVALENT :: if there is a reduction from another hint assumption. Again, this may only cover some parameters. This is meant to indicate that cryptanalytic efforts might be better directed at the equivalent problem.   
+
+Please reach out if you find a mistake or have an update.
+
+* STANDARD k-SIS
 
 [cite:@PKC:BonFre11]
 
@@ -112,7 +119,7 @@ The authors also explore direct cryptanalysis:
 - finding short \(\ZZ\)-linear combinations of \(\vec{u}_{i}\)
 - finding \(\mathbb{Q}\)-linear combinations of \(\vec{u}_{i}\) that produce short images.
 
-* Knowledge K-R-ISIS
+* BROKEN Knowledge K-R-ISIS
 
 [cite:@C:ACLMT22]
 
@@ -131,9 +138,11 @@ c \equiv \sum_{g \in \mathcal{G}} c_{g} \cdot g(\vec{v}) \bmod q.
 
 The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
 
-** Hardness
+** Cryptanalysis
 
-No analysis is provided to date.
+The assumption is invalidated -- at least "morally" -- in [cite:@AC:WeeWu23]. Roughly speaking,  the attack uses that the preimages of \(g(\vec{v}) \cdot \vec{t}\) span a short basis of the submodule spanned by \(\vec{t}\): essentially an Ajtai-style trapdoor. Then, sampling an arbitrary, not-necessarily short, preimage of some \(c \cdot \vec{t}\), Babai rounding can be applied to obtain a short preimage of some other, random \(\tilde{c} \cdot \vec{t}\).
+
+An implementation of the attack in SageMath is available [[https://gist.github.com/malb/7c8b86520c675560be62eda98dab2a6f][here]].
 
 * Twin K-R-ISIS
 
@@ -186,6 +195,28 @@ A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}
 
 The authors also show that given an algorithm for solving BASIS there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
 
+* PRISIS
+
+[cite:@EPRINT:FenNgu23]
+
+
+#+begin_quote
+Let \(\mat{A} \in \ring_{q}^{\eta \times \ell}\). We're given
+\[\vec{B} := \begin{pmatrix}
+\mat{A}_{0} &             \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
+\vec{0}     &     w \cdot \mat{A}_{1} & \cdots & -\vec{G}_{\eta+1}\\
+\mat{0}     &             \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
+\vec{0} & \cdots & w^{\ell-1} \cdot \mat{A}_{\ell-1} & -\vec{G}_{\eta+1}
+\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
+
+The \(\mathsf{PRISIS}\) assumption states that given \((\mat{A}, \mat{B}, w, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+#+end_quote
+
+** Hardness
+
+If \(\ell=2\) then PRISIS is no easier than M-SIS.
+
 * ISISf
 
 [cite:@EPRINT:BLNS23]
@@ -207,8 +238,6 @@ In [cite:@EPRINT:BLNS23] the authors set \(f\) to be a function that first turns
 * COMMENT Evasive LWE
 
 * Footer                                                                :ignore:
-
-#+print_bibliography:
 
 #+INCLUDE: footer.org
 
