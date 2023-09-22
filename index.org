@@ -13,8 +13,9 @@ I am a professor in the [[https://www.kcl.ac.uk/research/cys][Cybersecurity Grou
 
 * Here
 
-- [[./are-graded-encoding-schemes-broken-yet.html][are graded encoding schemes broken yet]]?
-
+- [[./are-graded-encoding-schemes-broken-yet.html][Are graded encoding schemes broken yet?]]
+- [[https://malb.io/sis-with-hints.html][SIS with hints]]
+  
 * Code
 
 - [[https://github.com/malb][github]]
