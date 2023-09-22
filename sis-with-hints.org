@@ -197,8 +197,7 @@ The authors also show that given an algorithm for solving BASIS there is an algo
 
 * PRISIS
 
-[cite:@EPRINT:FenNgu23]
-
+PRISIS [cite:@EPRINT:FenNgu23] is a special case of BASIS. It is more structured than BASIS, so we might expect hardness results on PRISIS to translate to BASIS. It turns out the additional structure allows to prove a broader regime of parameters as hard as M-SIS.
 
 #+begin_quote
 Let \(\mat{A} \in \ring_{q}^{\eta \times \ell}\). We're given
