@@ -202,10 +202,10 @@ PRISIS [cite:@EPRINT:FenNgu23] is a special case of BASIS. It is more structured
 #+begin_quote
 Let \(\mat{A} \in \ring_{q}^{\eta \times \ell}\). We're given
 \[\vec{B} := \begin{pmatrix}
-\mat{A}_{0} &             \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
-\vec{0}     &     w \cdot \mat{A}_{1} & \cdots & -\vec{G}_{\eta+1}\\
-\mat{0}     &             \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
-\vec{0} & \cdots & w^{\ell-1} \cdot \mat{A}_{\ell-1} & -\vec{G}_{\eta+1}
+\mat{A} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
+\vec{0} &           w \cdot \mat{A} & \cdots & -\vec{G}_{\eta+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
+\vec{0} & \cdots & w^{\ell-1} \cdot \mat{A} & -\vec{G}_{\eta+1}
 \end{pmatrix}\] and a short \(\vec{T}\) s.t.
 \[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
 
