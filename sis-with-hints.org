@@ -236,9 +236,16 @@ In [cite:@EPRINT:BLNS23] the authors set \(f\) to be a function that first turns
 
 * COMMENT Evasive LWE
 
-* Footer                                                                :ignore:
+* Bibliography
+:PROPERTIES:
+:UNNUMBERED: t
+:END:
+
+#+print_bibliography:
 
 #+INCLUDE: footer.org
+
+* Footer                                                                :ignore:
 
 # Local Variables:
 # eval: (typo-mode -1)
