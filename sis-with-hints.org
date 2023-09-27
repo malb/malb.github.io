@@ -230,7 +230,7 @@ Let \(\mat{A}_{i} \in \ring_{q}^{\eta \times \ell}\) for \(i \in \{0,…,h-1\}\)
 \end{pmatrix}\] and a short \(\vec{T}_{i}\) s.t.
 \[\vec{G}_{\eta'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
 
-The \(\mathsf{PRISIS}\) assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
+The \(h\text{-}\mathsf{PRISIS}\) assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
