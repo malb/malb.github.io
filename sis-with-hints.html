@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-09-26 Tue 12:00 -->
+<!-- 2023-09-27 Wed 17:58 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SIS with Hints Zoo</title>
@@ -265,51 +265,56 @@ ga('send', 'pageview');
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org400e28e">1. <span class="done STANDARD">STANDARD</span> k-SIS</a>
+<li><a href="#orgcaf4763">1. <span class="done STANDARD">STANDARD</span> k-SIS</a>
 <ul>
-<li><a href="#orgc9d4e6a">1.1. Hardness</a></li>
+<li><a href="#org5ac77e8">1.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgdf959d1">2. One-more-ISIS</a>
+<li><a href="#org707bb49">2. One-more-ISIS</a>
 <ul>
-<li><a href="#org9af0c28">2.1. Hardness</a></li>
+<li><a href="#orgfdf20a4">2.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org32893c2">3. K-R-ISIS</a>
+<li><a href="#org3bde68f">3. K-R-ISIS</a>
 <ul>
-<li><a href="#org612f5c5">3.1. Hardness</a></li>
+<li><a href="#org05d912e">3.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org435d214">4. <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</a>
+<li><a href="#orga1d0b43">4. <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</a>
 <ul>
-<li><a href="#org9e9dfb3">4.1. Cryptanalysis</a></li>
+<li><a href="#org586aa33">4.1. Cryptanalysis</a></li>
 </ul>
 </li>
-<li><a href="#org83e7ac2">5. Twin K-R-ISIS</a>
+<li><a href="#org43c99b2">5. Twin K-R-ISIS</a>
 <ul>
-<li><a href="#org7066ae3">5.1. Hardness</a></li>
+<li><a href="#orgb5b4f1c">5.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgac63a7e">6. BASIS</a>
+<li><a href="#org1bfe842">6. BASIS</a>
 <ul>
-<li><a href="#orga061494">6.1. Hardness</a></li>
+<li><a href="#orga249ab8">6.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgf0db7fc">7. PRISIS</a>
+<li><a href="#org2b455d1">7. PRISIS</a>
 <ul>
-<li><a href="#orgc9d8ec5">7.1. Hardness</a></li>
+<li><a href="#orgd06df4e">7.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org0fc2a04">8. ISISf</a>
+<li><a href="#org5c897b9">8. <span class="done STANDARD">STANDARD</span> \(h\)-PRISIS</a>
 <ul>
-<li><a href="#orge937c58">8.1. Hardness</a></li>
+<li><a href="#org40743e4">8.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org1ea9c88">Bibliography</a></li>
+<li><a href="#orge67140e">9. ISISf</a>
+<ul>
+<li><a href="#orgcf235ec">9.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#org0d77fdf">Bibliography</a></li>
 </ul>
 </div>
 </div>
-<div class="HTML" id="orgbd61914">
+<div class="HTML" id="org655f5de">
 <p>
 \( 
   \newcommand\ring{\mathcal{R}}
@@ -346,11 +351,11 @@ In th jolly tradition of <a href="https://malb.io/are-graded-encoding-schemes-br
 Please reach out if you find a mistake or have an update.
 </p>
 
-<div id="outline-container-org400e28e" class="outline-2">
-<h2 id="org400e28e"><span class="section-number-2">1.</span> <span class="done STANDARD">STANDARD</span> k-SIS</h2>
+<div id="outline-container-orgcaf4763" class="outline-2">
+<h2 id="orgcaf4763"><span class="section-number-2">1.</span> <span class="done STANDARD">STANDARD</span> k-SIS</h2>
 <div class="outline-text-2" id="text-1">
 <p>
-(<a href="#citeproc_bib_item_4">Boneh &#38; Freeman, 2011</a>)
+(<a href="#citeproc_bib_item_5">Boneh &#38; Freeman, 2011</a>)
 </p>
 
 <p>
@@ -369,15 +374,15 @@ For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\
 
 
 <p>
-An LWE variant, called k-LWE was introduced in (<a href="#citeproc_bib_item_7">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>).
+An LWE variant, called k-LWE was introduced in (<a href="#citeproc_bib_item_8">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>).
 </p>
 </div>
 
-<div id="outline-container-orgc9d4e6a" class="outline-3">
-<h3 id="orgc9d4e6a"><span class="section-number-3">1.1.</span> Hardness</h3>
+<div id="outline-container-org5ac77e8" class="outline-3">
+<h3 id="org5ac77e8"><span class="section-number-3">1.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in (<a href="#citeproc_bib_item_7">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>) to cover \(k = \mathcal{O}(\ell)\).
+The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in (<a href="#citeproc_bib_item_8">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>) to cover \(k = \mathcal{O}(\ell)\).
 </p>
 
 <p>
@@ -391,8 +396,8 @@ No proof was provided for the module variant.
 </div>
 </div>
 
-<div id="outline-container-orgdf959d1" class="outline-2">
-<h2 id="orgdf959d1"><span class="section-number-2">2.</span> One-more-ISIS</h2>
+<div id="outline-container-org707bb49" class="outline-2">
+<h2 id="org707bb49"><span class="section-number-2">2.</span> One-more-ISIS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 (<a href="#citeproc_bib_item_1">Agrawal, Kirshanova, Stehlé, &#38; Yadav, 2022</a>)
@@ -418,8 +423,8 @@ In the end the adversary is asked to output \(k+1\) pairs \(\{(\vec{y}_i,\vec{t}
 </blockquote>
 </div>
 
-<div id="outline-container-org9af0c28" class="outline-3">
-<h3 id="org9af0c28"><span class="section-number-3">2.1.</span> Hardness</h3>
+<div id="outline-container-orgfdf20a4" class="outline-3">
+<h3 id="orgfdf20a4"><span class="section-number-3">2.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 The hardness of the problem is analysed using direct cryptanalysis in the original paper. The authors give a combinatorial attack and a lattice attack.
@@ -436,8 +441,8 @@ The hardness of the problem is analysed using direct cryptanalysis in the origin
 </div>
 </div>
 
-<div id="outline-container-org32893c2" class="outline-2">
-<h2 id="org32893c2"><span class="section-number-2">3.</span> K-R-ISIS</h2>
+<div id="outline-container-org3bde68f" class="outline-2">
+<h2 id="org3bde68f"><span class="section-number-2">3.</span> K-R-ISIS</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 (<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>)
@@ -479,8 +484,8 @@ When \(\eta = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem 
 </blockquote>
 </div>
 
-<div id="outline-container-org612f5c5" class="outline-3">
-<h3 id="org612f5c5"><span class="section-number-3">3.1.</span> Hardness</h3>
+<div id="outline-container-org05d912e" class="outline-3">
+<h3 id="org05d912e"><span class="section-number-3">3.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 The hardness of the problem is analysed by the authors by providing some partial reductions, i.e. covering some special cases. These special cases are not interesting for applications. The authors show that
@@ -505,8 +510,8 @@ The authors also explore direct cryptanalysis:
 </div>
 </div>
 
-<div id="outline-container-org435d214" class="outline-2">
-<h2 id="org435d214"><span class="section-number-2">4.</span> <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</h2>
+<div id="outline-container-orga1d0b43" class="outline-2">
+<h2 id="orga1d0b43"><span class="section-number-2">4.</span> <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 (<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>)
@@ -534,11 +539,11 @@ The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order
 </p>
 </div>
 
-<div id="outline-container-org9e9dfb3" class="outline-3">
-<h3 id="org9e9dfb3"><span class="section-number-3">4.1.</span> Cryptanalysis</h3>
+<div id="outline-container-org586aa33" class="outline-3">
+<h3 id="org586aa33"><span class="section-number-3">4.1.</span> Cryptanalysis</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
-The assumption is invalidated &#x2013; at least "morally" &#x2013; in (<a href="#citeproc_bib_item_8">Wee &#38; Wu, 2023a</a>). Roughly speaking,  the attack uses that the preimages of \(g(\vec{v}) \cdot \vec{t}\) span a short basis of the submodule spanned by \(\vec{t}\): essentially an Ajtai-style trapdoor. Then, sampling an arbitrary, not-necessarily short, preimage of some \(c \cdot \vec{t}\), Babai rounding can be applied to obtain a short preimage of some other, random \(\tilde{c} \cdot \vec{t}\).
+The assumption is invalidated &#x2013; at least "morally" &#x2013; in (<a href="#citeproc_bib_item_9">Wee &#38; Wu, 2023a</a>). Roughly speaking,  the attack uses that the preimages of \(g(\vec{v}) \cdot \vec{t}\) span a short basis of the submodule spanned by \(\vec{t}\): essentially an Ajtai-style trapdoor. Then, sampling an arbitrary, not-necessarily short, preimage of some \(c \cdot \vec{t}\), Babai rounding can be applied to obtain a short preimage of some other, random \(\tilde{c} \cdot \vec{t}\).
 </p>
 
 <p>
@@ -548,11 +553,11 @@ An implementation of the attack in SageMath is available <a href="https://gist.g
 </div>
 </div>
 
-<div id="outline-container-org83e7ac2" class="outline-2">
-<h2 id="org83e7ac2"><span class="section-number-2">5.</span> Twin K-R-ISIS</h2>
+<div id="outline-container-org43c99b2" class="outline-2">
+<h2 id="org43c99b2"><span class="section-number-2">5.</span> Twin K-R-ISIS</h2>
 <div class="outline-text-2" id="text-5">
 <p>
-(<a href="#citeproc_bib_item_3">Balbás, Catalano, Fiore, &#38; Lai, 2022</a>)
+(<a href="#citeproc_bib_item_4">Balbás, Catalano, Fiore, &#38; Lai, 2022</a>)
 </p>
 
 <blockquote>
@@ -576,8 +581,8 @@ it is hard to find a short \(\vec{u}^{*}, \vec{w}^{*}\) s.t.
 </blockquote>
 </div>
 
-<div id="outline-container-org7066ae3" class="outline-3">
-<h3 id="org7066ae3"><span class="section-number-3">5.1.</span> Hardness</h3>
+<div id="outline-container-orgb5b4f1c" class="outline-3">
+<h3 id="orgb5b4f1c"><span class="section-number-3">5.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G}_{A}\) and \(\mathcal{G}_{B}\) which would trivially solve the problem by outputting \((\vec{u}_g, -\vec{w}_g)\) as the solution.
@@ -586,11 +591,11 @@ No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G
 </div>
 </div>
 
-<div id="outline-container-orgac63a7e" class="outline-2">
-<h2 id="orgac63a7e"><span class="section-number-2">6.</span> BASIS</h2>
+<div id="outline-container-org1bfe842" class="outline-2">
+<h2 id="org1bfe842"><span class="section-number-2">6.</span> BASIS</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-(<a href="#citeproc_bib_item_9">Wee &#38; Wu, 2023b</a>)
+(<a href="#citeproc_bib_item_10">Wee &#38; Wu, 2023b</a>)
 </p>
 
 <p>
@@ -615,8 +620,8 @@ The \(\mathsf{BASIS}\) assumption states that given \((\vec{B}, \vec{T})\) it is
 </blockquote>
 </div>
 
-<div id="outline-container-orga061494" class="outline-3">
-<h3 id="orga061494"><span class="section-number-3">6.1.</span> Hardness</h3>
+<div id="outline-container-orga249ab8" class="outline-3">
+<h3 id="orga249ab8"><span class="section-number-3">6.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 It was shown in the original paper that \(\mathsf{BASIS}_{\mathsf{rand}}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
@@ -633,11 +638,11 @@ The authors also show that given an algorithm for solving BASIS there is an algo
 </div>
 </div>
 
-<div id="outline-container-orgf0db7fc" class="outline-2">
-<h2 id="orgf0db7fc"><span class="section-number-2">7.</span> PRISIS</h2>
+<div id="outline-container-org2b455d1" class="outline-2">
+<h2 id="org2b455d1"><span class="section-number-2">7.</span> PRISIS</h2>
 <div class="outline-text-2" id="text-7">
 <p>
-PRISIS (<a href="#citeproc_bib_item_6">Fenzi &#38; Nguyen, 2023</a>) is a special case of BASIS. It is more structured than BASIS, so we might expect hardness results on PRISIS to translate to BASIS. It turns out the additional structure allows to prove a broader regime of parameters as hard as M-SIS.
+PRISIS (<a href="#citeproc_bib_item_7">Fenzi &#38; Nguyen, 2023</a>) is a special case of BASIS. It is more structured than BASIS, so we might expect hardness results on PRISIS to translate to BASIS. It turns out the additional structure allows to prove a broader regime of parameters as hard as M-SIS.
 </p>
 
 <blockquote>
@@ -658,21 +663,56 @@ The \(\mathsf{PRISIS}\) assumption states that given \((\mat{A}, \mat{B}, w, \ve
 </blockquote>
 </div>
 
-<div id="outline-container-orgc9d8ec5" class="outline-3">
-<h3 id="orgc9d8ec5"><span class="section-number-3">7.1.</span> Hardness</h3>
+<div id="outline-container-orgd06df4e" class="outline-3">
+<h3 id="orgd06df4e"><span class="section-number-3">7.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
-If \(\ell=2\) then PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_6">Fenzi &#38; Nguyen, 2023</a>).
+If \(\ell=2\) then PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_7">Fenzi &#38; Nguyen, 2023</a>).
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org0fc2a04" class="outline-2">
-<h2 id="org0fc2a04"><span class="section-number-2">8.</span> ISISf</h2>
+<div id="outline-container-org5c897b9" class="outline-2">
+<h2 id="org5c897b9"><span class="section-number-2">8.</span> <span class="done STANDARD">STANDARD</span> \(h\)-PRISIS</h2>
 <div class="outline-text-2" id="text-8">
 <p>
-(<a href="#citeproc_bib_item_5">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023</a>)
+\(h\)-PRISIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>) is a multi-instance version of PRISIS.
+</p>
+
+<blockquote>
+<p>
+Let \(\mat{A}_{i} \in \ring_{q}^{\eta \times \ell}\) for \(i \in \{0,…,h-1\}\). We're given
+\[\vec{B}_{i} := \begin{pmatrix}
+\mat{A}_{i} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
+\vec{0} &           w_{i} \cdot \mat{A}_{i} & \cdots & -\vec{G}_{\eta+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
+\vec{0} & \cdots & w_i^{\ell-1} \cdot \mat{A}_{i} & -\vec{G}_{\eta+1}
+\end{pmatrix}\] and a short \(\vec{T}_{i}\) s.t.
+\[\vec{G}_{\eta'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
+</p>
+
+<p>
+The \(\mathsf{PRISIS}\) assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org40743e4" class="outline-3">
+<h3 id="org40743e4"><span class="section-number-3">8.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+\(h\)-PRISIS is no easier than PRISIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>). In particular, if \(\ell=2\) then \(h\)-PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>).
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge67140e" class="outline-2">
+<h2 id="orge67140e"><span class="section-number-2">9.</span> ISISf</h2>
+<div class="outline-text-2" id="text-9">
+<p>
+(<a href="#citeproc_bib_item_6">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023</a>)
 </p>
 
 <blockquote>
@@ -686,36 +726,37 @@ the <i>ISISf</i> assumption states that it is hard to output a fresh tuple \((x^
 </blockquote>
 </div>
 
-<div id="outline-container-orge937c58" class="outline-3">
-<h3 id="orge937c58"><span class="section-number-3">8.1.</span> Hardness</h3>
-<div class="outline-text-3" id="text-8-1">
+<div id="outline-container-orgcf235ec" class="outline-3">
+<h3 id="orgcf235ec"><span class="section-number-3">9.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-9-1">
 <p>
 If \(f\) is a random oracle then the problem, in the ROM, is as hard as SIS.
 </p>
 
 <p>
-In (<a href="#citeproc_bib_item_5">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023</a>) the authors set \(f\) to be a function that first turns \(x \in \ZZ_{N}\) into a binary vector \(\vec{x} \in \{0,1\}^{\log N}\) and then outputs \(\mat{B} \cdot \vec{x}\). The call this problem \(ISIS_{bin}\). The authors analyse direct lattice reduction as well as exploiting relations on the image space. The authors also introduce an interactive variant and show its equivalence.
+In (<a href="#citeproc_bib_item_6">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023</a>) the authors set \(f\) to be a function that first turns \(x \in \ZZ_{N}\) into a binary vector \(\vec{x} \in \{0,1\}^{\log N}\) and then outputs \(\mat{B} \cdot \vec{x}\). The call this problem \(ISIS_{bin}\). The authors analyse direct lattice reduction as well as exploiting relations on the image space. The authors also introduce an interactive variant and show its equivalence.
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org1ea9c88" class="outline-2">
-<h2 id="org1ea9c88">Bibliography</h2>
-<div class="outline-text-2" id="text-org1ea9c88">
+<div id="outline-container-org0d77fdf" class="outline-2">
+<h2 id="org0d77fdf">Bibliography</h2>
+<div class="outline-text-2" id="text-org0d77fdf">
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Agrawal, S., Kirshanova, E., Stehlé, D., &#38; Yadav, A. (2022). Practical, round-optimal lattice-based blind signatures. In H. Yin, A. Stavrou, C. Cremers, &#38; E. Shi (Eds.), <i>Proceedings of the 2022 ACM SIGSAC conference on computer and communications security, CCS 2022</i> (pp. 39–53). <a href="https://doi.org/10.1145/3548606.3560650">https://doi.org/10.1145/3548606.3560650</a></div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Albrecht, M. R., Cini, V., Lai, R. W. F., Malavolta, G., &#38; Thyagarajan, S. A. K. (2022). Lattice-based snarks: Publicly verifiable, preprocessing, and recursively composable - (extended abstract). In Y. Dodis &#38; T. Shrimpton (Eds.), <i>Advances in cryptology - CRYPTO 2022</i> (pp. 102–132). Springer. <a href="https://doi.org/10.1007/978-3-031-15979-4\_4">https://doi.org/10.1007/978-3-031-15979-4\_4</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Balbás, D., Catalano, D., Fiore, D., &#38; Lai, R. W. F. (2022). <i>Functional commitments for circuits from falsifiable assumptions</i>. Cryptology ePrint Archive, Paper 2022/1365. Retrieved from <a href="https://eprint.iacr.org/2022/1365">https://eprint.iacr.org/2022/1365</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Boneh, D., &#38; Freeman, D. M. (2011). Linearly homomorphic signatures over binary fields and new tools for lattice-based signatures. In D. Catalano, N. Fazio, R. Gennaro, &#38; A. Nicolosi (Eds.), <i>Public key cryptography - PKC 2011</i> (pp. 1–16). Springer. <a href="https://doi.org/10.1007/978-3-642-19379-8\_1">https://doi.org/10.1007/978-3-642-19379-8\_1</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Bootle, J., Lyubashevsky, V., Nguyen, N. K., &#38; Sorniotti, A. (2023). <i>A framework for practical anonymous credentials from lattices</i>. Cryptology ePrint Archive, Paper 2023/560. Retrieved from <a href="https://eprint.iacr.org/2023/560">https://eprint.iacr.org/2023/560</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Fenzi, G., &#38; Nguyen, N. K. (2023). <i>Lattice-based polynomial commitments: Towards asymptotic and concrete efficiency</i>. Cryptology ePrint Archive, Paper 2023/846. Retrieved from <a href="https://eprint.iacr.org/2023/846">https://eprint.iacr.org/2023/846</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Ling, S., Phan, D. H., Stehlé, D., &#38; Steinfeld, R. (2014). Hardness of k-lwe and applications in traitor tracing. In J. A. Garay &#38; R. Gennaro (Eds.), <i>Advances in cryptology - CRYPTO 2014</i> (pp. 315–334). Springer. <a href="https://doi.org/10.1007/978-3-662-44371-2\_18">https://doi.org/10.1007/978-3-662-44371-2\_18</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Wee, H., &#38; Wu, D. J. (2023a). Lattice-based functional commitments: Fast verification and cryptanalysis. <i>Asiacrypt 2023</i>. Springer-Verlag.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Wee, H., &#38; Wu, D. J. (2023b). Succinct vector, polynomial, and functional commitments from lattices. In C. Hazay &#38; M. Stam (Eds.), <i>Advances in cryptology - EUROCRYPT 2023</i> (pp. 385–416). Springer. <a href="https://doi.org/10.1007/978-3-031-30620-4\_13">https://doi.org/10.1007/978-3-031-30620-4\_13</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_3"></a>Albrecht, M. R., Fenzi, G., Lapiha, O., &#38; Nguyen, N. K. (2023). <i>Slap: Succinct lattice-based polynomial commitments from standard assumptions</i>. Cryptology ePrint Archive, Paper 2023/1469. Retrieved from <a href="https://eprint.iacr.org/2023/1469">https://eprint.iacr.org/2023/1469</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_4"></a>Balbás, D., Catalano, D., Fiore, D., &#38; Lai, R. W. F. (2022). <i>Functional commitments for circuits from falsifiable assumptions</i>. Cryptology ePrint Archive, Paper 2022/1365. Retrieved from <a href="https://eprint.iacr.org/2022/1365">https://eprint.iacr.org/2022/1365</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_5"></a>Boneh, D., &#38; Freeman, D. M. (2011). Linearly homomorphic signatures over binary fields and new tools for lattice-based signatures. In D. Catalano, N. Fazio, R. Gennaro, &#38; A. Nicolosi (Eds.), <i>Public key cryptography - PKC 2011</i> (pp. 1–16). Springer. <a href="https://doi.org/10.1007/978-3-642-19379-8\_1">https://doi.org/10.1007/978-3-642-19379-8\_1</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_6"></a>Bootle, J., Lyubashevsky, V., Nguyen, N. K., &#38; Sorniotti, A. (2023). <i>A framework for practical anonymous credentials from lattices</i>. Cryptology ePrint Archive, Paper 2023/560. Retrieved from <a href="https://eprint.iacr.org/2023/560">https://eprint.iacr.org/2023/560</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Fenzi, G., &#38; Nguyen, N. K. (2023). <i>Lattice-based polynomial commitments: Towards asymptotic and concrete efficiency</i>. Cryptology ePrint Archive, Paper 2023/846. Retrieved from <a href="https://eprint.iacr.org/2023/846">https://eprint.iacr.org/2023/846</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Ling, S., Phan, D. H., Stehlé, D., &#38; Steinfeld, R. (2014). Hardness of k-lwe and applications in traitor tracing. In J. A. Garay &#38; R. Gennaro (Eds.), <i>Advances in cryptology - CRYPTO 2014</i> (pp. 315–334). Springer. <a href="https://doi.org/10.1007/978-3-662-44371-2\_18">https://doi.org/10.1007/978-3-662-44371-2\_18</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Wee, H., &#38; Wu, D. J. (2023a). Lattice-based functional commitments: Fast verification and cryptanalysis. <i>Asiacrypt 2023</i>. Springer-Verlag.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_10"></a>Wee, H., &#38; Wu, D. J. (2023b). Succinct vector, polynomial, and functional commitments from lattices. In C. Hazay &#38; M. Stam (Eds.), <i>Advances in cryptology - EUROCRYPT 2023</i> (pp. 385–416). Springer. <a href="https://doi.org/10.1007/978-3-031-30620-4\_13">https://doi.org/10.1007/978-3-031-30620-4\_13</a></div>
 </div>
 
-<div class="HTML" id="orga972b41">
+<div class="HTML" id="org57d4898">
 <p>
 
 </p>

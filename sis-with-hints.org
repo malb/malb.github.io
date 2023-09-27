@@ -216,6 +216,27 @@ The \(\mathsf{PRISIS}\) assumption states that given \((\mat{A}, \mat{B}, w, \ve
 
 If \(\ell=2\) then PRISIS is no easier than M-SIS [cite:@EPRINT:FenNgu23].
 
+* STANDARD \(h\)-PRISIS
+
+\(h\)-PRISIS [cite:@EPRINT:AFLN23] is a multi-instance version of PRISIS.
+
+#+begin_quote
+Let \(\mat{A}_{i} \in \ring_{q}^{\eta \times \ell}\) for \(i \in \{0,…,h-1\}\). We're given
+\[\vec{B}_{i} := \begin{pmatrix}
+\mat{A}_{i} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
+\vec{0} &           w_{i} \cdot \mat{A}_{i} & \cdots & -\vec{G}_{\eta+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
+\vec{0} & \cdots & w_i^{\ell-1} \cdot \mat{A}_{i} & -\vec{G}_{\eta+1}
+\end{pmatrix}\] and a short \(\vec{T}_{i}\) s.t.
+\[\vec{G}_{\eta'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
+
+The \(\mathsf{PRISIS}\) assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
+#+end_quote
+
+** Hardness
+
+\(h\)-PRISIS is no easier than PRISIS [cite:@EPRINT:AFLN23]. In particular, if \(\ell=2\) then \(h\)-PRISIS is no easier than M-SIS [cite:@EPRINT:AFLN23].
+
 * ISISf
 
 [cite:@EPRINT:BLNS23]
