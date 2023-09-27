@@ -174,7 +174,7 @@ No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G
 
 [cite:@EC:WeeWu23]
 
-We consider \(\mathsf{BASIS}\) with with \(k=2\), for simplicity.
+We consider BASIS with with \(k=2\), for simplicity.
 
 #+begin_quote
 Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
@@ -182,14 +182,14 @@ Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
 \vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
 \[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
 
-We say \(\mathsf{BASIS}_{\mathsf{rand}}\) if \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\mat{A} | \mat{A}^{T}]^{T}\) for some uniformly random \(\mat{A}\). and \(\mathsf{BASIS}_{\mathsf{struct}}\) when \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
+We say BASIS\(_{rand}\) if \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\mat{A} | \mat{A}^{T}]^{T}\) for some uniformly random \(\mat{A}\). and BASIS\(_{struct}\) when \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
 
-The \(\mathsf{BASIS}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+The BASIS assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
 
-It was shown in the original paper that \(\mathsf{BASIS}_{\mathsf{rand}}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
+It was shown in the original paper that BASIS\(_{rand}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
 
 A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{\eta+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\).
 
@@ -209,7 +209,7 @@ Let \(\mat{A} \in \ring_{q}^{\eta \times \ell}\). We're given
 \end{pmatrix}\] and a short \(\vec{T}\) s.t.
 \[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
 
-The \(\mathsf{PRISIS}\) assumption states that given \((\mat{A}, \mat{B}, w, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+The PRISIS assumption states that given \((\mat{A}, \mat{B}, w, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
@@ -230,7 +230,7 @@ Let \(\mat{A}_{i} \in \ring_{q}^{\eta \times \ell}\) for \(i \in \{0,…,h-1\}\)
 \end{pmatrix}\] and a short \(\vec{T}_{i}\) s.t.
 \[\vec{G}_{\eta'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
 
-The \(h\text{-}\mathsf{PRISIS}\) assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
+The \(h\)-PRISIS assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
@@ -253,7 +253,7 @@ the /ISISf/ assumption states that it is hard to output a fresh tuple \((x^{*}, 
 
 If \(f\) is a random oracle then the problem, in the ROM, is as hard as SIS.
 
-In [cite:@EPRINT:BLNS23] the authors set \(f\) to be a function that first turns \(x \in \ZZ_{N}\) into a binary vector \(\vec{x} \in \{0,1\}^{\log N}\) and then outputs \(\mat{B} \cdot \vec{x}\). The call this problem \(ISIS_{bin}\). The authors analyse direct lattice reduction as well as exploiting relations on the image space. The authors also introduce an interactive variant and show its equivalence.
+In [cite:@EPRINT:BLNS23] the authors set \(f\) to be a function that first turns \(x \in \ZZ_{N}\) into a binary vector \(\vec{x} \in \{0,1\}^{\log N}\) and then outputs \(\mat{B} \cdot \vec{x}\). The call this problem ISIS\(_{bin}\). The authors analyse direct lattice reduction as well as exploiting relations on the image space. The authors also introduce an interactive variant and show its equivalence.
 
 * COMMENT Evasive LWE
 
