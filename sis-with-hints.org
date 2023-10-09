@@ -144,7 +144,7 @@ The assumption is invalidated -- at least "morally" -- in [cite:@AC:WeeWu23]. Ro
 
 An implementation of the attack in SageMath is available [[https://gist.github.com/malb/7c8b86520c675560be62eda98dab2a6f][here]].
 
-* Twin K-R-ISIS
+* EQUIVALENT Twin K-R-ISIS
 
 [cite:@EPRINT:BCFL22]
 
@@ -168,7 +168,9 @@ it is hard to find a short \(\vec{u}^{*}, \vec{w}^{*}\) s.t.
 
 ** Hardness
 
-No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G}_{A}\) and \(\mathcal{G}_{B}\) which would trivially solve the problem by outputting \((\vec{u}_g, -\vec{w}_g)\) as the solution.
+# No detailed analysis is provided beyond ruling out overlapping sets \(\mathcal{G}_{A}\) and \(\mathcal{G}_{B}\) which would trivially solve the problem by outputting \((\vec{u}_g, -\vec{w}_g)\) as the solution.
+
+In [cite:@EPRINT:AFLN23], it is shown that Twin k-R-ISIS is no easier than k-R-ISIS via a re-randomisation argument.
 
 * BASIS
 
