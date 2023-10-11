@@ -172,21 +172,20 @@ it is hard to find a short \(\vec{u}^{*}, \vec{w}^{*}\) s.t.
 
 In [cite:@EPRINT:AFLN23], it is shown that Twin k-R-ISIS is no easier than k-R-ISIS via a re-randomisation argument.
 
-* BASIS
+* STANDARD BASIS (Random)
 
 [cite:@EC:WeeWu23]
 
-We consider BASIS with with \(k=2\), for simplicity.
+We consider BASIS\(_{rand}\) with with \(k=2\), for simplicity.
 
 #+begin_quote
 Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
 \[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
 \vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
 \[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+where \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\vec{a} | \mat{A}^{T}]^{T}\) for uniformly random \(\mat{A}\) and \(\vec{a}\).
 
-We say BASIS\(_{rand}\) if \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\mat{A} | \mat{A}^{T}]^{T}\) for some uniformly random \(\mat{A}\). and BASIS\(_{struct}\) when \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
-
-The BASIS assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+The BASIS\(_{rand}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
@@ -195,7 +194,25 @@ It was shown in the original paper that BASIS\(_{rand}\) is as hard as SIS. The 
 
 A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{\eta+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\).
 
-The authors also show that given an algorithm for solving BASIS there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
+* EQUIVALENT BASIS (Structured)
+
+[cite:@EC:WeeWu23]
+
+We consider BASIS\(_{struct}\) with with \(k=2\), for simplicity.
+
+#+begin_quote
+Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+where \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
+
+The BASIS\(_{struct}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+#+end_quote
+
+** Hardness
+
+The authors also show that given an algorithm for solving BASIS\(_{struct}\) there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS\(_{struct}\) instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
 
 * PRISIS
 
