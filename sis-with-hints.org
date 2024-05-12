@@ -176,7 +176,7 @@ In [cite:@EPRINT:AFLN23], it is shown that Twin k-R-ISIS is no easier than k-R-I
 
 [cite:@EC:WeeWu23]
 
-We consider BASIS\(_{rand}\) with with \(k=2\), for simplicity.
+We consider BASIS\(_{rand}\) with \(k=2\), for simplicity.
 
 #+begin_quote
 Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
@@ -198,7 +198,7 @@ A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}
 
 [cite:@EC:WeeWu23]
 
-We consider BASIS\(_{struct}\) with with \(k=2\), for simplicity.
+We consider BASIS\(_{struct}\) with \(k=2\), for simplicity.
 
 #+begin_quote
 Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
