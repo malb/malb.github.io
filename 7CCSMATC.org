@@ -1,0 +1,308 @@
+#+title: 7CCSMATC: Advanced Topics in Cryptography
+#+setupfile: setup.org
+
+** Definitions
+
+We discuss the role of definitions in (modern) cryptography, how definitions can be wrong and how unintuitive definitions might hit the nail on the head.
+
+[[./7CCSMATC/lecture-definitions.pdf][slides]]
+
+*Preparatory Reading*
+
+- Phillip Rogaway. /On the Role of Definitions in and beyond Cryptography/. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32
+
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Phillip_Rogaway][Phil Rogaway]]
+- [[https://en.wikipedia.org/wiki/Shafi_Goldwasser][Shafi Goldwasser]]
+- [[https://en.wikipedia.org/wiki/Silvio_Micali][Silvio Micali]]
+
+** Game Playing
+
+Following Mike's rather excellent book /The Joy of Cryptography/, we prove the One-Time-Pad secure to introduce game hopping proofs, a central proof technique in cryptography.
+
+[[./7CCSMATC/lecture-game-playing.pdf][slides]]
+
+*Preparatory Reading*
+
+- Mike Rosulek. /The Joy of Cryptography/. https://joyofcryptography.com. self published, 2021, Chapters 1 and 2.
+
+*Dramatis Personae*
+
+- [[https://web.engr.oregonstate.edu/~rosulekm/][Mike Rosulek]]
+
+** Fundamental Lemma of Game Playing
+
+We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in our games once a low-probability event happened. This gives us the "PRP-PRF Switching Lemma" which allows us to "swap" a pseudorandom function (PRF) for a pseudorandom permutation (PRP) without anyone noticing.
+
+[[./7CCSMATC/lecture-fundamental-lemma-of-game-playing.pdf][slides]]
+
+*Preparatory Reading*
+
+- Mihir Bellare and Phillip Rogaway. /Code-Based Game-Playing Proofs and the Security of Triple Encryption/. Cryptology ePrint Archive, Report 2004/331. 2004. url: https://eprint.iacr.org/2004/331
+
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Phillip_Rogaway][Phil Rogaway]]
+- [[https://en.wikipedia.org/wiki/Mihir_Bellare][Mihir Bellare]]
+  
+** Indistinguishability
+
+We introduce the /assumption/ that AES-128 is a pseudorandom permutation. This finishes our proof that AES-128 in CTR mode is secure if AES-128 is a PRP.
+
+[[./7CCSMATC/lecture-indistinguishability.pdf][slides]]
+
+*Dramatis Personae*
+
+- [[https://dblp.org/pid/b/AndreyBogdanov.html][Andrey Bogdanov]]
+- [[https://en.wikipedia.org/wiki/Dmitry_Khovratovich][Dmitry Khovratovich]]
+- [[https://www.iaik.tugraz.at/person/christian-rechberger/][Christian Rechberger]]
+
+** Assumptions and Minicrypt v Cryptomania
+
+We go all-in on cryptographic assumptions which underpin most cryptographic guarantees. These give rise to two plausible "worlds" of cryptography: one, called "Minicrypt", where only one-way functions (OWFs) exist and one where public-key cryptography exists, called "Cryptomania". Then, in 1994 Peter Shor snapped his fingers and wiped out all widely used public-key encryption schemes. The catch: you would need a quantum computer to run his algorithm. This provoked the creation of “post-quantum cryptography” lest we want to live in Minicrypt.
+
+[[./7CCSMATC/lecture-assumptions.pdf][slides]]
+
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Silvio_Micali][Silvio Micali]]
+- [[https://en.wikipedia.org/wiki/Ralph_Merkle][Ralph Merkle]]
+- [[https://en.wikipedia.org/wiki/Russell_Impagliazzo][Russell Impagliazzo]]
+- [[https://www.boazbarak.org/][Boaz Barak]]
+- [[https://en.wikipedia.org/wiki/Orr_Dunkelman][Orr Dunkelman]]
+- [[https://en.wikipedia.org/wiki/Ron_Rivest][Ron Rivest]]
+- [[https://en.wikipedia.org/wiki/Adi_Shamir][Adi Shamir]]
+- [[https://en.wikipedia.org/wiki/Leonard_Adleman][Leonard Adleman]]          
+- [[https://en.wikipedia.org/wiki/Whitfield_Diffie][Whit Diffie]]
+- [[https://en.wikipedia.org/wiki/Martin_Hellman][Martin Hellman]]
+- [[https://en.wikipedia.org/wiki/Peter_Shor][Peter Shor]]
+- [[https://homes.esat.kuleuven.be/~wcastryc/][Wouter Castryck]]
+- [[https://www.esat.kuleuven.be/cosic/people/thomas-decru/][Thomas Decru]]
+- [[https://iacr.org/cryptodb/data/author.php?authorkey=10892][Ward Beullens]]
+  
+
+** Quantum Computing
+
+We discuss hopefully just enough quantum computing to convince you that quantum computers are not faster, they are weirder. The first half of the lecture introduces quantum mechanics, the second half discusses that what we mean by "secure" may need to change when faced with a quantum adversary.
+
+[[./7CCSMATC/lecture-fundamental-quantum-computing.pdf][slides]]
+
+*Preparatory Reading*
+
+- Noson S Yanofsky and Mirco A Mannucci. /Quantum Computing for Computer Scientists./ Cambridge University Press, 2008, esp. Chapters 1, 2 and 3.
+
+*Dramatis Personae*
+
+- [[http://tdalazard.io/][Thomas Debris-Alazard]]
+- [[http://www.sci.brooklyn.cuny.edu/~noson/][Noson S Yanofsky]]
+- [[https://cs.gmu.edu/~mmannucc/][Mirco A Mannucci]]
+- [[https://en.wikipedia.org/wiki/William_A._Stein][William Stein]]
+- [[https://en.wikipedia.org/wiki/Peter_Shor][Peter Shor]]
+- [[https://en.wikipedia.org/wiki/Andris_Ambainis][Andris Ambainis]]
+- [[http://rosmanis.com/research/index.html][Ansis Rosmanis]]
+- [[https://kodu.ut.ee/~unruh/][Dominique Unruh]]
+- [[https://fermima.com/][Fermi Ma]]
+
+** Learning with Errors
+
+We discuss the Learning with Errors (LWE) problem which needs to be hard for our post-quantum standards to be secure. It asserts that adding a small bit of "noise" or "error" to a linear system of equations makes it hard to solve, even on a quantum computer.
+
+[[./7CCSMATC/lecture-fundamental-lwe.pdf][slides]]
+
+*Preparatory Reading*
+
+- Chris Peikert, /A decade of lattice cryptography./ Cryptology ePrint Archive, Report 2015/939. https://eprint.iacr.org/2015/939
+
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Oded_Regev_(computer_scientist)][Oded Regev]]
+- [[https://web.eecs.umich.edu/~cpeikert/][Chris Peikert]]  
+  
+** Minicrypt with Algebraic Structure
+
+Minicrypt is a "world" built from one-way functions (OWFs), can we find similar constitutive primitives for the "world" of public-key cryptography? What algebraic structure can we add to e.g. OWFs to arrive at public-key encryption?
+
+[[./7CCSMATC/lecture-minicrypt-with-algebraic-structure.pdf][slides]]
+
+*Preparatory Reading*
+
+- Navid Alamati, Hart Montgomery, Sikhar Patranabis, and Arnab Roy. /Minicrypt Primitives with Algebraic Structure and Applications/. In: Journal of Cryptology 36.1 (Jan. 2023), p. 2. doi: 10.1007/s00145-022-09442-2
+
+*Dramatis Personae*
+
+- [[https://usa.visa.com/about-visa/visa-research/navid-alamati.html][Navid Alamati]]
+- [[https://iacr.org/cryptodb/data/author.php?authorkey=7454][Hart Montgomery]]
+- [[https://sites.google.com/site/sikharpatranabis/home][Sikhar Patranabis]]
+- [[https://iacr.org/cryptodb/data/author.php?authorkey=3773][Arnab Roy]]
+
+** The Random Oracle Model
+
+The Random Oracle Model (ROM) /pretends/ that hash functions like SHA-3 are random functions. The reason why your favourite cryptographic construction has a hash function call is probably not the reason you think it is. We know that the ROM is not true and we will discuss schemes that are secure under this pretence but insecure when built with /any/ real hash function. Yet, the Internet runs on schemes proven secure only in the ROM.
+
+[[./7CCSMATC/lecture-rom.pdf][slides]]
+
+*Preparatory Reading*
+
+- Arno Mittelbach and Marc Fischlin. /Chapter 9: The Full Power of Random Oracles./ In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: https://doi.org/10.1007/978-3-030-63287-8
+- Oded Goldreich. /On Post-Modern Cryptography./ Cryptology ePrint Archive, Report 2006/461. 2006. url: https://eprint.iacr.org/2006/461
+- Phillip Rogaway. /Practice-Oriented Provable Security and the Social Construction of Cryptography./ In: IEEE Secur. Priv. 14.6 (2016), pp. 10–17. doi: 10.1109/MSP.2016.122. url: https://doi.org/10.1109/MSP.2016.122
+  
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Phillip_Rogaway][Phil Rogaway]]
+- [[https://en.wikipedia.org/wiki/Mihir_Bellare][Mihir Bellare]]
+- [[http://www.arno-mittelbach.de/][Arno Mittelbach]]
+- [[https://www.cryptoplexity.informatik.tu-darmstadt.de/cryptoplexity/team_cryptoplexity/marc_fischlin_cryptoplexity/index.en.jsp][Marc Fischlin]]
+- [[https://en.wikipedia.org/wiki/Oded_Goldreich][Oded Goldreich]]
+
+** The Fujisaki-Okamoto Transform
+
+We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure schemes into CCA secure schemes in the random oracle model … using one weird trick, adversaries hate it.
+
+[[./7CCSMATC/lecture-fo.pdf][slides]]
+
+*Preparatory Reading*
+
+- Alexander W. Dent. /A Designer’s Guide to KEMs./ In: 9th IMA International Conference on Cryptography and Coding. Ed. by Kenneth G. Paterson. Vol. 2898. LNCS. Springer, Berlin, Heidelberg, Dec. 2003, pp. 133–151. doi: 10.1007/978-3-540-40974-8_12
+
+*Dramatis Personae*
+
+- [[https://www.jaist.ac.jp/~fujisaki/index-e.html][Eiichiro Fujisaki]]
+- [[https://www.rd.ntt/e/organization/researcher/fellow/f_001.html][Tatsuaki Okamoto]]
+- [[http://cogentcryptography.com/][Alexander W. Dent]]  
+
+** Hash-and-Sign Signatures
+
+We discuss the hash-and-sign signature paradigm, proven secure in the random oracle model. We also discuss the GPV signature scheme paradigm, of which Falcon (soon to be a NIST standard for post-quantum signatures) is an example.
+
+[[./7CCSMATC/lecture-gpv-signatures.pdf][slides]]
+
+*Preparatory Reading*
+
+- Craig Gentry, Chris Peikert, and Vinod Vaikuntanathan. /Trapdoors for hard lattices and new cryptographic constructions/. In: 40th ACM STOC. ed. by Richard E. Ladner and Cynthia Dwork. ACM Press, May 2008, pp.197–206. doi: 10.1145/1374376.1374407
+
+*Dramatis Personae*
+
+- [[https://homepages.cwi.nl/~ducas/][Léo Ducas]]
+- [[https://en.wikipedia.org/wiki/Craig_Gentry][Craig Gentry]]
+- [[https://web.eecs.umich.edu/~cpeikert/][Chris Peikert]]
+- [[https://en.wikipedia.org/wiki/Vinod_Vaikuntanathan][Vinod Vaikuntanathan]]
+
+** Rewinding
+
+We discuss "rewinding" as a cryptographic proof technique, typically in the random oracle model (ROM). We can make an adversary reveal its secrets by making it solving a task more than once.
+
+[[./7CCSMATC/lecture-rewinding.pdf][slides]]
+
+*Preparatory Reading*
+
+- Arno Mittelbach and Marc Fischlin. Chapter 10: Random Oracle Schemes in Practice. In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: https://doi.org/10.1007/978-3-030-63287-8 
+- Ivan Damgård. /On Σ-protocols/. In: Lecture Notes, University of Aarhus, Department for Computer Science 84 (2002). https://www.cs.au.dk/~ivan/Sigma.pdf
+  
+*Dramatis Personae*
+
+- [[http://www.arno-mittelbach.de/][Arno Mittelbach]]
+- [[https://www.cryptoplexity.informatik.tu-darmstadt.de/cryptoplexity/team_cryptoplexity/marc_fischlin_cryptoplexity/index.en.jsp][Marc Fischlin]]
+- [[https://en.wikipedia.org/wiki/Claus_P._Schnorr][Claus-Peter Schnorr]]
+- [[https://en.wikipedia.org/wiki/Ivan_Damg%C3%A5rd][Ivan Damgård]]
+- [[https://en.wikipedia.org/wiki/Amos_Fiat][Amos Fiat]]
+- [[https://en.wikipedia.org/wiki/Adi_Shamir][Adi Shamir]]
+- [[https://crypto.stanford.edu/~eujin/][Eu-Jin Goh]]
+- [[https://ics.uci.edu/people/stanislaw-jarecki/][Stanislaw Jarecki]]
+- [[https://en.wikipedia.org/wiki/Jonathan_Katz][Jonathan Katz]]
+- [[https://dblp.uni-trier.de/pid/w/NanWang.html][Nan Wang]]
+  
+** Limits of Proofs (SSH Attack)
+
+We discuss an attack on SSH which had been previously proven secure. The attack was possible because the model was not correct. In response a new model was proposed and then SSH was broken again, because that model still was not correct.
+
+[[./7CCSMATC/lecture-ssh-attack.pdf][slides]]
+
+*Preparatory Reading*
+
+- Martin R. Albrecht, Kenneth G. Paterson, and Gaven J. Watson. /Plaintext Recovery Attacks against SSH./ In: 2009 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2009, pp. 16–26. doi: 10.1109/SP.2009.5
+
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Kenny_Paterson][Kenneth G. Paterson]]
+- [[https://ieeexplore.ieee.org/author/37088183260][Gaven J. Watson]]
+
+** Limits of Proofs (Heartbleed)
+
+TLS implements a "ping" command. A bug in its implementation allowed to extract secret keys. How can we hope to secure the Internet if we cannot get ping right? 
+
+[[./7CCSMATC/lecture-heartbleed.pdf][slides]]
+
+** Limits of Proofs (S2N)
+
+We discuss the "Lucky-13" attack which broke TLS implementations. The attack is "outside the model" of cryptographic proofs because it is a “side-channel attack”.
+
+[[./7CCSMATC/lecture-s2n.pdf][slides]]
+
+*Preparatory Reading*
+
+- Nadhem J. AlFardan and Kenneth G. Paterson. /Lucky Thirteen: Breaking the TLS and DTLS Record Protocols./ In: 2013 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2013, pp. 526–540. doi: 10.1109/SP.2013.42
+
+*Dramatis Personae*
+
+- [[https://dblp.org/pid/82/9056.html][Nadhem J. AlFardan]]
+- [[https://en.wikipedia.org/wiki/Kenny_Paterson][Kenneth G. Paterson]]
+
+** Limits of Proofs (Societal Foundations)
+
+We discuss that proofs of cryptographic security guarantees only hold under specific societal conditions.
+
+[[./7CCSMATC/lecture-societal-foundations.pdf][slides]]
+
+*Preparatory Reading*
+
+- Whitfield Diffie and Martin E. Hellman. /New Directions in Cryptography./ In: IEEE Transactions on Information Theory 22.6 (1976), pp. 644–654. doi: 10.1109/TIT.1976.1055638
+
+*Dramatis Personae*
+
+- [[https://en.wikipedia.org/wiki/Whitfield_Diffie][Whit Diffie]]
+- [[https://en.wikipedia.org/wiki/Martin_Hellman][Martin Hellman]]
+- [[https://en.wikipedia.org/wiki/Mireille_Hildebrandt][Mireille Hildebrandt]]
+- [[https://en.wikipedia.org/wiki/Max_Weber][Max Weber]]
+- [[https://www.brunel.ac.uk/people/mark-neocleous][Mark Neocleous]]
+- [[https://en.wikipedia.org/wiki/Thomas_Hobbes][Thomas Hobbes]]
+- [[https://en.wikipedia.org/wiki/John_Locke][John Locke]]
+- [[https://en.wikipedia.org/wiki/Adam_Smith][Adam Smith]]
+- [[https://en.wikipedia.org/wiki/William_Blackstone][William Blackstone]]
+- [[https://en.wikipedia.org/wiki/Thomas_Paine][Thomas Paine]]  
+- [[https://en.wikipedia.org/wiki/Ron_Rivest][Ron Rivest]]
+- [[https://en.wikipedia.org/wiki/Adi_Shamir][Adi Shamir]]
+- [[https://en.wikipedia.org/wiki/Leonard_Adleman][Leonard Adleman]]          
+
+*Content Warning*
+
+We talk about the regulation of online speech in this lecture which means we will mention child sexual exploitation and abuse (CSEA).
+
+** Limits of Proofs (Social Foundations)
+
+We discuss that cryptography is also a social science, done poorly.
+
+[[./7CCSMATC/lecture-social-foundations.pdf][slides]]
+
+*Preparatory Reading*
+
+- Jean-François Blanchette. /Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents/. MIT Press, 2012, Chapter 4: The Equivalent of a Written Signature
+
+*Dramatis Personae*
+
+- [[https://pages.gseis.ucla.edu/faculty/blanchette/][Jean-François Blanchette]]
+- [[https://en.wikipedia.org/wiki/Oded_Goldreich][Oded Goldreich]]
+- [[https://www.jorgeblascoalis.com/][Jorge Blasco]]
+- [[https://rikkebjerg.gitlab.io/me/][Rikke Bjerg Jensen]]
+- [[https://lenka.sh/][Lenka Mareková]]
+- [[https://cis.cnrs.fr/en/ksenia_ermoshina/][Ksenia Ermoshina]]
+- [[https://www.ibiblio.org/hhalpin/][Harry Halpin]]
+- [[https://cis.cnrs.fr/francesca-musiani/][Francesca Musiani]]
+
+
+#+include: footer.org
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
+# End:

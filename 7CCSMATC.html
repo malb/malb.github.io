@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-08-27 Tue 15:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>7CCSMATC: Advanced Topics in Cryptography</title>
+<meta name="author" content="Martin R. Albrecht" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<link rel="stylesheet" href="css/worg.css" type="text/css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/bundle.css"/>
+<link rel="stylesheet" type="text/css" href="css/custom.css"/>
+<script src="css/bundle.js" type="text/javascript" ></script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-74660978-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script>
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+// @license-end
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">7CCSMATC: Advanced Topics in Cryptography</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgebf35ba">Definitions</a></li>
+<li><a href="#orgbb8f45d">Game Playing</a></li>
+<li><a href="#orgae69d11">Fundamental Lemma of Game Playing</a></li>
+<li><a href="#org7722856">Indistinguishability</a></li>
+<li><a href="#orge3a32f6">Assumptions and Minicrypt v Cryptomania</a></li>
+<li><a href="#orgca4ef0a">Quantum Computing</a></li>
+<li><a href="#org98509d4">Learning with Errors</a></li>
+<li><a href="#org45ce374">Minicrypt with Algebraic Structure</a></li>
+<li><a href="#org11e4b51">The Random Oracle Model</a></li>
+<li><a href="#org273817f">The Fujisaki-Okamoto Transform</a></li>
+<li><a href="#org4b5b6e6">Hash-and-Sign Signatures</a></li>
+<li><a href="#org5d5dd70">Rewinding</a></li>
+<li><a href="#org31d5f90">Limits of Proofs (SSH Attack)</a></li>
+<li><a href="#org811cba1">Limits of Proofs (Heartbleed)</a></li>
+<li><a href="#org0f16859">Limits of Proofs (S2N)</a></li>
+<li><a href="#org7a57c24">Limits of Proofs (Societal Foundations)</a></li>
+<li><a href="#org3109886">Limits of Proofs (Social Foundations)</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgebf35ba" class="outline-2">
+<h2 id="orgebf35ba">Definitions</h2>
+<div class="outline-text-2" id="text-orgebf35ba">
+<p>
+We discuss the role of definitions in (modern) cryptography, how definitions can be wrong and how unintuitive definitions might hit the nail on the head.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-definitions.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Phillip Rogaway. <i>On the Role of Definitions in and beyond Cryptography</i>. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Phillip_Rogaway">Phil Rogaway</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shafi_Goldwasser">Shafi Goldwasser</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Silvio_Micali">Silvio Micali</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgbb8f45d" class="outline-2">
+<h2 id="orgbb8f45d">Game Playing</h2>
+<div class="outline-text-2" id="text-orgbb8f45d">
+<p>
+Following Mike's rather excellent book <i>The Joy of Cryptography</i>, we prove the One-Time-Pad secure to introduce game hopping proofs, a central proof technique in cryptography.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-game-playing.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Mike Rosulek. <i>The Joy of Cryptography</i>. <a href="https://joyofcryptography.com">https://joyofcryptography.com</a>. self published, 2021, Chapters 1 and 2.</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://web.engr.oregonstate.edu/~rosulekm/">Mike Rosulek</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgae69d11" class="outline-2">
+<h2 id="orgae69d11">Fundamental Lemma of Game Playing</h2>
+<div class="outline-text-2" id="text-orgae69d11">
+<p>
+We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in our games once a low-probability event happened. This gives us the "PRP-PRF Switching Lemma" which allows us to "swap" a pseudorandom function (PRF) for a pseudorandom permutation (PRP) without anyone noticing.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-fundamental-lemma-of-game-playing.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Mihir Bellare and Phillip Rogaway. <i>Code-Based Game-Playing Proofs and the Security of Triple Encryption</i>. Cryptology ePrint Archive, Report 2004/331. 2004. url: <a href="https://eprint.iacr.org/2004/331">https://eprint.iacr.org/2004/331</a></li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Phillip_Rogaway">Phil Rogaway</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mihir_Bellare">Mihir Bellare</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7722856" class="outline-2">
+<h2 id="org7722856">Indistinguishability</h2>
+<div class="outline-text-2" id="text-org7722856">
+<p>
+We introduce the <i>assumption</i> that AES-128 is a pseudorandom permutation. This finishes our proof that AES-128 in CTR mode is secure if AES-128 is a PRP.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-indistinguishability.pdf">slides</a>
+</p>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://dblp.org/pid/b/AndreyBogdanov.html">Andrey Bogdanov</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dmitry_Khovratovich">Dmitry Khovratovich</a></li>
+<li><a href="https://www.iaik.tugraz.at/person/christian-rechberger/">Christian Rechberger</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge3a32f6" class="outline-2">
+<h2 id="orge3a32f6">Assumptions and Minicrypt v Cryptomania</h2>
+<div class="outline-text-2" id="text-orge3a32f6">
+<p>
+We go all-in on cryptographic assumptions which underpin most cryptographic guarantees. These give rise to two plausible "worlds" of cryptography: one, called "Minicrypt", where only one-way functions (OWFs) exist and one where public-key cryptography exists, called "Cryptomania". Then, in 1994 Peter Shor snapped his fingers and wiped out all widely used public-key encryption schemes. The catch: you would need a quantum computer to run his algorithm. This provoked the creation of “post-quantum cryptography” lest we want to live in Minicrypt.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-assumptions.pdf">slides</a>
+</p>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Silvio_Micali">Silvio Micali</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ralph_Merkle">Ralph Merkle</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Russell_Impagliazzo">Russell Impagliazzo</a></li>
+<li><a href="https://www.boazbarak.org/">Boaz Barak</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Orr_Dunkelman">Orr Dunkelman</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ron_Rivest">Ron Rivest</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adi_Shamir">Adi Shamir</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Leonard_Adleman">Leonard Adleman</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Whitfield_Diffie">Whit Diffie</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Martin_Hellman">Martin Hellman</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Peter_Shor">Peter Shor</a></li>
+<li><a href="https://homes.esat.kuleuven.be/~wcastryc/">Wouter Castryck</a></li>
+<li><a href="https://www.esat.kuleuven.be/cosic/people/thomas-decru/">Thomas Decru</a></li>
+<li><a href="https://iacr.org/cryptodb/data/author.php?authorkey=10892">Ward Beullens</a></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgca4ef0a" class="outline-2">
+<h2 id="orgca4ef0a">Quantum Computing</h2>
+<div class="outline-text-2" id="text-orgca4ef0a">
+<p>
+We discuss hopefully just enough quantum computing to convince you that quantum computers are not faster, they are weirder. The first half of the lecture introduces quantum mechanics, the second half discusses that what we mean by "secure" may need to change when faced with a quantum adversary.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-fundamental-quantum-computing.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Noson S Yanofsky and Mirco A Mannucci. <i>Quantum Computing for Computer Scientists.</i> Cambridge University Press, 2008, esp. Chapters 1, 2 and 3.</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://tdalazard.io/">Thomas Debris-Alazard</a></li>
+<li><a href="http://www.sci.brooklyn.cuny.edu/~noson/">Noson S Yanofsky</a></li>
+<li><a href="https://cs.gmu.edu/~mmannucc/">Mirco A Mannucci</a></li>
+<li><a href="https://en.wikipedia.org/wiki/William_A._Stein">William Stein</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Peter_Shor">Peter Shor</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Andris_Ambainis">Andris Ambainis</a></li>
+<li><a href="http://rosmanis.com/research/index.html">Ansis Rosmanis</a></li>
+<li><a href="https://kodu.ut.ee/~unruh/">Dominique Unruh</a></li>
+<li><a href="https://fermima.com/">Fermi Ma</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org98509d4" class="outline-2">
+<h2 id="org98509d4">Learning with Errors</h2>
+<div class="outline-text-2" id="text-org98509d4">
+<p>
+We discuss the Learning with Errors (LWE) problem which needs to be hard for our post-quantum standards to be secure. It asserts that adding a small bit of "noise" or "error" to a linear system of equations makes it hard to solve, even on a quantum computer.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-fundamental-lwe.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Chris Peikert, <i>A decade of lattice cryptography.</i> Cryptology ePrint Archive, Report 2015/939. <a href="https://eprint.iacr.org/2015/939">https://eprint.iacr.org/2015/939</a></li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Oded_Regev_(computer_scientist)">Oded Regev</a></li>
+<li><a href="https://web.eecs.umich.edu/~cpeikert/">Chris Peikert</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org45ce374" class="outline-2">
+<h2 id="org45ce374">Minicrypt with Algebraic Structure</h2>
+<div class="outline-text-2" id="text-org45ce374">
+<p>
+Minicrypt is a "world" built from one-way functions (OWFs), can we find similar constitutive primitives for the "world" of public-key cryptography? What algebraic structure can we add to e.g. OWFs to arrive at public-key encryption?
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-minicrypt-with-algebraic-structure.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Navid Alamati, Hart Montgomery, Sikhar Patranabis, and Arnab Roy. <i>Minicrypt Primitives with Algebraic Structure and Applications</i>. In: Journal of Cryptology 36.1 (Jan. 2023), p. 2. doi: 10.1007/s00145-022-09442-2</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://usa.visa.com/about-visa/visa-research/navid-alamati.html">Navid Alamati</a></li>
+<li><a href="https://iacr.org/cryptodb/data/author.php?authorkey=7454">Hart Montgomery</a></li>
+<li><a href="https://sites.google.com/site/sikharpatranabis/home">Sikhar Patranabis</a></li>
+<li><a href="https://iacr.org/cryptodb/data/author.php?authorkey=3773">Arnab Roy</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org11e4b51" class="outline-2">
+<h2 id="org11e4b51">The Random Oracle Model</h2>
+<div class="outline-text-2" id="text-org11e4b51">
+<p>
+The Random Oracle Model (ROM) <i>pretends</i> that hash functions like SHA-3 are random functions. The reason why your favourite cryptographic construction has a hash function call is probably not the reason you think it is. We know that the ROM is not true and we will discuss schemes that are secure under this pretence but insecure when built with <i>any</i> real hash function. Yet, the Internet runs on schemes proven secure only in the ROM.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-rom.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Arno Mittelbach and Marc Fischlin. <i>Chapter 9: The Full Power of Random Oracles.</i> In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: <a href="https://doi.org/10.1007/978-3-030-63287-8">https://doi.org/10.1007/978-3-030-63287-8</a></li>
+<li>Oded Goldreich. <i>On Post-Modern Cryptography.</i> Cryptology ePrint Archive, Report 2006/461. 2006. url: <a href="https://eprint.iacr.org/2006/461">https://eprint.iacr.org/2006/461</a></li>
+<li>Phillip Rogaway. <i>Practice-Oriented Provable Security and the Social Construction of Cryptography.</i> In: IEEE Secur. Priv. 14.6 (2016), pp. 10–17. doi: 10.1109/MSP.2016.122. url: <a href="https://doi.org/10.1109/MSP.2016.122">https://doi.org/10.1109/MSP.2016.122</a></li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Phillip_Rogaway">Phil Rogaway</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mihir_Bellare">Mihir Bellare</a></li>
+<li><a href="http://www.arno-mittelbach.de/">Arno Mittelbach</a></li>
+<li><a href="https://www.cryptoplexity.informatik.tu-darmstadt.de/cryptoplexity/team_cryptoplexity/marc_fischlin_cryptoplexity/index.en.jsp">Marc Fischlin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Oded_Goldreich">Oded Goldreich</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org273817f" class="outline-2">
+<h2 id="org273817f">The Fujisaki-Okamoto Transform</h2>
+<div class="outline-text-2" id="text-org273817f">
+<p>
+We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure schemes into CCA secure schemes in the random oracle model … using one weird trick, adversaries hate it.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-fo.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Alexander W. Dent. <i>A Designer’s Guide to KEMs.</i> In: 9th IMA International Conference on Cryptography and Coding. Ed. by Kenneth G. Paterson. Vol. 2898. LNCS. Springer, Berlin, Heidelberg, Dec. 2003, pp. 133–151. doi: 10.1007/978-3-540-40974-8_12</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.jaist.ac.jp/~fujisaki/index-e.html">Eiichiro Fujisaki</a></li>
+<li><a href="https://www.rd.ntt/e/organization/researcher/fellow/f_001.html">Tatsuaki Okamoto</a></li>
+<li><a href="http://cogentcryptography.com/">Alexander W. Dent</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4b5b6e6" class="outline-2">
+<h2 id="org4b5b6e6">Hash-and-Sign Signatures</h2>
+<div class="outline-text-2" id="text-org4b5b6e6">
+<p>
+We discuss the hash-and-sign signature paradigm, proven secure in the random oracle model. We also discuss the GPV signature scheme paradigm, of which Falcon (soon to be a NIST standard for post-quantum signatures) is an example.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-gpv-signatures.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Craig Gentry, Chris Peikert, and Vinod Vaikuntanathan. <i>Trapdoors for hard lattices and new cryptographic constructions</i>. In: 40th ACM STOC. ed. by Richard E. Ladner and Cynthia Dwork. ACM Press, May 2008, pp.197–206. doi: 10.1145/1374376.1374407</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://homepages.cwi.nl/~ducas/">Léo Ducas</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Craig_Gentry">Craig Gentry</a></li>
+<li><a href="https://web.eecs.umich.edu/~cpeikert/">Chris Peikert</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vinod_Vaikuntanathan">Vinod Vaikuntanathan</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5d5dd70" class="outline-2">
+<h2 id="org5d5dd70">Rewinding</h2>
+<div class="outline-text-2" id="text-org5d5dd70">
+<p>
+We discuss "rewinding" as a cryptographic proof technique, typically in the random oracle model (ROM). We can make an adversary reveal its secrets by making it solving a task more than once.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-rewinding.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Arno Mittelbach and Marc Fischlin. Chapter 10: Random Oracle Schemes in Practice. In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: <a href="https://doi.org/10.1007/978-3-030-63287-8">https://doi.org/10.1007/978-3-030-63287-8</a></li>
+<li>Ivan Damgård. <i>On Σ-protocols</i>. In: Lecture Notes, University of Aarhus, Department for Computer Science 84 (2002). <a href="https://www.cs.au.dk/~ivan/Sigma.pdf">https://www.cs.au.dk/~ivan/Sigma.pdf</a></li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="http://www.arno-mittelbach.de/">Arno Mittelbach</a></li>
+<li><a href="https://www.cryptoplexity.informatik.tu-darmstadt.de/cryptoplexity/team_cryptoplexity/marc_fischlin_cryptoplexity/index.en.jsp">Marc Fischlin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Claus_P._Schnorr">Claus-Peter Schnorr</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ivan_Damg%C3%A5rd">Ivan Damgård</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amos_Fiat">Amos Fiat</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adi_Shamir">Adi Shamir</a></li>
+<li><a href="https://crypto.stanford.edu/~eujin/">Eu-Jin Goh</a></li>
+<li><a href="https://ics.uci.edu/people/stanislaw-jarecki/">Stanislaw Jarecki</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Jonathan_Katz">Jonathan Katz</a></li>
+<li><a href="https://dblp.uni-trier.de/pid/w/NanWang.html">Nan Wang</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org31d5f90" class="outline-2">
+<h2 id="org31d5f90">Limits of Proofs (SSH Attack)</h2>
+<div class="outline-text-2" id="text-org31d5f90">
+<p>
+We discuss an attack on SSH which had been previously proven secure. The attack was possible because the model was not correct. In response a new model was proposed and then SSH was broken again, because that model still was not correct.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-ssh-attack.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Martin R. Albrecht, Kenneth G. Paterson, and Gaven J. Watson. <i>Plaintext Recovery Attacks against SSH.</i> In: 2009 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2009, pp. 16–26. doi: 10.1109/SP.2009.5</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Kenny_Paterson">Kenneth G. Paterson</a></li>
+<li><a href="https://ieeexplore.ieee.org/author/37088183260">Gaven J. Watson</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org811cba1" class="outline-2">
+<h2 id="org811cba1">Limits of Proofs (Heartbleed)</h2>
+<div class="outline-text-2" id="text-org811cba1">
+<p>
+TLS implements a "ping" command. A bug in its implementation allowed to extract secret keys. How can we hope to secure the Internet if we cannot get ping right? 
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-heartbleed.pdf">slides</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0f16859" class="outline-2">
+<h2 id="org0f16859">Limits of Proofs (S2N)</h2>
+<div class="outline-text-2" id="text-org0f16859">
+<p>
+We discuss the "Lucky-13" attack which broke TLS implementations. The attack is "outside the model" of cryptographic proofs because it is a “side-channel attack”.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-s2n.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Nadhem J. AlFardan and Kenneth G. Paterson. <i>Lucky Thirteen: Breaking the TLS and DTLS Record Protocols.</i> In: 2013 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2013, pp. 526–540. doi: 10.1109/SP.2013.42</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://dblp.org/pid/82/9056.html">Nadhem J. AlFardan</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kenny_Paterson">Kenneth G. Paterson</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7a57c24" class="outline-2">
+<h2 id="org7a57c24">Limits of Proofs (Societal Foundations)</h2>
+<div class="outline-text-2" id="text-org7a57c24">
+<p>
+We discuss that proofs of cryptographic security guarantees only hold under specific societal conditions.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-societal-foundations.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Whitfield Diffie and Martin E. Hellman. <i>New Directions in Cryptography.</i> In: IEEE Transactions on Information Theory 22.6 (1976), pp. 644–654. doi: 10.1109/TIT.1976.1055638</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Whitfield_Diffie">Whit Diffie</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Martin_Hellman">Martin Hellman</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mireille_Hildebrandt">Mireille Hildebrandt</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Max_Weber">Max Weber</a></li>
+<li><a href="https://www.brunel.ac.uk/people/mark-neocleous">Mark Neocleous</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Thomas_Hobbes">Thomas Hobbes</a></li>
+<li><a href="https://en.wikipedia.org/wiki/John_Locke">John Locke</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adam_Smith">Adam Smith</a></li>
+<li><a href="https://en.wikipedia.org/wiki/William_Blackstone">William Blackstone</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Thomas_Paine">Thomas Paine</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ron_Rivest">Ron Rivest</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adi_Shamir">Adi Shamir</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Leonard_Adleman">Leonard Adleman</a></li>
+</ul>
+
+<p>
+<b>Content Warning</b>
+</p>
+
+<p>
+We talk about the regulation of online speech in this lecture which means we will mention child sexual exploitation and abuse (CSEA).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3109886" class="outline-2">
+<h2 id="org3109886">Limits of Proofs (Social Foundations)</h2>
+<div class="outline-text-2" id="text-org3109886">
+<p>
+We discuss that cryptography is also a social science, done poorly.
+</p>
+
+<p>
+<a href="./7CCSMATC/lecture-social-foundations.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Jean-François Blanchette. <i>Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents</i>. MIT Press, 2012, Chapter 4: The Equivalent of a Written Signature</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://pages.gseis.ucla.edu/faculty/blanchette/">Jean-François Blanchette</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Oded_Goldreich">Oded Goldreich</a></li>
+<li><a href="https://www.jorgeblascoalis.com/">Jorge Blasco</a></li>
+<li><a href="https://rikkebjerg.gitlab.io/me/">Rikke Bjerg Jensen</a></li>
+<li><a href="https://lenka.sh/">Lenka Mareková</a></li>
+<li><a href="https://cis.cnrs.fr/en/ksenia_ermoshina/">Ksenia Ermoshina</a></li>
+<li><a href="https://www.ibiblio.org/hhalpin/">Harry Halpin</a></li>
+<li><a href="https://cis.cnrs.fr/francesca-musiani/">Francesca Musiani</a></li>
+</ul>
+
+
+<div class="HTML" id="org528639c">
+<p>
+
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
