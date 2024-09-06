@@ -261,6 +261,7 @@ We discuss that proofs of cryptographic security guarantees only hold under spec
 
 *Dramatis Personae*
 
+- [[https://en.wikipedia.org/wiki/Randall_Munroe][Randall Munroe]]
 - [[https://en.wikipedia.org/wiki/Whitfield_Diffie][Whit Diffie]]
 - [[https://en.wikipedia.org/wiki/Martin_Hellman][Martin Hellman]]
 - [[https://en.wikipedia.org/wiki/Mireille_Hildebrandt][Mireille Hildebrandt]]
