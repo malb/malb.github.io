@@ -1,0 +1,12 @@
+#+title: Cryptography in the UK Mailing List
+#+setupfile: setup.org
+
+The “Cryptography in the UK” mailing list, is the “main” cryptography research mailing list in the UK. People send seminars, calls for papers, job ads: https://groups.google.com/g/cryptography-in-the-uk
+
+We do light gatekeeping at sign-up time to prevent spam, e.g. people peddling their currency.[fn::For the avoidance of doubt, if you work for a blockchain project and are interested in cryptographic research and you are very welcome to sign up. We just don’t want people to push their coins or products.] So let us know who you are when you sign up.
+
+#+include: footer.org
+
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
+# End:
