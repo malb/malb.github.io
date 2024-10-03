@@ -64,6 +64,10 @@ We go all-in on cryptographic assumptions which underpin most cryptographic guar
 
 [[https://malb.github.io/7CCSMATC/lecture-assumptions.pdf][slides]]
 
+*Preparatory Reading*
+
+- Boaz Barak. /The Complexity of Public-Key Cryptography./ Cryptology ePrint Archive, Report 2017/365. 2017. url: https://eprint.iacr.org/2017/365
+
 *Dramatis Personae*
 
 - [[https://en.wikipedia.org/wiki/Silvio_Micali][Silvio Micali]]
