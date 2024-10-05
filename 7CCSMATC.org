@@ -232,13 +232,13 @@ We discuss an attack on SSH which had been previously proven secure. The attack 
 - [[https://en.wikipedia.org/wiki/Kenny_Paterson][Kenneth G. Paterson]]
 - [[https://ieeexplore.ieee.org/author/37088183260][Gaven J. Watson]]
 
-** Limits of Proofs (Heartbleed)
+** Limits of Proofs (Heartbleed Vulnerability)
 
 TLS implements a "ping" command. A bug in its implementation allowed to extract secret keys. How can we hope to secure the Internet if we cannot get ping right? 
 
 [[https://malb.github.io/7CCSMATC/lecture-heartbleed.pdf][slides]]
 
-** Limits of Proofs (S2N)
+** Limits of Proofs (S2N Attack)
 
 We discuss the "Lucky-13" attack which broke TLS implementations. The attack is "outside the model" of cryptographic proofs because it is a “side-channel attack”.
 
