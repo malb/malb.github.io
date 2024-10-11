@@ -90,7 +90,7 @@ We go all-in on cryptographic assumptions which underpin most cryptographic guar
 
 We discuss hopefully just enough quantum computing to convince you that quantum computers are not faster, they are weirder. The first half of the lecture introduces quantum mechanics, the second half discusses that what we mean by "secure" may need to change when faced with a quantum adversary.
 
-[[https://malb.github.io/7CCSMATC/lecture-fundamental-quantum-computing.pdf][slides]]
+[[https://malb.github.io/7CCSMATC/lecture-quantum.pdf][slides]]
 
 *Preparatory Reading*
 
