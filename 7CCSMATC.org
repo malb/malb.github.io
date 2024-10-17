@@ -85,7 +85,6 @@ We go all-in on cryptographic assumptions which underpin most cryptographic guar
 - [[https://www.esat.kuleuven.be/cosic/people/thomas-decru/][Thomas Decru]]
 - [[https://iacr.org/cryptodb/data/author.php?authorkey=10892][Ward Beullens]]
   
-
 ** Quantum Computing
 
 We discuss hopefully just enough quantum computing to convince you that quantum computers are not faster, they are weirder. The first half of the lecture introduces quantum mechanics, the second half discusses that what we mean by "secure" may need to change when faced with a quantum adversary.
@@ -112,7 +111,7 @@ We discuss hopefully just enough quantum computing to convince you that quantum 
 
 We discuss the Learning with Errors (LWE) problem which needs to be hard for our post-quantum standards to be secure. It asserts that adding a small bit of "noise" or "error" to a linear system of equations makes it hard to solve, even on a quantum computer.
 
-[[https://malb.github.io/7CCSMATC/lecture-fundamental-lwe.pdf][slides]]
+[[https://malb.github.io/7CCSMATC/lecture-lwe.pdf][slides]]
 
 *Preparatory Reading*
 
