@@ -179,7 +179,7 @@ We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure sc
 
 We discuss the hash-and-sign signature paradigm, proven secure in the random oracle model. We also discuss the GPV signature scheme paradigm, of which Falcon (soon to be a NIST standard for post-quantum signatures) is an example.
 
-[[https://malb.github.io/7CCSMATC/lecture-gpv-signatures.pdf][slides]]
+[[https://malb.github.io/7CCSMATC/lecture-gpv.pdf][slides]]
 
 *Preparatory Reading*
 
