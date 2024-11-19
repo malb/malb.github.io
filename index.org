@@ -3,7 +3,7 @@
 
 * Decl
 
-I am a professor in the [[https://www.kcl.ac.uk/research/cys][Cybersecurity Group]] at [[https://www.kcl.ac.uk/research/cys][King’s College London]]. I am also a Principal Research Scientist for [[https://www.sandboxaq.com/][SandboxAQ]]. I work in cryptography, especially post-quantum and lattice-based cryptography and applied cryptography.
+I am a [[https://cryptographers.kcl.ac.uk/][professor in cryptography]] at [[https://www.kcl.ac.uk/research/cys][King’s College London]]. I am also a Principal Research Scientist for [[https://www.sandboxaq.com/][SandboxAQ]]. I work in cryptography, especially post-quantum and lattice-based cryptography as well as cryptography “[[https://eprint.iacr.org/2024/532][in the wild]]”.
 
 ** Text
 
@@ -13,8 +13,8 @@ I am a professor in the [[https://www.kcl.ac.uk/research/cys][Cybersecurity Grou
 
 * Here
 
-- [[./are-graded-encoding-schemes-broken-yet.html][Are graded encoding schemes broken yet?]]
 - [[https://malb.io/sis-with-hints.html][SIS with hints]]
+- [[./are-graded-encoding-schemes-broken-yet.html][Are graded encoding schemes broken yet?]]
   
 * Code
 
@@ -25,10 +25,11 @@ I am a professor in the [[https://www.kcl.ac.uk/research/cys][Cybersecurity Grou
 * Link
 
 - e-mail: [[mailto:FIRSTNAME.LASTNAME@kcl.ac.uk][King's College London]] or [[mailto:FIRSTNAME.LASTNAME@sandboxquantum.com][SandboxAQ]]
+- [[https://bsky.app/profile/malb.bsky.social][bsky]]
+- [[https://ioc.exchange/@malb][mastodon]]    
 - [[https://twitter.com/martinralbrecht][twitter]]
 - [[https://keybase.io/martinralbrecht][keybase]]
 - [[https://scholar.google.com/citations?user=mELfH20AAAAJ&hl=en][gscholar]]
-- [[http://uk.linkedin.com/pub/martin-albrecht/95/74b/42a][linkedin]]
 
 #+INCLUDE: footer.org
 
