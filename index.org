@@ -18,6 +18,18 @@ I am a [[https://cryptographers.kcl.ac.uk/][professor in cryptography]] at [[htt
   
 * Code
 
+Some open-source projects I’m involved in are:
+
+- [[https://github.com/fplll/fplll][FPLLL]]: Fast lattice algorithms
+- [[https://github.com/fplll/fpylll][FPyLLL]]: Python interface to FPLLL
+- [[https://github.com/fplll/g6k][G6K]]: Faster lattice algorithms
+- [[https://github.com/malb/lattice-estimator/][Lattice Estimator]]: How fast are algorithms solving lattice problems?
+- [[https://github.com/malb/m4ri][M4RI]]: Fast dense linear algebra mod 2
+- [[https://github.com/malb/m4rie][M4RIE]]: Fast dense linear algebra for small extensions of GF(2).
+- [[https://github.com/malb/bdd-predicate][BDD with Predicate]]: Solving the Hidden Number Problem to steal some Bitcoin
+
+More of my code, such as smaller projects, can be found in various places:  
+
 - [[https://github.com/malb][github]]
 - [[https://gist.github.com/malb][gists]]
 - [[https://bitbucket.org/malb][bitbucket]]
