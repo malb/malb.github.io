@@ -7,9 +7,9 @@ I am a [[https://cryptographers.kcl.ac.uk/][professor in cryptography]] at [[htt
 
 ** Text
 
- - [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][dblp]]
- - [[https://martinralbrecht.wordpress.com][blog]] ([[https://bitbucket.org/malb/blog/][src]])
- - [[https://github.com/malb/malb.github.io][this]]
+ - [[http://dblp.uni-trier.de/pers/hd/a/Albrecht:Martin_R=][DBLP]]
+ - [[https://martinralbrecht.wordpress.com][Blog]] ([[https://bitbucket.org/malb/blog/][src]])
+ - [[https://github.com/malb/malb.github.io][This]]
 
 * Here
 
@@ -30,18 +30,18 @@ Some open-source projects I’m involved in are:
 
 More of my code, such as smaller projects, can be found in various places:  
 
-- [[https://github.com/malb][github]]
-- [[https://gist.github.com/malb][gists]]
-- [[https://bitbucket.org/malb][bitbucket]]
+- [[https://github.com/malb][Github]]
+- [[https://gist.github.com/malb][Gists]]
+- [[https://bitbucket.org/malb][Bitbucket]]
 
 * Link
 
 - e-mail: [[mailto:FIRSTNAME.LASTNAME@kcl.ac.uk][King's College London]] or [[mailto:FIRSTNAME.LASTNAME@sandboxquantum.com][SandboxAQ]]
-- [[https://bsky.app/profile/malb.bsky.social][bsky]]
-- [[https://ioc.exchange/@malb][mastodon]]    
-- [[https://twitter.com/martinralbrecht][twitter]]
-- [[https://keybase.io/martinralbrecht][keybase]]
-- [[https://scholar.google.com/citations?user=mELfH20AAAAJ&hl=en][gscholar]]
+- [[https://bsky.app/profile/malb.bsky.social][Bsky]]
+- [[https://ioc.exchange/@malb][Mastodon]]    
+- [[https://twitter.com/martinralbrecht][Twitter]]
+- [[https://keybase.io/martinralbrecht][Keybase]]
+- [[https://scholar.google.com/citations?user=mELfH20AAAAJ&hl=en][Gscholar]]
 
 #+INCLUDE: footer.org
 
