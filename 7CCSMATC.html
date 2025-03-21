@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-11-14 Thu 09:02 -->
+<!-- 2025-03-19 Wed 17:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>7CCSMATC: Advanced Topics in Cryptography</title>
@@ -233,30 +233,30 @@ ga('send', 'pageview');
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgccf45f1">Definitions</a></li>
-<li><a href="#org2c34390">Game Playing</a></li>
-<li><a href="#org3c633bc">Fundamental Lemma of Game Playing</a></li>
-<li><a href="#orgac99f90">Indistinguishability</a></li>
-<li><a href="#orgf596bd5">Assumptions and Minicrypt v Cryptomania</a></li>
-<li><a href="#orgb8b0010">Quantum Computing</a></li>
-<li><a href="#orgbc05a25">Learning with Errors</a></li>
-<li><a href="#orgaadd259">Minicrypt with Algebraic Structure</a></li>
-<li><a href="#orgbdc7797">The Random Oracle Model</a></li>
-<li><a href="#org05a3473">The Fujisaki-Okamoto Transform</a></li>
-<li><a href="#org483d4e6">Hash-and-Sign Signatures</a></li>
-<li><a href="#org73ef068">Rewinding</a></li>
-<li><a href="#orgfef9bd6">Limits of Proofs (SSH Attack)</a></li>
-<li><a href="#org40d0dd2">Limits of Proofs (Heartbleed Vulnerability)</a></li>
-<li><a href="#org6d81ca7">Limits of Proofs (S2N Attack)</a></li>
-<li><a href="#org816a638">Limits of Proofs (Societal Foundations)</a></li>
-<li><a href="#orga42c2c1">Limits of Proofs (Social Foundations)</a></li>
+<li><a href="#org34e96e5">Definitions</a></li>
+<li><a href="#orga63fd6d">Game Playing</a></li>
+<li><a href="#org7d3c318">Fundamental Lemma of Game Playing</a></li>
+<li><a href="#org35f4d18">Indistinguishability</a></li>
+<li><a href="#orgd831537">Assumptions and Minicrypt v Cryptomania</a></li>
+<li><a href="#orgeef0910">Quantum Computing</a></li>
+<li><a href="#org19a62c2">Learning with Errors</a></li>
+<li><a href="#org4936e77">Minicrypt with Algebraic Structure</a></li>
+<li><a href="#org9254f31">The Random Oracle Model</a></li>
+<li><a href="#org9cdae1c">The Fujisaki-Okamoto Transform</a></li>
+<li><a href="#orgab50be2">Hash-and-Sign Signatures</a></li>
+<li><a href="#orgdc57177">Rewinding</a></li>
+<li><a href="#org8db3af0">Limits of Proofs (SSH Attack)</a></li>
+<li><a href="#org6fa770b">Limits of Proofs (Heartbleed Vulnerability)</a></li>
+<li><a href="#org50eae02">Limits of Proofs (S2N Attack)</a></li>
+<li><a href="#org87b67c8">Limits of Proofs (Societal Foundations)</a></li>
+<li><a href="#org3187c54">Limits of Proofs (Social Foundations)</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgccf45f1" class="outline-2">
-<h2 id="orgccf45f1">Definitions</h2>
-<div class="outline-text-2" id="text-orgccf45f1">
+<div id="outline-container-org34e96e5" class="outline-2">
+<h2 id="org34e96e5">Definitions</h2>
+<div class="outline-text-2" id="text-org34e96e5">
 <p>
 We discuss the role of definitions in (modern) cryptography, how definitions can be wrong and how unintuitive definitions might hit the nail on the head.
 </p>
@@ -270,7 +270,7 @@ We discuss the role of definitions in (modern) cryptography, how definitions can
 </p>
 
 <ul class="org-ul">
-<li>Phillip Rogaway. <i>On the Role of Definitions in and beyond Cryptography</i>. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32</li>
+<li>Phillip Rogaway. <i>On the Role of Definitions in and beyond Cryptography</i>. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32, Sections 2 to 5 (inclusive).</li>
 </ul>
 
 <p>
@@ -285,9 +285,9 @@ We discuss the role of definitions in (modern) cryptography, how definitions can
 </div>
 </div>
 
-<div id="outline-container-org2c34390" class="outline-2">
-<h2 id="org2c34390">Game Playing</h2>
-<div class="outline-text-2" id="text-org2c34390">
+<div id="outline-container-orga63fd6d" class="outline-2">
+<h2 id="orga63fd6d">Game Playing</h2>
+<div class="outline-text-2" id="text-orga63fd6d">
 <p>
 Following Mike's rather excellent book <i>The Joy of Cryptography</i>, we prove the One-Time-Pad secure to introduce game hopping proofs, a central proof technique in cryptography.
 </p>
@@ -314,9 +314,9 @@ Following Mike's rather excellent book <i>The Joy of Cryptography</i>, we prove 
 </div>
 </div>
 
-<div id="outline-container-org3c633bc" class="outline-2">
-<h2 id="org3c633bc">Fundamental Lemma of Game Playing</h2>
-<div class="outline-text-2" id="text-org3c633bc">
+<div id="outline-container-org7d3c318" class="outline-2">
+<h2 id="org7d3c318">Fundamental Lemma of Game Playing</h2>
+<div class="outline-text-2" id="text-org7d3c318">
 <p>
 We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in our games once a low-probability event happened. This gives us the "PRP-PRF Switching Lemma" which allows us to "swap" a pseudorandom function (PRF) for a pseudorandom permutation (PRP) without anyone noticing.
 </p>
@@ -344,9 +344,9 @@ We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in o
 </div>
 </div>
 
-<div id="outline-container-orgac99f90" class="outline-2">
-<h2 id="orgac99f90">Indistinguishability</h2>
-<div class="outline-text-2" id="text-orgac99f90">
+<div id="outline-container-org35f4d18" class="outline-2">
+<h2 id="org35f4d18">Indistinguishability</h2>
+<div class="outline-text-2" id="text-org35f4d18">
 <p>
 We introduce the <i>assumption</i> that AES-128 is a pseudorandom permutation. This finishes our proof that AES-128 in CTR mode is secure if AES-128 is a PRP.
 </p>
@@ -367,9 +367,9 @@ We introduce the <i>assumption</i> that AES-128 is a pseudorandom permutation. T
 </div>
 </div>
 
-<div id="outline-container-orgf596bd5" class="outline-2">
-<h2 id="orgf596bd5">Assumptions and Minicrypt v Cryptomania</h2>
-<div class="outline-text-2" id="text-orgf596bd5">
+<div id="outline-container-orgd831537" class="outline-2">
+<h2 id="orgd831537">Assumptions and Minicrypt v Cryptomania</h2>
+<div class="outline-text-2" id="text-orgd831537">
 <p>
 We go all-in on cryptographic assumptions which underpin most cryptographic guarantees. These give rise to two plausible "worlds" of cryptography: one, called "Minicrypt", where only one-way functions (OWFs) exist and one where public-key cryptography exists, called "Cryptomania". Then, in 1994 Peter Shor snapped his fingers and wiped out all widely used public-key encryption schemes. The catch: you would need a quantum computer to run his algorithm. This provoked the creation of “post-quantum cryptography” lest we want to live in Minicrypt.
 </p>
@@ -409,9 +409,9 @@ We go all-in on cryptographic assumptions which underpin most cryptographic guar
 </div>
 </div>
 
-<div id="outline-container-orgb8b0010" class="outline-2">
-<h2 id="orgb8b0010">Quantum Computing</h2>
-<div class="outline-text-2" id="text-orgb8b0010">
+<div id="outline-container-orgeef0910" class="outline-2">
+<h2 id="orgeef0910">Quantum Computing</h2>
+<div class="outline-text-2" id="text-orgeef0910">
 <p>
 We discuss hopefully just enough quantum computing to convince you that quantum computers are not faster, they are weirder. The first half of the lecture introduces quantum mechanics, the second half discusses that what we mean by "secure" may need to change when faced with a quantum adversary.
 </p>
@@ -446,9 +446,9 @@ We discuss hopefully just enough quantum computing to convince you that quantum 
 </div>
 </div>
 
-<div id="outline-container-orgbc05a25" class="outline-2">
-<h2 id="orgbc05a25">Learning with Errors</h2>
-<div class="outline-text-2" id="text-orgbc05a25">
+<div id="outline-container-org19a62c2" class="outline-2">
+<h2 id="org19a62c2">Learning with Errors</h2>
+<div class="outline-text-2" id="text-org19a62c2">
 <p>
 We discuss the Learning with Errors (LWE) problem which needs to be hard for our post-quantum standards to be secure. It asserts that adding a small bit of "noise" or "error" to a linear system of equations makes it hard to solve, even on a quantum computer.
 </p>
@@ -476,9 +476,9 @@ We discuss the Learning with Errors (LWE) problem which needs to be hard for our
 </div>
 </div>
 
-<div id="outline-container-orgaadd259" class="outline-2">
-<h2 id="orgaadd259">Minicrypt with Algebraic Structure</h2>
-<div class="outline-text-2" id="text-orgaadd259">
+<div id="outline-container-org4936e77" class="outline-2">
+<h2 id="org4936e77">Minicrypt with Algebraic Structure</h2>
+<div class="outline-text-2" id="text-org4936e77">
 <p>
 Minicrypt is a "world" built from one-way functions (OWFs), can we find similar constitutive primitives for the "world" of public-key cryptography? What algebraic structure can we add to e.g. OWFs to arrive at public-key encryption?
 </p>
@@ -508,9 +508,9 @@ Minicrypt is a "world" built from one-way functions (OWFs), can we find similar 
 </div>
 </div>
 
-<div id="outline-container-orgbdc7797" class="outline-2">
-<h2 id="orgbdc7797">The Random Oracle Model</h2>
-<div class="outline-text-2" id="text-orgbdc7797">
+<div id="outline-container-org9254f31" class="outline-2">
+<h2 id="org9254f31">The Random Oracle Model</h2>
+<div class="outline-text-2" id="text-org9254f31">
 <p>
 The Random Oracle Model (ROM) <i>pretends</i> that hash functions like SHA-3 are random functions. The reason why your favourite cryptographic construction has a hash function call is probably not the reason you think it is. We know that the ROM is not true and we will discuss schemes that are secure under this pretence but insecure when built with <i>any</i> real hash function. Yet, the Internet runs on schemes proven secure only in the ROM.
 </p>
@@ -543,9 +543,9 @@ The Random Oracle Model (ROM) <i>pretends</i> that hash functions like SHA-3 are
 </div>
 </div>
 
-<div id="outline-container-org05a3473" class="outline-2">
-<h2 id="org05a3473">The Fujisaki-Okamoto Transform</h2>
-<div class="outline-text-2" id="text-org05a3473">
+<div id="outline-container-org9cdae1c" class="outline-2">
+<h2 id="org9cdae1c">The Fujisaki-Okamoto Transform</h2>
+<div class="outline-text-2" id="text-org9cdae1c">
 <p>
 We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure schemes into CCA secure schemes in the random oracle model … using one weird trick, adversaries hate it.
 </p>
@@ -574,9 +574,9 @@ We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure sc
 </div>
 </div>
 
-<div id="outline-container-org483d4e6" class="outline-2">
-<h2 id="org483d4e6">Hash-and-Sign Signatures</h2>
-<div class="outline-text-2" id="text-org483d4e6">
+<div id="outline-container-orgab50be2" class="outline-2">
+<h2 id="orgab50be2">Hash-and-Sign Signatures</h2>
+<div class="outline-text-2" id="text-orgab50be2">
 <p>
 We discuss the hash-and-sign signature paradigm, proven secure in the random oracle model. We also discuss the GPV signature scheme paradigm, of which Falcon (soon to be a NIST standard for post-quantum signatures) is an example.
 </p>
@@ -606,9 +606,9 @@ We discuss the hash-and-sign signature paradigm, proven secure in the random ora
 </div>
 </div>
 
-<div id="outline-container-org73ef068" class="outline-2">
-<h2 id="org73ef068">Rewinding</h2>
-<div class="outline-text-2" id="text-org73ef068">
+<div id="outline-container-orgdc57177" class="outline-2">
+<h2 id="orgdc57177">Rewinding</h2>
+<div class="outline-text-2" id="text-orgdc57177">
 <p>
 We discuss "rewinding" as a cryptographic proof technique, typically in the random oracle model (ROM). We can make an adversary reveal its secrets by making it solving a task more than once.
 </p>
@@ -645,9 +645,9 @@ We discuss "rewinding" as a cryptographic proof technique, typically in the rand
 </div>
 </div>
 
-<div id="outline-container-orgfef9bd6" class="outline-2">
-<h2 id="orgfef9bd6">Limits of Proofs (SSH Attack)</h2>
-<div class="outline-text-2" id="text-orgfef9bd6">
+<div id="outline-container-org8db3af0" class="outline-2">
+<h2 id="org8db3af0">Limits of Proofs (SSH Attack)</h2>
+<div class="outline-text-2" id="text-org8db3af0">
 <p>
 We discuss an attack on SSH which had been previously proven secure. The attack was possible because the model was not correct. In response a new model was proposed and then SSH was broken again, because that model still was not correct.
 </p>
@@ -675,9 +675,9 @@ We discuss an attack on SSH which had been previously proven secure. The attack 
 </div>
 </div>
 
-<div id="outline-container-org40d0dd2" class="outline-2">
-<h2 id="org40d0dd2">Limits of Proofs (Heartbleed Vulnerability)</h2>
-<div class="outline-text-2" id="text-org40d0dd2">
+<div id="outline-container-org6fa770b" class="outline-2">
+<h2 id="org6fa770b">Limits of Proofs (Heartbleed Vulnerability)</h2>
+<div class="outline-text-2" id="text-org6fa770b">
 <p>
 TLS implements a "ping" command. A bug in its implementation allowed to extract secret keys. How can we hope to secure the Internet if we cannot get ping right? 
 </p>
@@ -688,9 +688,9 @@ TLS implements a "ping" command. A bug in its implementation allowed to extract 
 </div>
 </div>
 
-<div id="outline-container-org6d81ca7" class="outline-2">
-<h2 id="org6d81ca7">Limits of Proofs (S2N Attack)</h2>
-<div class="outline-text-2" id="text-org6d81ca7">
+<div id="outline-container-org50eae02" class="outline-2">
+<h2 id="org50eae02">Limits of Proofs (S2N Attack)</h2>
+<div class="outline-text-2" id="text-org50eae02">
 <p>
 We discuss the "Lucky-13" attack which broke TLS implementations. The attack is "outside the model" of cryptographic proofs because it is a “side-channel attack”.
 </p>
@@ -718,9 +718,9 @@ We discuss the "Lucky-13" attack which broke TLS implementations. The attack is 
 </div>
 </div>
 
-<div id="outline-container-org816a638" class="outline-2">
-<h2 id="org816a638">Limits of Proofs (Societal Foundations)</h2>
-<div class="outline-text-2" id="text-org816a638">
+<div id="outline-container-org87b67c8" class="outline-2">
+<h2 id="org87b67c8">Limits of Proofs (Societal Foundations)</h2>
+<div class="outline-text-2" id="text-org87b67c8">
 <p>
 We discuss that proofs of cryptographic security guarantees only hold under specific societal conditions.
 </p>
@@ -768,9 +768,9 @@ We talk about the regulation of online speech in this lecture which means we wil
 </div>
 </div>
 
-<div id="outline-container-orga42c2c1" class="outline-2">
-<h2 id="orga42c2c1">Limits of Proofs (Social Foundations)</h2>
-<div class="outline-text-2" id="text-orga42c2c1">
+<div id="outline-container-org3187c54" class="outline-2">
+<h2 id="org3187c54">Limits of Proofs (Social Foundations)</h2>
+<div class="outline-text-2" id="text-org3187c54">
 <p>
 We discuss that cryptography is also a social science, done poorly.
 </p>
@@ -803,7 +803,7 @@ We discuss that cryptography is also a social science, done poorly.
 </ul>
 
 
-<div class="HTML" id="orgdce70a4">
+<div class="HTML" id="org3a1c083">
 <p>
 
 </p>

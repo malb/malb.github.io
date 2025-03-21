@@ -9,7 +9,7 @@ We discuss the role of definitions in (modern) cryptography, how definitions can
 
 *Preparatory Reading*
 
-- Phillip Rogaway. /On the Role of Definitions in and beyond Cryptography/. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32
+- Phillip Rogaway. /On the Role of Definitions in and beyond Cryptography/. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32, Sections 2 to 5 (inclusive).
 
 *Dramatis Personae*
 
