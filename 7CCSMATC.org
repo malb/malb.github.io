@@ -9,7 +9,7 @@ We discuss the role of definitions in (modern) cryptography, how definitions can
 
 *Preparatory Reading*
 
-- Phillip Rogaway. /On the Role of Definitions in and beyond Cryptography/. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32, Sections 2 to 5 (inclusive).
+- Phillip Rogaway. /On the Role of Definitions in and beyond Cryptography/. In: Annual Asian Computing Science Conference. Springer. 2004, pp. 13–32, Sections 1 to 5 (inclusive, 10 pages).
 
 *Dramatis Personae*
 
@@ -25,7 +25,7 @@ Following Mike's rather excellent book /The Joy of Cryptography/, we prove the O
 
 *Preparatory Reading*
 
-- Mike Rosulek. /The Joy of Cryptography/. https://joyofcryptography.com. self published, 2021, Chapters 1 and 2.
+- Mike Rosulek. /The Joy of Cryptography/. https://joyofcryptography.com. self published, 2021, Chapters 1 and 2 (29 pages, excluding exercises).
 
 *Dramatis Personae*
 
@@ -39,7 +39,7 @@ We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in o
 
 *Preparatory Reading*
 
-- Mihir Bellare and Phillip Rogaway. /Code-Based Game-Playing Proofs and the Security of Triple Encryption/. Cryptology ePrint Archive, Report 2004/331. 2004. url: https://eprint.iacr.org/2004/331
+- Mihir Bellare and Phillip Rogaway. /Code-Based Game-Playing Proofs and the Security of Triple Encryption/. Cryptology ePrint Archive, Report 2004/331. 2004. url: https://eprint.iacr.org/2004/331, Sections 1 to 3 (inclusive, 13 pages).
 
 *Dramatis Personae*
 
@@ -51,6 +51,10 @@ We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in o
 We introduce the /assumption/ that AES-128 is a pseudorandom permutation. This finishes our proof that AES-128 in CTR mode is secure if AES-128 is a PRP.
 
 [[https://malb.github.io/7CCSMATC/lecture-indistinguishability.pdf][slides]]
+
+*Preparatory Reading*
+
+- None
 
 *Dramatis Personae*
 
@@ -66,7 +70,7 @@ We go all-in on cryptographic assumptions which underpin most cryptographic guar
 
 *Preparatory Reading*
 
-- Boaz Barak. /The Complexity of Public-Key Cryptography./ Cryptology ePrint Archive, Report 2017/365. 2017. url: https://eprint.iacr.org/2017/365
+- Boaz Barak. /The Complexity of Public-Key Cryptography./ Cryptology ePrint Archive, Report 2017/365. 2017. url: https://eprint.iacr.org/2017/365 (24 pages)
 
 *Dramatis Personae*
 
@@ -93,7 +97,7 @@ We discuss hopefully just enough quantum computing to convince you that quantum 
 
 *Preparatory Reading*
 
-- Noson S Yanofsky and Mirco A Mannucci. /Quantum Computing for Computer Scientists./ Cambridge University Press, 2008, esp. Chapters 1, 2 and 3.
+- Noson S Yanofsky and Mirco A Mannucci. /Quantum Computing for Computer Scientists./ Cambridge University Press, 2008, Chapter 3 (and Chapters 1 and 2 if you need a refresher on complex numbers, 29 pages)
 
 *Dramatis Personae*
 
@@ -115,7 +119,7 @@ We discuss the Learning with Errors (LWE) problem which needs to be hard for our
 
 *Preparatory Reading*
 
-- Chris Peikert, /A decade of lattice cryptography./ Cryptology ePrint Archive, Report 2015/939. https://eprint.iacr.org/2015/939
+- Vadim Lyubashevsky, /Basic Lattice Cryptography: The concepts behind Kyber (ML-KEM) and Dilithium (ML-DSA)/. Cryptology ePrint Archive, Report 2024/1287. https://ia.cr/2024/1287, Section 2 (12 pages)
 
 *Dramatis Personae*
 
@@ -130,7 +134,7 @@ Minicrypt is a "world" built from one-way functions (OWFs), can we find similar 
 
 *Preparatory Reading*
 
-- Navid Alamati, Hart Montgomery, Sikhar Patranabis, and Arnab Roy. /Minicrypt Primitives with Algebraic Structure and Applications/. In: Journal of Cryptology 36.1 (Jan. 2023), p. 2. doi: 10.1007/s00145-022-09442-2
+- Navid Alamati, Hart Montgomery, Sikhar Patranabis, and Arnab Roy. /Minicrypt Primitives with Algebraic Structure and Applications/. In: Journal of Cryptology 36.1 (Jan. 2023), p. 2. doi: 10.1007/s00145-022-09442-2, url: https://doi.org/10.1007/s00145-022-09442-2, Section 1 (24 pages)
 
 *Dramatis Personae*
 
@@ -147,7 +151,10 @@ The Random Oracle Model (ROM) /pretends/ that hash functions like SHA-3 are rand
 
 *Preparatory Reading*
 
-- Arno Mittelbach and Marc Fischlin. /Chapter 9: The Full Power of Random Oracles./ In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: https://doi.org/10.1007/978-3-030-63287-8
+- Arno Mittelbach and Marc Fischlin. /Chapter 9: The Full Power of Random Oracles./ In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: https://doi.org/10.1007/978-3-030-63287-8 (38 pages)
+
+*Additional Reading*
+
 - Oded Goldreich. /On Post-Modern Cryptography./ Cryptology ePrint Archive, Report 2006/461. 2006. url: https://eprint.iacr.org/2006/461
 - Phillip Rogaway. /Practice-Oriented Provable Security and the Social Construction of Cryptography./ In: IEEE Secur. Priv. 14.6 (2016), pp. 10–17. doi: 10.1109/MSP.2016.122. url: https://doi.org/10.1109/MSP.2016.122
   
@@ -167,7 +174,7 @@ We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure sc
 
 *Preparatory Reading*
 
-- Alexander W. Dent. /A Designer’s Guide to KEMs./ In: 9th IMA International Conference on Cryptography and Coding. Ed. by Kenneth G. Paterson. Vol. 2898. LNCS. Springer, Berlin, Heidelberg, Dec. 2003, pp. 133–151. doi: 10.1007/978-3-540-40974-8_12
+- Alexander W. Dent. /A Designer’s Guide to KEMs./ In: 9th IMA International Conference on Cryptography and Coding. Ed. by Kenneth G. Paterson. Vol. 2898. LNCS. Springer, Berlin, Heidelberg, Dec. 2003, pp. 133–151. doi: 10.1007/978-3-540-40974-8_12, url: http://doi.org/10.1007/978-3-540-40974-8_12 (27 pages)
 
 *Dramatis Personae*
 
@@ -183,7 +190,7 @@ We discuss the hash-and-sign signature paradigm, proven secure in the random ora
 
 *Preparatory Reading*
 
-- Craig Gentry, Chris Peikert, and Vinod Vaikuntanathan. /Trapdoors for hard lattices and new cryptographic constructions/. In: 40th ACM STOC. ed. by Richard E. Ladner and Cynthia Dwork. ACM Press, May 2008, pp.197–206. doi: 10.1145/1374376.1374407
+- Craig Gentry, Chris Peikert, and Vinod Vaikuntanathan. /Trapdoors for hard lattices and new cryptographic constructions/. In: 40th ACM STOC. ed. by Richard E. Ladner and Cynthia Dwork. ACM Press, May 2008, pp.197–206. doi: 10.1145/1374376.1374407, url: http://doi.org/10.1145/1374376.1374407 (10 pages)
 
 *Dramatis Personae*
 
@@ -200,8 +207,8 @@ We discuss "rewinding" as a cryptographic proof technique, typically in the rand
 
 *Preparatory Reading*
 
-- Arno Mittelbach and Marc Fischlin. Chapter 10: Random Oracle Schemes in Practice. In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: https://doi.org/10.1007/978-3-030-63287-8 
-- Ivan Damgård. /On Σ-protocols/. In: Lecture Notes, University of Aarhus, Department for Computer Science 84 (2002). https://www.cs.au.dk/~ivan/Sigma.pdf
+- Arno Mittelbach and Marc Fischlin. Chapter 10: Random Oracle Schemes in Practice. In: The Theory of Hash Functions and Random Oracles - An Approach to Modern Cryptography. Information Security and Cryptography. Springer, 2021. isbn: 978-3-030-63286-1. doi: 10.1007/978-3-030-63287-8. url: https://doi.org/10.1007/978-3-030-63287-8, Section 10.2 (14 pages)
+- Ivan Damgård. /On Σ-protocols/. In: Lecture Notes, University of Aarhus, Department for Computer Science 84 (2002). https://www.cs.au.dk/~ivan/Sigma.pdf, Sections 1 to 3 (inclusive, 7 pages)
   
 *Dramatis Personae*
 
@@ -224,7 +231,7 @@ We discuss an attack on SSH which had been previously proven secure. The attack 
 
 *Preparatory Reading*
 
-- Martin R. Albrecht, Kenneth G. Paterson, and Gaven J. Watson. /Plaintext Recovery Attacks against SSH./ In: 2009 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2009, pp. 16–26. doi: 10.1109/SP.2009.5
+- Martin R. Albrecht, Kenneth G. Paterson, and Gaven J. Watson. /Plaintext Recovery Attacks against SSH./ In: 2009 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2009, pp. 16–26. doi: 10.1109/SP.2009.5, url: http://doi.org/10.1109/SP.2009.5 (10 pages)
 
 *Dramatis Personae*
 
@@ -245,7 +252,7 @@ We discuss the "Lucky-13" attack which broke TLS implementations. The attack is 
 
 *Preparatory Reading*
 
-- Nadhem J. AlFardan and Kenneth G. Paterson. /Lucky Thirteen: Breaking the TLS and DTLS Record Protocols./ In: 2013 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2013, pp. 526–540. doi: 10.1109/SP.2013.42
+- Nadhem J. AlFardan and Kenneth G. Paterson. /Lucky Thirteen: Breaking the TLS and DTLS Record Protocols./ In: 2013 IEEE Symposium on Security and Privacy. IEEE Computer Society Press, May 2013, pp. 526–540. doi: 10.1109/SP.2013.42, url: https://doi.org/10.1109/SP.2013.42 (15 pages)
 
 *Dramatis Personae*
 
@@ -260,7 +267,7 @@ We discuss that proofs of cryptographic security guarantees only hold under spec
 
 *Preparatory Reading*
 
-- Whitfield Diffie and Martin E. Hellman. /New Directions in Cryptography./ In: IEEE Transactions on Information Theory 22.6 (1976), pp. 644–654. doi: 10.1109/TIT.1976.1055638
+- Whitfield Diffie and Martin E. Hellman. /New Directions in Cryptography./ In: IEEE Transactions on Information Theory 22.6 (1976), pp. 644–654. doi: 10.1109/TIT.1976.1055638, url: https://doi.org/10.1109/TIT.1976.1055638 (11 pages)
 
 *Dramatis Personae*
 
@@ -291,7 +298,7 @@ We discuss that cryptography is also a social science, done poorly.
 
 *Preparatory Reading*
 
-- Jean-François Blanchette. /Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents/. MIT Press, 2012, Chapter 4: The Equivalent of a Written Signature
+- Jean-François Blanchette. /Chapter 4: The Equivalent of a Written Signature/ in Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents. MIT Press, 2012 (31 pages)
 
 *Dramatis Personae*
 
