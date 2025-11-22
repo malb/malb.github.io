@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-04-04 Fri 11:01 -->
+<!-- 2025-11-22 Sat 13:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>7CCSMATC: Advanced Topics in Cryptography</title>
@@ -233,29 +233,29 @@ ga('send', 'pageview');
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgbb419e7">Definitions</a></li>
-<li><a href="#org311efca">Game Playing</a></li>
-<li><a href="#org73db5fd">Fundamental Lemma of Game Playing</a></li>
-<li><a href="#org3d3cb95">Indistinguishability</a></li>
-<li><a href="#org0b67511">Assumptions and Minicrypt v Cryptomania</a></li>
-<li><a href="#orga6c67d7">Quantum Computing</a></li>
-<li><a href="#org0747eae">Learning with Errors</a></li>
-<li><a href="#org4c05d89">Minicrypt with Algebraic Structure</a></li>
-<li><a href="#orgea91138">The Random Oracle Model</a></li>
-<li><a href="#org5e5c714">The Fujisaki-Okamoto Transform</a></li>
-<li><a href="#org2d6667f">Hash-and-Sign Signatures</a></li>
-<li><a href="#org7428c0e">Rewinding</a></li>
-<li><a href="#org3bd4e98">Limits of Proofs (SSH Attack)</a></li>
-<li><a href="#org277c036">Limits of Proofs (Heartbleed Vulnerability)</a></li>
-<li><a href="#orgde98a39">Limits of Proofs (S2N Attack)</a></li>
-<li><a href="#org39463ea">Limits of Proofs (Societal Foundations)</a></li>
-<li><a href="#orgf10703f">Limits of Proofs (Social Foundations)</a></li>
+<li><a href="#org69ccb13">Definitions</a></li>
+<li><a href="#org18e41fd">Game Playing</a></li>
+<li><a href="#org85fcd89">Fundamental Lemma of Game Playing</a></li>
+<li><a href="#orgf8f7578">Indistinguishability</a></li>
+<li><a href="#orgb5ca908">Assumptions and Minicrypt v Cryptomania</a></li>
+<li><a href="#org60448f6">Quantum Computing</a></li>
+<li><a href="#org14748fd">Learning with Errors</a></li>
+<li><a href="#org7647488">Minicrypt with Algebraic Structure</a></li>
+<li><a href="#org1a0b54e">The Random Oracle Model</a></li>
+<li><a href="#orge31b26f">The Fujisaki-Okamoto Transform</a></li>
+<li><a href="#org998d23e">Hash-and-Sign Signatures</a></li>
+<li><a href="#org1c5d29b">Rewinding</a></li>
+<li><a href="#org0bdcb1e">Limits of Proofs (SSH Attack)</a></li>
+<li><a href="#orgd005edd">Limits of Proofs (Heartbleed Vulnerability)</a></li>
+<li><a href="#org0d76c7b">Limits of Proofs (S2N Attack)</a></li>
+<li><a href="#orgcd54f4b">Limits of Proofs (Social Foundations)</a></li>
+<li><a href="#org25bd5a9">Limits of Proofs (Societal Foundations)</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orgbb419e7" class="outline-2">
-<h2 id="orgbb419e7">Definitions</h2>
-<div class="outline-text-2" id="text-orgbb419e7">
+<div id="outline-container-org69ccb13" class="outline-2">
+<h2 id="org69ccb13">Definitions</h2>
+<div class="outline-text-2" id="text-org69ccb13">
 <p>
 We discuss the role of definitions in (modern) cryptography, how definitions can be wrong and how unintuitive definitions might hit the nail on the head.
 </p>
@@ -283,9 +283,9 @@ We discuss the role of definitions in (modern) cryptography, how definitions can
 </ul>
 </div>
 </div>
-<div id="outline-container-org311efca" class="outline-2">
-<h2 id="org311efca">Game Playing</h2>
-<div class="outline-text-2" id="text-org311efca">
+<div id="outline-container-org18e41fd" class="outline-2">
+<h2 id="org18e41fd">Game Playing</h2>
+<div class="outline-text-2" id="text-org18e41fd">
 <p>
 Following Mike's rather excellent book <i>The Joy of Cryptography</i>, we prove the One-Time-Pad secure to introduce game hopping proofs, a central proof technique in cryptography.
 </p>
@@ -311,9 +311,9 @@ Following Mike's rather excellent book <i>The Joy of Cryptography</i>, we prove 
 </ul>
 </div>
 </div>
-<div id="outline-container-org73db5fd" class="outline-2">
-<h2 id="org73db5fd">Fundamental Lemma of Game Playing</h2>
-<div class="outline-text-2" id="text-org73db5fd">
+<div id="outline-container-org85fcd89" class="outline-2">
+<h2 id="org85fcd89">Fundamental Lemma of Game Playing</h2>
+<div class="outline-text-2" id="text-org85fcd89">
 <p>
 We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in our games once a low-probability event happened. This gives us the "PRP-PRF Switching Lemma" which allows us to "swap" a pseudorandom function (PRF) for a pseudorandom permutation (PRP) without anyone noticing.
 </p>
@@ -340,9 +340,9 @@ We prove the "Fundamental Lemma of Game Playing" which allows us to diverge in o
 </ul>
 </div>
 </div>
-<div id="outline-container-org3d3cb95" class="outline-2">
-<h2 id="org3d3cb95">Indistinguishability</h2>
-<div class="outline-text-2" id="text-org3d3cb95">
+<div id="outline-container-orgf8f7578" class="outline-2">
+<h2 id="orgf8f7578">Indistinguishability</h2>
+<div class="outline-text-2" id="text-orgf8f7578">
 <p>
 We introduce the <i>assumption</i> that AES-128 is a pseudorandom permutation. This finishes our proof that AES-128 in CTR mode is secure if AES-128 is a PRP.
 </p>
@@ -370,9 +370,9 @@ We introduce the <i>assumption</i> that AES-128 is a pseudorandom permutation. T
 </ul>
 </div>
 </div>
-<div id="outline-container-org0b67511" class="outline-2">
-<h2 id="org0b67511">Assumptions and Minicrypt v Cryptomania</h2>
-<div class="outline-text-2" id="text-org0b67511">
+<div id="outline-container-orgb5ca908" class="outline-2">
+<h2 id="orgb5ca908">Assumptions and Minicrypt v Cryptomania</h2>
+<div class="outline-text-2" id="text-orgb5ca908">
 <p>
 We go all-in on cryptographic assumptions which underpin most cryptographic guarantees. These give rise to two plausible "worlds" of cryptography: one, called "Minicrypt", where only one-way functions (OWFs) exist and one where public-key cryptography exists, called "Cryptomania". Then, in 1994 Peter Shor snapped his fingers and wiped out all widely used public-key encryption schemes. The catch: you would need a quantum computer to run his algorithm. This provoked the creation of “post-quantum cryptography” lest we want to live in Minicrypt.
 </p>
@@ -411,9 +411,9 @@ We go all-in on cryptographic assumptions which underpin most cryptographic guar
 </ul>
 </div>
 </div>
-<div id="outline-container-orga6c67d7" class="outline-2">
-<h2 id="orga6c67d7">Quantum Computing</h2>
-<div class="outline-text-2" id="text-orga6c67d7">
+<div id="outline-container-org60448f6" class="outline-2">
+<h2 id="org60448f6">Quantum Computing</h2>
+<div class="outline-text-2" id="text-org60448f6">
 <p>
 We discuss hopefully just enough quantum computing to convince you that quantum computers are not faster, they are weirder. The first half of the lecture introduces quantum mechanics, the second half discusses that what we mean by "secure" may need to change when faced with a quantum adversary.
 </p>
@@ -447,9 +447,9 @@ We discuss hopefully just enough quantum computing to convince you that quantum 
 </ul>
 </div>
 </div>
-<div id="outline-container-org0747eae" class="outline-2">
-<h2 id="org0747eae">Learning with Errors</h2>
-<div class="outline-text-2" id="text-org0747eae">
+<div id="outline-container-org14748fd" class="outline-2">
+<h2 id="org14748fd">Learning with Errors</h2>
+<div class="outline-text-2" id="text-org14748fd">
 <p>
 We discuss the Learning with Errors (LWE) problem which needs to be hard for our post-quantum standards to be secure. It asserts that adding a small bit of "noise" or "error" to a linear system of equations makes it hard to solve, even on a quantum computer.
 </p>
@@ -476,9 +476,9 @@ We discuss the Learning with Errors (LWE) problem which needs to be hard for our
 </ul>
 </div>
 </div>
-<div id="outline-container-org4c05d89" class="outline-2">
-<h2 id="org4c05d89">Minicrypt with Algebraic Structure</h2>
-<div class="outline-text-2" id="text-org4c05d89">
+<div id="outline-container-org7647488" class="outline-2">
+<h2 id="org7647488">Minicrypt with Algebraic Structure</h2>
+<div class="outline-text-2" id="text-org7647488">
 <p>
 Minicrypt is a "world" built from one-way functions (OWFs), can we find similar constitutive primitives for the "world" of public-key cryptography? What algebraic structure can we add to e.g. OWFs to arrive at public-key encryption?
 </p>
@@ -507,9 +507,9 @@ Minicrypt is a "world" built from one-way functions (OWFs), can we find similar 
 </ul>
 </div>
 </div>
-<div id="outline-container-orgea91138" class="outline-2">
-<h2 id="orgea91138">The Random Oracle Model</h2>
-<div class="outline-text-2" id="text-orgea91138">
+<div id="outline-container-org1a0b54e" class="outline-2">
+<h2 id="org1a0b54e">The Random Oracle Model</h2>
+<div class="outline-text-2" id="text-org1a0b54e">
 <p>
 The Random Oracle Model (ROM) <i>pretends</i> that hash functions like SHA-3 are random functions. The reason why your favourite cryptographic construction has a hash function call is probably not the reason you think it is. We know that the ROM is not true and we will discuss schemes that are secure under this pretence but insecure when built with <i>any</i> real hash function. Yet, the Internet runs on schemes proven secure only in the ROM.
 </p>
@@ -548,9 +548,9 @@ The Random Oracle Model (ROM) <i>pretends</i> that hash functions like SHA-3 are
 </ul>
 </div>
 </div>
-<div id="outline-container-org5e5c714" class="outline-2">
-<h2 id="org5e5c714">The Fujisaki-Okamoto Transform</h2>
-<div class="outline-text-2" id="text-org5e5c714">
+<div id="outline-container-orge31b26f" class="outline-2">
+<h2 id="orge31b26f">The Fujisaki-Okamoto Transform</h2>
+<div class="outline-text-2" id="text-orge31b26f">
 <p>
 We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure schemes into CCA secure schemes in the random oracle model … using one weird trick, adversaries hate it.
 </p>
@@ -578,9 +578,9 @@ We will discuss the Fujisaki-Okamoto (FO) Transform for converting CPA secure sc
 </ul>
 </div>
 </div>
-<div id="outline-container-org2d6667f" class="outline-2">
-<h2 id="org2d6667f">Hash-and-Sign Signatures</h2>
-<div class="outline-text-2" id="text-org2d6667f">
+<div id="outline-container-org998d23e" class="outline-2">
+<h2 id="org998d23e">Hash-and-Sign Signatures</h2>
+<div class="outline-text-2" id="text-org998d23e">
 <p>
 We discuss the hash-and-sign signature paradigm, proven secure in the random oracle model. We also discuss the GPV signature scheme paradigm, of which Falcon (soon to be a NIST standard for post-quantum signatures) is an example.
 </p>
@@ -609,9 +609,9 @@ We discuss the hash-and-sign signature paradigm, proven secure in the random ora
 </ul>
 </div>
 </div>
-<div id="outline-container-org7428c0e" class="outline-2">
-<h2 id="org7428c0e">Rewinding</h2>
-<div class="outline-text-2" id="text-org7428c0e">
+<div id="outline-container-org1c5d29b" class="outline-2">
+<h2 id="org1c5d29b">Rewinding</h2>
+<div class="outline-text-2" id="text-org1c5d29b">
 <p>
 We discuss "rewinding" as a cryptographic proof technique, typically in the random oracle model (ROM). We can make an adversary reveal its secrets by making it solving a task more than once.
 </p>
@@ -647,9 +647,9 @@ We discuss "rewinding" as a cryptographic proof technique, typically in the rand
 </ul>
 </div>
 </div>
-<div id="outline-container-org3bd4e98" class="outline-2">
-<h2 id="org3bd4e98">Limits of Proofs (SSH Attack)</h2>
-<div class="outline-text-2" id="text-org3bd4e98">
+<div id="outline-container-org0bdcb1e" class="outline-2">
+<h2 id="org0bdcb1e">Limits of Proofs (SSH Attack)</h2>
+<div class="outline-text-2" id="text-org0bdcb1e">
 <p>
 We discuss an attack on SSH which had been previously proven secure. The attack was possible because the model was not correct. In response a new model was proposed and then SSH was broken again, because that model still was not correct.
 </p>
@@ -676,9 +676,9 @@ We discuss an attack on SSH which had been previously proven secure. The attack 
 </ul>
 </div>
 </div>
-<div id="outline-container-org277c036" class="outline-2">
-<h2 id="org277c036">Limits of Proofs (Heartbleed Vulnerability)</h2>
-<div class="outline-text-2" id="text-org277c036">
+<div id="outline-container-orgd005edd" class="outline-2">
+<h2 id="orgd005edd">Limits of Proofs (Heartbleed Vulnerability)</h2>
+<div class="outline-text-2" id="text-orgd005edd">
 <p>
 TLS implements a "ping" command. A bug in its implementation allowed to extract secret keys. How can we hope to secure the Internet if we cannot get ping right? 
 </p>
@@ -688,9 +688,9 @@ TLS implements a "ping" command. A bug in its implementation allowed to extract 
 </p>
 </div>
 </div>
-<div id="outline-container-orgde98a39" class="outline-2">
-<h2 id="orgde98a39">Limits of Proofs (S2N Attack)</h2>
-<div class="outline-text-2" id="text-orgde98a39">
+<div id="outline-container-org0d76c7b" class="outline-2">
+<h2 id="org0d76c7b">Limits of Proofs (S2N Attack)</h2>
+<div class="outline-text-2" id="text-org0d76c7b">
 <p>
 We discuss the "Lucky-13" attack which broke TLS implementations. The attack is "outside the model" of cryptographic proofs because it is a “side-channel attack”.
 </p>
@@ -717,9 +717,52 @@ We discuss the "Lucky-13" attack which broke TLS implementations. The attack is 
 </ul>
 </div>
 </div>
-<div id="outline-container-org39463ea" class="outline-2">
-<h2 id="org39463ea">Limits of Proofs (Societal Foundations)</h2>
-<div class="outline-text-2" id="text-org39463ea">
+<div id="outline-container-orgcd54f4b" class="outline-2">
+<h2 id="orgcd54f4b">Limits of Proofs (Social Foundations)</h2>
+<div class="outline-text-2" id="text-orgcd54f4b">
+<p>
+We discuss that cryptography is also a social science, done poorly.
+</p>
+
+<p>
+<a href="https://malb.github.io/7CCSMATC/lecture-social-foundations.pdf">slides</a>
+</p>
+
+<p>
+<b>Preparatory Reading</b>
+</p>
+
+<ul class="org-ul">
+<li>Jean-François Blanchette. <i>Chapter 4: The Equivalent of a Written Signature</i> in Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents. MIT Press, 2012 (31 pages)</li>
+</ul>
+
+<p>
+<b>Dramatis Personae</b>
+</p>
+
+<ul class="org-ul">
+<li><a href="https://pages.gseis.ucla.edu/faculty/blanchette/">Jean-François Blanchette</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Oded_Goldreich">Oded Goldreich</a></li>
+<li><a href="https://www.jorgeblascoalis.com/">Jorge Blasco</a></li>
+<li><a href="https://rikkebjerg.gitlab.io/me/">Rikke Bjerg Jensen</a></li>
+<li><a href="https://lenka.sh/">Lenka Mareková</a></li>
+<li><a href="https://cis.cnrs.fr/en/ksenia_ermoshina/">Ksenia Ermoshina</a></li>
+<li><a href="https://www.ibiblio.org/hhalpin/">Harry Halpin</a></li>
+<li><a href="https://cis.cnrs.fr/francesca-musiani/">Francesca Musiani</a></li>
+</ul>
+
+
+<div class="HTML" id="org833a21a">
+<p>
+
+</p>
+
+</div>
+</div>
+</div>
+<div id="outline-container-org25bd5a9" class="outline-2">
+<h2 id="org25bd5a9">Limits of Proofs (Societal Foundations)</h2>
+<div class="outline-text-2" id="text-org25bd5a9">
 <p>
 We discuss that proofs of cryptographic security guarantees only hold under specific societal conditions.
 </p>
@@ -762,51 +805,8 @@ We discuss that proofs of cryptographic security guarantees only hold under spec
 </p>
 
 <p>
-We talk about the regulation of online speech in this lecture which means we will mention child sexual exploitation and abuse (CSEA).
+We also talk, abstractly, about torture. We also talk about the regulation of online speech in this lecture which means we will mention child sexual exploitation and abuse (CSEA).
 </p>
-</div>
-</div>
-<div id="outline-container-orgf10703f" class="outline-2">
-<h2 id="orgf10703f">Limits of Proofs (Social Foundations)</h2>
-<div class="outline-text-2" id="text-orgf10703f">
-<p>
-We discuss that cryptography is also a social science, done poorly.
-</p>
-
-<p>
-<a href="https://malb.github.io/7CCSMATC/lecture-social-foundations.pdf">slides</a>
-</p>
-
-<p>
-<b>Preparatory Reading</b>
-</p>
-
-<ul class="org-ul">
-<li>Jean-François Blanchette. <i>Chapter 4: The Equivalent of a Written Signature</i> in Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents. MIT Press, 2012 (31 pages)</li>
-</ul>
-
-<p>
-<b>Dramatis Personae</b>
-</p>
-
-<ul class="org-ul">
-<li><a href="https://pages.gseis.ucla.edu/faculty/blanchette/">Jean-François Blanchette</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Oded_Goldreich">Oded Goldreich</a></li>
-<li><a href="https://www.jorgeblascoalis.com/">Jorge Blasco</a></li>
-<li><a href="https://rikkebjerg.gitlab.io/me/">Rikke Bjerg Jensen</a></li>
-<li><a href="https://lenka.sh/">Lenka Mareková</a></li>
-<li><a href="https://cis.cnrs.fr/en/ksenia_ermoshina/">Ksenia Ermoshina</a></li>
-<li><a href="https://www.ibiblio.org/hhalpin/">Harry Halpin</a></li>
-<li><a href="https://cis.cnrs.fr/francesca-musiani/">Francesca Musiani</a></li>
-</ul>
-
-
-<div class="HTML" id="orgfc55830">
-<p>
-
-</p>
-
-</div>
 </div>
 </div>
 </div>

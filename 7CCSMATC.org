@@ -259,6 +259,30 @@ We discuss the "Lucky-13" attack which broke TLS implementations. The attack is 
 - [[https://dblp.org/pid/82/9056.html][Nadhem J. AlFardan]]
 - [[https://en.wikipedia.org/wiki/Kenny_Paterson][Kenneth G. Paterson]]
 
+** Limits of Proofs (Social Foundations)
+
+We discuss that cryptography is also a social science, done poorly.
+
+[[https://malb.github.io/7CCSMATC/lecture-social-foundations.pdf][slides]]
+
+*Preparatory Reading*
+
+- Jean-François Blanchette. /Chapter 4: The Equivalent of a Written Signature/ in Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents. MIT Press, 2012 (31 pages)
+
+*Dramatis Personae*
+
+- [[https://pages.gseis.ucla.edu/faculty/blanchette/][Jean-François Blanchette]]
+- [[https://en.wikipedia.org/wiki/Oded_Goldreich][Oded Goldreich]]
+- [[https://www.jorgeblascoalis.com/][Jorge Blasco]]
+- [[https://rikkebjerg.gitlab.io/me/][Rikke Bjerg Jensen]]
+- [[https://lenka.sh/][Lenka Mareková]]
+- [[https://cis.cnrs.fr/en/ksenia_ermoshina/][Ksenia Ermoshina]]
+- [[https://www.ibiblio.org/hhalpin/][Harry Halpin]]
+- [[https://cis.cnrs.fr/francesca-musiani/][Francesca Musiani]]
+
+
+#+include: footer.org
+
 ** Limits of Proofs (Societal Foundations)
 
 We discuss that proofs of cryptographic security guarantees only hold under specific societal conditions.
@@ -288,31 +312,7 @@ We discuss that proofs of cryptographic security guarantees only hold under spec
 
 *Content Warning*
 
-We talk about the regulation of online speech in this lecture which means we will mention child sexual exploitation and abuse (CSEA).
-
-** Limits of Proofs (Social Foundations)
-
-We discuss that cryptography is also a social science, done poorly.
-
-[[https://malb.github.io/7CCSMATC/lecture-social-foundations.pdf][slides]]
-
-*Preparatory Reading*
-
-- Jean-François Blanchette. /Chapter 4: The Equivalent of a Written Signature/ in Burdens of Proof: Cryptographic Culture and Evidence Law in the Age of Electronic Documents. MIT Press, 2012 (31 pages)
-
-*Dramatis Personae*
-
-- [[https://pages.gseis.ucla.edu/faculty/blanchette/][Jean-François Blanchette]]
-- [[https://en.wikipedia.org/wiki/Oded_Goldreich][Oded Goldreich]]
-- [[https://www.jorgeblascoalis.com/][Jorge Blasco]]
-- [[https://rikkebjerg.gitlab.io/me/][Rikke Bjerg Jensen]]
-- [[https://lenka.sh/][Lenka Mareková]]
-- [[https://cis.cnrs.fr/en/ksenia_ermoshina/][Ksenia Ermoshina]]
-- [[https://www.ibiblio.org/hhalpin/][Harry Halpin]]
-- [[https://cis.cnrs.fr/francesca-musiani/][Francesca Musiani]]
-
-
-#+include: footer.org
+We also talk, abstractly, about torture. We also talk about the regulation of online speech in this lecture which means we will mention child sexual exploitation and abuse (CSEA).
 
 # Local Variables:
 # eval: (add-hook 'after-save-hook (lambda () (when (eq major-mode 'org-mode) (org-html-export-to-html))) nil t)
