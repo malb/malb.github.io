@@ -22,7 +22,7 @@ An attempt to keep track of all those new SIS-like assumptions that hand out add
 
 - *Cryptanalysts:* Analyse them!
 
-In th jolly tradition of [[https://malb.io/are-graded-encoding-schemes-broken-yet.html]["Are Graded Encoding Schemes broken yet?"]]  I tag problems as BROKEN if I am aware of cryptanalysis. I also tag them as:
+In the jolly tradition of [[https://malb.io/are-graded-encoding-schemes-broken-yet.html]["Are Graded Encoding Schemes broken yet?"]]  I tag problems as BROKEN if I am aware of cryptanalysis. I also tag them as:
 
 - STANDARD :: if there is a reduction from a standard (non-hint) assumption that covers meaningful parameters, i.e. those useful in applications. For example, k-SIS is tagged like this but k-R-ISIS is not because known reductions only cover parameters that, so far, seem useless in applications.
 
@@ -37,7 +37,7 @@ Please reach out if you find a mistake or have an update.
 We give the module variant defined in [cite:@C:ACLMT22]. We recover the original definition by setting \(\ring := \ZZ\).
 
 #+begin_quote
-For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\mat{A} \in \ring_{q}^{\eta \times \ell}\) and a set of \(k\) vectors \(\vec{u}_{0}, \ldots \vec{u}_{k-1}\) s.t. \(\mat{A}\cdot \vec{u}_{i} \equiv \vec{0} \bmod q\) with \(\|{\vec{u}_i}\| \leq \beta\). A solution to the problem is a nonzero vector \(\vec{u} \in \ring^{\ell}\) such that
+For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\mat{A} \in \ring_{q}^{n \times m}\) and a set of \(k\) vectors \(\vec{u}_{0}, \ldots \vec{u}_{k-1}\) s.t. \(\mat{A}\cdot \vec{u}_{i} \equiv \vec{0} \bmod q\) with \(\|{\vec{u}_i}\| \leq \beta\). A solution to the problem is a nonzero vector \(\vec{u} \in \ring^{m}\) such that
 
 \[\|{\vec{u}}\| \leq \beta^*, \quad \mat{A}\cdot \vec{u} \equiv \vec{0} \bmod q,\quad \text{and} \quad \vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k}).\]
 #+end_quote
@@ -47,9 +47,9 @@ An LWE variant, called k-LWE was introduced in [cite:@C:LPSS14].
 
 ** Hardness
 
-The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in [cite:@C:LPSS14] to cover \(k = \mathcal{O}(\ell)\).
+The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in [cite:@C:LPSS14] to cover \(k = \mathcal{O}(m)\).
 
-The condition \(\vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k})\) can be dropped when \(k < \ell^{1/4}\) because then the probability that there is an additional short vector in the \(k\)-dimensional sublattice spanned by the \(\vec{u}_i\) is negligible.
+The condition \(\vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k})\) can be dropped when \(k < m^{1/4}\) because then the probability that there is an additional short vector in the \(k\)-dimensional sublattice spanned by the \(\vec{u}_i\) is negligible.
 
 No proof was provided for the module variant.
 
@@ -58,11 +58,11 @@ No proof was provided for the module variant.
 [cite:@CCS:AKSY22]
 
 #+begin_quote
-A challenger selects a matrix \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\) and sends it to the adversary. The adversary can perform two types of queries:
+A challenger selects a matrix \(\mat{A} \in \ZZ_{q}^{n \times m}\) and sends it to the adversary. The adversary can perform two types of queries:
 
-*Syndrome queries* The adversary can request a challenge vector which the challenger selects at random, i.e. \(\vec{t} \gets_{\$} \ZZ_{q}^{\eta}\), adds to some set \(\mathcal{S}\) and returns to the adversary.
+*Syndrome queries* The adversary can request a challenge vector which the challenger selects at random, i.e. \(\vec{t} \gets_{\$} \ZZ_{q}^{n}\), adds to some set \(\mathcal{S}\) and returns to the adversary.
 
-*Preimage queries.* The adversary submits /any/ vector \(\vec{t}' \in \ZZ_{q}^{\eta}\). The challenger will return a short vector \(\vec{y}' \gets_{\$} D_{\ZZ^\ell,\sigma}\) such that \(\mat{A}\cdot \vec{y}' \equiv \vec{t}' \bmod q\). Denote \(k\) for the number of preimage queries.
+*Preimage queries.* The adversary submits /any/ vector \(\vec{t}' \in \ZZ_{q}^{n}\). The challenger will return a short vector \(\vec{y}' \gets_{\$} D_{\ZZ^m,\sigma}\) such that \(\mat{A}\cdot \vec{y}' \equiv \vec{t}' \bmod q\). Denote \(k\) for the number of preimage queries.
 
 In the end the adversary is asked to output \(k+1\) pairs \(\{(\vec{y}_i,\vec{t}_i)\}_{0 \leq i < k+1}\) satisfying:
 \[\mat{A}\cdot \vec{y}_{i} \equiv \vec{t}_{i} \bmod q, \|\vec{y}_{i}\| \leq \beta \text{ and }\vec{t}_{i} \in \mathcal{S}.\]
@@ -72,9 +72,9 @@ In the end the adversary is asked to output \(k+1\) pairs \(\{(\vec{y}_i,\vec{t}
 
 The hardness of the problem is analysed using direct cryptanalysis in the original paper. The authors give a combinatorial attack and a lattice attack.
 
-*Combinatorial Attack.* The adversary requests \(\eta \cdot q\) preimages for all \(\{a \cdot \vec{e}_{i}\ \mid\ a \in \ZZ_{q}, i \in \ZZ_{\eta}\}\), here \(\vec{e}_{i}\) is the \(i\)-th unit vector. Then, adding up \(\eta\) such preimages allows to construct any image. Since the norm of the preimages returned by the challenger is \(\sqrt{\ell} \cdot \sigma\), this allows to solve the One-more-ISIS problem when \(\sqrt{\eta \cdot \ell} \cdot \sigma \leq \beta\). Of course, smaller and larger sets of preimages are possible, increasing and decreasing the output norm respectively.
+*Combinatorial Attack.* The adversary requests \(n \cdot q\) preimages for all \(\{a \cdot \vec{e}_{i}\ \mid\ a \in \ZZ_{q}, i \in \ZZ_{n}\}\), here \(\vec{e}_{i}\) is the \(i\)-th unit vector. Then, adding up \(n\) such preimages allows to construct any image. Since the norm of the preimages returned by the challenger is \(\sqrt{m} \cdot \sigma\), this allows to solve the One-more-ISIS problem when \(\sqrt{n \cdot m} \cdot \sigma \leq \beta\). Of course, smaller and larger sets of preimages are possible, increasing and decreasing the output norm respectively.
 
-*Lattice Attack.* The adversary requests \(\geq \ell\) preimages of zero and uses that to produce a short basis \(\mat{T}\) for the kernel of \(\mat{A}\), i.e. \(\mat{A}\cdot\mat{T} \equiv \vec{0} \bmod q\). This constitutes a trapdoor for \(\mat{A}\) and thus permits to return short preimages for any target. The key point here is that this trapdoor is of degraded quality relative to the trapdoor used by the challenger. The key computational challenge then is to fix-up or improve this degraded trapdoor in order to be able to sample sufficiently short vectors.
+*Lattice Attack.* The adversary requests \(\geq m\) preimages of zero and uses that to produce a short basis \(\mat{T}\) for the kernel of \(\mat{A}\), i.e. \(\mat{A}\cdot\mat{T} \equiv \vec{0} \bmod q\). This constitutes a trapdoor for \(\mat{A}\) and thus permits to return short preimages for any target. The key point here is that this trapdoor is of degraded quality relative to the trapdoor used by the challenger. The key computational challenge then is to fix-up or improve this degraded trapdoor in order to be able to sample sufficiently short vectors.
 
 ** Variants
 
@@ -98,7 +98,7 @@ Now, let \(\vec{t} = (1,0,\ldots,0)\).
 Let \(\mathcal{G} \subset \mathcal{R}(\vec{X})\) be a set of \(w\)-variate Laurent monomial.
 Let \(g^{\star} \in \mathcal{R}(\vec{X})\) be a target Laurent monomial.
 Let \((\mathcal{G},g^\star)\) be k-M-ISIS-admissible.
-Let  \(\mat{A} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The /K-M-ISIS/ assumption states that given \((\mat{A}, \vec{v}, \vec{t}, \{\vec{u}_{g}\})\) with \(\vec{u}_{g}\) short and
+Let  \(\mat{A} \gets_{\$} \ring_q^{n \times m}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The /K-M-ISIS/ assumption states that given \((\mat{A}, \vec{v}, \vec{t}, \{\vec{u}_{g}\})\) with \(\vec{u}_{g}\) short and
 \[
 g(\vec{v}) \cdot \vec{t} \equiv \mat{A}\cdot \vec{u}_{g} \bmod q
 \]
@@ -106,14 +106,14 @@ it is hard to find a short \(\vec{u}_{g^*}\) and small \(s^{*}\) s.t.
 \[
 s^* \cdot g^{*}(\vec{v}) \cdot \vec{t} \equiv \mat{A} \cdot \vec{u}_{g^*} \bmod q.
 \]
-When \(\eta = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem /k-R-ISIS/.
+When \(n = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem /k-R-ISIS/.
 #+end_quote
 
 ** Hardness
 
 The hardness of the problem is analysed by the authors by providing some partial reductions, i.e. covering some special cases. These special cases are not interesting for applications. The authors show that
 
-- k-R-ISIS (with \(g^{*} \equiv 1\)) is as hard as R-SIS when \(\ell > k\) or when the system generated by \(\mathcal{G}\) is efficiently invertible.
+- k-R-ISIS (with \(g^{*} \equiv 1\)) is as hard as R-SIS when \(m > k\) or when the system generated by \(\mathcal{G}\) is efficiently invertible.
 - k-M-ISIS is at least as hard as k-R-ISIS and that k-M-ISIS is a true generalisation of k-R-SIS.
 -  \((\mathcal{G},g^*)\) is as hard as \((\mathcal{G},0)\) for any \(\mathcal{G}\), formalising the intuition that the non-homogeneous variant is no easier than the homogeneous variant.
 - scaling \((\mathcal{G},g^*)\) multiplicatively by any non-zero Laurent monomial does not change the hardness, e.g. we may choose to normalise instances to \(g^{*} \equiv 1\).
@@ -140,7 +140,7 @@ c \equiv \sum_{g \in \mathcal{G}} c_{g} \cdot g(\vec{v}) \bmod q.
 \]
 #+end_quote
 
-The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
+The knowledge assumption only makes sense for \(n \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
 
 ** Cryptanalysis
 
@@ -156,7 +156,7 @@ An implementation of the attack in SageMath is available [[https://gist.github.c
 let \(\vec{t} = (1,0,\ldots,0)\).
 Let \(\mathcal{G}_{A}, \mathcal{G}_{B} \subset \mathcal{R}(\vec{X})\) be sets of \(w\)-variate Laurent monomial.
 Let \((\mathcal{G}_{A} \cup \mathcal{G}_B)\) be k-M-ISIS-admissible.
-Let \(\mat{A} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\mat{B} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The /Twin K-M-ISIS/ assumption states that given \((\mat{A}, \mat{B}, \{\vec{u}_{g}\}_{g \in \mathcal{G}_A}, \{\vec{w}_{g}\}_{g \in \mathcal{G}_B}, \vec{t}, \vec{v})\) with \(\vec{u}_{g}, \mathbf{w}_{g}\) short,
+Let \(\mat{A} \gets_{\$} \ring_q^{n \times m}\), \(\mat{B} \gets_{\$} \ring_q^{n \times m}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The /Twin K-M-ISIS/ assumption states that given \((\mat{A}, \mat{B}, \{\vec{u}_{g}\}_{g \in \mathcal{G}_A}, \{\vec{w}_{g}\}_{g \in \mathcal{G}_B}, \vec{t}, \vec{v})\) with \(\vec{u}_{g}, \mathbf{w}_{g}\) short,
 \[
 g(\vec{v}) \cdot \vec{t} \equiv \mat{A}\cdot \vec{u}_{g} \bmod q,\ \forall\ g \in \mathcal{G}_{A},
 \]
@@ -183,10 +183,10 @@ In [cite:@EPRINT:AFLN23], it is shown that Twin k-R-ISIS is no easier than k-R-I
 We consider BASIS\(_{rand}\) with \(k=2\), for simplicity.
 
 #+begin_quote
-Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
-\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
-\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{n+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{n+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{n'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
 where \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\vec{a} | \mat{A}^{T}]^{T}\) for uniformly random \(\mat{A}\) and \(\vec{a}\).
 
 The BASIS\(_{rand}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
@@ -196,7 +196,7 @@ The BASIS\(_{rand}\) assumption states that given \((\vec{B}, \vec{T})\) it is h
 
 It was shown in the original paper that BASIS\(_{rand}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
 
-A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{\eta+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\).
+A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{n+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{n+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{n+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{n+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{n+1} \cdot \vec{t}^{(G)}\).
 
 * EQUIVALENT BASIS (Structured)
 
@@ -205,67 +205,84 @@ A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}
 We consider BASIS\(_{struct}\) with \(k=2\), for simplicity.
 
 #+begin_quote
-Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
-\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
-\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
-where \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{n+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{n+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{n'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+where \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{n \times n}\).
 
 The BASIS\(_{struct}\) assumption states that given \((\vec{B}, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
 
-The authors also show that given an algorithm for solving BASIS\(_{struct}\) there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS\(_{struct}\) instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
+The authors also show that given an algorithm for solving BASIS\(_{struct}\) there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS\(_{struct}\) instance of size \(k < m/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
 
 * PRISIS
 
 PRISIS [cite:@EPRINT:FenNgu23] is a special case of BASIS. It is more structured than BASIS, so we might expect hardness results on PRISIS to translate to BASIS. It turns out the additional structure allows to prove a broader regime of parameters as hard as M-SIS.
 
 #+begin_quote
-Let \(\mat{A} \in \ring_{q}^{\eta \times \ell}\). We're given
+Let \(\mat{A} \in \ring_{q}^{n \times m}\). We're given
 \[\vec{B} := \begin{pmatrix}
-\mat{A} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
-\vec{0} &           w \cdot \mat{A} & \cdots & -\vec{G}_{\eta+1}\\
-\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
-\vec{0} & \cdots & w^{\ell-1} \cdot \mat{A} & -\vec{G}_{\eta+1}
+\mat{A} &               \vec{0} & \cdots & - \vec{G}_{n+1}\\
+\vec{0} &           w \cdot \mat{A} & \cdots & -\vec{G}_{n+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{n+1}\\
+\vec{0} & \cdots & w^{m-1} \cdot \mat{A} & -\vec{G}_{n+1}
 \end{pmatrix}\] and a short \(\vec{T}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
+\[\vec{G}_{n'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
 
 The PRISIS assumption states that given \((\mat{A}, \mat{B}, w, \vec{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
 
-If \(\ell=2\) then PRISIS is no easier than M-SIS [cite:@EPRINT:FenNgu23].
+If \(m=2\) then PRISIS is no easier than M-SIS [cite:@EPRINT:FenNgu23].
 
 * STANDARD \(h\)-PRISIS
 
 \(h\)-PRISIS [cite:@EPRINT:AFLN23] is a multi-instance version of PRISIS.
 
 #+begin_quote
-Let \(\mat{A}_{i} \in \ring_{q}^{\eta \times \ell}\) for \(i \in \{0,…,h-1\}\). We're given
+Let \(\mat{A}_{i} \in \ring_{q}^{n \times m}\) for \(i \in \{0,…,h-1\}\). We're given
 \[\vec{B}_{i} := \begin{pmatrix}
-\mat{A}_{i} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
-\vec{0} &           w_{i} \cdot \mat{A}_{i} & \cdots & -\vec{G}_{\eta+1}\\
-\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
-\vec{0} & \cdots & w_i^{\ell-1} \cdot \mat{A}_{i} & -\vec{G}_{\eta+1}
+\mat{A}_{i} &               \vec{0} & \cdots & - \vec{G}_{n+1}\\
+\vec{0} &           w_{i} \cdot \mat{A}_{i} & \cdots & -\vec{G}_{n+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{n+1}\\
+\vec{0} & \cdots & w_i^{m-1} \cdot \mat{A}_{i} & -\vec{G}_{n+1}
 \end{pmatrix}\] and a short \(\vec{T}_{i}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
+\[\vec{G}_{n'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
 
 The \(h\)-PRISIS assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\}, \{w_i\}, \{\vec{T}\}_i)\) it is hard to find a short \(\vec{x}_{i}\) s.t. \(\sum \mat{A}_{i} \cdot \vec{x}_{i} \equiv \vec{0}\).
 #+end_quote
 
 ** Hardness
 
-\(h\)-PRISIS is no easier than PRISIS [cite:@EPRINT:AFLN23]. In particular, if \(\ell=2\) then \(h\)-PRISIS is no easier than M-SIS [cite:@EPRINT:AFLN23].
+\(h\)-PRISIS is no easier than PRISIS [cite:@EPRINT:AFLN23]. In particular, if \(m=2\) then \(h\)-PRISIS is no easier than M-SIS [cite:@EPRINT:AFLN23].
+
+* \(\ell\)-Succinct SIS
+
+[cite:@EPRINT:Wee24a]
+
+#+begin_quote
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\) and \(\mat{W} \in \ZZ_{q}^{\ell n \times m}\). We're given \(\mat{B} := (\mat{I}_\ell \otimes \mat{A} \mid \mat{W})\) and a short \(\mat{T}\) s.t.
+\[\mat{I}_\ell \otimes \mat{G} = \mat{B}\mat{T} \bmod q.\]
+
+The \(\ell\)-succinct SIS assumption states that given \((\mat{A}, \mat{W}, \mat{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+#+end_quote
+
+** Hardness
+
+In [cite:@EPRINT:Wee24a], it is shown that BASIS\(_{struct}\) with parameter \(k\) implies \(\ell\)-succinct SIS with parameter \(\ell=k\).
+
+Furthermore, we can observe that SIS implies \(1\)-succinct SIS: the reduction samples \(\mat{W}\sample \ZZ_{q}^{n \times m}\) along with a trapdoor, which is used to sample a trapdoor for \((\mat{A} \mid \mat{W})\).
 
 * ISISf
 
 [cite:@EPRINT:BLNS23]
 
 #+begin_quote
-Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\) and let \(f: \ZZ_{N} \rightarrow \ZZ_{q}^{\eta}\) be a function. Given \((\mat{A}, f)\) and access to an oracle that when called samples a fresh \(x \sample \ZZ_{N}\) and outputs \(x, \vec{u}_{x}\) s.t. \[
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\) and let \(f: \ZZ_{N} \rightarrow \ZZ_{q}^{n}\) be a function. Given \((\mat{A}, f)\) and access to an oracle that when called samples a fresh \(x \sample \ZZ_{N}\) and outputs \(x, \vec{u}_{x}\) s.t. \[
 \mat{A} \cdot \vec{u}_{x} \equiv f(x) \bmod q \text{ and } \|\vec{u}_{x}\| \leq \beta,
 \]
 the /ISISf/ assumption states that it is hard to output a fresh tuple \((x^{*}, \vec{u}^{*})\) s.t.

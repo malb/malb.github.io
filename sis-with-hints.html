@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-09-13 Sat 16:50 -->
+<!-- 2026-02-17 Tue 12:26 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SIS with Hints Zoo</title>
@@ -265,62 +265,67 @@ ga('send', 'pageview');
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orga07a5b4">1. <span class="done STANDARD">STANDARD</span> k-SIS</a>
+<li><a href="#org1c1381c">1. <span class="done STANDARD">STANDARD</span> k-SIS</a>
 <ul>
-<li><a href="#org2a73984">1.1. Hardness</a></li>
+<li><a href="#org52942fb">1.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org6687302">2. One-more-ISIS</a>
+<li><a href="#org1883ae2">2. One-more-ISIS</a>
 <ul>
-<li><a href="#org70d95c5">2.1. Hardness</a></li>
-<li><a href="#orgc52ccf5">2.2. Variants</a></li>
+<li><a href="#orgb8a258d">2.1. Hardness</a></li>
+<li><a href="#org2c4b519">2.2. Variants</a></li>
 </ul>
 </li>
-<li><a href="#orgd51bfd5">3. K-R-ISIS</a>
+<li><a href="#orgb944960">3. K-R-ISIS</a>
 <ul>
-<li><a href="#org904f471">3.1. Hardness</a></li>
+<li><a href="#orgf0a2326">3.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgb1c9488">4. <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</a>
+<li><a href="#org9aeebac">4. <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</a>
 <ul>
-<li><a href="#org1bdc7bc">4.1. Cryptanalysis</a></li>
+<li><a href="#orgad4258a">4.1. Cryptanalysis</a></li>
 </ul>
 </li>
-<li><a href="#orgf7c3826">5. <span class="done EQUIVALENT">EQUIVALENT</span> Twin K-R-ISIS</a>
+<li><a href="#org4e86adb">5. <span class="done EQUIVALENT">EQUIVALENT</span> Twin K-R-ISIS</a>
 <ul>
-<li><a href="#orgfeba415">5.1. Hardness</a></li>
+<li><a href="#orgb341939">5.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org727536b">6. <span class="done STANDARD">STANDARD</span> BASIS (Random)</a>
+<li><a href="#org261d627">6. <span class="done STANDARD">STANDARD</span> BASIS (Random)</a>
 <ul>
-<li><a href="#org78cdd18">6.1. Hardness</a></li>
+<li><a href="#org0e7c04f">6.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orga3354f3">7. <span class="done EQUIVALENT">EQUIVALENT</span> BASIS (Structured)</a>
+<li><a href="#orge6ac352">7. <span class="done EQUIVALENT">EQUIVALENT</span> BASIS (Structured)</a>
 <ul>
-<li><a href="#orgf6aadd7">7.1. Hardness</a></li>
+<li><a href="#org0fea70b">7.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org5085f73">8. PRISIS</a>
+<li><a href="#org4ae4e39">8. PRISIS</a>
 <ul>
-<li><a href="#org60b52f5">8.1. Hardness</a></li>
+<li><a href="#orgacad966">8.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orgcf2a1ad">9. <span class="done STANDARD">STANDARD</span> \(h\)-PRISIS</a>
+<li><a href="#orge94438b">9. <span class="done STANDARD">STANDARD</span> \(h\)-PRISIS</a>
 <ul>
-<li><a href="#org46d850c">9.1. Hardness</a></li>
+<li><a href="#org5f81174">9.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#org8666a99">10. ISISf</a>
+<li><a href="#orgf5e848d">10. \(\ell\)-Succinct SIS</a>
 <ul>
-<li><a href="#org558c1de">10.1. Hardness</a></li>
+<li><a href="#orga4fb7f2">10.1. Hardness</a></li>
 </ul>
 </li>
-<li><a href="#orga4eb0b3">Bibliography</a></li>
+<li><a href="#org666eeef">11. ISISf</a>
+<ul>
+<li><a href="#orgb9af27e">11.1. Hardness</a></li>
+</ul>
+</li>
+<li><a href="#org9803b64">Bibliography</a></li>
 </ul>
 </div>
 </div>
-<div class="HTML" id="org29f00dd">
+<div class="HTML" id="org6917014">
 <p>
 \( 
   \newcommand\ring{\mathcal{R}}
@@ -344,7 +349,7 @@ An attempt to keep track of all those new SIS-like assumptions that hand out add
 </ul>
 
 <p>
-In th jolly tradition of <a href="https://malb.io/are-graded-encoding-schemes-broken-yet.html">"Are Graded Encoding Schemes broken yet?"</a>  I tag problems as BROKEN if I am aware of cryptanalysis. I also tag them as:
+In the jolly tradition of <a href="https://malb.io/are-graded-encoding-schemes-broken-yet.html">"Are Graded Encoding Schemes broken yet?"</a>  I tag problems as BROKEN if I am aware of cryptanalysis. I also tag them as:
 </p>
 
 <dl class="org-dl">
@@ -356,8 +361,8 @@ In th jolly tradition of <a href="https://malb.io/are-graded-encoding-schemes-br
 <p>
 Please reach out if you find a mistake or have an update.
 </p>
-<div id="outline-container-orga07a5b4" class="outline-2">
-<h2 id="orga07a5b4"><span class="section-number-2">1.</span> <span class="done STANDARD">STANDARD</span> k-SIS</h2>
+<div id="outline-container-org1c1381c" class="outline-2">
+<h2 id="org1c1381c"><span class="section-number-2">1.</span> <span class="done STANDARD">STANDARD</span> k-SIS</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 (<a href="#citeproc_bib_item_6">Boneh &#38; Freeman, 2011</a>)
@@ -369,7 +374,7 @@ We give the module variant defined in (<a href="#citeproc_bib_item_2">Albrecht, 
 
 <blockquote>
 <p>
-For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\mat{A} \in \ring_{q}^{\eta \times \ell}\) and a set of \(k\) vectors \(\vec{u}_{0}, \ldots \vec{u}_{k-1}\) s.t. \(\mat{A}\cdot \vec{u}_{i} \equiv \vec{0} \bmod q\) with \(\|{\vec{u}_i}\| \leq \beta\). A solution to the problem is a nonzero vector \(\vec{u} \in \ring^{\ell}\) such that
+For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\mat{A} \in \ring_{q}^{n \times m}\) and a set of \(k\) vectors \(\vec{u}_{0}, \ldots \vec{u}_{k-1}\) s.t. \(\mat{A}\cdot \vec{u}_{i} \equiv \vec{0} \bmod q\) with \(\|{\vec{u}_i}\| \leq \beta\). A solution to the problem is a nonzero vector \(\vec{u} \in \ring^{m}\) such that
 </p>
 
 <p>
@@ -382,15 +387,15 @@ For any integer \(k \geq 0\), an instance of the k-M-SIS problem is a matrix \(\
 An LWE variant, called k-LWE was introduced in (<a href="#citeproc_bib_item_9">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>).
 </p>
 </div>
-<div id="outline-container-org2a73984" class="outline-3">
-<h3 id="org2a73984"><span class="section-number-3">1.1.</span> Hardness</h3>
+<div id="outline-container-org52942fb" class="outline-3">
+<h3 id="org52942fb"><span class="section-number-3">1.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in (<a href="#citeproc_bib_item_9">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>) to cover \(k = \mathcal{O}(\ell)\).
+The original paper showed that k-SIS (over \(\ZZ\)) is hard if SIS is hard for uniform \(\mat{A}\) and discrete Gaussian \(\vec{u}_{i}\). This reduction was improved in (<a href="#citeproc_bib_item_9">Ling, Phan, Stehlé, &#38; Steinfeld, 2014</a>) to cover \(k = \mathcal{O}(m)\).
 </p>
 
 <p>
-The condition \(\vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k})\) can be dropped when \(k < \ell^{1/4}\) because then the probability that there is an additional short vector in the \(k\)-dimensional sublattice spanned by the \(\vec{u}_i\) is negligible.
+The condition \(\vec{u} \notin \mathcal{K}\text{-}\operatorname{span}(\set{\vec{u}_i}_{0 \leq i < k})\) can be dropped when \(k < m^{1/4}\) because then the probability that there is an additional short vector in the \(k\)-dimensional sublattice spanned by the \(\vec{u}_i\) is negligible.
 </p>
 
 <p>
@@ -399,8 +404,8 @@ No proof was provided for the module variant.
 </div>
 </div>
 </div>
-<div id="outline-container-org6687302" class="outline-2">
-<h2 id="org6687302"><span class="section-number-2">2.</span> One-more-ISIS</h2>
+<div id="outline-container-org1883ae2" class="outline-2">
+<h2 id="org1883ae2"><span class="section-number-2">2.</span> One-more-ISIS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 (<a href="#citeproc_bib_item_1">Agrawal, Kirshanova, Stehlé, &#38; Yadav, 2022</a>)
@@ -408,15 +413,15 @@ No proof was provided for the module variant.
 
 <blockquote>
 <p>
-A challenger selects a matrix \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\) and sends it to the adversary. The adversary can perform two types of queries:
+A challenger selects a matrix \(\mat{A} \in \ZZ_{q}^{n \times m}\) and sends it to the adversary. The adversary can perform two types of queries:
 </p>
 
 <p>
-<b>Syndrome queries</b> The adversary can request a challenge vector which the challenger selects at random, i.e. \(\vec{t} \gets_{\$} \ZZ_{q}^{\eta}\), adds to some set \(\mathcal{S}\) and returns to the adversary.
+<b>Syndrome queries</b> The adversary can request a challenge vector which the challenger selects at random, i.e. \(\vec{t} \gets_{\$} \ZZ_{q}^{n}\), adds to some set \(\mathcal{S}\) and returns to the adversary.
 </p>
 
 <p>
-<b>Preimage queries.</b> The adversary submits <i>any</i> vector \(\vec{t}' \in \ZZ_{q}^{\eta}\). The challenger will return a short vector \(\vec{y}' \gets_{\$} D_{\ZZ^\ell,\sigma}\) such that \(\mat{A}\cdot \vec{y}' \equiv \vec{t}' \bmod q\). Denote \(k\) for the number of preimage queries.
+<b>Preimage queries.</b> The adversary submits <i>any</i> vector \(\vec{t}' \in \ZZ_{q}^{n}\). The challenger will return a short vector \(\vec{y}' \gets_{\$} D_{\ZZ^m,\sigma}\) such that \(\mat{A}\cdot \vec{y}' \equiv \vec{t}' \bmod q\). Denote \(k\) for the number of preimage queries.
 </p>
 
 <p>
@@ -425,24 +430,24 @@ In the end the adversary is asked to output \(k+1\) pairs \(\{(\vec{y}_i,\vec{t}
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org70d95c5" class="outline-3">
-<h3 id="org70d95c5"><span class="section-number-3">2.1.</span> Hardness</h3>
+<div id="outline-container-orgb8a258d" class="outline-3">
+<h3 id="orgb8a258d"><span class="section-number-3">2.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 The hardness of the problem is analysed using direct cryptanalysis in the original paper. The authors give a combinatorial attack and a lattice attack.
 </p>
 
 <p>
-<b>Combinatorial Attack.</b> The adversary requests \(\eta \cdot q\) preimages for all \(\{a \cdot \vec{e}_{i}\ \mid\ a \in \ZZ_{q}, i \in \ZZ_{\eta}\}\), here \(\vec{e}_{i}\) is the \(i\)-th unit vector. Then, adding up \(\eta\) such preimages allows to construct any image. Since the norm of the preimages returned by the challenger is \(\sqrt{\ell} \cdot \sigma\), this allows to solve the One-more-ISIS problem when \(\sqrt{\eta \cdot \ell} \cdot \sigma \leq \beta\). Of course, smaller and larger sets of preimages are possible, increasing and decreasing the output norm respectively.
+<b>Combinatorial Attack.</b> The adversary requests \(n \cdot q\) preimages for all \(\{a \cdot \vec{e}_{i}\ \mid\ a \in \ZZ_{q}, i \in \ZZ_{n}\}\), here \(\vec{e}_{i}\) is the \(i\)-th unit vector. Then, adding up \(n\) such preimages allows to construct any image. Since the norm of the preimages returned by the challenger is \(\sqrt{m} \cdot \sigma\), this allows to solve the One-more-ISIS problem when \(\sqrt{n \cdot m} \cdot \sigma \leq \beta\). Of course, smaller and larger sets of preimages are possible, increasing and decreasing the output norm respectively.
 </p>
 
 <p>
-<b>Lattice Attack.</b> The adversary requests \(\geq \ell\) preimages of zero and uses that to produce a short basis \(\mat{T}\) for the kernel of \(\mat{A}\), i.e. \(\mat{A}\cdot\mat{T} \equiv \vec{0} \bmod q\). This constitutes a trapdoor for \(\mat{A}\) and thus permits to return short preimages for any target. The key point here is that this trapdoor is of degraded quality relative to the trapdoor used by the challenger. The key computational challenge then is to fix-up or improve this degraded trapdoor in order to be able to sample sufficiently short vectors.
+<b>Lattice Attack.</b> The adversary requests \(\geq m\) preimages of zero and uses that to produce a short basis \(\mat{T}\) for the kernel of \(\mat{A}\), i.e. \(\mat{A}\cdot\mat{T} \equiv \vec{0} \bmod q\). This constitutes a trapdoor for \(\mat{A}\) and thus permits to return short preimages for any target. The key point here is that this trapdoor is of degraded quality relative to the trapdoor used by the challenger. The key computational challenge then is to fix-up or improve this degraded trapdoor in order to be able to sample sufficiently short vectors.
 </p>
 </div>
 </div>
-<div id="outline-container-orgc52ccf5" class="outline-3">
-<h3 id="orgc52ccf5"><span class="section-number-3">2.2.</span> Variants</h3>
+<div id="outline-container-org2c4b519" class="outline-3">
+<h3 id="org2c4b519"><span class="section-number-3">2.2.</span> Variants</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 In (<a href="#citeproc_bib_item_5">Baldimtsi, Cheng, Goyal, &#38; Yadav, 2024</a>) a variant of OM-ISIS is introduced, referred to as "randomised OM-ISIS" by the authors.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup> This variant imposes additional constraints on the preimages \(\vec{y}_{i}\) in that some components are required to be in \(\{-1,1\}\). In particular, the preimages (both those output by the challenger and the adversary) are split into \(\vec{y}_{i,0}\) and \(\vec{y}_{i,1}\) where \(\Vert\vec{y}_{i,0}\Vert \leq \beta\) as above and \(y' \in \{-1,1\}\) for all entries \(y'\) of \(\vec{y}_{i,1}\). 
@@ -450,8 +455,8 @@ In (<a href="#citeproc_bib_item_5">Baldimtsi, Cheng, Goyal, &#38; Yadav, 2024</a
 </div>
 </div>
 </div>
-<div id="outline-container-orgd51bfd5" class="outline-2">
-<h2 id="orgd51bfd5"><span class="section-number-2">3.</span> K-R-ISIS</h2>
+<div id="outline-container-orgb944960" class="outline-2">
+<h2 id="orgb944960"><span class="section-number-2">3.</span> K-R-ISIS</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 (<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>)
@@ -480,7 +485,7 @@ Now, let \(\vec{t} = (1,0,\ldots,0)\).
 Let \(\mathcal{G} \subset \mathcal{R}(\vec{X})\) be a set of \(w\)-variate Laurent monomial.
 Let \(g^{\star} \in \mathcal{R}(\vec{X})\) be a target Laurent monomial.
 Let \((\mathcal{G},g^\star)\) be k-M-ISIS-admissible.
-Let  \(\mat{A} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The <i>K-M-ISIS</i> assumption states that given \((\mat{A}, \vec{v}, \vec{t}, \{\vec{u}_{g}\})\) with \(\vec{u}_{g}\) short and
+Let  \(\mat{A} \gets_{\$} \ring_q^{n \times m}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The <i>K-M-ISIS</i> assumption states that given \((\mat{A}, \vec{v}, \vec{t}, \{\vec{u}_{g}\})\) with \(\vec{u}_{g}\) short and
 \[
 g(\vec{v}) \cdot \vec{t} \equiv \mat{A}\cdot \vec{u}_{g} \bmod q
 \]
@@ -488,19 +493,19 @@ it is hard to find a short \(\vec{u}_{g^*}\) and small \(s^{*}\) s.t.
 \[
 s^* \cdot g^{*}(\vec{v}) \cdot \vec{t} \equiv \mat{A} \cdot \vec{u}_{g^*} \bmod q.
 \]
-When \(\eta = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem <i>k-R-ISIS</i>.
+When \(n = 1\), i.e. when \(\mat{A}\) is just a vector, we call the problem <i>k-R-ISIS</i>.
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org904f471" class="outline-3">
-<h3 id="org904f471"><span class="section-number-3">3.1.</span> Hardness</h3>
+<div id="outline-container-orgf0a2326" class="outline-3">
+<h3 id="orgf0a2326"><span class="section-number-3">3.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 The hardness of the problem is analysed by the authors by providing some partial reductions, i.e. covering some special cases. These special cases are not interesting for applications. The authors show that
 </p>
 
 <ul class="org-ul">
-<li>k-R-ISIS (with \(g^{*} \equiv 1\)) is as hard as R-SIS when \(\ell > k\) or when the system generated by \(\mathcal{G}\) is efficiently invertible.</li>
+<li>k-R-ISIS (with \(g^{*} \equiv 1\)) is as hard as R-SIS when \(m > k\) or when the system generated by \(\mathcal{G}\) is efficiently invertible.</li>
 <li>k-M-ISIS is at least as hard as k-R-ISIS and that k-M-ISIS is a true generalisation of k-R-SIS.</li>
 <li>\((\mathcal{G},g^*)\) is as hard as \((\mathcal{G},0)\) for any \(\mathcal{G}\), formalising the intuition that the non-homogeneous variant is no easier than the homogeneous variant.</li>
 <li>scaling \((\mathcal{G},g^*)\) multiplicatively by any non-zero Laurent monomial does not change the hardness, e.g. we may choose to normalise instances to \(g^{*} \equiv 1\).</li>
@@ -517,8 +522,8 @@ The authors also explore direct cryptanalysis:
 </div>
 </div>
 </div>
-<div id="outline-container-orgb1c9488" class="outline-2">
-<h2 id="orgb1c9488"><span class="section-number-2">4.</span> <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</h2>
+<div id="outline-container-org9aeebac" class="outline-2">
+<h2 id="org9aeebac"><span class="section-number-2">4.</span> <span class="todo BROKEN">BROKEN</span> Knowledge K-R-ISIS</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 (<a href="#citeproc_bib_item_2">Albrecht, Cini, Lai, Malavolta, &#38; Thyagarajan, 2022</a>)
@@ -542,14 +547,14 @@ c \equiv \sum_{g \in \mathcal{G}} c_{g} \cdot g(\vec{v}) \bmod q.
 </blockquote>
 
 <p>
-The knowledge assumption only makes sense for \(\eta \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
+The knowledge assumption only makes sense for \(n \geq 2\). However, in order to be able to pun about "crises of knowledge", the authors also define a ring version of the knowledge assumption. In the ring setting, they consider proper ideals rather than submodules.
 </p>
 </div>
-<div id="outline-container-org1bdc7bc" class="outline-3">
-<h3 id="org1bdc7bc"><span class="section-number-3">4.1.</span> Cryptanalysis</h3>
+<div id="outline-container-orgad4258a" class="outline-3">
+<h3 id="orgad4258a"><span class="section-number-3">4.1.</span> Cryptanalysis</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
-The assumption is invalidated &#x2013; at least "morally" &#x2013; in (<a href="#citeproc_bib_item_10">Wee &#38; Wu, 2023a</a>). Roughly speaking,  the attack uses that the preimages of \(g(\vec{v}) \cdot \vec{t}\) span a short basis of the submodule spanned by \(\vec{t}\): essentially an Ajtai-style trapdoor. Then, sampling an arbitrary, not-necessarily short, preimage of some \(c \cdot \vec{t}\), Babai rounding can be applied to obtain a short preimage of some other, random \(\tilde{c} \cdot \vec{t}\).
+The assumption is invalidated &#x2013; at least "morally" &#x2013; in (<a href="#citeproc_bib_item_11">Wee &#38; Wu, 2023a</a>). Roughly speaking,  the attack uses that the preimages of \(g(\vec{v}) \cdot \vec{t}\) span a short basis of the submodule spanned by \(\vec{t}\): essentially an Ajtai-style trapdoor. Then, sampling an arbitrary, not-necessarily short, preimage of some \(c \cdot \vec{t}\), Babai rounding can be applied to obtain a short preimage of some other, random \(\tilde{c} \cdot \vec{t}\).
 </p>
 
 <p>
@@ -558,8 +563,8 @@ An implementation of the attack in SageMath is available <a href="https://gist.g
 </div>
 </div>
 </div>
-<div id="outline-container-orgf7c3826" class="outline-2">
-<h2 id="orgf7c3826"><span class="section-number-2">5.</span> <span class="done EQUIVALENT">EQUIVALENT</span> Twin K-R-ISIS</h2>
+<div id="outline-container-org4e86adb" class="outline-2">
+<h2 id="org4e86adb"><span class="section-number-2">5.</span> <span class="done EQUIVALENT">EQUIVALENT</span> Twin K-R-ISIS</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 (<a href="#citeproc_bib_item_4">Balbás, Catalano, Fiore, &#38; Lai, 2022</a>)
@@ -570,7 +575,7 @@ An implementation of the attack in SageMath is available <a href="https://gist.g
 let \(\vec{t} = (1,0,\ldots,0)\).
 Let \(\mathcal{G}_{A}, \mathcal{G}_{B} \subset \mathcal{R}(\vec{X})\) be sets of \(w\)-variate Laurent monomial.
 Let \((\mathcal{G}_{A} \cup \mathcal{G}_B)\) be k-M-ISIS-admissible.
-Let \(\mat{A} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\mat{B} \gets_{\$} \ring_q^{\eta \times \ell}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The <i>Twin K-M-ISIS</i> assumption states that given \((\mat{A}, \mat{B}, \{\vec{u}_{g}\}_{g \in \mathcal{G}_A}, \{\vec{w}_{g}\}_{g \in \mathcal{G}_B}, \vec{t}, \vec{v})\) with \(\vec{u}_{g}, \mathbf{w}_{g}\) short,
+Let \(\mat{A} \gets_{\$} \ring_q^{n \times m}\), \(\mat{B} \gets_{\$} \ring_q^{n \times m}\), \(\vec{v} \gets_{\$} (\ring_q^\star)^w\). The <i>Twin K-M-ISIS</i> assumption states that given \((\mat{A}, \mat{B}, \{\vec{u}_{g}\}_{g \in \mathcal{G}_A}, \{\vec{w}_{g}\}_{g \in \mathcal{G}_B}, \vec{t}, \vec{v})\) with \(\vec{u}_{g}, \mathbf{w}_{g}\) short,
 \[
 g(\vec{v}) \cdot \vec{t} \equiv \mat{A}\cdot \vec{u}_{g} \bmod q,\ \forall\ g \in \mathcal{G}_{A},
 \]
@@ -585,8 +590,8 @@ it is hard to find a short \(\vec{u}^{*}, \vec{w}^{*}\) s.t.
 </p>
 </blockquote>
 </div>
-<div id="outline-container-orgfeba415" class="outline-3">
-<h3 id="orgfeba415"><span class="section-number-3">5.1.</span> Hardness</h3>
+<div id="outline-container-orgb341939" class="outline-3">
+<h3 id="orgb341939"><span class="section-number-3">5.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 In (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>), it is shown that Twin k-R-ISIS is no easier than k-R-ISIS via a re-randomisation argument.
@@ -594,11 +599,11 @@ In (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</
 </div>
 </div>
 </div>
-<div id="outline-container-org727536b" class="outline-2">
-<h2 id="org727536b"><span class="section-number-2">6.</span> <span class="done STANDARD">STANDARD</span> BASIS (Random)</h2>
+<div id="outline-container-org261d627" class="outline-2">
+<h2 id="org261d627"><span class="section-number-2">6.</span> <span class="done STANDARD">STANDARD</span> BASIS (Random)</h2>
 <div class="outline-text-2" id="text-6">
 <p>
-(<a href="#citeproc_bib_item_11">Wee &#38; Wu, 2023b</a>)
+(<a href="#citeproc_bib_item_12">Wee &#38; Wu, 2023b</a>)
 </p>
 
 <p>
@@ -607,10 +612,10 @@ We consider BASIS\(_{rand}\) with \(k=2\), for simplicity.
 
 <blockquote>
 <p>
-Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
-\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
-\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{n+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{n+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{n'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
 where \(\mat{A}_{i}\) are uniformly random for \(i>0\) and \(\mat{A}_{0} := [\vec{a} | \mat{A}^{T}]^{T}\) for uniformly random \(\mat{A}\) and \(\vec{a}\).
 </p>
 
@@ -619,24 +624,24 @@ The BASIS\(_{rand}\) assumption states that given \((\vec{B}, \vec{T})\) it is h
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org78cdd18" class="outline-3">
-<h3 id="org78cdd18"><span class="section-number-3">6.1.</span> Hardness</h3>
+<div id="outline-container-org0e7c04f" class="outline-3">
+<h3 id="org0e7c04f"><span class="section-number-3">6.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-6-1">
 <p>
 It was shown in the original paper that BASIS\(_{rand}\) is as hard as SIS. The idea is that we can construct \(\vec{B}\) given \(\mat{A}\) since we can trapdoor all \(\mat{A}_{i}\) for \(i > 0\).
 </p>
 
 <p>
-A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{\eta+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{\eta+1} \cdot \vec{t}^{(G)}\).
+A way of looking at is by noting that for each column \(\vec{t} = (\vec{t}^{(0)}, \vec{t}^{(1)}, \vec{t}^{(G)})\) of \(\vec{T}\) we have \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{n+1} \cdot \vec{t}^{(G)}\) where \(\vec{G}_{n+1} \cdot \vec{t}^{(G)}\) is close to uniform. Thus, we can sample \(\vec{t}^{(0)}\), compute \(\vec{y} := \mat{A}_{0} \cdot \vec{t}^{(0)}\) and then use the gadget structure of \(\vec{G}_{n+1}\) to find a short \(\vec{t}^{(G)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{n+1} \cdot \vec{t}^{(G)}\). Then, using the trapdoors for \(\mat{A}_{i}\) with \(i>0\) we can find \(\vec{t}^{(i)}\) s.t. \(\mat{A}_{i} \cdot \vec{t}^{(i)} \equiv \vec{G}_{n+1} \cdot \vec{t}^{(G)}\).
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orga3354f3" class="outline-2">
-<h2 id="orga3354f3"><span class="section-number-2">7.</span> <span class="done EQUIVALENT">EQUIVALENT</span> BASIS (Structured)</h2>
+<div id="outline-container-orge6ac352" class="outline-2">
+<h2 id="orge6ac352"><span class="section-number-2">7.</span> <span class="done EQUIVALENT">EQUIVALENT</span> BASIS (Structured)</h2>
 <div class="outline-text-2" id="text-7">
 <p>
-(<a href="#citeproc_bib_item_11">Wee &#38; Wu, 2023b</a>)
+(<a href="#citeproc_bib_item_12">Wee &#38; Wu, 2023b</a>)
 </p>
 
 <p>
@@ -645,11 +650,11 @@ We consider BASIS\(_{struct}\) with \(k=2\), for simplicity.
 
 <blockquote>
 <p>
-Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\). We're given
-\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{\eta+1}\\
-\vec{0} & \mat{A}_{1} & -\vec{G}_{\eta+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
-where \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{\eta \times \eta}\).
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\). We're given
+\[\vec{B} := \begin{pmatrix}\mat{A}_{0} & \vec{0} & - \vec{G}_{n+1}\\
+\vec{0} & \mat{A}_{1} & -\vec{G}_{n+1}\end{pmatrix}\] and a short \(\vec{T}\) s.t.
+\[\vec{G}_{n'} \equiv \vec{B} \cdot \vec{T} \bmod q\]
+where \(\mat{A}_{i} := \vec{W}_{i} \cdot \mat{A}\) for known \(\vec{W}_{i} \in \ZZ_{q}^{n \times n}\).
 </p>
 
 <p>
@@ -657,17 +662,17 @@ The BASIS\(_{struct}\) assumption states that given \((\vec{B}, \vec{T})\) it is
 </p>
 </blockquote>
 </div>
-<div id="outline-container-orgf6aadd7" class="outline-3">
-<h3 id="orgf6aadd7"><span class="section-number-3">7.1.</span> Hardness</h3>
+<div id="outline-container-org0fea70b" class="outline-3">
+<h3 id="org0fea70b"><span class="section-number-3">7.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-7-1">
 <p>
-The authors also show that given an algorithm for solving BASIS\(_{struct}\) there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS\(_{struct}\) instance of size \(k < \ell/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
+The authors also show that given an algorithm for solving BASIS\(_{struct}\) there is an algorithm for solving k-M-ISIS. This reduction outputs a BASIS\(_{struct}\) instance of size \(k < m/k'\) where \(k'\) is the parameter \(k\) of the k-M-ISIS instance.
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org5085f73" class="outline-2">
-<h2 id="org5085f73"><span class="section-number-2">8.</span> PRISIS</h2>
+<div id="outline-container-org4ae4e39" class="outline-2">
+<h2 id="org4ae4e39"><span class="section-number-2">8.</span> PRISIS</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 PRISIS (<a href="#citeproc_bib_item_8">Fenzi &#38; Nguyen, 2023</a>) is a special case of BASIS. It is more structured than BASIS, so we might expect hardness results on PRISIS to translate to BASIS. It turns out the additional structure allows to prove a broader regime of parameters as hard as M-SIS.
@@ -675,14 +680,14 @@ PRISIS (<a href="#citeproc_bib_item_8">Fenzi &#38; Nguyen, 2023</a>) is a specia
 
 <blockquote>
 <p>
-Let \(\mat{A} \in \ring_{q}^{\eta \times \ell}\). We're given
+Let \(\mat{A} \in \ring_{q}^{n \times m}\). We're given
 \[\vec{B} := \begin{pmatrix}
-\mat{A} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
-\vec{0} &           w \cdot \mat{A} & \cdots & -\vec{G}_{\eta+1}\\
-\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
-\vec{0} & \cdots & w^{\ell-1} \cdot \mat{A} & -\vec{G}_{\eta+1}
+\mat{A} &               \vec{0} & \cdots & - \vec{G}_{n+1}\\
+\vec{0} &           w \cdot \mat{A} & \cdots & -\vec{G}_{n+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{n+1}\\
+\vec{0} & \cdots & w^{m-1} \cdot \mat{A} & -\vec{G}_{n+1}
 \end{pmatrix}\] and a short \(\vec{T}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
+\[\vec{G}_{n'} \equiv \vec{B} \cdot \vec{T} \bmod q.\]
 </p>
 
 <p>
@@ -690,17 +695,17 @@ The PRISIS assumption states that given \((\mat{A}, \mat{B}, w, \vec{T})\) it is
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org60b52f5" class="outline-3">
-<h3 id="org60b52f5"><span class="section-number-3">8.1.</span> Hardness</h3>
+<div id="outline-container-orgacad966" class="outline-3">
+<h3 id="orgacad966"><span class="section-number-3">8.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-8-1">
 <p>
-If \(\ell=2\) then PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_8">Fenzi &#38; Nguyen, 2023</a>).
+If \(m=2\) then PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_8">Fenzi &#38; Nguyen, 2023</a>).
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcf2a1ad" class="outline-2">
-<h2 id="orgcf2a1ad"><span class="section-number-2">9.</span> <span class="done STANDARD">STANDARD</span> \(h\)-PRISIS</h2>
+<div id="outline-container-orge94438b" class="outline-2">
+<h2 id="orge94438b"><span class="section-number-2">9.</span> <span class="done STANDARD">STANDARD</span> \(h\)-PRISIS</h2>
 <div class="outline-text-2" id="text-9">
 <p>
 \(h\)-PRISIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>) is a multi-instance version of PRISIS.
@@ -708,14 +713,14 @@ If \(\ell=2\) then PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_8
 
 <blockquote>
 <p>
-Let \(\mat{A}_{i} \in \ring_{q}^{\eta \times \ell}\) for \(i \in \{0,…,h-1\}\). We're given
+Let \(\mat{A}_{i} \in \ring_{q}^{n \times m}\) for \(i \in \{0,…,h-1\}\). We're given
 \[\vec{B}_{i} := \begin{pmatrix}
-\mat{A}_{i} &               \vec{0} & \cdots & - \vec{G}_{\eta+1}\\
-\vec{0} &           w_{i} \cdot \mat{A}_{i} & \cdots & -\vec{G}_{\eta+1}\\
-\mat{0} &               \vec{0} & \ddots & -\vec{G}_{\eta+1}\\
-\vec{0} & \cdots & w_i^{\ell-1} \cdot \mat{A}_{i} & -\vec{G}_{\eta+1}
+\mat{A}_{i} &               \vec{0} & \cdots & - \vec{G}_{n+1}\\
+\vec{0} &           w_{i} \cdot \mat{A}_{i} & \cdots & -\vec{G}_{n+1}\\
+\mat{0} &               \vec{0} & \ddots & -\vec{G}_{n+1}\\
+\vec{0} & \cdots & w_i^{m-1} \cdot \mat{A}_{i} & -\vec{G}_{n+1}
 \end{pmatrix}\] and a short \(\vec{T}_{i}\) s.t.
-\[\vec{G}_{\eta'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
+\[\vec{G}_{n'} \equiv \vec{B}_{i} \cdot \vec{T}_{i} \bmod q.\]
 </p>
 
 <p>
@@ -723,25 +728,56 @@ The \(h\)-PRISIS assumption states that given \((\{\mat{A}_i\}, \{\mat{B}_{i}\},
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org46d850c" class="outline-3">
-<h3 id="org46d850c"><span class="section-number-3">9.1.</span> Hardness</h3>
+<div id="outline-container-org5f81174" class="outline-3">
+<h3 id="org5f81174"><span class="section-number-3">9.1.</span> Hardness</h3>
 <div class="outline-text-3" id="text-9-1">
 <p>
-\(h\)-PRISIS is no easier than PRISIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>). In particular, if \(\ell=2\) then \(h\)-PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>).
+\(h\)-PRISIS is no easier than PRISIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>). In particular, if \(m=2\) then \(h\)-PRISIS is no easier than M-SIS (<a href="#citeproc_bib_item_3">Albrecht, Fenzi, Lapiha, &#38; Nguyen, 2023</a>).
 </p>
 </div>
 </div>
 </div>
-<div id="outline-container-org8666a99" class="outline-2">
-<h2 id="org8666a99"><span class="section-number-2">10.</span> ISISf</h2>
+<div id="outline-container-orgf5e848d" class="outline-2">
+<h2 id="orgf5e848d"><span class="section-number-2">10.</span> \(\ell\)-Succinct SIS</h2>
 <div class="outline-text-2" id="text-10">
+<p>
+(<a href="#citeproc_bib_item_10">Wee, 2024</a>)
+</p>
+
+<blockquote>
+<p>
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\) and \(\mat{W} \in \ZZ_{q}^{\ell n \times m}\). We're given \(\mat{B} := (\mat{I}_\ell \otimes \mat{A} \mid \mat{W})\) and a short \(\mat{T}\) s.t.
+\[\mat{I}_\ell \otimes \mat{G} = \mat{B}\mat{T} \bmod q.\]
+</p>
+
+<p>
+The \(\ell\)-succinct SIS assumption states that given \((\mat{A}, \mat{W}, \mat{T})\) it is hard to find a short \(\vec{x}\) s.t. \(\mat{A} \cdot \vec{x} \equiv \vec{0}\).
+</p>
+</blockquote>
+</div>
+<div id="outline-container-orga4fb7f2" class="outline-3">
+<h3 id="orga4fb7f2"><span class="section-number-3">10.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-10-1">
+<p>
+In (<a href="#citeproc_bib_item_10">Wee, 2024</a>), it is shown that BASIS\(_{struct}\) with parameter \(k\) implies \(\ell\)-succinct SIS with parameter \(\ell=k\).
+</p>
+
+<p>
+Furthermore, we can observe that SIS implies \(1\)-succinct SIS: the reduction samples \(\mat{W}\sample \ZZ_{q}^{n \times m}\) along with a trapdoor, which is used to sample a trapdoor for \((\mat{A} \mid \mat{W})\).
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org666eeef" class="outline-2">
+<h2 id="org666eeef"><span class="section-number-2">11.</span> ISISf</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 (<a href="#citeproc_bib_item_7">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti, 2023</a>)
 </p>
 
 <blockquote>
 <p>
-Let \(\mat{A} \in \ZZ_{q}^{\eta \times \ell}\) and let \(f: \ZZ_{N} \rightarrow \ZZ_{q}^{\eta}\) be a function. Given \((\mat{A}, f)\) and access to an oracle that when called samples a fresh \(x \sample \ZZ_{N}\) and outputs \(x, \vec{u}_{x}\) s.t. \[
+Let \(\mat{A} \in \ZZ_{q}^{n \times m}\) and let \(f: \ZZ_{N} \rightarrow \ZZ_{q}^{n}\) be a function. Given \((\mat{A}, f)\) and access to an oracle that when called samples a fresh \(x \sample \ZZ_{N}\) and outputs \(x, \vec{u}_{x}\) s.t. \[
 \mat{A} \cdot \vec{u}_{x} \equiv f(x) \bmod q \text{ and } \|\vec{u}_{x}\| \leq \beta,
 \]
 the <i>ISISf</i> assumption states that it is hard to output a fresh tuple \((x^{*}, \vec{u}^{*})\) s.t.
@@ -749,9 +785,9 @@ the <i>ISISf</i> assumption states that it is hard to output a fresh tuple \((x^
 </p>
 </blockquote>
 </div>
-<div id="outline-container-org558c1de" class="outline-3">
-<h3 id="org558c1de"><span class="section-number-3">10.1.</span> Hardness</h3>
-<div class="outline-text-3" id="text-10-1">
+<div id="outline-container-orgb9af27e" class="outline-3">
+<h3 id="orgb9af27e"><span class="section-number-3">11.1.</span> Hardness</h3>
+<div class="outline-text-3" id="text-11-1">
 <p>
 If \(f\) is a random oracle then the problem, in the ROM, is as hard as SIS.
 </p>
@@ -762,9 +798,9 @@ In (<a href="#citeproc_bib_item_7">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti
 </div>
 </div>
 </div>
-<div id="outline-container-orga4eb0b3" class="outline-2">
-<h2 id="orga4eb0b3">Bibliography</h2>
-<div class="outline-text-2" id="text-orga4eb0b3">
+<div id="outline-container-org9803b64" class="outline-2">
+<h2 id="org9803b64">Bibliography</h2>
+<div class="outline-text-2" id="text-org9803b64">
 <style>.csl-entry{text-indent: -1.5em; margin-left: 1.5em;}</style><div class="csl-bib-body">
   <div class="csl-entry"><a id="citeproc_bib_item_1"></a>Agrawal, S., Kirshanova, E., Stehlé, D., &#38; Yadav, A. (2022). Practical, round-optimal lattice-based blind signatures. In H. Yin, A. Stavrou, C. Cremers, &#38; E. Shi (Eds.), <i>Proceedings of the 2022 ACM SIGSAC conference on computer and communications security, CCS 2022</i> (pp. 39–53). <a href="https://doi.org/10.1145/3548606.3560650">https://doi.org/10.1145/3548606.3560650</a></div>
   <div class="csl-entry"><a id="citeproc_bib_item_2"></a>Albrecht, M. R., Cini, V., Lai, R. W. F., Malavolta, G., &#38; Thyagarajan, S. A. K. (2022). Lattice-based snarks: Publicly verifiable, preprocessing, and recursively composable - (extended abstract). In Y. Dodis &#38; T. Shrimpton (Eds.), <i>Advances in cryptology - CRYPTO 2022</i> (pp. 102–132). Springer. <a href="https://doi.org/10.1007/978-3-031-15979-4\_4">https://doi.org/10.1007/978-3-031-15979-4\_4</a></div>
@@ -775,11 +811,12 @@ In (<a href="#citeproc_bib_item_7">Bootle, Lyubashevsky, Nguyen, &#38; Sorniotti
   <div class="csl-entry"><a id="citeproc_bib_item_7"></a>Bootle, J., Lyubashevsky, V., Nguyen, N. K., &#38; Sorniotti, A. (2023). <i>A framework for practical anonymous credentials from lattices</i>. Cryptology ePrint Archive, Paper 2023/560. Retrieved from <a href="https://eprint.iacr.org/2023/560">https://eprint.iacr.org/2023/560</a></div>
   <div class="csl-entry"><a id="citeproc_bib_item_8"></a>Fenzi, G., &#38; Nguyen, N. K. (2023). <i>Lattice-based polynomial commitments: Towards asymptotic and concrete efficiency</i>. Cryptology ePrint Archive, Paper 2023/846. Retrieved from <a href="https://eprint.iacr.org/2023/846">https://eprint.iacr.org/2023/846</a></div>
   <div class="csl-entry"><a id="citeproc_bib_item_9"></a>Ling, S., Phan, D. H., Stehlé, D., &#38; Steinfeld, R. (2014). Hardness of k-lwe and applications in traitor tracing. In J. A. Garay &#38; R. Gennaro (Eds.), <i>Advances in cryptology - CRYPTO 2014</i> (pp. 315–334). Springer. <a href="https://doi.org/10.1007/978-3-662-44371-2\_18">https://doi.org/10.1007/978-3-662-44371-2\_18</a></div>
-  <div class="csl-entry"><a id="citeproc_bib_item_10"></a>Wee, H., &#38; Wu, D. J. (2023a). Lattice-based functional commitments: Fast verification and cryptanalysis. <i>Asiacrypt 2023</i>. Springer-Verlag.</div>
-  <div class="csl-entry"><a id="citeproc_bib_item_11"></a>Wee, H., &#38; Wu, D. J. (2023b). Succinct vector, polynomial, and functional commitments from lattices. In C. Hazay &#38; M. Stam (Eds.), <i>Advances in cryptology - EUROCRYPT 2023</i> (pp. 385–416). Springer. <a href="https://doi.org/10.1007/978-3-031-30620-4\_13">https://doi.org/10.1007/978-3-031-30620-4\_13</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_10"></a>Wee, H. (2024). <i>Circuit ABE with poly(depth, $\lambda$)-sized ciphertexts and keys from lattices</i>. Cryptology ePrint Archive, Report 2024/1416. Retrieved from <a href="https://eprint.iacr.org/2024/1416">https://eprint.iacr.org/2024/1416</a></div>
+  <div class="csl-entry"><a id="citeproc_bib_item_11"></a>Wee, H., &#38; Wu, D. J. (2023a). Lattice-based functional commitments: Fast verification and cryptanalysis. <i>Asiacrypt 2023</i>. Springer-Verlag.</div>
+  <div class="csl-entry"><a id="citeproc_bib_item_12"></a>Wee, H., &#38; Wu, D. J. (2023b). Succinct vector, polynomial, and functional commitments from lattices. In C. Hazay &#38; M. Stam (Eds.), <i>Advances in cryptology - EUROCRYPT 2023</i> (pp. 385–416). Springer. <a href="https://doi.org/10.1007/978-3-031-30620-4\_13">https://doi.org/10.1007/978-3-031-30620-4\_13</a></div>
 </div>
 
-<div class="HTML" id="org5d39d28">
+<div class="HTML" id="org4473048">
 <p>
 
 </p>
